@@ -1,31 +1,46 @@
 :root {
-    /* Primary color*/
 
-    --primary-950: #4DB100;
-    --primary-900: #55B40C;
-    --primary-800: #67BC26;
-    --primary-700: #79C43F;
-    --primary-600: #8BCC59;
-    --primary-500: #9DD472;
-    --primary-400: #AEDB8C;
-    --primary-300: #C0E3A5;
-    --primary-200: #D2EBBF;
-    --primary-100: #EAF3D8;
-    --primary-50: #F6FBF2;
+    /*primary color*/
+    --primary-950: #003404;
+    --primary-900: #0b5c0d;
+    --primary-800: #076d08;
+    --primary-700: #008000;
+    --primary-600: #00b800;
+    --primary-500: #07e500;
+    --primary-400: #29fe1d;
+    --primary-300: #5fff50;
+    --primary-200: #9eff90;
+    --primary-100: #ccffc4;
+    --primary-50: #e9ffe4;
+    
 
-    /* Secundary color*/
+    /*secundary color*/
+    --secundary-950: #352315;
+    --secundary-900: #5a4029;
+    --secundary-800: #684b2b;
+    --secundary-700: #7c5b2c;
+    --secundary-600: #9a7934;
+    --secundary-500: #b4973e;
+    --secundary-400: #c3ab4c;
+    --secundary-300: #d1c273;
+    --secundary-200: #e2dba6;
+    --secundary-100: #f0edd1;
+    --secundary-50: #f9f8ed;
+		
 
-    --secundary-950:#FED638;
-    --secundary-900:#FED841;
-    --secundary-800:#FEDC55;
-    --secundary-700:#FEE069;
-    --secundary-600:#FEE47D;
-    --secundary-500:#FEE891;
-    --secundary-400:#FEECA5;
-    --secundary-300:#FEF0B9;
-    --secundary-200:#FEF4CD;
-    --secundary-100:#FEF8E1;
-    --secundary-50:#FEFCF5;
+    /*terciary color*/
+	--terciary-950: #111c5a;
+	--terciary-900: #132b95;
+	--terciary-800: #0f2abe;
+	--terciary-700: #0a33eb;
+	--terciary-600: #2155ff;
+	--terciary-500: #286cff;
+	--terciary-400: #5095ff;
+	--terciary-300: #88bbff;
+	--terciary-200: #b9d4ff;
+	--terciary-100: #d7e6ff;
+	--terciary-50: #edf5ff;
+	
 
     /* Basic color*/
     --white: #fff;
@@ -42,8 +57,9 @@
     --gray-100: #D4D4D4;
     --gray-50: #E9E9E9;
 
-    /* Font-family */
-    --main-font: Helvetica, Arial, sans-serif;
+	/* Font-family */
+	--main-font: Roboto, Noto Sans;
+		
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */
