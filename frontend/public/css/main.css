@@ -1,11 +1,5 @@
 @import url(components/cards.css);
 @import url(components/search.css);
-<<<<<<< HEAD
 @import url(components/from.css);
-/*@import url(components/card-public.css);*/
+@import url(components/card-public.css);
 @import url(variables.css);
-=======
-@import url(variables.css);
-
-
->>>>>>> 03746da (feat: Componentes de cards y search)
