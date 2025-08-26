@@ -57,14 +57,9 @@
     --gray-100: #D4D4D4;
     --gray-50: #E9E9E9;
 
-<<<<<<< HEAD
-	/* Font-family */	
-=======
 	/* Font-family */
 	--main-font: Roboto, Noto Sans;
 	--main-font: Arial;
-		
->>>>>>> a3b8b778228a08159051aee66e8dc0f762b10d9d
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */
