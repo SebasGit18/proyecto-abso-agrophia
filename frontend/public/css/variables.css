@@ -57,14 +57,7 @@
     --gray-100: #D4D4D4;
     --gray-50: #E9E9E9;
 
-	/* Font-family */
-<<<<<<< Updated upstream
-	--main-font: Roboto, Noto Sans;
-=======
-	--main-font: Arial;
-
->>>>>>> Stashed changes
-		
+	/* Font-family */	
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */
