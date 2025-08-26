@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const logginElement = document.querySelector(".login-container");
+document.addEventListener("DOMContentLoaded", function () {
+  const perfilElement = document.querySelector(".profile-form-update-container");
 
-    if (logginElement) {
-        fetch("/frontend/public/views/components/forloggin.html")
-            .then(response => response.text())
-            .then(data => {
-                logginElement.innerHTML = data;
-            })
-    .catch(error => console.log("Error cargando el login", error));
-    }   
+  if (perfilElement) {
+    fetch("/frontend/public/views/components/informacion_perfil.html")
+      .then(response => response.text())
+      .then(data => {
+        perfilElement.innerHTML = data;
+      })
+      .catch(error => console.log("Error cargando el perfil", error));
+  }
 });

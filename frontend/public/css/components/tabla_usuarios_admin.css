@@ -1,0 +1,150 @@
+/* ====== RESETEO BÁSICO ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== LAYOUT GENERAL ====== */
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+
+/* ====== SIDEBAR ====== */
+.sidebar {
+    width: 220px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #1a252f;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 12px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* ====== CONTENIDO PRINCIPAL ====== */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* ====== TABLA ====== */
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14px; /* letra más pequeña */
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* ====== BOTONES DE ACCIONES ====== */
+td button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: transform 0.2s, background 0.3s;
+}
+
+td button:hover {
+    transform: translateY(-2px);
+}
+
+/* 🔹 Botones específicos */
+.block-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.edit-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.unblock-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* 🔹 Botón de Mensaje (verde con espacio para icono) */
+.message-button {
+    background-color: #27ae60;
+    color: white;
+}
+
+.message-button:hover {
+    background-color: #219150;
+}
+
+.message-button .icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
