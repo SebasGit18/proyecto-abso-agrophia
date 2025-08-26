@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url(variables.css);
 @import url(components/forloggin.css);
 @import url(components/hero.css);
@@ -6,3 +7,10 @@
 @import url(components/usuarios_admin.css);
 @import url(components/tabla_usuarios_admin.css);
 @import url(components/navbar.css);
+=======
+@import url(components/cards.css);
+@import url(components/search.css);
+@import url(components/from.css);
+@import url(components/card-public.css);
+@import url(variables.css);
+>>>>>>> Stashed changes
