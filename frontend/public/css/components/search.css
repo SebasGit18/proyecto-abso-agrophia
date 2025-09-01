@@ -1,6 +1,5 @@
 /* Reset general */
 * {
-<<<<<<< HEAD
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -50,11 +49,6 @@ body {
   color: var(--gray-900);
   padding: 0.4rem 0;
 }
-=======
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
   
   body {
     font-family: var(--main-font);
@@ -98,4 +92,3 @@ body {
     color: var(--gray-900);
     padding: 0.4rem 0;
   }
->>>>>>> 03746da (feat: Componentes de cards y search)

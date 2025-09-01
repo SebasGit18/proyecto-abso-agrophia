@@ -67,7 +67,7 @@ h3{
     background: var(--primary-950);
   }
   
-  .pago__volver {
+.pago__volver {
     display: block;
     text-align: center;
     margin-top: 15px;
