@@ -74,8 +74,8 @@
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
 
-    --pading-bootom: 12px;
-    --pading-top: 12px;
-    --pading-left: 24px;
-    --pading-right: 24px;
+    --padding-bottom: 12px;
+    --padding-top: 12px;
+    --padding-left: 24px;
+    --padding-right: 24px;
 }
