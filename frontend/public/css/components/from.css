@@ -1,0 +1,82 @@
+body {
+  font-family: var(--main-font);
+  /*background-color: var(--primary-100);*/
+  margin: 0;
+  padding: 0;
+}
+
+h3{
+  font-size: var(--fs-xxs);
+  font-family: var(--main-font);
+  padding: 5px;
+  margin-left: 5px;
+}
+  
+
+.payment__container {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+
+.payment__form {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px var(--gray-300);
+  width: 100%;
+  max-width: 900px; 
+}
+
+.payment__label {
+  display: flex;
+  font-weight: bold;
+  color: var(--primary-700);
+  margin-bottom: 5px;
+  font-size: var(--fs-xxs);
+  margin-top: 20px;
+}
+
+.selection{
+  width: 99%;
+  padding: 15px;
+  border: 1px solid var(--gray-400);
+  border-radius: 6px;
+  font-size: var(--fs-xxxs);
+}
+
+.payment__input {
+  width: 99%;
+  padding: 15px;
+  border: 1px solid var(--gray-400);
+  border-radius: 6px;
+  font-size: var(--fs-xxxs);
+}
+
+.payment__btn {
+  display: block;
+  width: 20%;
+  background: var(--primary-800);
+  color: var(--white);
+  font-size: var(--fs-xxxs);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.payment__btn:hover {
+  background: var(--primary-950);
+}
+
+.payment__volver {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: var(--primary-950);
+  font-size: var(--fs-xxxs);
+}
