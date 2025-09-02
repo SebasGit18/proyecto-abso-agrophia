@@ -57,6 +57,7 @@ html, body {
   border-radius: 6px;
   cursor: pointer;
   font-size: var(--fs-xxxs);
+  margin-top: 15px;
 }
 
 .card__button:hover {
@@ -69,11 +70,3 @@ html, body {
   height: 20px;
   stroke: var(--black);
 }
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
