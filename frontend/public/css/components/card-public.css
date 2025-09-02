@@ -50,16 +50,16 @@ html, body {
 .button-container {
   display: flex;
   flex-direction: column; /* pone los botones en columna */
-  gap: 10px; /* separación vertical entre ellos */
-  align-items: center;    /* centra los botones en horizontal */
+  gap: 10px;
+  align-items: center;
   justify-content: center;
 }
 
 .one-public__button {
-  display: flex;                /* usamos flexbox */
-  justify-content: center;      /* centra el texto en horizontal */
-  align-items: center;          /* centra el texto en vertical */
-  text-align: center;                                 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background: var(--terciary-200);
   color: var(--black);
   border: none;
@@ -77,9 +77,9 @@ html, body {
 
 
 .two-public__button {
-  display: flex;                /* usamos flexbox */
-  justify-content: center;      /* centra el texto en horizontal */
-  align-items: center;          /* centra el texto en vertical */
+  display: flex;                
+  justify-content: center;     
+  align-items: center;
   text-align: center;                                 
   background: var(--secundary-300);
   color: var(--black);
