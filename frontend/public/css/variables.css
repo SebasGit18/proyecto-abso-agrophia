@@ -58,7 +58,8 @@
     --gray-50: #E9E9E9;
 
 	/* Font-family */
-	--main-font: Roboto, Noto Sans;
+	--font-secundary: "Roboto"; 
+    --font-primary: "Noto Sans";
 		
 
     /* Font-size */
@@ -72,4 +73,10 @@
     --fs-xs: 1.6rem;  /* Extra pequeño */
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
+
+   /* Padding */
+    --padding-bottom: 12px;
+    --padding-top: 12px;
+    --padding-left: 24px;
+    --padding-right: 24px; 
 }

@@ -5,7 +5,7 @@
 .navbar__title{
   color: var(--primary-800);
   font-size: var(--fs-xl);
-  font-family: var(--main-font Roboto);
+  font-family: sans-serif;
   text-align: center;
 }
 

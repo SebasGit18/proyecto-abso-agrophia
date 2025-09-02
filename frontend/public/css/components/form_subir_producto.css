@@ -160,23 +160,24 @@
 /* }  */
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+  font-family: var(--font-primary);
+  background-color: var(--white);
 }
 
 .producto-form {
-  max-width: 500px;
+  width: 100%;
+  max-width: 550px;
   margin: 20px auto;
   padding: 20px;
   border: 2px solid var(--black); 
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--white);
   text-align: center;
 }
 
 .producto-form__title {
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: var(--fs-xs);
   font-weight: bold;
 }
 
@@ -195,12 +196,12 @@ body {
 }
 
 .producto-form__input {
-  width: 100%;
+  width: 80%;
   max-width: 220px;
-  padding: 10px;
+  padding: 20px;
   margin: 5px auto;
   border: 1px solid var(--black);
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 14px;
 }
 
@@ -215,13 +216,13 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #f0f0f0;
+  background-color: var(--gray-50);
   cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: var(--fs-xxxs);
+  /* font-weight: bold; */
   margin-top: 25px;
 }
 
 .producto-form__btn--publicar {
-  color: green;
+  color: var(--primary-700);
 }
