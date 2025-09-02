@@ -1,0 +1,98 @@
+body {
+    background-color: var(--primary-100);
+    font-family: Arial, sans-serif;
+}
+
+.shoppingcar-container {
+    background-color: var(--white);
+    width: 930px;
+    height: 310px;
+    padding: 24px;
+    margin: 140px;
+    margin-left: 13%;
+    font-family: var(--main-font);
+    border-radius: 16px;
+}
+
+.shoppingcar-content {
+    color: var(--black);
+}
+
+table {
+    padding: 24px;
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary-100);
+    color: var(--gray-800);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: var(--terciary-400);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--terciary-400);
+}
+
+.valor__total {
+    color: var(--black);
+}
+
+.button__pagar {
+    background-color: var(--terciary-400);
+    color: var(--white);
+    border: none;
+    width: 150px;
+    padding: 8px 12px;
+    margin-left: 600px;
+    margin-top: -70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eliminar__btn {
+    margin-left: 60px;
+}
+
+.button__pagar:hover {
+    background-color: var(--terciary-500);
+}
+
+.total {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: -20px;
+}
+
+.link__home {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: -700px;
+    color: var(--primary-950);
+    text-decoration: none;
+}
+
+.link__home:hover {
+    text-decoration: underline;
+}
