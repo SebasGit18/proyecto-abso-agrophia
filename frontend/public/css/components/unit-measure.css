@@ -1,0 +1,33 @@
+.unit-measure {
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    width: 330px;
+    font-family: var(--main-font);
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.unit-measure__title {
+    text-align: center;
+    font-size: var(--fs-xxs);
+    margin: 0;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.unit-measure hr {
+    border: 1px solid var(--black);
+    width: 100%;
+}
+
+.unit-measure__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 30px 30px; 
+}
+
+.unit-measure__form label {
+    font-size: var(--fs-xxxs);
+    cursor: pointer;
+}
