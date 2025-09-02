@@ -20,7 +20,7 @@ body {
 }
 
 .form {
-    background: #fff;
+    background: var(--white);
     padding: 12px 24px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -33,7 +33,7 @@ body {
 .form__title {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: var(--fs-xxs);
 }
 
 .form__group {
@@ -44,7 +44,7 @@ body {
     color: var(--gray-800);
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: var(--fs-xxxxs);
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ body {
 
 .form__input:focus,
 .form__select:focus {
-    border-color: #4CAF50;
+    border-color: var(--primary-100);
 }
 
 .form__check {

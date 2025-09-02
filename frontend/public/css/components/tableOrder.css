@@ -1,20 +1,20 @@
 body {
     background-color: var(--primary-100);
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
-.shoppingcar-container {
+.tableorder-container {
     background-color: var(--white);
     width: 930px;
     height: 310px;
-    padding: 24px;
+    padding: 24px 0px;
     margin: 140px;
     margin-left: 13%;
     font-family: var(--main-font);
     border-radius: 16px;
 }
 
-.shoppingcar-content {
+.tableorder-content {
     color: var(--black);
 }
 
@@ -23,6 +23,8 @@ table {
     width: 95%;
     margin: 20px auto;
     border-collapse: collapse;
+    border-radius: 12px;
+    gap: 12px;
     border-spacing: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -33,62 +35,28 @@ th, td {
 }
 
 th {
-    background-color: var(--primary-100);
-    color: var(--gray-800);
+    background-color: var(--terciary-800);
+    color: var(--white);
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--white);
 }
 
-button {
-    background-color: var(--terciary-400);
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: var(--terciary-400);
-}
-
-.valor__total {
+.pediente__btn {
+    background-color: var(--secundary-400);
     color: var(--black);
-}
-
-.button__pagar {
-    background-color: var(--terciary-400);
-    color: var(--white);
     border: none;
-    width: 150px;
     padding: 8px 12px;
-    margin-left: 600px;
-    margin-top: -70px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.eliminar__btn {
-    margin-left: 60px;
-}
-
-.button__pagar:hover {
-    background-color: var(--terciary-500);
-}
-
-.total {
-    text-align: center;
-    margin: 20px 0;
-    margin-top: -20px;
 }
 
 .link__home {
     display: block;
     text-align: center;
     margin-bottom: 0px;
-    margin-left: -700px;
+    margin: 100px;
     color: var(--primary-950);
     text-decoration: none;
 }

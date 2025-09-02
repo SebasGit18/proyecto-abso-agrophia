@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function(){
             shoppingcarElemnent.innerHTML = data;
         })
 
-    .catch(error => console.log("Error cargando el botón de volver", error));
+    .catch(error => console.log("Error cargando al cargar el carrito de compras", error));
     }
 });
