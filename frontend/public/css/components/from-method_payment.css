@@ -5,9 +5,10 @@ body {
   padding: 0;
 }
 
-h3{
-  font-size: var(--fs-xxs);
+.title-method__payment{
+  font-size: var(--fs-xs);
   font-family: var(--main-font);
+  color: var(--black);
   padding: 5px;
   margin-left: 5px;
 }
@@ -75,7 +76,7 @@ h3{
   display: block;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: var(--primary-950);
   font-size: var(--fs-xxxs);

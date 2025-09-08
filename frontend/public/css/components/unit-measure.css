@@ -1,10 +1,10 @@
 .unit-measure {
     border: 1px solid var(--black);
     border-radius: 8px;
-    width: 330px;
+    width: 250px;
     font-family: var(--main-font);
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 90px;
+    margin-left: 90px;
 }
 
 .unit-measure__title {
@@ -13,6 +13,7 @@
     margin: 0;
     padding: 20px 0;
     font-weight: bold;
+    color: var(--black);
 }
 
 .unit-measure hr {
@@ -30,4 +31,5 @@
 .unit-measure__form label {
     font-size: var(--fs-xxxs);
     cursor: pointer;
+    color: var(--black);
 }

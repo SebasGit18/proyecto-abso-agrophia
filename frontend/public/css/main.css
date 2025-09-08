@@ -10,8 +10,9 @@
 @import url('themes/dark-mode.css');
 @import url(components/cards.css);
 @import url(components/search.css);
-@import url(components/from.css);
+@import url(components/from-method_payment.css);
 @import url(components/card-public.css);
+@import url(components/card-disable.css);
 @import url(components/forgot-password.css);
 @import url(components/unit-measure.css);
 @import url(variables.css);
