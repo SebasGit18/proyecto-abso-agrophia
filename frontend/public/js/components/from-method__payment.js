@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pagoContainer = document.querySelector(".payment__container");
   
     if (pagoContainer) {
-      fetch("/frontend/public/views/components/from.html")
+      fetch("/frontend/public/views/components/from-method_payment.html")
         .then(response => response.text())
         .then(data => {
           pagoContainer.innerHTML = data;
