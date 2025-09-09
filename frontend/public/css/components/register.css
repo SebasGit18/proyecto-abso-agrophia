@@ -1,0 +1,104 @@
+body {    
+    background-color: var(--white);      
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 1000px;
+    margin: 0;    
+}
+
+.form-container { 
+    margin: 120px;   
+    margin-left: 700px;
+    padding: 36px;
+    width: 250px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: solid 0.1rem var(--primary-950);
+    color: var(--black);
+}
+
+.form {
+    background: var(--white);
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    width: 500px;
+    max-width: 1000px;
+    border: 1px solid var(--black);
+    font-family: var(--main-font);
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: var(--fs-xxs);
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    color: var(--gray-800);
+    display: block;
+    margin-bottom: 5px;
+    font-size: var(--fs-xxxxs);
+    font-weight: bold;
+}
+
+.form__input,
+.form__select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+.form__input:focus,
+.form__select:focus {
+    border-color: var(--primary-100);
+}
+
+.form__check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.form__button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 24px;
+    background-color: var(--gray-50);
+    color: var(--primary-700);
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form__button:hover {
+    background: var(--gray-500);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+    .left-panel {
+        display: none; /* ocultar imagen/texto en pantallas pequeñas */
+    }
+    .right-panel {
+        padding: 20px;
+    }
+}
