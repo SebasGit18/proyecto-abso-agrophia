@@ -1,0 +1,56 @@
+.header{
+    /* position: static; */
+    background-color: var(--primary-50);
+    padding: 18px;
+    margin-top: -6px;
+}
+
+.navbar__title{
+ color: var(--primary-800);
+  font-size: var(--fs-xl);
+  font-family: var(--font-primary);
+  text-align: center;
+}
+
+.navbar__subtitle{
+  color: var(--black);
+  font-size: var(--fs-sm);
+  font-family: var(--font-primary);
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 0;
+}
+
+/*  Celulares (pantallas pequeñas hasta 480px) */
+@media (max-width: 768px) {
+  .navbar__title {
+    font-size: var(--fs-lg); 
+  }
+
+  .navbar__subtitle {
+    font-size: var(--fs-xs);
+    margin-bottom: 15px;
+  }
+
+  .header {
+    padding: 12px; /
+  }
+}
+
+/* (pantallas entre 481px y 768px) */
+@media  (max-width: 1024px) {
+  .navbar__title {
+    font-size: var(--fs-lg);
+  }
+
+  .navbar__subtitle {
+    font-size: var(--fs-sm);
+    margin-bottom: 20px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+}
+

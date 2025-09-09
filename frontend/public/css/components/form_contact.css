@@ -5,9 +5,10 @@
     border: 1px solid var(--gray-300);
     border-radius: 10px;
     background-color: var(--white);
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
 }
 
+/* Título */
 .contact-form__title {
     text-align: center;
     margin-bottom: 20px;
@@ -15,49 +16,100 @@
     font-weight: bold;
 }
 
+/* Grupos */
 .contact-form__group {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
 }
 
+/* Labels */
 .contact-form__label {
     margin-bottom: 5px;
     font-size: 14px;
-    /* font-weight: bold; */
-    
+    color: var(--black);
 }
 
+/* Inputs */
 .contact-form__input,
 .contact-form__textarea {
     width: 100%;
     padding: 10px;
-    margin: 5px auto;
     border: 1px solid var(--gray-900);
     border-radius: 5px;
     font-size: 14px;
     box-sizing: border-box;
 }
 
+/* Textarea */
 .contact-form__textarea {
     resize: vertical;
-    max-height: 40px;
-   font-family: sans-serif;
+    min-height: 30px;
+    font-family: sans-serif;
 }
 
+/* Botón */
 .contact-form__button {
     display: block;
-    width: 100px;
-    margin: 10px auto 0;
-    padding: 10px;
+    width: 30%;        
+    margin: 1px auto; 
+    padding: 12px;
     background-color: var(--gray-50);
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 14px;
     cursor: pointer;
     color: var(--primary-700);
+    transition: background 0.3s ease;
 }
 
 .contact-form__button:hover {
     background-color: var(--gray-100);
 }
+
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .contact-form__title {
+        font-size: 1rem;
+    }
+
+    .contact-form__label {
+        font-size: 13px;
+    }
+
+    .contact-form__input,
+    .contact-form__textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .contact-form__button {
+        font-size: 13px;
+        padding: 10px;
+        width: 30%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .contact-form {
+        max-width: 350px;
+    }
+
+    .contact-form__title {
+        font-size: 1.1rem;
+    }
+
+    .contact-form__button {
+        width: 30%;
+        margin: 15px auto 0;
+    }
+}
+
+

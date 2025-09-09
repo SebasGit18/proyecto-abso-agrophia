@@ -59,11 +59,8 @@
 
 	/* Font-family */
 
-	--font-secundary: "Roboto"; 
-    --font-primary: "Noto Sans";
-
-	--main-font: Roboto, Noto Sans;
-	--main-font: Arial;
+	--font-secundary: "sans-serif" ; 
+    --font-primary: "arial";
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */
