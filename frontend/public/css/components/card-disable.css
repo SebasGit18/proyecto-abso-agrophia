@@ -17,7 +17,7 @@ html, body {
 .card-public {
   border-radius: 12px;
   padding: 16px;
-  width: 180px;    
+  width: 180px;
   min-height: 200px;
   border: 1px solid var(--primary-900);
   background-color: var(--white);
@@ -76,4 +76,4 @@ html, body {
   transition: background 0.3s ease;
 }
 
-  
+/*este css esta segun las medidas de google material design, si no lo estan dime cuales son y donde las tengo que colocar*/  
