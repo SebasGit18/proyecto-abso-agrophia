@@ -1,22 +1,7 @@
-/* ====== RESETEO BÁSICO ====== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--main-font);
-}
-
-
-/* ====== CONTENIDO PRINCIPAL ====== */
-.main-content {
-  flex: 1;
-  padding: 30px;
-  overflow-y: auto;
-}
 
 /* ====== CONTENEDOR DE TABLAS ====== */
 .table-container {
-  background: white;
+  background: var(--white);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
@@ -25,10 +10,13 @@
 
 /* ====== TABLA DE USUARIOS ====== */
 .users-table {
-  width: 100%;
+  width: auto;
+  max-width: ;
+  margin-left:200px;
+  margin-right: 10px;
   border-collapse: collapse;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: var(--white);
+  box-shadow: 0 4px 12px var(--gray-100);
   font-size: 12px;
   border-radius: 10px;
   overflow: hidden;
@@ -127,11 +115,11 @@
 
 .button--message {
   background-color: var(--primary-600);
-  color: #fff;
+  color: var(--white);
 }
 
 .button--message:hover {
-  background-color: #219150; /* opcional si quieres hover distinto */
+  background-color: var(--primary-700); /* opcional si quieres hover distinto */
 }
 
 /* Icono dentro del botón */

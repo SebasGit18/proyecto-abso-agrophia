@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // 👉 Cargar Sidebar
-    fetch("/frontend/public/views/components/sidebar.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector(".sidebar-container").innerHTML = html;
-        })
-        .catch(error => console.error("Error cargando sidebar:", error));
+document.addEventListener("DOMContentLoaded", function() {
+    const tableusersElement = document.querySelector(".table_users");
 
-    // 👉 Cargar Tabla de Usuarios
-    fetch("/frontend/public/views/components/tabla_usuarios_admin.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector(".main-content").innerHTML = html;
-        })
-        .catch(error => console.error("Error cargando tabla de usuarios:", error));
+    if (tableusersElement) {
+        fetch("/frontend/public/views/components/tabla_usuarios_admin.html")
+            .then(response => response.text())
+            .then(data => {
+                tableusersElement.innerHTML = data;
+            })
+            .catch(error => console.log("Error cargando la tabla de usuarios", error));
+    }   
 });
+
+

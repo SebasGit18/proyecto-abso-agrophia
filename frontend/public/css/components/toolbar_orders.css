@@ -1,0 +1,77 @@
+.toolbar-orders{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+
+    
+
+}
+
+.toolbar-orders__button{
+    background-color: var(--gray-100);
+    width: 100%;
+    font-size:var(--fs-xxxxs);
+    font-weight: 600;
+    padding: 12px 12px;
+    border: none;
+    border-radius:12px;
+    color: var(--primary-700);
+    cursor: pointer;
+}
+
+
+.toolbar-orders__row-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30PX;
+}
+
+.toolbar-orders__icon-img{
+    width: 30px;
+    height: 30pxpx;
+}
+
+.toolbar-orders__icon{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--gray-100)
+}
+
+
+/* =====================
+   TABLET (>=768px)
+   ===================== */
+@media (min-width: 478px) {
+  .toolbar-orders {
+    flex-direction: row;      /* en fila */
+    justify-content: center;  /* centrado */
+    align-items: center;
+  }
+
+  .toolbar-orders__button {
+    font-size: var(--fs-xxxxs);
+    width: 200px;
+    max-width: 200px;
+    font-weight:500;
+  }
+}
+
+/* =====================
+   DESKTOP (>=1024px)
+   ===================== */
+@media (min-width: 1024px) {
+  .toolbar-orders {
+    justify-content: flex-end; /* a la derecha */
+  }
+  .toolbar-orders__button{
+    width: 100px;
+    min-width: 150px;
+  }
+  .toolbar-orders__row-icons{
+    gap: 20px;
+  }
+}
