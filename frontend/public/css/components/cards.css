@@ -57,7 +57,6 @@ html, body {
   border-radius: 6px;
   cursor: pointer;
   font-size: var(--fs-xxxs);
-}
 
 .card__button:hover {
   background: var(--primary-600);
@@ -68,4 +67,3 @@ html, body {
   width: 20px;
   height: 20px;
   stroke: var(--black);
-}
