@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/frontend/public/css/variables.css">
     <link rel="stylesheet" href="/frontend/public/css/components/sidebar.css">
     <link rel="stylesheet" href="/frontend/public/css/components/header_admin.css">
+    <link rel="stylesheet" href="/frontend/public/css/components/layout.css">
     <link rel="stylesheet" href="/frontend/public/css/components/toolbar.css">
     <script src="/frontend/public/js/components/usuarios_admin.js" defer></script>
     <script src="/frontend/public/js/components/sidebar_admin.js" defer></script>
@@ -15,10 +16,16 @@
     <title>Usuarios</title>
 </head>
 <body>
-    <header class="header-adminis"></header>
-    <div class="toolbar"></div>
-    <div class="sidebar-container"></div>
-    <!-- Contenido principal -->
-    <div class="table_users"></div>
+  <header class="header-adminis"></header>
+  
+  <!-- sidebar colocado en columna izquierda -->
+  <div class="toolbar"></div>
+  
+  <!-- contenido derecho: toolbar + tabla -->
+  <!-- <main class="main-content"> -->
+    <div class="layout">
+        <div class="sidebar-container"></div>
+        <div class="table_users"></div>
+    </div>
 </body>
 </html>

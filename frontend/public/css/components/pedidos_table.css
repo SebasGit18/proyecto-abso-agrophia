@@ -8,7 +8,7 @@
 
 /* ====== TABLA DE PEDIDOS ====== */
 .orders-table {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: auto;
   /* margin-left: 200px; */
   /* margin-right: 10px; */
@@ -153,8 +153,3 @@
     }
 }
 
-@media(min-width: 1024px){
-    .orders-table{
-        margin-left:300px;
-    }
-}

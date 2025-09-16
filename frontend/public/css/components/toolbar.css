@@ -1,9 +1,13 @@
+
+
 .toolbar{
     display:flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     margin: 10px;
+    background-color: var(--white);
+    padding: 0px 24px;
 
     
 
@@ -12,6 +16,7 @@
 .toolbar__button{
     background-color: var(--gray-100);
     width: 100%;
+    max-width: 320px;
     font-size:var(--fs-xxxxs);
     font-weight: 600;
     padding: 12px 12px;
@@ -20,15 +25,14 @@
     color: var(--primary-700);
     cursor: pointer;
 }
-/* ===== Estilo base (Mobile First) ===== */
 .toolbar__search {
     display: flex;
     align-items: center;
     gap: 8px;
-
+    max-width:320px ;
     background: var(--gray-100);
     border: none    ;
-    border-radius: 24px;
+    border-radius: 12px;
 
     padding: 12px 14px;
     width: 100%;
@@ -89,6 +93,9 @@
    ===================== */
 @media (min-width: 768px) {
   .toolbar {
+    min-height: 60px;
+    border-radius: 0px;
+    margin: 0;
     flex-direction: row;      /* en fila */
     justify-content: center;  /* centrado */
     align-items: center;
@@ -112,7 +119,9 @@
    ===================== */
 @media (min-width: 1024px) {
   .toolbar {
+    width: auto;
     justify-content: flex-end; /* a la derecha */
+
   }
   .toolbar__row-icons{
     gap: 20px;

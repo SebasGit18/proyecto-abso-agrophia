@@ -1,11 +1,11 @@
 .header-admin{
     position: static;
-    top: 0;
+    top: 0px;
     width: 100%;
     background:var(--primary-700);
     height: auto
-    /* font-family:var(--main-font); */
-    /* min-height:100px; */
+    /* font-family:var(--main-font); 
+     min-height:100px; */
 
 }
 

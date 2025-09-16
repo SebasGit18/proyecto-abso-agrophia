@@ -1,7 +1,7 @@
 /* ---- Reset útil para que el padding no rompa anchos ---- */
-*, *::before, *::after { 
+/* *, *::before, *::after { 
   box-sizing: border-box; 
-}
+} */
 
 /* Layout (igual que tenías) */
 .page { 

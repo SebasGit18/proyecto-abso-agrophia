@@ -11,8 +11,8 @@
 /* ====== TABLA DE USUARIOS ====== */
 .users-table {
   width: auto;
-  max-width: ;
-  margin-left:200px;
+  max-width: auto;
+  /* margin-left:200px; */
   margin-right: 10px;
   border-collapse: collapse;
   background: var(--white);
@@ -127,4 +127,14 @@
   width: 16px;
   height: 16px;
   display: inline-block;
+}
+  
+/* DEBUG: aplica margen cuando la pantalla es <1115px
+   Cubre los 3 selectores que podrías estar usando en tu proyecto */
+@media (max-width: 1115px) {
+  .users-table,
+  .table_users,
+  .table-container {
+    margin-top: 10px; 
+  }
 }
