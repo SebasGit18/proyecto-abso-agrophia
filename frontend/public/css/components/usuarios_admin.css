@@ -4,7 +4,7 @@
   background: var(--white);
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 6px var(--gray-100);
   overflow-x: auto;
 }
 
@@ -100,17 +100,17 @@
 /* Variantes */
 .button--block {
   background-color: var(--secundary-400);
-  color: #fff;
+  color: var(--whitegit );
 }
 
 .button--unblock {
   background-color: var(--primary-600);
-  color: #fff;
+  color: var(--whitegit );
 }
 
 .button--edit {
   background-color: var(--terciary-400);
-  color: #fff;
+  color: var(--whitegit );
 }
 
 .button--message {

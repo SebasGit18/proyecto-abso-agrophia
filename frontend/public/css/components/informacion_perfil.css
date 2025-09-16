@@ -19,7 +19,7 @@
 
 /* Columna izquierda fija con imagen */
 .page__left {
-  position: fixed;            /* 🔥 siempre fija */
+  position: fixed;            
   top: 0;
   left: 0;
   width: 50%;                 /* ocupa la mitad izquierda */
@@ -33,7 +33,7 @@
 .page__right {
   margin-left: 50%;
   width: 50%;
-  background-color: #fafafa;
+  background-color: var(--white);
   min-height: 100vh;
   height: 100vh;
   overflow-y: auto;

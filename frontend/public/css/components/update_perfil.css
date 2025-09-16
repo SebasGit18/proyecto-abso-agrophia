@@ -113,9 +113,9 @@
   padding:.35rem 1rem;
   font-size:.75rem; 
   font-weight:600; 
-  color:#fff;
+  color: var(--white);
   cursor:pointer; 
-  box-shadow:0 1px 3px rgb(0 0 0 / 0.1);
+  box-shadow:0 1px 3px var(--gray-100);
   transition:background-color .3s ease; 
   text-decoration:none; 
   display:inline-block;

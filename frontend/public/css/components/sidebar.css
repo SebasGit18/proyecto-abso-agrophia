@@ -1,13 +1,12 @@
-/* ===== Sidebar (mobile-first: por defecto columna) ===== */
 
 .sidebar {
   position: static;
   width: 100%;               /* móvil: ocupa todo el ancho */
-  background: #ffffff;
+  background: var(--white);
   padding: 20px 10px;
   display: flex;
   flex-direction: row;    /* por defecto en columna (<=478px) */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 5px var(--gray-100);
   border-radius: 8px;
   justify-content: center;
 }
@@ -35,7 +34,7 @@
 }
 
 .sidebar__item:hover {
-  background: #f0f0f0; }
+  background: var(--white); }
 .sidebar__item--active { 
   background: var(--terciary-50); 
   font-weight:700; 
