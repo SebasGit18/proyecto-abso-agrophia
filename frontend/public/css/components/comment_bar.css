@@ -4,14 +4,13 @@
     gap: 0.5rem;
     max-width: 600px;
     margin-left: 150px;
-    margin-top: 400px;
     font-family: var(--fs-font);
 }
 
 .question-bar__label {
-    font-size: 1rem;
+    font-size: var(--fs-xxxs);
     font-weight: bold;
-    color: #000;
+    color: var(--black);
 }
 
 .question-bar__container {
@@ -23,22 +22,81 @@
 .question-bar__input {
     flex: 1;
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray-50);
     border-radius: 6px;
-    font-size: 0.95rem;
+    font-size: var(--fs-xxxs);
 }
 
 .question-bar__button {
-    background-color: #4285f4;
-    color: white;
+    background-color: var(--terciary-700);
+    color: var(--white);
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 0.95rem;
+    font-size: var(--fs-xxxs);
     transition: background-color 0.2s ease-in-out;
 }
 
 .question-bar__button:hover {
-    background-color: #357ae8;
+    background-color: var(--terciary-900);
+}
+
+/* --- Media Queries para .question-bar --- */
+
+@media (max-width: 600px) {
+  .question-bar {
+    max-width: 90%;
+    margin: 2rem auto 0; /* Centrado en horizontal */
+  }
+
+  .question-bar__label {
+    font-size: var(--fs-xxxs);
+    text-align: center;
+  }
+
+  .question-bar__container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .question-bar__input {
+    width: 93%;
+    font-size: var(--fs-xxxs);
+    /* max-width: 340px; */
+  }
+
+  .question-bar__button {
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-xxxs);
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .question-bar {
+    max-width: 80%;
+    margin: 3rem auto 0; /* Centrado */
+  }
+
+  .question-bar__container {
+    gap: var(--fs-xxxs);
+  }
+
+  .question-bar__input {
+    font-size: var(--fs-xxxs);
+  }
+
+  .question-bar__button {
+    font-size: var(--fs-xxxs);
+  }
+}
+
+@media (min-width: 1025px) {
+  .question-bar {
+    margin-left: 150px;
+    margin-top: 0;
+    max-width: 600px;
+  }
 }
