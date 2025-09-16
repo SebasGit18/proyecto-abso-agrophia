@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subir Producto</title>
+</head>
+<body>
+  <div class="producto-form">
+    <h2 class="producto-form__title">Subir producto</h2>
+
+    <form class="producto-form__body">
+      <div class="producto-form__row producto-form__row--center">
+        <label class="producto-form__label">Nombre producto</label>
+      </div>
+      <div class="producto-form__row producto-form__row--center">
+        <input type="text" class="producto-form__input producto-form__input--nombre" placeholder="Nombres producto" required>
+      </div>
+
+      <div class="producto-form__grid">
+        <input type="text" class="producto-form__input" placeholder="Tipo producto" required>
+        <input type="number" class="producto-form__input" placeholder="Cantidad producto" required>
+
+        <input type="number" class="producto-form__input" placeholder="Precio" required>
+        <input type="text" class="producto-form__input" placeholder="Foto">
+
+        <input type="number" class="producto-form__input" placeholder="Existencias" required>
+        <input type="text" class="producto-form__input" placeholder="Unidad de medida">
+
+        <input type="text" class="producto-form__input" placeholder="Descripción">
+        <input type="text" class="producto-form__input" placeholder="Garantía">
+      </div>
+
+      <div class="producto-form__row producto-form__row--center">
+        <button type="submit" class="producto-form__btn producto-form__btn--publicar">
+          Publicar Producto
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
