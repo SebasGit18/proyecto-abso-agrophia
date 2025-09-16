@@ -8,8 +8,9 @@ body {
     width: 930px;
     height: 310px;
     padding: 24px 0px;
-    margin: 140px;
-    margin-left: 13%;
+    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
     font-family: var(--main-font);
     border-radius: 16px;
 }
@@ -26,7 +27,7 @@ table {
     border-radius: 12px;
     gap: 12px;
     border-spacing: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--black);
 }
 
 th, td {
