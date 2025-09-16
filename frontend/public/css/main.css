@@ -1,4 +1,20 @@
 
+@import url(sidebar.css);
+@import url(variables.css);
+@import url(components/forloggin.css);
+@import url(components/hero.css);
+@import url(components/informacion_perfil.css);
+@import url(components/update_perfil.css);
+@import url(components/usuarios_admin.css);
+@import url(components/tabla_usuarios_admin.css);
+@import url(components/navbar.css);
+@import url(components/cards.css);
+@import url(components/search.css);
+@import url(components/from.css);
+@import url(components/card-public.css);
+@import url(variables.css);
+@import url(header_admin.css);
+
 @import url('reset.css');
 @import url('variables.css');
 @import url('layout.css');
@@ -18,3 +34,4 @@
 @import url(components/forgot-password.css);
 @import url(components/unit-measure.css);
 @import url(variables.css);
+

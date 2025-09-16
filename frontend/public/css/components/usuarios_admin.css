@@ -1,0 +1,140 @@
+
+/* ====== CONTENEDOR DE TABLAS ====== */
+.table-container {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px var(--gray-100);
+  overflow-x: auto;
+}
+
+/* ====== TABLA DE USUARIOS ====== */
+.users-table {
+  width: auto;
+  max-width: auto;
+  /* margin-left:200px; */
+  margin-right: 10px;
+  border-collapse: collapse;
+  background: var(--white);
+  box-shadow: 0 4px 12px var(--gray-100);
+  font-size: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.users-table__header,
+.users-table__cell {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.users-table__header {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+.users-table__row:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+.users-table__row:hover {
+  background-color: var(--terciary-100);
+}
+
+.users-table__cell--status,
+.users-table__cell--message {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.users-table__cell--actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ====== ESTADOS ====== */
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.status--active {
+  background-color: var(--primary-200);
+  color: var(--black);
+}
+
+.status--blocked {
+  background-color: var(--secundary-400);
+  color: var(--black);
+}
+
+/* ====== BOTONES ====== */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* Variantes */
+.button--block {
+  background-color: var(--secundary-400);
+  color: var(--whitegit );
+}
+
+.button--unblock {
+  background-color: var(--primary-600);
+  color: var(--whitegit );
+}
+
+.button--edit {
+  background-color: var(--terciary-400);
+  color: var(--whitegit );
+}
+
+.button--message {
+  background-color: var(--primary-600);
+  color: var(--white);
+}
+
+.button--message:hover {
+  background-color: var(--primary-700); /* opcional si quieres hover distinto */
+}
+
+/* Icono dentro del botón */
+.button__icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+  
+/* DEBUG: aplica margen cuando la pantalla es <1115px
+   Cubre los 3 selectores que podrías estar usando en tu proyecto */
+@media (max-width: 1115px) {
+  .users-table,
+  .table_users,
+  .table-container {
+    margin-top: 10px; 
+  }
+}
