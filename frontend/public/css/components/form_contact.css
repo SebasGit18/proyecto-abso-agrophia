@@ -69,9 +69,10 @@
 
 
 /* Celulares pequeños */
-@media (max-width: 480px) {
+@media (width > 768px) {
     .contact-form {
-        max-width: 95%;
+        width: 100%;
+        max-width: 500px;
         padding: 15px;
     }
 
@@ -86,6 +87,7 @@
     .contact-form__input,
     .contact-form__textarea {
         font-size: 13px;
+        box-sizing: border-box;
         padding: 8px;
     }
 
@@ -96,20 +98,5 @@
     }
 }
 
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-    .contact-form {
-        max-width: 350px;
-    }
-
-    .contact-form__title {
-        font-size: 1.1rem;
-    }
-
-    .contact-form__button {
-        width: 30%;
-        margin: 15px auto 0;
-    }
-}
 
 
