@@ -73,10 +73,11 @@
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
     --fs-xxxxs: 0.875rem
-}
+
 
 
    /* Padding */
+   
     --padding-bottom: 12px;
     --padding-top: 12px;
     --padding-left: 24px;

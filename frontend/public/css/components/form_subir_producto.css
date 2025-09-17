@@ -197,12 +197,13 @@ body {
 
 .producto-form__input {
   width: 100%;
+  height: 10px;
   max-width: 220px;
   padding: 20px;
   margin: 5px auto;
   border: 1px solid var(--black);
   border-radius: 12px;
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xxxxs);
 }
 
 .producto-form__grid {
@@ -224,6 +225,7 @@ body {
 
 .producto-form__btn--publicar {
   color: var(--primary-700);
+  font-size: var(--fs-xxxxs);
 }
 
 
@@ -257,7 +259,7 @@ body {
     max-width: 200px;
     /* min-width: 100px; */
     padding: 12px;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
   }
 }
 

@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const infoContainer = document.querySelector(".table_header-users");
+  const loginContainer = document.querySelector(".login-container");
 
-  if (infoContainer) {
-    fetch("/frontend/public/views/components/informacion_perfil.html")
+  if (loginContainer) {
+    fetch("/frontend/public/views/components/forloggin.html")
       .then(response => response.text())
       .then(data => {
-        infoContainer.innerHTML = data;
+        loginContainer.innerHTML = data;
       })
       .catch(error => console.error("Error cargando la información del perfil:", error));
   }

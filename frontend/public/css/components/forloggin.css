@@ -7,30 +7,24 @@
   padding: 0;
 }
 
-/* Estilo general */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 
 .login-container {
-  background-color: white;
+  margin-left: 400px;
+  margin-right: auto;
+  background-color: var(--white);
   padding: 30px 25px;
   border: 0.2px solid;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 300px;
-  margin-left: 100%;
+  /* margin: 10px; */
+  /* margin-left: 100%; */
 }
 
 .login-container__title {
   text-align: center;
   margin-bottom: 25px;
-  font-size: 22px;
+  font-size: var(--fs-xxs);
   font-weight: bold;
 }
 

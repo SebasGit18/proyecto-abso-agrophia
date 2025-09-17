@@ -52,6 +52,7 @@
 /* ===== Tablet: de 479px hasta 1115px => barra horizontal ===== */
 @media (min-width: 479px) and (max-width: 1115px) {
   .sidebar {
+    margin-top: 10px;
     border-radius: 0px;
     flex-direction: row;
     width: 100%;

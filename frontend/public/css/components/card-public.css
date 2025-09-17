@@ -15,6 +15,7 @@ html, body {
   
   /*Targeta*/
   .card-public {
+    height: auto;
     border-radius: 12px;
     padding: 15px;
     width: 230px;
@@ -92,10 +93,9 @@ html, body {
   }
   
   .two-public__button:hover {
-    background: var(--secundary-600);
-    transition: background 0.3s ease;
-  }
-  height: 100%;
+  background: var(--secundary-600);
+  transition: background 0.3s ease;
+  height: auto;
   margin: 0;
   padding: 0;
   /*background-color: var(--gray-50);*/
@@ -111,6 +111,7 @@ html, body {
 
 /*Targeta*/
 .card-public {
+  height: auto;
   border-radius: 12px;
   padding: 16px;
   width: 180px;    
