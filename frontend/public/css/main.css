@@ -4,6 +4,8 @@
 @import url('layout.css');
 @import url('components/navbar.css');
 @import url('components/footer.css');
+@import url('components/form_contact.css');
+@import url('components/form_subir_producto.css');
 @import url('components/forms.css');
 @import url('components/shopping_car.css');
 @import url('pages/home.css');
