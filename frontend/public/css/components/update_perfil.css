@@ -1,0 +1,137 @@
+/* ---- Reset útil para que el padding no rompa anchos ---- */
+/* *, *::before, *::after { 
+  box-sizing: border-box; 
+} */
+
+/* Layout (igual que tenías) */
+.page { 
+  display:flex; 
+  width:100%; 
+  min-height:100vh; 
+  margin:0; 
+  font-family:var(--main-font, Arial, sans-serif); }
+
+.page__left {
+  position:fixed; 
+  top:0; 
+  left:0; 
+  width:50%; 
+  height:100vh;
+  background-image:url("/frontend/public/img/imagen_planta_perfil.png");
+  background-size:cover; 
+  background-position:center;
+}
+.page__right {
+  margin-left:50%; 
+  width:50%; 
+  min-height:100vh; 
+  height:100vh; 
+  overflow-y:auto;
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  padding:0 40px;
+}
+.page__right::before, .page__right::after { 
+  content:""; 
+  display:block; 
+  flex:0 0 60px; }
+
+/* ---- Caja principal fija a 350px ---- */
+.profile-form-update-container {
+  width:350px;           /* caja de 350px */
+  max-width:100%;
+  margin:0 auto;
+  flex:0 0 auto;
+}
+
+/* Tarjeta/formulario */
+.profile {
+  width:100%;            /* ocupa toda la caja (350px) */
+  padding:16px;          /* si quieres que el input toque el borde, pon 0 */
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+/* Grupos y etiquetas */
+.profile__group { 
+  margin-bottom:14px; 
+}
+.profile__label { 
+  display:block; 
+  margin-bottom:6px; 
+  font-weight:600; }
+
+/* ---- Inputs: todos idénticos y al 100% ---- */
+.profile__input,
+.profile input[type="text"],
+.profile input[type="email"],
+.profile input[type="tel"],
+.profile input[type="password"]{
+  display:block;
+  width:100%;
+  min-width:0;                 /* evita límites raros del navegador */
+  height:40px;
+  padding:10px 12px;
+  border:1px solid var(--black);
+  border-radius:8px;
+  background:#fff;
+  appearance:none;             /* unifica estilos nativos */
+  -webkit-appearance:none;
+}
+
+.profile__input:focus{
+  border-color:var(--primary-600) !important;
+  outline:none !important;
+  box-shadow:none !important;
+}
+
+/* Botón guardar: mismo ancho de la caja */
+.profile__button{
+  display:block;
+  width:80%;
+  padding:12px;
+  margin-top:12px;
+  background:var(--primary-700);
+  color:var(--white);
+  border:none; 
+  border-radius:8px; 
+  cursor:pointer;
+}
+.profile__button:hover{ 
+  background:var(--primary-600); }
+
+/* Botón volver como enlace (no <a> dentro de <button>) */
+.back-btn{
+  position:fixed; 
+  top:1rem; 
+  right:1rem;
+  background-color:var(--primary-700);
+  border:none; 
+  border-radius:4px; 
+  padding:.35rem 1rem;
+  font-size:.75rem; 
+  font-weight:600; 
+  color: var(--white);
+  cursor:pointer; 
+  box-shadow:0 1px 3px var(--gray-100);
+  transition:background-color .3s ease; 
+  text-decoration:none; 
+  display:inline-block;
+}
+.back-btn:hover{ 
+  background-color:var(--primary-600); }
+
+/* Responsive: ocultar imagen en tablet/móvil */
+@media (max-width:1024px){
+  .page__left{ 
+    display:none; 
+  }
+  .page__right{ 
+    margin-left:0; width:100%;
+  }
+  .profile-form-update-container{ 
+    width:100%; 
+    max-width:350px; }
+}

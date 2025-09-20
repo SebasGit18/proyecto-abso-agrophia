@@ -1,0 +1,65 @@
+.header-admin{
+    position: static;
+    top: 0px;
+    width: 100%;
+    background:var(--primary-700);
+    height: auto
+    /* font-family:var(--main-font); 
+     min-height:100px; */
+
+}
+
+.header-admin__title{
+    /* margin-top:10px; */
+    color: var(--white);
+    text-align:center;
+    font-size:var(--fs-xxxs);
+    /* font-family: var(--main-font) */
+}
+
+.header-admin__subtitle{
+    padding:10px;
+    color: var(--white);
+    text-align:center;
+    font-size:var(--fs-xxxxs);
+    /* font-family: var(--main-font) */
+    
+}
+
+
+
+/* =====================
+   TABLET (>=768px)
+   ===================== */
+@media (min-width: 768px) {
+  .header-admin {
+    padding: 15px 0px;       /* más alto */
+    min-height: 100px;     /* asegura un poquito más de altura */
+  }
+
+  .header-admin__title {
+    font-size:var(--fs-xs); /* un poco más grande */
+  }
+
+  .header-admin__subtitle {
+    font-size: var(--fs-xxxs);
+  }
+}
+
+/* =====================
+   DESKTOP (>=1024px)
+   ===================== */
+@media (min-width: 1024px) {
+  .header-admin {
+    padding: 15px 0;       /* todavía más alto */
+    min-height: 100px;
+  }
+
+  .header-admin__title {
+    font-size:var(--fs-xs); /* un poco más grande */
+  }
+
+  .header-admin__subtitle {
+    font-size: var(--fs-xxxs);
+  }
+}

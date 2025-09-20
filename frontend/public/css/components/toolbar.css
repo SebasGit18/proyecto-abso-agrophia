@@ -1,0 +1,132 @@
+
+
+.toolbar{
+    display:flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    align-items: center;
+    margin: 0px;
+    background-color: var(--white);
+    padding: 0px 24px;
+
+    
+
+}
+
+.toolbar__button{
+  margin: 10px;
+  background-color: var(--gray-100);
+  width: 100%;
+  max-width: 320px;
+  font-size:var(--fs-xxxxs);
+  font-weight: 600;
+  padding: 12px 12px;
+  border: none;
+  border-radius:12px;
+  color: var(--primary-700);
+  cursor: pointer;
+}
+.toolbar__search {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width:320px ;
+  background: var(--gray-100);
+  border: none    ;
+  border-radius: 12px;
+
+  padding: 12px 14px;
+  width: 100%;
+  max-width: 100%; /* en móvil ocupa todo el ancho */
+}
+
+.toolbar__search-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toolbar__icon-img-input {
+    width: 24px;
+    height: 24px;
+    /* color: var(--primary-700); */
+}
+
+.toolbar__search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px; /* un poco más grande para móvil */
+    background: transparent;
+    color: var(--primary-700);
+    }
+
+.toolbar__search-input::placeholder {
+    color: var(--gray-400);
+    font-size: 16px;
+}
+
+.toolbar__row-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.toolbar__icon-img{
+    width: 30px;
+    height: 30px;
+}
+
+.toolbar__icon{cursor: pointer;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    background-color: var(--gray-100)
+}
+
+
+/* =====================
+   TABLET (>=768px)
+   ===================== */
+@media (min-width: 768px) {
+  .toolbar {
+    /* min-height: 60px; */
+    border-radius: 0px;
+    margin: 0;
+    flex-direction: row;      /* en fila */
+    justify-content: center;  /* centrado */
+    align-items: center;
+    margin: 0;
+  }
+
+  .toolbar__button {
+    font-size: var(--fs-xxxxs);
+    width: 130px;
+    max-width: 200px;
+    font-weight:500;
+  }
+
+  .toolbar__search {
+    max-width: 150px; /* no tan ancho */
+    padding: 8px 12px
+  }
+}
+
+/* =====================
+   DESKTOP (>=1024px)
+   ===================== */
+@media (min-width: 1024px) {
+  .toolbar {
+    width: auto;
+    justify-content: flex-end; /* a la derecha */
+
+  }
+  .toolbar__row-icons{
+    gap: 20px;
+  }
+}
