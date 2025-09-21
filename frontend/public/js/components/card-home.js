@@ -13,8 +13,8 @@ export async function loadCards(containerSelector, cardIds = []) {
             //Hacer 2 fetch al mismo tiempo
             //1- Es para la plantilla
             //2- Es para los datos
-            fetch("/frontend/public/views/components/card-public.html"),
-            fetch("/frontend/public/data/card-public.json"),
+            fetch("/frontend/public/views/components/card-home.html"),
+            fetch("/frontend/public/data/card-home.json"),
         ])
   
         //Convertir las respuestas a textos y los datos a json.
@@ -33,8 +33,7 @@ export async function loadCards(containerSelector, cardIds = []) {
                 .replace("{{image}}", card.image)
                 .replace("{{price}}", card.price)
                 .replace("{{name}}", card.name)
-                .replace("{{button1}}", card.button1)
-                .replace("{{button2}}", card.button2)
+                .replace("{{button}}", card.button)
             
             //container.innerHTML += html;
             container.insertAdjacentHTML("beforeend", html);
