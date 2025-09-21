@@ -58,9 +58,8 @@
     --gray-50: #E9E9E9;
 
 	/* Font-family */
-
-	--font-secundary: "sans-serif" ; 
-    --font-primary: "arial";
+	--main-font: Roboto, Noto Sans;
+	--main-font: Arial;
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */
@@ -73,7 +72,13 @@
     --fs-xs: 1.6rem;  /* Extra pequeño */
     --fs-xxs: 1.4rem; /* Extra extra pequeño */
     --fs-xxxs: 1.2rem; /* Mínimo */
+<<<<<<< HEAD
     --fs-xxxxs: 1rem
+=======
+    --fs-xxxxs: 0.875rem
+}
+
+>>>>>>> bce6690a6e997960800d3e94c6ae05a6ee8c3ac9
 
    /* Padding */
     --padding-bottom: 12px;
@@ -87,3 +92,4 @@
     --padding-right: 24px;
 
 }
+

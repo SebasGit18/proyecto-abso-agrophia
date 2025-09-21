@@ -1,0 +1,32 @@
+.layout {
+  display: flex;
+  flex-direction: column; /* por defecto, apilados uno debajo del otro */
+}
+
+/* Pantallas grandes: sidebar y tabla en fila */
+@media (min-width: 1116px) {
+  .layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .sidebar-container {
+    width: 250px; /* ancho fijo para sidebar */
+  }
+
+  .table_users {
+    flex: 1; /* tabla ocupa el resto */
+  }
+}
+
+/* Pantallas pequeñas (≤478px): columna forzada */
+@media (max-width: 478px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar-container,
+  .table_users {
+    width: 100%; /* cada uno ocupa todo el ancho */
+  }
+}
