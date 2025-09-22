@@ -1,3 +1,7 @@
+body{
+  background-color: var(--white); 
+}
+
 .header{
   position: static;
   background-color: var(--white);
@@ -6,8 +10,9 @@
 .navbar__title{
   color: var(--primary-800);
   font-size: var(--fs-xl);
-  font-family: sans-serif;
+  font-family: var(--main-font Arial);
   text-align: center;
+  margin-top: 0 ;
 }
 
 .navbar__subtitle{
@@ -21,12 +26,13 @@
 .navbar {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: var(--primary-800);
-  padding: 10px 20px;
-  margin: 12px 24px;
-  flex-wrap: wrap;
+  padding: 10px 20px ;
+  margin: 30px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .navbar__group {
@@ -40,7 +46,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 10px;
+  gap: 30px;
 }
 
 .navbar__link {
@@ -54,7 +60,7 @@
         margin: 0;
         display: flex;
         flex-direction: row;
-        gap: 40;
+        gap: 30px;
         flex-grow: 1;
         justify-content: space-evenly;
         

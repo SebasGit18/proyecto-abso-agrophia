@@ -1,0 +1,38 @@
+.board{
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.board__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.board__icon {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.board__button {
+  background-color: var(--white);
+  border: 2px solid var(--primary-800);
+  width: 100%;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gray-900);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.board__button:hover {
+  background-color: var(--primary-800);
+  color: var(--white);
+}
