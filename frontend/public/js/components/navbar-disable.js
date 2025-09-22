@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".navbar-container");
+    const navbarElement = document.querySelector(".container-navbar_disable");
 
     if(navbarElement){
-        fetch("/frontend/public/views/components/navbar.html")
+        fetch("/frontend/public/views/components/navbar-disable.html")
         .then(response => response.text())
         .then(data => {
             navbarElement.innerHTML = data;
-            
-            const navLinks = navbarElement.querySelectorAll(".navbar__link");
     })
     .catch(error => console.error("Error cargando el navbar", error));
 

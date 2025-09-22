@@ -9,11 +9,32 @@
 <body>
 
   <!-- Aquí se cargará la Card -->
-    <section class="contenedor-cards-public">
-    <section class="contenedor-cards__public">
-        <div class="card-public__container"></div>
-    </section>
 
-  <script src="/frontend/public/js/components/card-public.js"></script>
+    <header class="container-navbar_public">
+      <div class="button-container"></div>
+      <div class="header-product__public"></div>
+    </header>
+
+    <main>
+      <section class="search__container"></section>
+      <section class="contenedor-cards__public">
+        <div class="card-public__container"></div>
+      </section>
+    </main>
+
+    <footer class="footer">  
+        <div class="footer-container"></div>
+    </footer>   
+
+    <script src="/frontend/public/js/components/navbar-public.js" defer></script>
+    <script src="/frontend/public/js/components/buttonBack.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script type="module">
+      import { loadCards } from "/frontend/public/js/components/card-public.js";
+      loadCards(".card-public__container");// Clase para cargar todas las cards
+  </script>
 </body>
 </html>
+
+<script src="/frontend/public/views/components/footer.html"
