@@ -39,11 +39,11 @@ body {
     gap: 10px;
 }
 
-/* 4. Secciones principales */
+/* 4. Secciones principales 
 .header, .main, .footer {
     width: 100%;
     padding: 20px;
-}
+}*/
 
 /* 5. Espaciados reutilizables */
 .margin-top {
