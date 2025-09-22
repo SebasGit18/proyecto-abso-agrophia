@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 24px;
+  max-width: 1920px;
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -17,7 +18,6 @@
 /* === Card === */
 .card-public {
   background-color: var(--white);
-  border: 1px solid var(--primary-700);
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -65,9 +65,10 @@
 
 .container-button__public {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
   align-items: center;
+  justify-content: center;
 }
 
 .one-public__button {
@@ -82,12 +83,12 @@
 }
 
 .one-public__button:hover {
-  background-color: var(--primary-600);
+  background-color: var(--terciary-300);
   transform: scale(1.02);
 }
 
 .one-public__button:active {
-  background-color: var(--primary-700);
+  background-color: var(--terciary-400);
   transform: scale(0.98);
 }
 
@@ -103,12 +104,12 @@
 }
 
 .two-public__button:hover {
-  background-color: var(--primary-600);
+  background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
 .two-public__button:active {
-  background-color: var(--primary-700);
+  background-color: var(--secundary-500);
   transform: scale(0.98);
 }
 

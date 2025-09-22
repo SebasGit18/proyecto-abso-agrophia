@@ -1,4 +1,4 @@
-.contenedor-cards__disable {
+.contenedor-cards__available {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* Contenedor que organiza las cards en grilla */
-.card-disable__container {
+.card-available__container{
   display: grid;
   gap: 24px;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 /* === Card === */
-.card-disable {
+.card-available {
   background-color: var(--white);
   border-radius: 12px;
   padding: 24px;
@@ -26,20 +26,20 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-disable:hover {
+.card-available:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
 }
 
 /* Imagen de la card */
-.card-disable__img {
+.card-available__img {
   width: 100%;
   height: 300px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.card-disable__info {
+.card-available__info {
   display: flex;
   flex-direction: column; /* Precio arriba, nombre abajo */
   align-items: flex-start; /* ← Alineados a la izquierda */
@@ -47,46 +47,76 @@
 }
 
 /* Texto dentro de la card */
-.card-disable__price {
+.card-available__price {
   font-size: var(--fs-sm);
   color: var(--black);
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.card-disable__name {
+.card-available__name {
   font-size: var(--fs-xs);
   font-weight: 500;
   color: var(--primary-700);
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 /* === Botón === */
-.one-disable__button {
-  background-color: var(--secundary-300);
+
+.container-button__available {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-available__button {
+  background-color: var(--terciary-200);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px; /* Material Design spacing */
+  padding: 12px 24px;
   font-size: var(--fs-xs);
-  font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.one-disable__button:hover {
+.one-available__button:hover {
+  background-color: var(--terciary-300);
+  transform: scale(1.02);
+}
+
+.one-available__button:active {
+  background-color: var(--terciary-400);
+  transform: scale(0.98);
+}
+
+.two-available__button {
+  background-color: var(--secundary-300);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.two-available__button:hover {
   background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
-.one-disable__button:active {
+.two-available__button:active {
   background-color: var(--secundary-500);
   transform: scale(0.98);
 }
 
+
 /* === Responsive Grid === */
 @media (width > 640px) {
-  .card-disable__container {
+  .card-available__container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
     margin-bottom: 50px;
@@ -95,7 +125,7 @@
 }
 
 @media (width > 1024px) {
-  .card-disable__container {
+  .card-available__container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 90%;
     margin-bottom: 50px;

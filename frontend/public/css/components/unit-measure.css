@@ -1,15 +1,24 @@
+.form-unit-measure__container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 900px;
+    height: 570px;
+    border-radius: 12px;
+    gap: 8px;
+}
 .unit-measure {
     border: 1px solid var(--black);
     border-radius: 8px;
-    width: 250px;
+    width: 320px;
     font-family: var(--main-font);
-    margin-top: 90px;
+    margin-top: 20px;
     margin-left: 90px;
 }
 
 .unit-measure__title {
     text-align: center;
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-sm);
     margin: 0;
     padding: 20px 0;
     font-weight: bold;
@@ -29,7 +38,7 @@
 }
 
 .unit-measure__form label {
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     cursor: pointer;
     color: var(--black);
 }

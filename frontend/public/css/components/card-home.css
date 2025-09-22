@@ -1,11 +1,9 @@
-.background-home {
-  background-color: var(--gray-50);
-}
 .contenedor-cards__home {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
+  max-width: 1920px;
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -23,6 +21,8 @@
   padding: 24px;
   text-align: center;
   min-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-home:hover {
@@ -55,18 +55,19 @@
 .card-home__name {
   font-size: var(--fs-xs);
   font-weight: 500;
-  color: var(--primary-700);
+  color: var(--primary-950);
   margin-bottom: 4px;
 }
 
 /* === Botón === */
 .one-home__button {
-  background-color: var(--primary-300);
-  color: var(--black);
+  background-color: var(--primary-700);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
   font-size: var(--fs-xs);
+  font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-flex;       /* Flexbox dentro del botón */
@@ -76,17 +77,17 @@
 }
 
 .one-home__button:hover {
-  background-color: var(--primary-400);
+  background-color: var(--primary-800);
   transform: scale(1.02);
 }
 
 .one-home__button:active {
-  background-color: var(--primary-700);
+  background-color: var(--primary-900);
   transform: scale(0.98);
 }
 .card__button svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   stroke: var(--black);
 
 }
@@ -100,6 +101,15 @@
     margin-top: 20px;
   }
 }
+
+/*@media (width < 1320px) {
+  .card-home__container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}*/
 
 @media (width > 1024px) {
   .card-home__container {

@@ -1,4 +1,5 @@
-.header-product__disabled{
+
+.header__method{
     display: flex;
     position: static;
     top: 0;
@@ -10,14 +11,14 @@
     flex-direction: column;
 }
 
-.navbar-disable__title{
+.navbar-method__title{
     color: var(--white);
     font-size: var(--fs-md);
-    font-family: var(--main-font);
+    font-family: sans-serif;
     text-align: center;
 }
 
-.navbar-disable__subtitle{
+.navbar-method__subtitle{
     color: var(--gray-50);
     font-size: var(--fs-sm);
     font-family: var(--main-font);

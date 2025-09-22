@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página cards publicados</title>
+  <link rel="stylesheet" href="/frontend/public/css/main.css">
+  <link rel="stylesheet" href="/frontend/public/css/components/navbar-available.css">
+</head>
+<body>
+
+  <!-- Aquí se cargará la Card -->
+
+    <header class="container-navbar_available">
+        <div class="header-available"></div>
+    </header>
+
+    <main>
+      <section class="search__container"></section>
+      <section class="contenedor-cards__available">
+        <div class="card-available__container"></div>
+      </section>
+    </main>
+
+    <footer class="footer">  
+        <div class="footer-container"></div>
+    </footer>   
+
+    <script src="/frontend/public/js/components/navbar-available.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script type="module">
+      import { loadCards } from "/frontend/public/js/components/card-available.js";
+      loadCards(".card-available__container");// Clase para cargar todas las cards
+  </script>
+</body>
+</html>
