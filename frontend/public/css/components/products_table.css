@@ -1,4 +1,3 @@
-
 /* ====== CONTENEDOR DE TABLAS ====== */
 .table-container {
   background: var(--white);
@@ -8,8 +7,8 @@
   overflow-x: auto;
 }
 
-/* ====== TABLA DE USUARIOS ====== */
-.users-table {
+/* ====== TABLA DE PRODUCTOS ====== */
+.products-table {
   width: auto;
   max-width: auto;
   /* margin-left:200px; */
@@ -22,13 +21,13 @@
   overflow: hidden;
 }
 
-.users-table__header,
-.users-table__cell {
+.products-table__header,
+.products-table__cell {
   padding: 10px 12px;
   text-align: center;
 }
 
-.users-table__header {
+.products-table__header {
   background-color: var(--white);
   color: var(--black);
   font-weight: 600;
@@ -37,21 +36,20 @@
   text-align: center;
 }
 
-.users-table__row:nth-child(even) {
+.products-table__row:nth-child(even) {
   background-color: var(--gray-50);
 }
 
-.users-table__row:hover {
+.products-table__row:hover {
   background-color: var(--terciary-100);
 }
 
-.users-table__cell--status,
-.users-table__cell--message {
+.products-table__cell--status{
   text-align: center;
   vertical-align: middle;
 }
 
-.users-table__cell--actions {
+.products-table__cell--actions {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +58,7 @@
 }
 
 /* ====== ESTADOS ====== */
-.status {
+.products-table__status {
   display: inline-block;
   padding: 4px 10px;
   border-radius: 12px;
@@ -68,18 +66,18 @@
   font-size: 12px;
 }
 
-.status--active {
+.products-table__status--active {
   background-color: var(--primary-200);
   color: var(--black);
 }
 
-.status--blocked {
+.products-table__status--idle {
   background-color: var(--secundary-400);
   color: var(--black);
 }
 
 /* ====== BOTONES ====== */
-.button {
+.products-table__button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -93,37 +91,28 @@
   transition: transform 0.2s, background 0.3s;
 }
 
-.button:hover {
+.products-table__button:hover {
   transform: translateY(-2px);
 }
 
 /* Variantes */
-.button--block {
+.products-table__button--block {
   background-color: var(--secundary-400);
-  color: var(--whitegit );
+  color: var(--whitegit);
 }
 
-.button--unblock {
+.products-table__button--unblock {
   background-color: var(--primary-600);
-  color: var(--whitegit );
+  color: var(--whitegit);
 }
 
-.button--edit {
+.products-table__button--edit {
   background-color: var(--terciary-400);
-  color: var(--whitegit );
-}
-
-.button--message {
-  background-color: var(--primary-600);
-  color: var(--white);
-}
-
-.button--message:hover {
-  background-color: var(--primary-700); /* opcional si quieres hover distinto */
+  color: var(--whitegit);
 }
 
 /* Icono dentro del botón */
-.button__icon {
+.products-table__button__icon {
   width: 16px;
   height: 16px;
   display: inline-block;
@@ -132,11 +121,18 @@
 /* DEBUG: aplica margen cuando la pantalla es <1115px
    Cubre los 3 selectores que podrías estar usando en tu proyecto */
 @media (max-width: 1115px) {
-  .users-table,
-  .table_users,
+  .products-table,
+  .table_products,
   .table-container {
     margin-top: 10px; 
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+@media(width > 1350px){
+    .products-table{
+        width: 600px;
+        /* margin-left: 15px; */
+    }
 }

@@ -40,6 +40,7 @@ body {
   gap: 1rem;
 }
 
+
 /* Product Card */
 .product-card {
   background: var(--gray-100);

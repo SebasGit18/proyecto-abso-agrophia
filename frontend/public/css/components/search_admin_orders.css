@@ -59,11 +59,11 @@ body {
 
 @media(width > 1115px){
     .search-container{
-        margin-left: 250px;
+        margin-left: 18.5%;
     }
     .search__title{
         text-align: inherit;
-        margin-left: 250px;
+        margin-left: 18.5%;
     }
 }
 

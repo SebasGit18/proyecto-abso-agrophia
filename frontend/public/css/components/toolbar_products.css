@@ -1,6 +1,6 @@
 
 
-.toolbar{
+.toolbar-products{
     display:flex;
     flex-direction: column;
     /* gap: 20px; */
@@ -14,7 +14,7 @@
 
 }
 
-.toolbar__button{
+.toolbar-products__button{
   margin: 10px;
   background-color: var(--gray-100);
   width: 100%;
@@ -27,63 +27,19 @@
   color: var(--primary-700);
   cursor: pointer;
 }
-.toolbar__search {
-  /* width: 150px; */
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* max-width:320px ; */
-  background: var(--gray-100);
-  border: none    ;
-  border-radius: 12px;
 
-  padding: 12px 14px;
-  width: 100%;
-  /* max-width: 100%;  */
-}
-
-.toolbar__search-btn {
-    background: none;
-    border: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.toolbar__icon-img-input {
-    width: 24px;
-    height: 24px;
-    /* color: var(--primary-700); */
-}
-
-.toolbar__search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 16px; /* un poco más grande para móvil */
-    background: transparent;
-    color: var(--primary-700);
-    }
-
-.toolbar__search-input::placeholder {
-    color: var(--gray-400);
-    font-size: 16px;
-}
-
-.toolbar__row-icons{
+.toolbar-products__row-icons{
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.toolbar__icon-img{
+.toolbar-products__icon-img{
   width: 24px;
   height: 24px;
 }
 
-.toolbar__icon{
+.toolbar-products__icon{
   cursor: pointer;
   width: 40px;
   height:40px;
@@ -97,7 +53,7 @@
    TABLET (>=768px)
    ===================== */
 @media (min-width: 768px) {
-  .toolbar {
+  .toolbar-products {
     /* min-height: 60px; */
     border-radius: 0px;
     margin: 0;
@@ -107,7 +63,7 @@
     margin: 0;
   }
 
-  .toolbar__button {
+  .toolbar-products__button {
     padding: 12px 24px;
     font-size:var(--fs-xxxxs);
     width: auto;
@@ -115,11 +71,7 @@
     font-weight:500;
   }
 
-  .toolbar__search {
-    max-width: 150px; /* no tan ancho */
-    padding: 8px 12px
-  }
-  .toolbar__row-icons{
+  .toolbar-products__row-icons{
     gap: 15px;
   }
 }
@@ -128,29 +80,22 @@
    DESKTOP (>=1024px)
    ===================== */
 @media (min-width: 1024px) {
-  .toolbar {
+  .toolbar-products {
     width: 100%;
     justify-content: flex-end; /* a la derecha */
 
   }
-  .toolbar__row-icons{
+  .toolbar-products__row-icons{
     gap: 20px;
   }
 }
 
 @media(width < 303px){
-  .toolbar__button{
+  .toolbar-products__button{
     width: 150px;
   }
-  .toolbar__search{
-    /* margin: 15px; */
-    width: 150px;
-    /* width: auto; */
-  }
-  .toolbar__search-input::placeholder{
-    font-size: 16px;
-  }
-  .toolbar__icon-img{
+  
+  .toolbar-products__icon-img{
     width: 24px;
     height: 24px;
   }

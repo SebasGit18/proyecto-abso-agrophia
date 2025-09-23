@@ -10,37 +10,20 @@
     padding: 0 12px;
     /* padding: 0px 24px; */
 
-    
-
-}
-
-.toolbar__button{
-  margin: 10px;
-  background-color: var(--gray-100);
-  width: 100%;
-  /* max-width: 320px; */
-  font-size: var(--fs-xxxxs);
-  font-weight: 600;
-  padding: 12px 24px;
-  border: none;
-  border-radius:12px;
-  color: var(--primary-700);
-  cursor: pointer;
 }
 .toolbar__search {
-  /* width: 150px; */
-  margin: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  /* max-width:320px ; */
-  background: var(--gray-100);
-  border: none    ;
-  border-radius: 12px;
-
-  padding: 12px 14px;
-  width: 100%;
-  /* max-width: 100%;  */
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* max-width:320px ; */
+    background: var(--gray-100);
+    border: none    ;
+    border-radius: 12px;
+    justify-content: flex-end;
+    padding: 12px 14px;
+    width: 70%;
+    /* max-width: 100%;  */
 }
 
 .toolbar__search-btn {
@@ -59,7 +42,8 @@
 }
 
 .toolbar__search-input {
-    flex: 1;
+    /* flex: 1; */
+    width: 100%;
     border: none;
     outline: none;
     font-size: 16px; /* un poco más grande para móvil */
@@ -73,6 +57,7 @@
 }
 
 .toolbar__row-icons{
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -96,13 +81,13 @@
 /* =====================
    TABLET (>=768px)
    ===================== */
-@media (min-width: 768px) {
+@media (min-width: 368px) {
   .toolbar {
     /* min-height: 60px; */
     border-radius: 0px;
     margin: 0;
     flex-direction: row;      /* en fila */
-    justify-content: center;  /* centrado */
+    justify-content: flex-end;  /* centrado */
     align-items: center;
     margin: 0;
   }
@@ -120,38 +105,8 @@
     padding: 8px 12px
   }
   .toolbar__row-icons{
+    margin-left: 15px;
+    margin-top: 0px;
     gap: 15px;
-  }
-}
-
-/* =====================
-   DESKTOP (>=1024px)
-   ===================== */
-@media (min-width: 1024px) {
-  .toolbar {
-    width: 100%;
-    justify-content: flex-end; /* a la derecha */
-
-  }
-  .toolbar__row-icons{
-    gap: 20px;
-  }
-}
-
-@media(width < 303px){
-  .toolbar__button{
-    width: 150px;
-  }
-  .toolbar__search{
-    /* margin: 15px; */
-    width: 150px;
-    /* width: auto; */
-  }
-  .toolbar__search-input::placeholder{
-    font-size: 16px;
-  }
-  .toolbar__icon-img{
-    width: 24px;
-    height: 24px;
   }
 }

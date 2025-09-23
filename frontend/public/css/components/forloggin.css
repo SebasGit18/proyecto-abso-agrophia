@@ -7,9 +7,53 @@
   padding: 0;
 }
 
+.page__left {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 50%; 
+  height: 100dvh;   /* altura del viewport dinámico real */
+  overflow: hidden;
 
+  display: flex;                 
+  justify-content: center;       
+  align-items: center;           
+
+  background: 
+    linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+    url("/frontend/public/img/farmer.jpg");
+
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+
+.login__title-left {
+  text-align: center;
+  font-size: var(--fs-xxs);
+  font-weight: bold;
+  color: var(--white); /* para que se vea sobre el fondo oscuro */
+}
+
+
+.page__right {
+  margin-left:50%; 
+  width:50%; 
+  min-height:100vh; 
+  height:100vh; 
+  overflow-y:auto;
+  display:flex; 
+  flex-direction:column; 
+  align-items:center; 
+  /* padding:0 40px; */
+}
+.page__right::before, .page__right::after { 
+  content:""; 
+  display:block; 
+  flex:0 0 60px; }
 .login-container {
-  margin-left: 400px;
+  font-family: var(--main-font);
+  /* margin-left: 400px; */
   margin-right: auto;
   background-color: var(--white);
   padding: 30px 25px;
@@ -18,28 +62,31 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 300px;
   /* margin: 10px; */
-  /* margin-left: 100%; */
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .login-container__title {
   text-align: center;
   margin-bottom: 25px;
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xxxs);
   font-weight: bold;
 }
 
 .login-form__label {
   display: block;
   margin: 12px 0 5px;
-  font-size: 1rem;
+  font-size: var(--fs-xxxxs);
 }
 
 .login-form__input {
+  /* font-size: 16px; */
   width: 100%;
-  padding: 0.9rem 1.2rem;
+  padding: 12px 24px;
   border: 1px solid var(--black);
   border-radius: 10px;
-  font-size: 0.8rem;
+  font-size: var(--fs-xxxxs);
   margin-bottom: 15px;
 }
 
@@ -60,14 +107,18 @@
 .login-form__checkbox-label {
   cursor: pointer;
   user-select: none;
+  font-size: var(--fs-xxxxs);
 }
 
 .login-form__button {
+  font-weight: 600;
   display: block;
-  margin: 20px auto 0;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 24px;
-  background-color: var(--gray-50);
-  color: var(--primary-700);
+  background-color: var(--primary-700);
+  color: var(--white);
   font-size: 1rem;
   border: none;
   border-radius: 8px;
@@ -76,7 +127,7 @@
 }
 
 .login-form__button:hover {
-  background-color: var(--terciary-300);
+  background-color: var(--primary-900);
   color: var(--white);
 }
 
@@ -92,49 +143,36 @@
 .login-container__register a:hover {
   text-decoration: underline;
 }
+/* 
+@media(width <353px){
+  .login-container{
+    width: auto;
+  }
+} */
 
 @media (width< 969px) {
   .login-container {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;    
     justify-content: center;
-    text-align: left;
-    margin: 0 auto;                
+    text-align: left; 
+    width: auto;               
   }
 }
-@media (width < 480px) {
-  .login-page {
-    flex-direction: column;
+/* Responsive: ocultar imagen en tablet/móvil */
+@media (max-width:1024px){
+  .page__left{ 
+    display:none; 
   }
-
-  /* .login-page__image {
-    display: none; /* Oculta la imagen en celular 
-  } */
-
-  .login-page__form {
-    width: 100%;
-    padding: 20px;
+  .page__right{ 
+    margin-left:0; width:100%;
   }
-
-  .login-container {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 12px;
-    padding: 20px 15px;
-  }
-
-  .login-container__title {
-    font-size: 20px;
-  }
-
-  .login-form__input {
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-  }
-
-  .login-form__button {
-    width: 100%;
-    font-size: 1rem;
-  }
+  .profile-form-update-container{ 
+    width:100%; 
+    max-width:350px; }
 }
+
+
+
