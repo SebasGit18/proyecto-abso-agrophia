@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".list-categories__container");
+    const navbarElement = document.querySelector(".list-home__container");
 
     if(navbarElement){
         fetch("/frontend/public/views/components/list-home.html")

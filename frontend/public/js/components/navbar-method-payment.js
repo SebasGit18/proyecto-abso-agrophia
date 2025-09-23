@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".container-navbar-method__payment");
+    const navbarElement = document.querySelector(".header-method__container");
 
     if(navbarElement){
         fetch("/frontend/public/views/components/navbar-method-payment.html")

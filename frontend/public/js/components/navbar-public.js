@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".container-navbar_public");
+    const navbarElement = document.querySelector(".header-product_public-container");
 
     if(navbarElement){
         fetch("/frontend/public/views/components/navbar-public.html")
