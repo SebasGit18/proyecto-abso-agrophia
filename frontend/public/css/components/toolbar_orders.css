@@ -1,7 +1,7 @@
 .toolbar-orders{
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: center;
     background-color: var(--white);
     padding: 12px 24px;
@@ -53,7 +53,7 @@
     justify-content: center;  /* centrado */
     align-items: center;
     margin: 0;
-    padding: 12px 24px;
+    padding: 0px 24px;
   
   }
 
