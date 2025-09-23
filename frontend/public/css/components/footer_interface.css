@@ -10,12 +10,12 @@ html, body {
     }
 
     footer {
-      position: static;   
+      position: fixed;   
       bottom: 0;        
       left: 0;
       width: 100%;       
       background-color: var(--primary-100);
-      color: var(--white);
+      color: var(--primary-800);
       text-align: center;
       padding: 10px;
       font-size: var(--fs-xs);
@@ -42,8 +42,8 @@ html, body {
 
     .footer__social-link {
       text-decoration: none;
-      color: var(--black);
-      font-size: var(--fs-xs);
+      color: var(--primary-800);
+      font-size: 14px;
       position: relative;
     }
 
