@@ -1,4 +1,4 @@
-.header-product__disabled{
+.header-available{
     display: flex;
     position: static;
     top: 0;
@@ -10,14 +10,14 @@
     flex-direction: column;
 }
 
-.navbar-disable__title{
+.navbar-available__title{
     color: var(--white);
     font-size: var(--fs-md);
     font-family: var(--main-font);
     text-align: center;
 }
 
-.navbar-disable__subtitle{
+.navbar-available__subtitle{
     color: var(--gray-50);
     font-size: var(--fs-sm);
     font-family: var(--main-font);

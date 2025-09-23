@@ -11,8 +11,10 @@
 @import url(components/search.css);
 @import url(components/from.css);
 @import url(components/card-public.css);
+@import url(components/card-available.css);
 @import url(components/navbar-disable.css);
 @import url(components/navbar-public.css);
+@import url(components/navbar-method-payment.css);
 @import url(components/card-disable.css);
 @import url(header_admin.css);
 @import url('reset.css');

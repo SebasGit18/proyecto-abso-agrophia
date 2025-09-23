@@ -1,23 +1,25 @@
-.container {
-  width: 100%;
+.container-unidad__medida {
+  width: 500px;
+  height: 200px;
   max-width: 500px;       
   margin: 20px auto;
   padding: 20px;       
-  border: 1px solid var(--black); 
+  border: 1px solid var(--gray-300); 
   border-radius: 12px;    
   text-align: center;
   font-family: var(--font-primary);
   background: var(--white);
 }
 
-.title {
-  font-size: var(--fs-xxs);
+.title-unidad__medida {
+  font-size: var(--fs-sm);
   font-weight: bold;
   margin-bottom: 8px;
+  color: var(--black);
 }
 
-.description {
-  font-size: var(--fs-xxxs);
+.description-unidad__medida {
+  font-size: var(--fs-xs);
   margin-bottom: 15px;
   color: var(--black);
 }
@@ -35,8 +37,8 @@
   flex: 1;                
   width: 55%;    
   padding: 12px;
-  font-size: var(--fs-xxxs);
-  border: 1px solid var(--gray-100); 
+  font-size: var(--fs-xs);
+  border: 1px solid var(--black); 
   border-radius: 12px; 
   box-sizing: border-box;
 }
