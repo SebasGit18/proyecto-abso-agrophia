@@ -1,3 +1,26 @@
+
+/* Reset general */
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-50);
+} */
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--gray-50);
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 /*Contenedor principal*/
 .search-container {
   display: flex;
@@ -53,3 +76,4 @@
     font-size: var(--fs-xs);
   }
 }
+
