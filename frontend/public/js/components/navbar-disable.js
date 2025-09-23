@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".container-navbar_disable");
+    const navbarElement = document.querySelector(".header-product__disable-container");
 
     if(navbarElement){
         fetch("/frontend/public/views/components/navbar-disable.html")

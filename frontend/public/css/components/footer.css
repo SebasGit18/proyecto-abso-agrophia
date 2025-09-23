@@ -1,6 +1,6 @@
     main {
       padding: 20px;
-      min-height: 150vh; 
+      /*min-height: 150vh;*/
     }
 
     footer {
@@ -10,6 +10,8 @@
       left: 0;
       width: 100%;       
       background-color: var(--primary-200);
+      width: auto;       
+      background-color: var(--primary-100);
       color: var(--primary-800);
       text-align: center;
       padding: 10px;
