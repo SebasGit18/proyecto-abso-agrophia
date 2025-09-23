@@ -62,7 +62,7 @@ tr:nth-child(even) {
     background-color: var(--white);
 }
 
-.pediente__btn {
+.tableorder__btn--pending {
     background-color: var(--secundary-400);
     color: var(--black);
     border: none;
@@ -71,7 +71,7 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
-.link__home {
+.tableorder__link {
     display: block;
     text-align: center;
     margin-bottom: 0px;
@@ -80,6 +80,6 @@ tr:nth-child(even) {
     text-decoration: none;
 }
 
-.link__home:hover {
+.tableorder__link--home:hover {
     text-decoration: underline;
 }

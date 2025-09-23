@@ -8,12 +8,14 @@
       position: static;   
       bottom: 0;        
       left: 0;
+      width: 100%;       
+      background-color: var(--primary-200);
       width: auto;       
       background-color: var(--primary-100);
       color: var(--primary-800);
       text-align: center;
       padding: 10px;
-      font-size: var(--fs-xs);
+      font-size: var(--fs-xxxs);
     }
 
     .footer__container {
