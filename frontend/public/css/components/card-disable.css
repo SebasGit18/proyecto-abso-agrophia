@@ -41,8 +41,8 @@
 
 .card-disable__info {
   display: flex;
-  flex-direction: column; /* Precio arriba, nombre abajo */
-  align-items: flex-start; /* ← Alineados a la izquierda */
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 10px;
 }
 
@@ -84,7 +84,6 @@
   transform: scale(0.98);
 }
 
-/* === Responsive Grid === */
 @media (width > 640px) {
   .card-disable__container {
     grid-template-columns: repeat(2, 1fr);

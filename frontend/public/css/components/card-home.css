@@ -1,6 +1,7 @@
-.background-home {
+/*.background-home {
   background-color: var(--gray-50);
-}
+}*/
+
 .contenedor-cards__home {
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
   justify-content: center;
 }
 
-/* === Card === */
+
 .card-home {
   border-radius: 12px;
   padding: 24px;
@@ -29,7 +30,7 @@
   transform: translateY(-4px);
 }
 
-/* Imagen de la card */
+
 .card-home__img {
   width: 100%;
   height: 300px;
@@ -39,12 +40,12 @@
 
 .card-home__info {
   display: flex;
-  flex-direction: column; /* Precio arriba, nombre abajo */
-  align-items: flex-start; /* ← Alineados a la izquierda */
+  flex-direction: column;
+  align-items: flex-start;
   margin-bottom: 10px;
 }
 
-/* Texto dentro de la card */
+
 .card-home__price {
   font-size: var(--fs-sm);
   color: var(--black);
@@ -59,7 +60,7 @@
   margin-bottom: 4px;
 }
 
-/* === Botón === */
+
 .one-home__button {
   background-color: var(--primary-300);
   color: var(--black);

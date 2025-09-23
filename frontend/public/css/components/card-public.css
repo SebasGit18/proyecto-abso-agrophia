@@ -82,12 +82,12 @@
 }
 
 .one-public__button:hover {
-  background-color: var(--primary-600);
+  background-color: var(--terciary-300);
   transform: scale(1.02);
 }
 
 .one-public__button:active {
-  background-color: var(--primary-700);
+  background-color: var(--terciary-400);
   transform: scale(0.98);
 }
 
@@ -103,12 +103,12 @@
 }
 
 .two-public__button:hover {
-  background-color: var(--primary-600);
+  background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
 .two-public__button:active {
-  background-color: var(--primary-700);
+  background-color: var(--secundary-500);
   transform: scale(0.98);
 }
 
