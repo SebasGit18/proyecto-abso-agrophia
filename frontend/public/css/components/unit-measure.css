@@ -1,26 +1,32 @@
 .form-unit-measure__container {
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
     width: 900px;
     height: 570px;
+    margin: 40px auto;
+    border: 1px solid var(--black);
     border-radius: 12px;
-    gap: 8px;
+    padding: 20px;
+    background: var(--white);
 }
 .unit-measure {
+    flex: 0 0 320px;
     border: 1px solid var(--black);
     border-radius: 8px;
-    width: 320px;
+    background-color: var(--white);
     font-family: var(--main-font);
-    margin-top: 20px;
-    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .unit-measure__title {
     text-align: center;
     font-size: var(--fs-sm);
     margin: 0;
-    padding: 20px 0;
+    padding: 12px;
     font-weight: bold;
     color: var(--black);
 }
@@ -33,8 +39,8 @@
 .unit-measure__form {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    padding: 30px 30px; 
+    gap: 4px;
+    margin: 12px;
 }
 
 .unit-measure__form label {

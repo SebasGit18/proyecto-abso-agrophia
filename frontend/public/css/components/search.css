@@ -16,7 +16,7 @@
   font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /*Centra verticalmente el ícono */
+  align-items: center; 
 }
 
 .filter__icon {
@@ -37,3 +37,19 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .search-container {
+    width: 95%;
+    padding: 10px 16px;
+    margin: 15px auto;
+  }
+
+  .search__icon {
+    font-size: var(--fs-xxxs);
+    margin-right: 0.3rem;
+  }
+
+  .buscador {
+    font-size: var(--fs-xs);
+  }
+}
