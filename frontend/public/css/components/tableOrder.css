@@ -1,18 +1,36 @@
 body {
-    /*background-color: var(--primary-100);*/
+    background-color: var(--primary-100);
     font-family: var(--main-font);
+    margin: 0;
+}
+
+.header-container {
+    background-color: var(--primary-700);
+    padding: 25px;
+    color: var(--white);
+}
+
+.header__title {
+    font-size: var(--fs-sm);
+    text-align: center;
+}
+
+.header__subtitle {
+    font-size: var(--fs-xs);
+    text-align: center;
 }
 
 .tableorder-container {
     background-color: var(--white);
     width: 930px;
-    height: 310px;
+    height: auto;
     padding: 24px 0px;
-    margin-top: 140px;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     font-family: var(--main-font);
     border-radius: 16px;
+    margin-bottom: 100px;
 }
 
 .tableorder-content {

@@ -48,6 +48,7 @@
   .question-bar {
     max-width: 90%;
     margin: 2rem auto 0; /* Centrado en horizontal */
+    margin-top: -5px;
   }
 
   .question-bar__label {
@@ -95,8 +96,8 @@
 
 @media (min-width: 1025px) {
   .question-bar {
-    margin-left: 150px;
-    margin-top: 0;
+    margin: 2rem auto 0; /* centrado horizontal */
     max-width: 600px;
+    margin-left: 130px;
   }
 }

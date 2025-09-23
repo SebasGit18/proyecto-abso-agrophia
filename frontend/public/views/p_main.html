@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="navbar-container"></div>
+    </header>
+     
+    <main class="background-home">
+        <section class="search__container"></section>
+        <section class="list-categories__container"></section>
+        <section class="contenedor-cards__home">
+          <div class="card-home__container"></div>
+        </section>
+      </main>
+
+    <footer class="footer">  
+        <div class="footer-container"></div>
+    </footer>  
+
+    <script src="/frontend/public/js/components/navbar.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script src="/frontend/public/js/components/list-home.js"></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-home.js";
+        loadCards(".card-home__container");// Clase para cargar todas las cards
+    </script>
+</body>
+</html>

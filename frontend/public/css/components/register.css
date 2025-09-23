@@ -1,15 +1,56 @@
-body {    
-    background-color: var(--white);      
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    height: 1000px;
-    margin: 0;    
+.page { 
+    display:flex; 
+    width:100%; 
+    min-height:100vh; 
+    margin:0; 
+    font-family:var(--main-font, Arial, sans-serif); }
+
+.page__left {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:50%; 
+    height:100vh;
+    background-image: linear-gradient(var(--overlay-dark), var(--overlay-dark)), url("/frontend/public/img/plant.png");
+    background-size:cover; 
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.home__description {
+    font-size: var(--fs-xxxs);
+    color: var(--white);
+    text-align: center;
+    padding: 50% 25%;
+}
+.page__right {
+    margin-left: auto; 
+    width:50%; 
+    min-height:100vh; 
+    height:100vh; 
+    overflow-y:auto;
+    display:flex; 
+    flex-direction:column; 
+    align-items:center; 
+    padding:0 40px;
+}
+.page__right::before, .page__right::after { 
+    content:""; 
+    display:block; 
+    flex:0 0 60px; }
+
+.home__title {
+    margin-top: -70px;
+    margin-bottom: 20px;
+    color: var(--primary-700);
+    text-align: center;
+    margin-left: 100px;
+    font-size: var(--fs-xs);
 }
 
 .form-container { 
-    margin: 120px;   
-    margin-left: 700px;
+    margin: 0;   
+    margin-left: 100px;
     padding: 36px;
     width: 250px;
     border-radius: 6px;
@@ -91,14 +132,14 @@ body {
 }
 
 
-@media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
+@media (max-width: 1024px) {
+    .page__left {
+        display: none; /* Ocultar la imagen */
     }
-    .left-panel {
-        display: none; /* ocultar imagen/texto en pantallas pequeñas */
-    }
-    .right-panel {
+
+    .page__right {
+        width: 100%;   /* Que ocupe todo el ancho */
+        margin-left: 0; 
         padding: 20px;
     }
 }

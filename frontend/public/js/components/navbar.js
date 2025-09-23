@@ -1,5 +1,4 @@
-
- document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){
     const navbarElement = document.querySelector(".navbar-container");
 
     if(navbarElement){

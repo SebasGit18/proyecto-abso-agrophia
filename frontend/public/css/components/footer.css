@@ -1,24 +1,19 @@
-html, body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     main {
       padding: 20px;
-      background-color: #f0fff0;
       min-height: 150vh; 
     }
 
     footer {
-      position: fixed;   
+      margin-top: 15px;
+      position: static;   
       bottom: 0;        
       left: 0;
       width: 100%;       
-      background-color: #4CAF50;
-      color: white;
+      background-color: var(--primary-100);
+      color: var(--white);
       text-align: center;
       padding: 10px;
-      font-size: 14px;
+      font-size: var(--fs-xs);
     }
 
     .footer__container {
@@ -42,8 +37,8 @@ html, body {
 
     .footer__social-link {
       text-decoration: none;
-      color: #000;
-      font-size: 14px;
+      color: var(--black);
+      font-size: var(--fs-xs);
       position: relative;
     }
 
@@ -51,7 +46,7 @@ html, body {
     .footer__social-link:not(:last-child)::after {
       content: "|";
       margin-left: 8px;
-      color: #555;
+      color: var(--black);
     }
 
     .footer__social-link:hover {
@@ -77,7 +72,7 @@ html, body {
 
 @media (max-width: 600px) {
   footer {
-    font-size: 12px;
+    font-size: var(--fs-xs);
     padding: 8px;
   }
 

@@ -1,0 +1,73 @@
+[
+    {
+        "id": "1",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    }, 
+
+    {
+        "id": "2",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "3",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "4",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "5",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "6",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "7",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    },
+
+    {
+        "id": "8",
+        "image": "../assets/cards/apple.jpg",
+        "price": "12.000 / Libra",
+        "name": "Manzana",
+        "button1": "Agregar",
+        "button2": "Visualizar"
+    }
+]
