@@ -5,7 +5,7 @@ html, body {
 
     main {
       padding: 20px;
-      background-color: var(--white);
+      /*background-color: #f0fff0;*/
       min-height: 150vh; 
     }
 

@@ -1,4 +1,4 @@
-.contenedor-cards__public {
+.contenedor-cards__available {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* Contenedor que organiza las cards en grilla */
-.card-public__container{
+.card-available__container{
   display: grid;
   gap: 24px;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 /* === Card === */
-.card-public {
+.card-available {
   background-color: var(--white);
   border-radius: 12px;
   padding: 24px;
@@ -26,20 +26,20 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-public:hover {
+.card-available:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
 }
 
 /* Imagen de la card */
-.card-public__img {
+.card-available__img {
   width: 100%;
   height: 300px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.card-public__info {
+.card-available__info {
   display: flex;
   flex-direction: column; /* Precio arriba, nombre abajo */
   align-items: flex-start; /* ← Alineados a la izquierda */
@@ -47,14 +47,14 @@
 }
 
 /* Texto dentro de la card */
-.card-public__price {
+.card-available__price {
   font-size: var(--fs-sm);
   color: var(--black);
   font-weight: 600;
   margin-bottom: 4px;
 }
 
-.card-public__name {
+.card-available__name {
   font-size: var(--fs-xs);
   font-weight: 500;
   color: var(--primary-700);
@@ -63,7 +63,7 @@
 
 /* === Botón === */
 
-.container-button__public {
+.container-button__available {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -71,7 +71,7 @@
   justify-content: center;
 }
 
-.one-public__button {
+.one-available__button {
   background-color: var(--terciary-200);
   color: var(--black);
   border: none;
@@ -82,17 +82,17 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.one-public__button:hover {
+.one-available__button:hover {
   background-color: var(--terciary-300);
   transform: scale(1.02);
 }
 
-.one-public__button:active {
+.one-available__button:active {
   background-color: var(--terciary-400);
   transform: scale(0.98);
 }
 
-.two-public__button {
+.two-available__button {
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
@@ -103,12 +103,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.two-public__button:hover {
+.two-available__button:hover {
   background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
-.two-public__button:active {
+.two-available__button:active {
   background-color: var(--secundary-500);
   transform: scale(0.98);
 }
@@ -116,7 +116,7 @@
 
 /* === Responsive Grid === */
 @media (width > 640px) {
-  .card-public__container {
+  .card-available__container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
     margin-bottom: 50px;
@@ -125,7 +125,7 @@
 }
 
 @media (width > 1024px) {
-  .card-public__container {
+  .card-available__container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 90%;
     margin-bottom: 50px;

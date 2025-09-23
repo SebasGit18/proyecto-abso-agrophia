@@ -1,13 +1,3 @@
-
-/* Reset general */
-
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--gray-50);
-} */
-
 body {
   font-family: var(--main-font);
   background-color: var(--gray-50);
@@ -28,7 +18,7 @@ body {
   width: 80%;
   max-width: 500px;
   margin: 20px auto;
-  background: var(--gray-50);
+  background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
   padding: 12px 24px;
@@ -39,7 +29,7 @@ body {
   font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /*Centra verticalmente el ícono */
+  align-items: center; 
 }
 
 .filter__icon {
@@ -60,48 +50,20 @@ body {
   align-items: center;
 }
 
-  
-  body {
-    font-family: var(--main-font);
-  }
-  
-  /*Contenedor principal*/
+@media (max-width: 768px) {
   .search-container {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    max-width: 500px;
-    margin: 5vh auto 1rem; /*5vh es el 5% de la altura de la ventana, auto = margen derecho e izquierdo, 1rem = margen inferior.*/
-    background: var(--white);
-    border: 1px solid var(--gray-900);
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
+    width: 95%;
+    padding: 10px 16px;
+    margin: 15px auto;
   }
-  
+
   .search__icon {
-    color: var(--gray-900);
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-    display: flex;
-    align-items: center; /*Centra verticalmente el ícono */
-  }
-
-  .filter__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--gray-900);
-  }
-  
-  /*Style input*/
-  #buscador {
-    flex: 1;
-    border: none;
-    outline: none;
     font-size: var(--fs-xxxs);
-    background: transparent; 
-    color: var(--gray-900);
-    padding: 0.4rem 0;
+    margin-right: 0.3rem;
   }
 
+  .buscador {
+    font-size: var(--fs-xs);
+  }
+}
 
