@@ -1,3 +1,16 @@
+body {
+  font-family: var(--main-font);
+  background-color: var(--gray-50);
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 /*Contenedor principal*/
 .search-container {
   display: flex;
@@ -5,7 +18,7 @@
   width: 80%;
   max-width: 500px;
   margin: 20px auto;
-  background: var(--gray-50);
+  background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
   padding: 12px 24px;
@@ -16,7 +29,7 @@
   font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /*Centra verticalmente el ícono */
+  align-items: center; 
 }
 
 .filter__icon {
@@ -35,5 +48,22 @@
   background: transparent; 
   color: var(--gray-900);
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 95%;
+    padding: 10px 16px;
+    margin: 15px auto;
+  }
+
+  .search__icon {
+    font-size: var(--fs-xxxs);
+    margin-right: 0.3rem;
+  }
+
+  .buscador {
+    font-size: var(--fs-xs);
+  }
 }
 
