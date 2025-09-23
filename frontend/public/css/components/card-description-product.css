@@ -108,23 +108,35 @@ body::before {
 }
 
 .product-card__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  background: var(--primary-600);
-  color: var(--black);
+  background-color: var(--primary-700);
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 0.7rem;
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
   cursor: pointer;
-  font-size: var(--fs-xxxs);
-  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;       /* Flexbox dentro del botón */
+  align-items: center;        /* Centra verticalmente texto + icono */
+  justify-content: center;    /* Centra horizontalmente */
+  gap: 8px;  
 }
 
 .product-card__btn:hover {
-  background: var(--primary-700);
+  background-color: var(--primary-800);
+  transform: scale(1.02);
+}
+
+.product-card__btn:active {
+  background-color: var(--primary-900);
+  transform: scale(0.98);
+}
+.product-card__btn svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--black);
+
 }
 
 @media (max-width: 600px) {

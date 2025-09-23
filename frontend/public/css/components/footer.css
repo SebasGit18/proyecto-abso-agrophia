@@ -10,7 +10,7 @@
       left: 0;
       width: 100%;       
       background-color: var(--primary-100);
-      color: var(--white);
+      color: var(--primary-800);
       text-align: center;
       padding: 10px;
       font-size: var(--fs-xs);
