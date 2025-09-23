@@ -1,3 +1,4 @@
+
 /* Reset general */
 
 /* * {
@@ -19,17 +20,18 @@ body {
 }
 
 
+
 /*Contenedor principal*/
 .search-container {
   display: flex;
   align-items: center;
   width: 80%;
   max-width: 500px;
-  margin: 5vh auto 1rem; /*5vh es el 5% de la altura de la ventana, auto = margen derecho e izquierdo, 1rem = margen inferior.*/
-  background: var(--white);
+  margin: 20px auto;
+  background: var(--gray-50);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
 }
 
 .search__icon {
@@ -48,15 +50,16 @@ body {
 }
 
 /*Style input*/
-#buscador {
+.buscador {
   flex: 1;
   border: none;
   outline: none;
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xs);
   background: transparent; 
   color: var(--gray-900);
-  padding: 0.4rem 0;
+  align-items: center;
 }
+
   
   body {
     font-family: var(--main-font);
@@ -100,3 +103,5 @@ body {
     color: var(--gray-900);
     padding: 0.4rem 0;
   }
+
+
