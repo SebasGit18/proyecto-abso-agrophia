@@ -50,7 +50,6 @@ body {
   align-items: center;
 }
 
-
 @media (max-width: 768px) {
   .search-container {
     width: 95%;
