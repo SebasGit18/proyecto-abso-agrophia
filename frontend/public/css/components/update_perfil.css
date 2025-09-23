@@ -1,175 +1,157 @@
-/* ---- Reset útil para que el padding no rompa anchos ---- */
-/* *, *::before, *::after { 
-  box-sizing: border-box; 
-} */
+/* Reset box-sizing para que padding no rompa anchos */
+*, *::before, *::after { box-sizing: border-box; }
 
-/* Layout (igual que tenías) */
-/* .page { 
-  display:flex; 
-  width:100%; 
-  min-height:100vh; 
-  margin:0; 
-  font-family:var(--main-font, Arial, sans-serif); } */
 
+/* --- Layout existente (ajusta según tu HTML general) --- */
 .page__left {
-  position:fixed; 
-  top:0; 
-  left:0; 
-  width:50%; 
-  height:100vh;
-  background-image:url("/frontend/public/img/imagen_planta_perfil.png");
-  background-size:cover; 
-  background-position:center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background-image: url("/frontend/public/img/imagen_planta_perfil.png");
+  background-size: cover;
+  background-position: center;
 }
 .page__right {
-  margin-left:50%; 
-  width:50%; 
-  min-height:100vh; 
-  height:100vh; 
-  overflow-y:auto;
-  display:flex; 
-  flex-direction:column; 
-  align-items:center; 
-  /* padding:0 40px; */
-}
-.page__right::before, .page__right::after { 
-  content:""; 
-  display:block; 
-  flex:0 0 60px; }
-
-/* Tarjeta/formulario */
-.profile {
-  width:320px;            /* ocupa toda la caja (350px) */
-  padding:12px 24px;          /* si quieres que el input toque el borde, pon 0 */
-  background: var(--white);
-  margin: 10px;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.1);
-}
-
-/* Grupos y etiquetas */
-.profile__group { 
-  margin-bottom:14px; 
-  
-}
-.profile__view-passwork{
+  margin-left: 50%;
+  width: 50%;
+  min-height: 100vh;
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
   align-items: center;
-  
-}
-.profile__label-view-password{
-  font-size: var(--fs-xxxxs);
-  display:block; 
-  font-weight:600;
-  /* align-items: center; */
-
 }
 
-.profile__label { 
-  font-size: var(--fs-xxxxs);
-  display:block; 
-  margin-bottom:6px; 
-  font-weight:600;
- }
+/* --- Bloque profile-update (BEM) --- */
+.profile-update{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
 
-/* ---- Inputs: todos idénticos y al 100% ---- */
-.profile__input{
-  font-size: var(--fs-xxxxs);
-  width:90%;
-  /* min-width:0; */
-  /* padding: 12px 24px;   */
-  /* height:40px; */
-  padding:12px 24px;
-  border:1px solid var(--black);
-  border-radius:8px;
+.profile-update__card{
+  width: 100%;
+  max-width: 420px;
   background: var(--white);
-  appearance:none;             /* unifica estilos nativos */
-  /* -webkit-appearance:none; */
+  padding: 20px 24px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 
-.profile__input:focus{
-  border-color:var(--primary-600);
-  outline:none ;
-  box-shadow:none ;
-}
-
-.profile__checkbox{
-  height: 20px;
-  width: 20px;
-  /* font-weight: 700; */
-  /* border: 1px solid red; */
-  border: 4px solid var(--black);
-
-  /* border-radius: 12px; */
-  /* box-shadow: 0 0 0 2px var(--gray-100); */
-}
-
-/* Botón guardar: mismo ancho de la caja */
-.profile__button{
-  display:block;
-  width:60%;
-  font-size: var(--fs-xxxxs );
-  margin-left: auto;
-  margin-right: auto;
-  padding:12px 24px;
-  margin-top:12px;
-  background:var(--primary-700);
-  color:var(--white);
-  border:none; 
-  border-radius:8px; 
-  cursor:pointer;
-}
-.profile__button:hover{ 
-  background:var(--primary-600); }
-
-.profile__title{
+.profile-update__title{
   font-size: var(--fs-xxxs);
+  margin: 0 0 12px 0;
+  font-weight: 700;
 }
 
-/* Botón volver como enlace (no <a> dentro de <button>) */
-.back-btn{
-  position:fixed; 
-  top:1rem; 
-  right:1rem;
-  background-color:var(--primary-700);
-  border:none; 
-  border-radius:4px; 
-  padding:.35rem 1rem;
-  font-size:.75rem; 
-  font-weight:600; 
+/* Grupos y labels */
+.profile-update__group{
+  margin-bottom: 14px;
+}
+.profile-update__label{
+  display: block;
+  font-size: var(--fs-xxxxs);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Inputs: 100% ancho, padding manejado por box-sizing */
+.profile-update__input{
+  width: 100%;
+  padding: 12px 16px;
+  font-size: var(--fs-xxxxs);
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px;
+  background: var(--white);
+  appearance: none;
+}
+.profile-update__input:focus{
+  border-color: var(--primary-600);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(19,102,255,0.06);
+}
+
+/* Checkbox y label inline */
+.profile-update__group--inline{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-update__checkbox{
+  width: 18px;
+  height: 18px;
+  /* modern browsers: accent-color para colorear checkbox */
+  accent-color: var(--primary-700);
+}
+
+/* Label específico para checkbox (si quieres otro estilo) */
+.profile-update__label--checkbox{
+  margin: 0;
+  font-size: var(--fs-xxxxs);
+  font-weight: 600;
+}
+
+/* Botón submit */
+.profile-update__submit{
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin-top: 12px;
+  background: var(--primary-700);
   color: var(--white);
-  cursor:pointer; 
-  box-shadow:0 1px 3px var(--gray-100);
-  transition:background-color .3s ease; 
-  text-decoration:none; 
-  display:inline-block;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
 }
-.back-btn:hover{ 
-  background-color:var(--primary-600); }
+.profile-update__submit:hover{
+  background: var(--primary-600);
+}
 
-/* Responsive: ocultar imagen en tablet/móvil */
-@media (max-width:1024px){
+/* Botón volver (ahora parte del bloque, con scope global mínimo) */
+.profile-update__back{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-700);
+  border-radius: 4px;
+  padding: .35rem 1rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0 1px 3px var(--gray-100);
+  transition: background-color .2s ease;
+}
+.profile-update__back:hover{
+  background-color: var(--primary-600);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
   .page__left{ 
-    display:none; 
-  }
+    display: none;
+   }
   .page__right{ 
-    margin-left:0; width:100%;
+    margin-left: 0; 
+    width: 100%;
+   }
+  .profile-update__card{ 
+    max-width: 360px; 
   }
-  .profile-form-update-container{ 
-    width:100%; 
-    max-width:350px; }
 }
 
-
-@media(width < 450px){
-  .profile__input{
-    width: auto;
-    min-width: none;
-
+@media (max-width: 450px) {
+  .profile-update__card{ 
+    padding: 16px; 
+    border-radius: 8px; 
   }
-  .profile{
-    width: auto;
+  .profile-update{ 
+    padding: 24px 12px; 
   }
+
 }

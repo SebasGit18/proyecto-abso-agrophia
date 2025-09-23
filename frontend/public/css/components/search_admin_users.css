@@ -1,7 +1,6 @@
-
 body {
   font-family: var(--main-font);
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 * {
   box-sizing: border-box;
@@ -9,17 +8,16 @@ body {
   padding: 0;
 }
 
-.search__title{
-    font-size: var(--fs-xxxs);
-    margin: 15px;
-    text-align: center;
-
+/* title */
+.search-users__title {
+  font-size: var(--fs-xxxs);
+  margin: 15px;
+  text-align: center;
 }
 
-/*Contenedor principal*/
-.search-container {
+/*Contenedor principal: mantengo tus medidas y estilos */
+.search-users__container {
   display: flex;
-  /* align-items: center; */
   width: 80%;
   max-width: 500px;
   margin-left: auto;
@@ -30,52 +28,60 @@ body {
   padding: 0.5rem 1rem;
 }
 
-.search__icon {
+/* iconos (izquierda/derecha) */
+.search-users__icon {
   color: var(--gray-900);
   font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /*Centra verticalmente el ícono */
+  align-items: center; /* centra verticalmente el ícono */
 }
 
-.filter__icon {
+.search-users__filter {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gray-900);
 }
 
-/*Style input*/
-#buscador {
+/* Input: mantengo el id por compatibilidad y añado la clase para BEM */
+#buscador,
+.search-users__input {
   flex: 1;
   border: none;
   outline: none;
   font-size: var(--fs-xxxxs);
-  background: transparent; 
+  background: transparent;
   color: var(--gray-900);
   padding: 0.4rem 0;
 }
-  
 
-@media(width > 1115px){
-    .search-container{
-        margin-left: 250px;
-    }
-    .search__title{
-        text-align: inherit;
-        margin-left: 250px;
-    }
+/* placeholder */
+.search-users__input::placeholder,
+#buscador::placeholder {
+  color: var(--gray-400);
+  font-size: 16px;
 }
 
+/* Media query corregida (anteriormente estaba inválida) */
+/* Mantengo el comportamiento original: desplazar por el sidebar */
+@media (min-width: 1116px) {
+  .search-users__container {
+    margin-left: 250px;
+  }
+  .search-users__title {
+    text-align: inherit;
+    margin-left: 250px;
+  }
+}
 
+/* Mobile: ocultar icono de filtro tal como tenías */
 @media (max-width: 439px) {
-  #buscador {
-    width: 100%; /* ocupa todo el espacio */
+  #buscador, .search-users__input {
+    width: 100%;
   }
 
-  .filter__icon {
-    display: none; /* ya lo tenías */
+  .search-users__filter {
+    display: none;
   }
-
-  
 }
