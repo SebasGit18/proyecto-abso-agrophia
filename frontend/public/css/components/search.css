@@ -1,3 +1,16 @@
+body {
+  font-family: var(--main-font);
+  background-color: var(--gray-50);
+
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 /*Contenedor principal*/
 .search-container {
   display: flex;
@@ -37,6 +50,7 @@
   align-items: center;
 }
 
+
 @media (max-width: 768px) {
   .search-container {
     width: 95%;
@@ -53,3 +67,4 @@
     font-size: var(--fs-xs);
   }
 }
+

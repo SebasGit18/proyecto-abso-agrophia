@@ -21,7 +21,7 @@
   padding: 0;
 }
 
-/*  Celulares (pantallas pequeñas hasta 480px) */
+
 @media (width > 768px) {
   .navbar__title {
     font-size: var(--fs-lg); 
