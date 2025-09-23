@@ -1,4 +1,4 @@
-.contenedor-cards__disable {
+.card-disable__container-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,24 +62,25 @@
 }
 
 /* === Botón === */
-.one-disable__button {
+.card-disable__button-one {
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px; /* Material Design spacing */
+  padding: 12px 24px;
+  /* Material Design spacing */
   font-size: var(--fs-xs);
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.one-disable__button:hover {
+.card-disable__button-one:hover {
   background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
-.one-disable__button:active {
+.card-disable__button-one:active {
   background-color: var(--secundary-500);
   transform: scale(0.98);
 }

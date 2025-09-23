@@ -1,11 +1,11 @@
 /* ==== Lista horizontal de categorías ==== */
-.list__home {
+.list-home {
     padding: 8px;
     max-width: 1000px;
     margin: 20px 0 5px 40px;
 }
 
-.home__list {
+.list-home__section {
     display: flex;   
     flex-direction: row;
     justify-content: flex-start;
@@ -33,12 +33,12 @@
 
 
 @media (max-width: 768px) {
-    .list__home {
+    .list-home {
         margin: 10px auto;
         text-align: center;
     }
 
-    .home__list {
+    .list-home__section {
         flex-direction: column;
         justify-content: flex-start;
         gap: 12px;

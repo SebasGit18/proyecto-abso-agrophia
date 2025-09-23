@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const navbarElement = document.querySelector(".container-navbar_available");
+    const navbarElement = document.querySelector(".header-available__container");
 
     if(navbarElement){
         fetch("/frontend/public/views/components/navbar-available.html")
