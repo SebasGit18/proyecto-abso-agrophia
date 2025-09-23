@@ -1,16 +1,12 @@
-html, body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
     main {
       padding: 20px;
-      background-color: #f0fff0;
+      /* background-color: #f0fff0; */
       min-height: 150vh; 
     }
 
     footer {
-      position: fixed;   
+      margin-top: 15px;
+      position: static;   
       bottom: 0;        
       left: 0;
       width: 100%;       
