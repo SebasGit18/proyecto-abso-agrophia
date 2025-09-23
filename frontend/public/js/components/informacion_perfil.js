@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const infoContainer = document.querySelector(".profile-form-update-container");
+  const infoContainer = document.querySelector(".table_header-users");
 
   if (infoContainer) {
     fetch("/frontend/public/views/components/informacion_perfil.html")

@@ -85,12 +85,14 @@
 }
 
 .profile__label {
+  font-size: var(--fs-xxxxs);
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .profile__input {
+  font-size: var(--fs-xxxxs);
   width: 100%;
   padding: 10px;
   border: 1px solid var(--black);

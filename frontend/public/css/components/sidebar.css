@@ -1,5 +1,6 @@
 
 .sidebar {
+  font-family: var(--main-font);
   position: static;
   width: 100%;               /* móvil: ocupa todo el ancho */
   background: var(--white);
@@ -24,7 +25,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 8px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -34,27 +35,28 @@
 }
 
 .sidebar__item:hover {
-  background: var(--white); }
+  background: var(--gray-100); }
 .sidebar__item--active { 
   background: var(--terciary-50); 
   font-weight:700; 
   color:var(--terciary-500); }
 
 .sidebar__icon { 
-  width: 20px; 
-  height: 20px; 
+  width: 24px; 
+  height: 24px; 
   flex-shrink: 0; 
   margin-right: 12px; }
 .sidebar__text { 
   flex: 1; 
-  font-size: 14px; }
+  font-size: var(--fs-xxxxs); }
 
 /* ===== Tablet: de 479px hasta 1115px => barra horizontal ===== */
 @media (min-width: 479px) and (max-width: 1115px) {
   .sidebar {
+    margin-top: 0px;
     border-radius: 0px;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     justify-content: space-around;
     padding: 10px;
     box-shadow: none; /* opcional para que no interfiera visual */

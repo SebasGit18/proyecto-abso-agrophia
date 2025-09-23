@@ -1,7 +1,6 @@
 body {
   font-family: var(--main-font);
   background-color: var(--gray-50);
-
 }
 * {
   box-sizing: border-box;

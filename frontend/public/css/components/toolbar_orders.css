@@ -4,21 +4,23 @@
     gap: 20px;
     align-items: center;
     background-color: var(--white);
-    padding: 0px 24px;
+    padding: 12px 24px;
     margin: 0px;
 }
 
 .toolbar-orders__button{
-  margin-top: 12px;
+  /* margin-top: 12px; */
   background-color: var(--gray-100);
-  width: 100%;
+  width: 200px;
+  /* min-width: 180px; */
   font-size:var(--fs-xxxxs);
-  font-weight: 600;
-  padding: 12px 12px;
+  /* font-weight: 500; */
+  padding: 12px 24px;
   border: none;
   border-radius:12px;
   color: var(--primary-700);
   cursor: pointer;
+  margin: 10px;
 }
 
 
@@ -29,8 +31,8 @@
 }
 
 .toolbar-orders__icon-img{
-    width: 30px;
-    height: 30pxpx;
+    width: 24px;
+    height: 24px;
 }
 
 .toolbar-orders__icon{
@@ -68,14 +70,12 @@
    ===================== */
 @media (min-width: 1024px) {
   .toolbar-orders {
+    width: 100%;
     justify-content: flex-end; /* a la derecha */
-    margin: 0;
-    padding: 12px 24px;
+    padding: 0 24px;
+    
   }
-  .toolbar-orders__button{
-    width: 100px;
-    min-width: 150px;
-  }
+  
   .toolbar-orders__row-icons{
     gap: 20px;
   }

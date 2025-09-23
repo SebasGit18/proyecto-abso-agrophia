@@ -1,3 +1,107 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: var(--gray-50);*/
+  }
+  
+  /*Contenedor principal*/
+  .contenedor-cards-public {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+  }
+  
+  /*Targeta*/
+  .card-public {
+    height: auto;
+    border-radius: 12px;
+    padding: 15px;
+    width: 230px;
+    height: 400px;
+    border: 1px solid var(--primary-950);
+    background-color: var(--white);
+  }
+  
+  .card-public__img {
+    width: 230px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0.9rem;
+    align-items: center;
+  }
+  
+  .card-public__price {
+    font-size: var(--fs-xxs);
+    color: var(--black);
+    margin: 0.3rem 0;
+    text-align: left;
+  }
+  
+  .card-public__name {
+    font-size: var(--fs-xxxs);
+    font-family: var(--main-font);
+    color: var(--primary-600);
+    margin: 0.3rem 0;
+    text-align: left;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; /* pone los botones en columna */
+    gap: 10px; /* separación vertical entre ellos */
+    align-items: center;    /* centra los botones en horizontal */
+    justify-content: center;
+  }
+  
+  .one-public__button {
+    display: flex;                /* usamos flexbox */
+    justify-content: center;      /* centra el texto en horizontal */
+    align-items: center;          /* centra el texto en vertical */
+    text-align: center;                                 
+    background: var(--terciary-200);
+    color: var(--black);
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--fs-xxxs);
+  }
+  
+  .one-public__button:hover {
+    background: var(--terciary-500);
+    transition: background 0.3s ease;
+  }
+
+
+  .two-public__button {
+    display: flex;                /* usamos flexbox */
+    justify-content: center;      /* centra el texto en horizontal */
+    align-items: center;          /* centra el texto en vertical */
+    text-align: center;                                 
+    background: var(--secundary-300);
+    color: var(--black);
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: var(--fs-xxxs);
+  }
+  
+  .two-public__button:hover {
+  background: var(--secundary-600);
+  transition: background 0.3s ease;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  /*background-color: var(--gray-50);*/
+}
+
+/*Contenedor principal*/
 .contenedor-cards__public {
   display: flex;
   flex-direction: column;
@@ -17,6 +121,12 @@
 
 /* === Card === */
 .card-public {
+  height: auto;
+  border-radius: 12px;
+  padding: 16px;
+  width: 180px;    
+  min-height: 200px;
+  border: 1px solid var(--primary-900);
   background-color: var(--white);
   border-radius: 12px;
   padding: 24px;

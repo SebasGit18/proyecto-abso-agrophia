@@ -1,11 +1,6 @@
-/* :root
-body{
-    margin: 0;
-    padding: 0;
-} */
 
 .button-back{
-    background-color: var(--gray-50);
+    /* background-color: var(--gray-50);
     position: relative;
     top: -40px;
     left: 40px;
@@ -16,15 +11,30 @@ body{
     border-radius: 6px;
     border: none;
     padding: 11px 24px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
+    position:fixed; 
+    top:1rem; 
+    right:1rem;
+    background-color:var(--primary-700);
+    border:none; 
+    border-radius:4px; 
+    padding:.35rem 1rem;
+    font-size:.75rem; 
+    font-weight:600; 
+    color: var(--white);
+    cursor:pointer; 
+    box-shadow:0 1px 3px var(--gray-100);
+    transition:background-color .3s ease; 
+    text-decoration:none; 
+    display:inline-block;
 }
 
 .button-back:hover{
-    cursor: pointer;
+    background-color:var(--primary-600);
 }
 
 .button-back .back {
-    display: fixed;
+    display: flex;
     color: var(--primary-700);
     font-size: var(--fs-xxxs);
     text-align: center;
@@ -33,20 +43,29 @@ body{
 }
 
 @media (max-width: 1024px) {
-    .button-back {
-        margin: 20px auto 0;
+
+    .button-container{
         display: block;
-        left: 200px;
+        position: fixed;
+        justify-content: end;
+        padding: 16px;
+        max-width: 300px;
     }
+
+    .button-back .back{
+        /* margin: 20px auto 0; */
+        display: block;
+        /* left: 100px; */
+        max-width: 150px;    }
 }
 
 @media (max-width: 600px) {
     .button-back {
-        margin: auto;
+        margin: 20px auto 0;
         display: block;
-        width: 100%;
+        width: 50%;
         max-width: 300px;
         left: 150px;
         padding: 12px 0;
     }
-}
+} 

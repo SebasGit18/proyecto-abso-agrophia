@@ -4,12 +4,12 @@
 } */
 
 /* Layout (igual que tenías) */
-.page { 
+/* .page { 
   display:flex; 
   width:100%; 
   min-height:100vh; 
   margin:0; 
-  font-family:var(--main-font, Arial, sans-serif); }
+  font-family:var(--main-font, Arial, sans-serif); } */
 
 .page__left {
   position:fixed; 
@@ -30,26 +30,19 @@
   display:flex; 
   flex-direction:column; 
   align-items:center; 
-  padding:0 40px;
+  /* padding:0 40px; */
 }
 .page__right::before, .page__right::after { 
   content:""; 
   display:block; 
   flex:0 0 60px; }
 
-/* ---- Caja principal fija a 350px ---- */
-.profile-form-update-container {
-  width:350px;           /* caja de 350px */
-  max-width:100%;
-  margin:0 auto;
-  flex:0 0 auto;
-}
-
 /* Tarjeta/formulario */
 .profile {
-  width:100%;            /* ocupa toda la caja (350px) */
-  padding:16px;          /* si quieres que el input toque el borde, pon 0 */
-  background:#fff;
+  width:320px;            /* ocupa toda la caja (350px) */
+  padding:12px 24px;          /* si quieres que el input toque el borde, pon 0 */
+  background: var(--white);
+  margin: 10px;
   border-radius:12px;
   box-shadow:0 4px 12px rgba(0,0,0,.1);
 }
@@ -57,41 +50,70 @@
 /* Grupos y etiquetas */
 .profile__group { 
   margin-bottom:14px; 
+  
 }
+.profile__view-passwork{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  
+}
+.profile__label-view-password{
+  font-size: var(--fs-xxxxs);
+  display:block; 
+  font-weight:600;
+  /* align-items: center; */
+
+}
+
 .profile__label { 
+  font-size: var(--fs-xxxxs);
   display:block; 
   margin-bottom:6px; 
-  font-weight:600; }
+  font-weight:600;
+ }
 
 /* ---- Inputs: todos idénticos y al 100% ---- */
-.profile__input,
-.profile input[type="text"],
-.profile input[type="email"],
-.profile input[type="tel"],
-.profile input[type="password"]{
-  display:block;
-  width:100%;
-  min-width:0;                 /* evita límites raros del navegador */
-  height:40px;
-  padding:10px 12px;
+.profile__input{
+  font-size: var(--fs-xxxxs);
+  width:90%;
+  /* min-width:0; */
+  /* padding: 12px 24px;   */
+  /* height:40px; */
+  padding:12px 24px;
   border:1px solid var(--black);
   border-radius:8px;
-  background:#fff;
+  background: var(--white);
   appearance:none;             /* unifica estilos nativos */
-  -webkit-appearance:none;
+  /* -webkit-appearance:none; */
 }
 
 .profile__input:focus{
-  border-color:var(--primary-600) !important;
-  outline:none !important;
-  box-shadow:none !important;
+  border-color:var(--primary-600);
+  outline:none ;
+  box-shadow:none ;
+}
+
+.profile__checkbox{
+  height: 20px;
+  width: 20px;
+  /* font-weight: 700; */
+  /* border: 1px solid red; */
+  border: 4px solid var(--black);
+
+  /* border-radius: 12px; */
+  /* box-shadow: 0 0 0 2px var(--gray-100); */
 }
 
 /* Botón guardar: mismo ancho de la caja */
 .profile__button{
   display:block;
-  width:80%;
-  padding:12px;
+  width:60%;
+  font-size: var(--fs-xxxxs );
+  margin-left: auto;
+  margin-right: auto;
+  padding:12px 24px;
   margin-top:12px;
   background:var(--primary-700);
   color:var(--white);
@@ -101,6 +123,10 @@
 }
 .profile__button:hover{ 
   background:var(--primary-600); }
+
+.profile__title{
+  font-size: var(--fs-xxxs);
+}
 
 /* Botón volver como enlace (no <a> dentro de <button>) */
 .back-btn{
@@ -134,4 +160,16 @@
   .profile-form-update-container{ 
     width:100%; 
     max-width:350px; }
+}
+
+
+@media(width < 450px){
+  .profile__input{
+    width: auto;
+    min-width: none;
+
+  }
+  .profile{
+    width: auto;
+  }
 }
