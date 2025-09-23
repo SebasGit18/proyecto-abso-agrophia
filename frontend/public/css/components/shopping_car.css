@@ -1,6 +1,6 @@
-body {
+.body__shopping {
     font-family: Arial, sans-serif;
-    background-color: var(--primary-100);
+    background-color: var(--primary-50);
 }
 
 .header-container {
