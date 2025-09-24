@@ -7,11 +7,14 @@
 @import url(components/tabla_usuarios_admin.css);
 @import url(components/navbar.css);
 @import url(components/card-home.css);
+@import url(components/card-vegetables.css);
+@import url(components/card-dairy.css);
 @import url(components/search.css);
 @import url(components/from.css);
 @import url(components/card-public.css);
 @import url(components/card-available.css);
 @import url(components/navbar-disable.css);
+@import url(components/navbar-home.css);
 @import url(components/navbar-public.css);
 @import url(components/navbar-method-payment.css);
 @import url(components/navbar-available.css);

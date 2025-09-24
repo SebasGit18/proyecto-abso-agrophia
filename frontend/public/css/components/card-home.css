@@ -27,6 +27,7 @@
 
 .card-home:hover {
   transform: translateY(-4px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
 }
 
 
@@ -50,14 +51,14 @@
   font-size: var(--fs-sm);
   color: var(--black);
   font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .card-home__name {
   font-size: var(--fs-xs);
   font-weight: 500;
-  color: var(--primary-950);
-  margin-bottom: 4px;
+  color: var(--primary-700);
+  margin-bottom: 16px;
 }
 
 

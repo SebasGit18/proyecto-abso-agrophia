@@ -50,7 +50,7 @@
     {
         "id": "7",
         "image": "../assets/card/banana.jpg",
-        "price": "5000 / Libra",
+        "price": "500 / Libra",
         "name": "Banano",
         "button": "Agregar"
     },
