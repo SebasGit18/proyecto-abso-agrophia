@@ -10,7 +10,7 @@
   margin: 10px;
   background-color: var(--gray-100);
   width: 100%;
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xxs);
   font-weight: 600;
   padding: 12px 24px;
   border: none;
@@ -35,8 +35,8 @@
 
 .toolbar-products__icon {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  /* width: 40px; */
+  /* height: 40px; */
   border-radius: 50%;
   border: none;
   background-color: var(--gray-100);

@@ -13,7 +13,7 @@
   background-color: var(--gray-100);
   width: 200px;
   /* min-width: 180px; */
-  font-size:var(--fs-xxxxs);
+  font-size:var(--fs-xxs);
   /* font-weight: 500; */
   padding: 12px 24px;
   border: none;
@@ -36,8 +36,8 @@
 }
 
 .toolbar-orders__icon{
-    width: 40px;
-    height:40px;
+    /* width: 40px;
+    height:40px; */
     border-radius: 50%;
     border:none;
     background-color: var(--gray-100)
@@ -58,7 +58,7 @@
   }
 
   .toolbar-orders__button {
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxs);
     width: 200px;
     max-width: 200px;
     font-weight:500;
