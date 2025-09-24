@@ -35,6 +35,7 @@
   height: 250px;
   border-radius: 8px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .card-home__info {
