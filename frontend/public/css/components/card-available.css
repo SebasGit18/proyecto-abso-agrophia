@@ -1,4 +1,4 @@
-.contenedor-cards__available {
+.card-available__container-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* Contenedor que organiza las cards en grilla */
-.card-available__container{
+.card-available__container {
   display: grid;
   gap: 24px;
   width: 100%;
@@ -41,8 +41,10 @@
 
 .card-available__info {
   display: flex;
-  flex-direction: column; /* Precio arriba, nombre abajo */
-  align-items: flex-start; /* ← Alineados a la izquierda */
+  flex-direction: column;
+  /* Precio arriba, nombre abajo */
+  align-items: flex-start;
+  /* ← Alineados a la izquierda */
   margin-bottom: 10px;
 }
 
@@ -63,7 +65,7 @@
 
 /* === Botón === */
 
-.container-button__available {
+.card-available__button {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -71,7 +73,7 @@
   justify-content: center;
 }
 
-.one-available__button {
+.card-available__button-one {
   background-color: var(--terciary-200);
   color: var(--black);
   border: none;
@@ -82,17 +84,17 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.one-available__button:hover {
+.card-available__button-one:hover {
   background-color: var(--terciary-300);
   transform: scale(1.02);
 }
 
-.one-available__button:active {
+.card-available__button-one:active {
   background-color: var(--terciary-400);
   transform: scale(0.98);
 }
 
-.two-available__button {
+.card-available__button-two {
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
@@ -103,12 +105,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.two-available__button:hover {
+.card-available__button-two:hover {
   background-color: var(--secundary-400);
   transform: scale(1.02);
 }
 
-.two-available__button:active {
+.card-available__button-two:active {
   background-color: var(--secundary-500);
   transform: scale(0.98);
 }

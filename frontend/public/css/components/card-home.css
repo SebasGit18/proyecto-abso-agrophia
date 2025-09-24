@@ -1,4 +1,4 @@
-.contenedor-cards__home {
+.card-home__container-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
 }
 
 /* Contenedor que organiza las cards en grilla */
-.card-home__container{
+.card-home__container {
   display: grid;
   gap: 24px;
   width: 100%;
@@ -60,7 +60,7 @@
 }
 
 
-.one-home__button {
+.card-home__button-one {
   background-color: var(--primary-700);
   color: var(--white);
   border: none;
@@ -70,25 +70,29 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-flex;       /* Flexbox dentro del botón */
-  align-items: center;        /* Centra verticalmente texto + icono */
-  justify-content: center;    /* Centra horizontalmente */
-  gap: 8px;  
+  display: inline-flex;
+  /* Flexbox dentro del botón */
+  align-items: center;
+  /* Centra verticalmente texto + icono */
+  justify-content: center;
+  /* Centra horizontalmente */
+  gap: 8px;
 }
 
-.one-home__button:hover {
+.card-home__button-one:hover {
   background-color: var(--primary-800);
   transform: scale(1.02);
 }
 
-.one-home__button:active {
+.card-home__button-one:active {
   background-color: var(--primary-900);
   transform: scale(0.98);
 }
-.card__button svg {
+
+.card-home__button svg {
   width: 24px;
   height: 24px;
-  stroke: var(--black);
+  stroke: var(--white);
 
 }
 

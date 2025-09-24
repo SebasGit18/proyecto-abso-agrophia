@@ -1,19 +1,18 @@
-.title-method__payment{
+.method-payment {
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+}
+
+.method-payment__form-title {
   font-size: var(--fs-sm);
   font-family: var(--main-font);
   color: var(--black);
   padding: 5px;
   margin-left: 5px;
 }
-  
-.payment__container {
-  width: 100%;
-  max-width: 900px;
-  margin: 24px auto;
-}
 
-
-.payment__form {
+.method-payment__form {
   background: var(--white);
   border-radius: 12px;
   padding: 24px;
@@ -21,10 +20,10 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  max-width: 900px; 
+  max-width: 900px;
 }
 
-.payment__label {
+.method-payment__form-label {
   display: flex;
   font-weight: bold;
   color: var(--primary-700);
@@ -33,7 +32,7 @@
   margin-top: 20px;
 }
 
-.selection{
+.method-payment__form-option {
   width: 100%;
   padding: 16px 16px;
   border: 1px solid var(--gray-400);
@@ -41,7 +40,7 @@
   font-size: var(--fs-xs);
 }
 
-.payment__input {
+.method-payment__form-input {
   width: 100%;
   padding: 16px 16px;
   border: 1px solid var(--gray-400);
@@ -49,7 +48,7 @@
   font-size: var(--fs-xs);
 }
 
-.payment__btn {
+.method-payment__form-button {
   display: block;
   width: 20%;
   background: var(--primary-800);
@@ -62,11 +61,11 @@
   margin-top: 35px;
 }
 
-.payment__btn:hover {
+.method-payment__form-button:hover {
   background: var(--primary-950);
 }
 
-.payment__volver {
+.method-payment__form-volver {
   display: block;
   text-align: center;
   margin-top: 15px;
@@ -77,7 +76,7 @@
 }
 
 @media (width > 640px) {
-  .payment__container {
+  .method-payment {
     max-width: 90%;
     margin-bottom: 50px;
     margin-top: 20px;
@@ -85,7 +84,7 @@
 }
 
 @media (width > 1024px) {
-  .payment__container {
+  .method-payment {
     max-width: 90%;
     margin-bottom: 50px;
     margin-top: 20px;

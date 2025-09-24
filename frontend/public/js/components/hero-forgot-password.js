@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
-    const heroElement = document.querySelector(".hero-forgot__password");
+    const heroElement = document.querySelector(".forgot-password__hero-container");
 
     if(heroElement){
         fetch("/frontend/public/views/components/hero-forgot-password.html")

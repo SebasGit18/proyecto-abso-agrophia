@@ -1,6 +1,6 @@
     main {
       padding: 20px;
-      min-height: 150vh; 
+      /*min-height: 150vh;*/
     }
 
     footer {
@@ -9,11 +9,16 @@
       bottom: 0;        
       left: 0;
       width: 100%;       
+<<<<<<< HEAD
+=======
+      background-color: var(--primary-200);
+      width: auto;       
+>>>>>>> 65f80fefc3a8055ad3f0640bc1f7c0e97e838aea
       background-color: var(--primary-100);
       color: var(--primary-800);
       text-align: center;
       padding: 10px;
-      font-size: var(--fs-xs);
+      font-size: var(--fs-xxxs);
     }
 
     .footer__container {

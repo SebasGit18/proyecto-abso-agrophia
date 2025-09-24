@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página cards publicados</title>
-  <!-- <link rel="stylesheet" href="/frontend/public/css/main.css"> -->
-   <link rel="stylesheet" href="/frontend/public/css/variables.css">
-   <link rel="stylesheet" href="/frontend/public/css/components/card-public.css">
+  <link rel="stylesheet" href="/frontend/public/css/main.css">
 </head>
+
 <body>
 
   <!-- Aquí se cargará la Card -->
 
-    <header class="container-navbar_public">
-      <div class="button-container"></div>
-      <div class="header-product__public"></div>
-    </header>
+  <header>
+    <div class="header-product_public-container"></div>
+  </header>
 
-    <main>
-      <section class="search__container"></section>
-      <section class="contenedor-cards__public">
-        <div class="card-public__container"></div>
-      </section>
-    </main>
+  <main>
+    <section class="search__container"></section>
+    <section class="card-public__container-section">
+      <div class="card-public__container"></div>
+    </section>
+  </main>
 
-    <footer class="footer">  
-        <div class="footer-container"></div>
-    </footer>   
+  <footer class="footer">
+    <div class="footer-container"></div>
+  </footer>
 
-    <script src="/frontend/public/js/components/navbar-public.js" defer></script>
-    <script src="/frontend/public/js/components/buttonBack.js" defer></script>
-    <script src="/frontend/public/js/components/footer.js" defer></script>
-    <script src="/frontend/public/js/components/search.js" defer></script>
-    <script type="module">
-      import { loadCards } from "/frontend/public/js/components/card-public.js";
-      loadCards(".card-public__container");// Clase para cargar todas las cards
+  <script src="/frontend/public/js/components/navbar-public.js" defer></script>
+  <script src="/frontend/public/js/components/buttonBack.js" defer></script>
+  <script src="/frontend/public/js/components/footer.js" defer></script>
+  <script src="/frontend/public/js/components/search.js" defer></script>
+  <script type="module">
+    import { loadCards } from "/frontend/public/js/components/card-public.js";
+    loadCards(".card-public__container");// Clase para cargar todas las cards
   </script>
 </body>
+
 </html>
 
 <script src="/frontend/public/views/components/footer.html"
