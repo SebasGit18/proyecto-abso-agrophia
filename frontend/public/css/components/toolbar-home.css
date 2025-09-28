@@ -38,14 +38,14 @@
   width: 100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: var(--fs-xs);
   background: transparent;
   color: var(--primary-700);
 }
 
 .toolbar-main__search-input::placeholder {
   color: var(--gray-400);
-  font-size: 16px;
+  font-size: var(--fs-xs);
 }
 
 .toolbar-main__row-icons {
@@ -62,8 +62,8 @@
 
 .toolbar-main__icon {
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;  
   border-radius: 50%;
   border: none;
   background-color: var(--gray-100);

@@ -1,18 +1,12 @@
-body {
-  font-family: var(--main-font);
-  /* background-color: var(--white); */
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 /* title */
 .search-users__title {
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-sm);
   margin: 15px;
   text-align: center;
+  color: var(--black);
+  font-family: var(--main-font);
+
 }
 
 /*Contenedor principal: mantengo tus medidas y estilos */
@@ -31,7 +25,6 @@ body {
 /* iconos (izquierda/derecha) */
 .search-users__icon {
   color: var(--gray-900);
-  font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
   align-items: center; /* centra verticalmente el ícono */
@@ -50,7 +43,7 @@ body {
   flex: 1;
   border: none;
   outline: none;
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xs);
   background: transparent;
   color: var(--gray-900);
   padding: 0.4rem 0;
