@@ -5,24 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface</title>
     <link rel="stylesheet" href="/frontend/public/css/main.css">
-
-    <link rel="stylesheet" href="/frontend/public/css/variables.css">
-    <link rel="stylesheet" href="/frontend/public/css/components/interface_farmer.css">
-    <link rel="stylesheet" href="/frontend/public/css/components/footer_interface.css">
-    <link rel="stylesheet" href="/frontend/public/css/components/search_interface_farmer.css ">
-    <link rel="stylesheet" href="/frontend/public/css/components/interface_option_farmer.css">
-    
-   
     
     <script src="/frontend/public/js/components/interface_farmer.js" defer></script>
-    <script src="/frontend/public/js/components/footer_interface.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
     <script src="/frontend/public/js/components/search_interface_farmer.js" defer></script>
-     <script src="/frontend/public/js/components/interface_option_farmer.js" defer></script>
+    <script src="/frontend/public/js/components/interface_option_farmer.js" defer></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-home-farmer.js";
+        loadCards(".card-farmer__container");// Clase para cargar todas las cards
+    </script>
    
-    
-
-
-
 </head>
 <body>
     
@@ -31,7 +23,6 @@
         <div class="navbar-container"></div>
         
     </header>
-
 
         <div class="navbar-container"></div> 
     </header>
@@ -44,7 +35,9 @@
 
       <section class="board-container"></section>
 
-
+      <section class="card-farmer__container-section">
+            <div class="card-farmer__container"></div>
+        </section>
 
 </body>
 </html>
