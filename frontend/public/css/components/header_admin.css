@@ -21,7 +21,7 @@ body{
     margin: 0;
     color: var(--white);
     text-align:center;
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-md);
     /* font-family: var(--main-font) */
 }
 
@@ -47,7 +47,7 @@ body{
   }
 
   .header-admin__title {
-    font-size:var(--fs-xs); /* un poco más grande */
+    font-size:var(--fs-md); /* un poco más grande */
   }
 
   .header-admin__subtitle {
@@ -66,7 +66,7 @@ body{
   }
 
   .header-admin__title {
-    font-size:var(--fs-xs); /* un poco más grande */
+    font-size:var(--fs-md); /* un poco más grande */
   }
 
   .header-admin__subtitle {
