@@ -1,11 +1,13 @@
-.body__shopping {
+body {
     font-family: Arial, sans-serif;
-    background-color: var(--primary-50);
+    /* background-color: var(--primary-50); */
+    margin: 0px;
 }
 
 .header-container {
     background-color: var(--primary-700);
-    padding: 25px;
+    padding: 24px;
+    height: 150px;
 }
 
 .header-content {
@@ -32,7 +34,6 @@
     padding-left: var(--padding-left);
     padding-right: var(--padding-right);
     padding-bottom: var(--padding-bottom);
-
 }
 
 

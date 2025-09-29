@@ -1,5 +1,5 @@
 body {
-    background-color: var(--primary-100);
+    /* background-color: var(--primary-100); */
     font-family: var(--main-font);
     margin: 0;
 }
@@ -11,13 +11,17 @@ body {
 }
 
 .header__title {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-lg);
     text-align: center;
+    font-weight: bold;
+    color: var(--white);
 }
 
 .header__subtitle {
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm  );
     text-align: center;
+    font-weight: 100;
+    color: var(--white);
 }
 
 .tableorder-container {
@@ -49,7 +53,7 @@ table {
 }
 
 th, td {
-    padding: 15px;
+    padding: 12px;
     text-align: left;
 }
 
@@ -66,7 +70,7 @@ tr:nth-child(even) {
     background-color: var(--secundary-400);
     color: var(--black);
     border: none;
-    padding: 8px 12px;
+    padding: 12px 24px;
     border-radius: 5px;
     cursor: pointer;
 }

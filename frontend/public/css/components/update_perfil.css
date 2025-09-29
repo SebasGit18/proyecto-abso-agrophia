@@ -1,5 +1,5 @@
 /* Reset box-sizing para que padding no rompa anchos */
-*, *::before, *::after { box-sizing: border-box; }
+/* *, *::before, *::after { box-sizing: border-box; } */
 
 
 /* --- Layout existente (ajusta según tu HTML general) --- */
