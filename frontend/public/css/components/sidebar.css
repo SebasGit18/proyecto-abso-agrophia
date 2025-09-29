@@ -46,6 +46,7 @@
   flex-shrink: 0; 
   margin-right: 12px; }
 .sidebar__text { 
+  font-family: var(--main-font);
   flex: 1; 
   font-size: 14px; }
 

@@ -10,7 +10,8 @@ body {
 
 /* title */
 .search-products__title {
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-sm);
+  color: var(--black);
   margin: 15px;
   text-align: center;
 }
@@ -50,10 +51,10 @@ body {
   flex: 1;
   border: none;
   outline: none;
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xs);
   background: transparent;
   color: var(--gray-900);
-  padding: 0.4rem 0;
+  padding: 12px 24px;
 }
 
 /* placeholder */

@@ -23,6 +23,9 @@
 
 .products-table__header,
 .products-table__cell {
+  font-family: var(--main-font);
+  font-size: var(--fs-xxxs);
+  color: var(--black);
   padding: 10px 12px;
   text-align: center;
 }

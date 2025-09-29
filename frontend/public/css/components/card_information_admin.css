@@ -11,6 +11,7 @@
     margin-right: auto; */
 
 .card_information{
+    color: var(--black);
     display: flex;
     border: 1px solid var(--black);
     flex-direction: column;
@@ -23,15 +24,16 @@
     
 }
 .card_information__title{
-    font-size: var(--fs-xxxxxs);
+    font-size: var(--fs-xxs);
     font-weight: 500;
 }
 .card_information__category{
-    font-size: var(--fs-xxxs);
+    font-weight: 600;
+    font-size: var(--fs-xs);
 }
 
 .card_information__article{
-    font-size: var(--fs-xxxxxs);
+    font-size: var(--fs-xxs);
     color: var(--primary-700);
 }
 
@@ -74,6 +76,6 @@
     .card_information{
         gap: 30px;
         width: auto;
-        min-width: 180px;
+        min-width: 200px;
     }
 }
