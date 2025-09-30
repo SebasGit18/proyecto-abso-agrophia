@@ -1,21 +1,37 @@
-<div class="profile-content">
-    <h2 class="profile__title">Perfil</h2>
+<div class="profile">
+  <h2 class="profile__title">Perfil</h2>
 
-    <h4 class="profile__field">Nombre Completo</h4>
-    <p class="profile__paragraph">Juan Pérez</p>
+  <div class="profile__grid">
+    <div class="profile__item">
+      <div class="profile__label">Nombre Completo</div>
+      <div class="profile__value">Juan Pérez</div>
+    </div>
 
-    <h4 class="profile__field">Número de Identificación</h4>
-    <p class="profile__paragraph">123456789</p>
+    <div class="profile__item">
+      <div class="profile__label">Número de Identificación</div>
+      <div class="profile__value">123456789</div>
+    </div>
 
-    <h4 class="profile__field">Telefono</h4>
-    <p class="profile__paragraph">3123456789</p>
+    <div class="profile__item">
+      <div class="profile__label">Teléfono</div>
+      <div class="profile__value">3123456789</div>
+    </div>
 
-    <h4 class="profile__field">Correo Electrónico</h4>
-    <p class="profile__paragraph">juanperez@agrophia.com</p>
+    <div class="profile__item">
+      <div class="profile__label">Correo Electrónico</div>
+      <div class="profile__value">juanperez@agrophia.com</div>
+    </div>
+  </div>
 
-    <h4 class="profile__field">Dirección</h4>
-    <p class="profile__paragraph">Finca La Esperanza. Risaralda -Pereira</p>
+  <!-- Dirección fuera del grid -->
+  <div class="profile__address">
+    <div class="profile__label">Dirección</div>
+    <div class="profile__value">
+      Finca La Esperanza. Risaralda - Pereira
+    </div>
+  </div>
 
-    <button class="profile-button__edit">Editar Información</button>
-
+  <div class="profile__actions">
+    <button class="profile__button profile__button--edit">Editar Información</button>
+  </div>
 </div>

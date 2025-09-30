@@ -23,26 +23,28 @@
   margin: 10px;
 }
 
-
-.toolbar-orders__row-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+.toolbar-orders__row-icons {
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
 }
-
-.toolbar-orders__icon-img{
-    width: 24px;
-    height: 24px;
+.toolbar-orders__icon {
+  display: flex;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gray-100);
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
-
-.toolbar-orders__icon{
-    /* width: 40px;
-    height:40px; */
-    border-radius: 50%;
-    border:none;
-    background-color: var(--gray-100)
+.toolbar-orders__icon-img {
+  width: 24px;
+  height: 24px;
 }
-
 
 /* =====================
    TABLET (>=768px)
