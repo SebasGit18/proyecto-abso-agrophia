@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "image": "../assets/card/vegetables/pepino.jpg",
+        "price": "3.000 / Libra",
+        "name": "Pepino",
+        "button": "Agregar"
+    }, 
+
+    {
+        "id": "2",
+        "image": "../assets/card/vegetables/zanahoria.jpg",
+        "price": "4.000 / Libra",
+        "name": "Zanahoria",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "3",
+        "image": "../assets/card/vegetables/papa.jpg",
+        "price": "2.000 / Libra",
+        "name": "Papa",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "4",
+        "image": "../assets/card/vegetables/cebolla.jpg",
+        "price": "2.500 / Libra",
+        "name": "Cebolla",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "5",
+        "image": "../assets/card/vegetables/tomate.jpg",
+        "price": "4.500 / Libra",
+        "name": "Tomate",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "6",
+        "image": "../assets/card/vegetables/lechuga.jpg",
+        "price": "3.000 / Libra",
+        "name": "Lechuga",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "7",
+        "image": "../assets/card/vegetables/brocoli.jpg",
+        "price": "5.000 / Libra",
+        "name": "Banano",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "8",
+        "image": "../assets/card/vegetables/pimenton.jpg",
+        "price": "2.000 / Libra",
+        "name": "Pimenton",
+        "button": "Agregar"
+    }
+]

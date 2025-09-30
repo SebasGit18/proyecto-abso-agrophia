@@ -17,7 +17,6 @@
 
 /* === Card === */
 .card-disable {
-  background-color: var(--white);
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -37,6 +36,7 @@
   height: 250px;
   border-radius: 8px;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .card-disable__info {

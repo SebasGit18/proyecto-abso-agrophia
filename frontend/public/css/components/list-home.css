@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+.list-home__option a {
+    color: var(--primary-700);
+}
+
 .list-home__option:hover {
     background: var(--primary-100);
     color: var(--black);
