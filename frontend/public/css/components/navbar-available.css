@@ -6,7 +6,7 @@
   
   .header-available__title{
     color: var(--primary-800);
-    font-size: var(--fs-md);
+    font-size: var(--fs-lg);
     font-family: var(--main-font);
     text-align: center;
     margin: 0

@@ -6,7 +6,6 @@
 
 .header__title{
   color: var(--primary-800);
-  font-size: var(--fs-sm);
   font-size: var(--fs-lg);
   font-family: sans-serif;
   text-align: center;

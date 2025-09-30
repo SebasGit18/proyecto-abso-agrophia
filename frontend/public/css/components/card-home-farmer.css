@@ -5,6 +5,7 @@
   align-items: flex-end;
   padding: 24px;
   max-width: 1920px;
+  margin-bottom: 70px;
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -19,11 +20,12 @@
 
 
 .card-farmer {
+  height: 150px;
   border-radius: 12px;
-  padding: 24px;
+  padding: 16px;
   text-align: center;
   max-width: 320px;
-  box-shadow: 0 4px 10px rgba(192, 149, 149, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
@@ -33,30 +35,30 @@
 }
 
 
-.card-frmer__img {
-  width: 100%;
-  height: 250px;
-  border-radius: 8px;
+.card-farmer__img {
+  width: 100px;
+  height: auto;
   margin-bottom: 16px;
 }
 
 .card-farmer__info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   margin-bottom: 10px;
 }
 
 
 .card-farmer__price {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-xs);
   color: var(--black);
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .card-farmer__name {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
   font-weight: 500;
   color: var(--primary-950);
   margin-bottom: 4px;
@@ -99,13 +101,50 @@
 
 } */
 
+@media (width < 640px) {
+  .card-farmer {
+    width: 300px;
+    height: 200px;
+  }
+
+  .card-farmer__container {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-farmer__img {
+    justify-self: center;
+    width: 70%;
+  }
+}
+
 /* === Responsive Grid === */
 @media (width > 640px) {
+
   .card-farmer__container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 90%;
     margin-bottom: 50px;
     margin-top: 20px;
+  }
+
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-farmer__img {
+    justify-self: center;
+    width: 70%;
   }
 }
 
@@ -119,6 +158,16 @@
 }*/
 
 @media (width > 1024px) {
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px;
+    max-width: 1920px;
+    margin-bottom: 70px;
+  }
+
   .card-farmer__container {
     grid-template-columns: repeat(4, 1fr);
     max-width: 90%;

@@ -6,7 +6,6 @@
   padding: 10px;
   width: 100%;
   box-sizing: border-box;
-  margin-top: -520px;
   /* margin-right: 50px; */
 }
 
@@ -51,12 +50,37 @@
 
 
 @media (min-width: 640px) {
+  .board-container {
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+
   .board {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    max-width: 600px;       
-    margin: 0; 
-    margin-top: -550px; 
+    max-width: 600px; 
+    align-items: center;      
+    margin: 0;  
+    margin-left: auto;
+    margin-right: 60%             
+  }
+}
+
+@media (min-width: 1024px) {
+  .board-container {
+    margin-top: -560px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .board {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;      
+    margin: 0;  
     margin-left: auto;
     margin-right: 60%             
   }

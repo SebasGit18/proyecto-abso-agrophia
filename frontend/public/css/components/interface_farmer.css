@@ -20,8 +20,6 @@
   padding-bottom: 10px;
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -56,6 +54,7 @@
 }
 
 .navbar__icon:hover {
+
   background-color:var(--white);
   border-radius: 50%;
 }
