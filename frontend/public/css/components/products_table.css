@@ -54,10 +54,10 @@
 
 .products-table__cell--actions {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0px;
 }
 
 /* ====== ESTADOS ====== */
@@ -67,6 +67,7 @@
   border-radius: 12px;
   font-weight: 500;
   font-size: 12px;
+  width: 70px;
 }
 
 .products-table__status--active {
@@ -75,7 +76,7 @@
 }
 
 .products-table__status--idle {
-  background-color: var(--secundary-400);
+  background-color: var(--gray-200);
   color: var(--black);
 }
 
@@ -100,18 +101,17 @@
 
 /* Variantes */
 .products-table__button--block {
-  background-color: var(--secundary-400);
-  color: var(--whitegit);
+  color: var(--black);
 }
 
 .products-table__button--unblock {
-  background-color: var(--primary-600);
-  color: var(--whitegit);
+  /* background-color: var(--primary-600); */
+  color: var(--white);
 }
 
 .products-table__button--edit {
-  background-color: var(--terciary-400);
-  color: var(--whitegit);
+  /* background-color: var(--terciary-400); */
+  color: var(--white);
 }
 
 /* Icono dentro del botón */
@@ -133,9 +133,9 @@
   }
 }
 
-@media(width > 1350px){
+@media(width > 1150px){
     .products-table{
-        width: 600px;
+        width: 800px;
         /* margin-left: 15px; */
     }
 }
