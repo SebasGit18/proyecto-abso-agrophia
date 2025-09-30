@@ -10,6 +10,7 @@
 }
 
 .profile__field{
+    color: var(--black);
     margin-top: 10px;
     font-size: var(--fs-xxxs);
     color: var(--black);
@@ -22,6 +23,7 @@
 }
 
 .profile__title{
+    color: var(--black);
     /* color: var(--black) */
     color: var(--primary-800);
     text-align: center;

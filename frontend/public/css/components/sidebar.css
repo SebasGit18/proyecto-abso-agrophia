@@ -1,4 +1,3 @@
-
 .sidebar {
   position: static;
   width: 100%;               /* móvil: ocupa todo el ancho */
@@ -9,6 +8,7 @@
   box-shadow: 2px 0 5px var(--gray-100);
   border-radius: 8px;
   justify-content: center;
+  font-family: var(--main-font);
 }
 
 .sidebar__list {

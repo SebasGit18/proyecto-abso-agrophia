@@ -5,7 +5,7 @@
 @import url('components/update_perfil.css');
 @import url(components/usuarios_admin.css);
 @import url(components/tabla_usuarios_admin.css);
-@import url(components/navbar.css);
+@import url('components/navbar.css');
 @import url(components/card-home.css);
 @import url(components/card-home-farmer.css);
 @import url(components/search.css);
@@ -25,6 +25,11 @@
 @import url('components/form_subir_producto.css');
 @import url('components/forms.css');
 @import url('components/shopping_car.css');
+@import url('components/buttonBack.css');
+@import url('components/register.css');
+@import url('components/comment_bar.css');
+@import url('components/card-description-product.css');
+@import url('components/tableOrder.css');
 @import url('components/list-home.css');
 @import url('pages/home.css');
 @import url('themes/dark-mode.css');

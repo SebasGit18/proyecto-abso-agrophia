@@ -1,9 +1,9 @@
 
 .button-back{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
-    position:fixed; 
+    position: fixed; 
     top:1rem; 
-    right:1rem;
+    margin-left: 220px;
     background-color:var(--primary-700);
     border:none; 
     border-radius:4px; 
@@ -24,7 +24,8 @@
 
 .button-back .button-back__text {
     display: flex;
-    color: var(--primary-700);
+    color: var(--white);
+    padding: 0 12px;
     font-size: var(--fs-xxxs);
     text-align: center;
     justify-content: center;
@@ -35,7 +36,7 @@
 
     .button-container{
         display: block;
-        position: fixed;
+        position: static;
         justify-content: end;
         padding: 16px;
         max-width: 300px;
