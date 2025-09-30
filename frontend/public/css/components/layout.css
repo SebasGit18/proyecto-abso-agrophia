@@ -17,9 +17,7 @@
     width: 250px; /* ancho fijo para sidebar */
   }
 
-  .table_users {
-    flex: 1; /* tabla ocupa el resto */
-  }
+ 
 }
 
 /* Pantallas pequeñas (≤478px): columna forzada */
