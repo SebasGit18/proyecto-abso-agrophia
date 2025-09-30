@@ -1,5 +1,5 @@
 @import url(sidebar.css);
-@import url(components/forloggin.css);
+@import url('components/forloggin.css');
 @import url(components/hero.css);
 @import url(components/informacion_perfil.css);
 @import url('components/update_perfil.css');

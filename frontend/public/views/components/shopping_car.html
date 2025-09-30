@@ -3,6 +3,7 @@
         <thead>
             <tr>
                 <th>Producto</th>
+                <th>Precio/Unidad</th>
                 <th>Tipo</th>
                 <th>Cantidad</th>
                 <th>Acciones</th>
@@ -11,27 +12,29 @@
         <tbody>
             <tr>
                 <td>Tomates orgánicos</td>
+                <td>$500</td>
                 <td>Verdura</td>
                 <td>10 kg</td>
                 <td>
-                    <button class="shoppingcar__btn shoppingcar__btn--modify">Modificar</button>
+                    <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'">Modificar</button>
                     <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
                 </td>
             </tr>
             <tr>
                 <td>Maíz Amarillo</td>
+                <td>$1000</td>
                 <td>Grano</td>
                 <td>25 kg</td>
                 <td>
-                    <button class="shoppingcar__btn shoppingcar__btn--modify">Modificar</button>
+                    <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'" >Modificar</button>
                     <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
                 </td>
             </tr>
         </tbody>
     </table>
-    <a href="/frontend/public/views/p_main.html" class="link__home">Volver al inicio</a>
+    <a href="/frontend/public/views/p_card-available.html" class="link__home">Volver al inicio</a>
     <div class="total">
         <strong><p class="total__value">Valor total: 204.754 COP</p></strong>
-        <button class="button__pagar" id="pagar-btn" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_from-method_payment.html'">Pagar Solicitudes</button>
+        <button class="button__pagar" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_from-method_payment.html'">Pagar Solicitudes</button>
     </div>
 </div>
