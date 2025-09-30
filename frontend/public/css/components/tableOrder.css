@@ -10,14 +10,15 @@ body {
     color: var(--white);
 }
 
-.header__title {
+.header__title-orders {
     font-size: var(--fs-lg);
     text-align: center;
     font-weight: bold;
+    margin-bottom: 12px;
     color: var(--white);
 }
 
-.header__subtitle {
+.header__subtitle-orders {
     font-size: var(--fs-sm  );
     text-align: center;
     font-weight: 100;
@@ -58,8 +59,8 @@ th, td {
 }
 
 th {
-    background-color: var(--terciary-800);
-    color: var(--white);
+    background-color: var(--primary-100);
+    color: var(--black);
 }
 
 tr:nth-child(even) {
@@ -71,7 +72,7 @@ tr:nth-child(even) {
     color: var(--black);
     border: none;
     padding: 12px 24px;
-    border-radius: 5px;
+    border-radius: 12px;
     cursor: pointer;
 }
 

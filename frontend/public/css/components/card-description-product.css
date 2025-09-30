@@ -19,7 +19,7 @@
 }
 
 /* Layout */
-.page {
+.page__product {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -119,11 +119,11 @@
 
 .product-card__btn {
   background-color: var(--primary-700);
-  color: var(--white);
+  color: var(--black);
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
