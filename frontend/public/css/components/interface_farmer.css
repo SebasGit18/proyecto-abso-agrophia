@@ -54,6 +54,8 @@
 }
 
 .navbar__icon:hover {
+
+  background-color:var(--white);
   border-radius: 50%;
 }
 
