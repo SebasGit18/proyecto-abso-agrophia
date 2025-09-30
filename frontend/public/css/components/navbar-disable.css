@@ -12,7 +12,7 @@
 
 .header-product__disable-title {
     color: var(--white);
-    font-size: var(--fs-md);
+    font-size: var(--fs-lg);
     font-family: var(--main-font);
     text-align: center;
 }

@@ -58,7 +58,7 @@
     padding: 12px 24px;
     width: 350px;
     border-radius: 8px;
-    box-shadow: 0 0 10px var(--black);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
     border: solid 0.1rem var(--primary-950);
     color: var(--black);

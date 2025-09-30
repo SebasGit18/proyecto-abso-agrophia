@@ -1,12 +1,17 @@
+.contact-form__body {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
 .contact-form {
-    max-width: 320px;
+    max-width: 380px;
     margin: 20px auto;
-    margin-top: 150px;
     padding: 20px;
     border: 1px solid var(--gray-300);
     border-radius: 10px;
     background-color: var(--white);
     font-family: var(--main-font);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Título */
@@ -37,8 +42,13 @@
 /* Inputs */
 .contact-form__input,
 .contact-form__textarea {
-    width: 100%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-width: 320px;
+    height: 56px;
+    gap: 8px;
+    padding: 12px 24px;
     margin-bottom: 10px;
     border: 1px solid var(--gray-900);
     border-radius: 5px;
@@ -74,9 +84,14 @@
 
 
 @media (width > 768px) {
+    .contact-form__body {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
     .contact-form {
         width: 100%;
-        max-width: 500px;
+        max-width: 350px;
         padding: 15px;
     }
 
@@ -97,10 +112,10 @@
     }
 
     .contact-form__button {
+        height: 48px;
         font-size: var(--fs-xs);
-        padding: 12px 24px;
-        width: 20%;
-        border-radius: 6px;
+        padding: 8px 16px;
+        border-radius: 8px;
     }
 }
 

@@ -34,7 +34,8 @@
 
 .method-payment__form-option {
   width: 100%;
-  padding: 16px 16px;
+  height: 56px;
+  padding: 12px 24px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
   font-size: var(--fs-xs);
@@ -42,7 +43,8 @@
 
 .method-payment__form-input {
   width: 100%;
-  padding: 16px 16px;
+  height: 56px;
+  padding: 12px 24px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
   font-size: var(--fs-xs);
