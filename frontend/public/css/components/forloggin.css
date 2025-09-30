@@ -1,4 +1,3 @@
-
 .page__left_login {
   position: fixed; 
   top: 0; 
@@ -43,7 +42,9 @@
 .page__right::before, .page__right::after { 
   content:""; 
   display:block; 
-  flex:0 0 60px; }
+  flex:0 0 60px; 
+}
+
 .login-container {
   font-family: var(--main-font);
   /* margin-left: 400px; */
@@ -53,11 +54,11 @@
   border: 0.2px solid;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  width: 300px;
+  width: 400px;
   /* margin: 10px; */
   margin-left: auto;
   margin-right: auto;
-
+  gap: 8px;
 }
 
 .login-container__title {
@@ -68,15 +69,18 @@
 }
 
 .login-form__label {
+  gap: 4px;
   display: block;
   margin: 12px 0 5px;
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xxxs);
 }
 
 .login-form__input {
   /* font-size: 16px; */
   width: 100%;
-  padding: 12px 24px;
+  min-width: 320px;
+  height: 56px;
+  padding: 16px;
   border: 1px solid var(--black);
   border-radius: 10px;
   font-size: var(--fs-xxxxs);
@@ -100,7 +104,7 @@
 .login-form__checkbox-label {
   cursor: pointer;
   user-select: none;
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xxxs);
 }
 
 .login-form__button {
@@ -126,10 +130,11 @@
 }
 
 .login-container__register {
+  display: flex;
   text-align: center;
   margin-top: 20px;
-  margin-left: 22px;
-  font-size: var(1rem);
+  justify-content: center;
+  font-size: var(--fs-xxs);
   color: var(--primary-700);
   font-weight: bold;
 }
