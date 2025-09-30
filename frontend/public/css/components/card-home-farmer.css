@@ -14,6 +14,7 @@
     width: 50%;
     max-width: 1200px;
     justify-content: center;
+    margin-top: 0; 
 }
 
 
@@ -24,6 +25,7 @@
   max-width: 320px;
   box-shadow: 0 4px 10px rgba(192, 149, 149, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 
 .card-farmer:hover {
