@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetales</title>
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+
+</head>
+
+<body>
+
+    <header class="header-home__section">
+        <div class="header-home__container"></div>
+    </header>
+
+    <main>
+        <section class="search__container"></section>
+        <section class="list-home__container"></section>
+        <section class="card-vegetables__container-section">
+            <div class="card-vegetables__container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container"></div>
+    </footer>
+
+    <script src="/frontend/public/js/components/navbar-home.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script src="/frontend/public/js/components/list-home.js"></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-vegetables.js";
+        loadCards(".card-vegetables__container");// Clase para cargar todas las cards
+    </script>
+</body>
+
+</html>

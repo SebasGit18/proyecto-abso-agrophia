@@ -1,65 +1,33 @@
 [
     {
         "id": "1",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
+        "image": "../assets/card/dairy/yogurt-natural.png",
+        "price": "10.000 / Libra",
+        "name": "Yogurt natural",
         "button": "Habilitar"
     }, 
 
     {
         "id": "2",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
+        "image": "../assets/card/dairy/requeson.jpg",
+        "price": "15.000 / Libra",
+        "name": "Requesón",
         "button": "Habilitar"
     },
 
     {
         "id": "3",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/dairy/queso.jpg",
         "price": "12.000 / Libra",
-        "name": "Manzana",
+        "name": "Queso fresco",
         "button": "Habilitar"
     },
 
     {
         "id": "4",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
-        "button": "Habilitar"
-    },
-
-    {
-        "id": "5",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
-        "button": "Habilitar"
-    },
-
-    {
-        "id": "6",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
-        "button": "Habilitar"
-    },
-
-    {
-        "id": "7",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
-        "button": "Habilitar"
-    },
-
-    {
-        "id": "8",
-        "image": "../assets/cards/apple.jpg",
-        "price": "12.000 / Libra",
-        "name": "Manzana",
+        "image": "../assets/card/dairy/leche.jpg",
+        "price": "5.000 c/u",
+        "name": "Leche fresca",
         "button": "Habilitar"
     }
 ]

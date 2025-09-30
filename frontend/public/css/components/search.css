@@ -1,15 +1,3 @@
-body {
-  font-family: var(--main-font);
-  background-color: var(--gray-50);
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-
-
 /*Contenedor principal*/
 .search-container {
   display: flex;
@@ -21,6 +9,7 @@ body {
   border: 1px solid var(--gray-900);
   border-radius: 8px;
   padding: 12px 24px;
+  gap: 8px;
 }
 
 .search__icon {

@@ -1,73 +1,163 @@
-.profile-content{
-    border: 1px solid var(--black);
-    padding: 20px 50px;
-    /* width: 20%; */
-    /* margin: 100px; */
-    /* margin-left: 650px; */
-    border-radius: 12px;
-    gap: 20px;
-    max-width: 350px;
+.page__left_profile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  background-image: url("/frontend/public/img/imagen_planta_perfil.png");
+  background-size: cover;
+  background-position: center;
+}
+.page__right_profile {
+    margin-left: 50%;
+    width: 50%;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.profile__field{
-    margin-top: 10px;
-    font-size: var(--fs-xxxs);
-    color: var(--black);
+
+/* BLOQUE: profile */
+.profile {
+  max-width: 720px;      /* ancho pensado para 2 columnas */
+  width: 100%;
+  margin: 36px auto;
+  padding: 24px 28px;
+  border: 1px solid var(--black);
+  border-radius: 12px;
+  background: var(--white, #fff);
+  display: block;
+  gap: 20px;
 }
 
-.profile__paragraph{
-    font-size: var(--fs-xxxs);
-    margin-top: 10px;
-    color: var(--black);
+/* título */
+.profile__title {
+  text-align: center;
+  color: var(--primary-800);
+  font-size: var(--fs-xs);
+  margin: 0;
 }
 
-.profile__title{
-    /* color: var(--black) */
-    color: var(--primary-800);
-    text-align: center;
-    font-size: var(--fs-xxxs);
+/* GRID: dos por fila en escritorio, 1 en móvil */
+.profile__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px; /* row-gap col-gap */
+  margin-top: 18px;
+  align-items: start;
 }
 
-.profile-button__edit{
-    margin-top: 10px;
+/* ITEM: cada par etiqueta-valor */
+.profile__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0; /* evita overflow por palabras largas */
+}
+/* Dirección centrada abajo */
+.profile__address {
+  margin-top: 20px;
+  /* text-align: center; */
+}
+
+.profile__address .profile__label {
+  display: block;
+  font-size: var(--fs-xxxs);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile__address .profile__value {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* margin: 20px auto 0; */
-    padding: 10px 24px;
-    background-color: var(--primary-700);
-    color: var(--white);
+}
+
+
+/* etiqueta / label */
+.profile__label {
+  font-size: var(--fs-xxxs);
+  color: var(--black);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* valor / value */
+.profile__value {
+    display: flex;
+    height: 42px;
     font-size: var(--fs-xxxs);
-    border: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.profile-button__edit:hover{
-    cursor: pointer;
-    background-color: var(--primary-950);
-}
-
-/* @media (max-width: 1024px) {
-    .profile-content {
-        margin: 36px auto; */
-        /* width: 50%;
+    color: var(--black);
+    background-color: var(--gray-50);
+    /* align-content: center; */
+    align-items: center;
+    padding: 12px;
+    border-radius: 12px;
+    /* margin: 10px; */
     }
-} */
 
-/* Celular (hasta 600px) */
+/* acciones (botón centrado) */
+.profile__actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* botón (elemento + modificador) */
+.profile__button {
+  padding: 10px 24px;
+  font-size: var(--fs-xxxs);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color .25s ease;
+}
+.profile__button--edit {
+  background-color: var(--primary-700);
+  color: var(--white);
+}
+.profile__button--edit:hover {
+  background-color: var(--primary-950);
+}
+
+@media (max-width: 1024px) {
+    .profile__address .profile__label{
+        text-align: center;
+    }
+    
+  .page__left_profile {
+    display: none;
+  }
+  .page__right_profile {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive: 1 columna en pantallas pequeñas */
+@media (max-width: 622px) {
+  .profile {
+    max-width: 520px;
+    padding: 20px;
+  }
+  .profile__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ajuste para móviles pequeños */
 @media (max-width: 600px) {
-    .profile-content {
-        margin: 24px auto;
-        width: 90%;
-        padding: 16px 20px;
-    }
-
-    .profile-button__edit {
-        margin-top: 10px;
-        width: 80%;
-        padding: 12px;
-        font-size: var(--fs-xxxs);
-    }
+  .profile {
+    margin: 24px auto;
+    padding: 16px 20px;
+    width: 90%;
+  }
+  .profile__button {
+    width: 80%;
+    padding: 12px;
+  }
 }

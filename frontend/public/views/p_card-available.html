@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página cards publicados</title>
+  <title>Productos Disponibles</title>
   <link rel="stylesheet" href="/frontend/public/css/main.css">
-  <link rel="stylesheet" href="/frontend/public/css/components/navbar-available.css">
 </head>
 
 <body>
@@ -19,6 +18,7 @@
 
   <main>
     <section class="search__container"></section>
+    <section class="list-home__container"></section>
     <section class="card-available__container-section">
       <div class="card-available__container"></div>
     </section>
@@ -31,6 +31,7 @@
   <script src="/frontend/public/js/components/navbar-available.js" defer></script>
   <script src="/frontend/public/js/components/footer.js" defer></script>
   <script src="/frontend/public/js/components/search.js" defer></script>
+  <script src="/frontend/public/js/components/list-home.js"></script>
   <script type="module">
     import { loadCards } from "/frontend/public/js/components/card-available.js";
     loadCards(".card-available__container");// Clase para cargar todas las cards
