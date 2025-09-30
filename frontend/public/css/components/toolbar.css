@@ -58,6 +58,7 @@
 }
 
 .toolbar-users__row-icons {
+  flex-direction: row;
   display: flex;
   gap: 30px;
 }

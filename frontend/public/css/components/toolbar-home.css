@@ -47,26 +47,27 @@
   color: var(--gray-400);
   font-size: var(--fs-xs);
 }
-
 .toolbar-main__row-icons {
-  margin-top: 15px;
-  display: flex;
   flex-direction: row;
+  display: flex;
   gap: 30px;
 }
-
-.toolbar-main__icon-img {
-  width: 24px;
-  height: 24px;
-}
-
 .toolbar-main__icon {
+  display: flex;
   cursor: pointer;
-  width: auto;
-  height: auto;  
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   background-color: var(--gray-100);
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.toolbar-main__icon-img {
+  width: 24px;
+  height: 24px;
 }
 
 /* Tablet */
