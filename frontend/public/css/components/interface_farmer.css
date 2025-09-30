@@ -56,7 +56,7 @@
 }
 
 .navbar__icon:hover {
-  background-color: red;
+  background-color:var(--white);
   border-radius: 50%;
 }
 

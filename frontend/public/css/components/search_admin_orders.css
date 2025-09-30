@@ -11,7 +11,7 @@ body {
 /* Title (igual que antes, solo renombrado) */
 .search-orders__title{
   color: var(--black);
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-sm);
   margin: 15px;
   text-align: center;
 }

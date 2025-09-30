@@ -54,15 +54,16 @@
 
 .orders-table__cell--actions {
   display: flex;
-  flex-direction: column; /* 🔹 botones uno debajo del otro */
+  flex-direction: row; /* 🔹 botones uno debajo del otro */
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   margin:5px;
 }
 
 /* ====== ESTADOS ====== */
 .orders-table__status-completed {
+  width: 85px;
   display: inline-block;
   margin: 10px;
   padding: 4px 10px;
@@ -70,44 +71,43 @@
   font-weight: 500;
   font-size: 12px;
   background-color: var(--primary-200);
+  text-align: center;
   color: var(--black);
 }
 
 .orders-table__status-earring {
+  text-align: center;
+  width: 85px;
   margin: 10px;
   display: inline-block;
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 500;
   font-size: 12px;
-  background-color: var(--secundary-400);
+  background-color: var(--gray-200);
   color: var(--black);
 }
 
 /* ====== BOTONES ====== */
 .orders-table__button--edit,
 .orders-table__button--rastrear {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 8px 14px;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 12px;
   transition: transform 0.2s, background 0.3s;
   color: var(--white);
-  width: 100px; /* 🔹 opcional: mismo ancho */
 }
 
 .orders-table__button--edit {
-  background-color: var(--terciary-400);
+  /* background-color: var(--terciary-400); */
+  color: var(--black);
 }
 
 .orders-table__button--rastrear {
-  background-color: var(--primary-600);
+  /* background-color: var(--primary-600); */
+  color: var(--black);
 }
 
 .orders-table__button--edit:hover,
@@ -117,10 +117,9 @@
 }
 
 /* ====== ICONOS ====== */
-.button__icon {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
+.orders-table__icon {
+  width: 24px;
+  height: 24px;
 }
 
 /* ====== RESPONSIVE ====== */
