@@ -63,12 +63,17 @@
   gap: 30px;
 }
 .toolbar-users__icon {
+  display: flex;
   cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   background-color: var(--gray-100);
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 .toolbar-users__icon-img {
   width: 24px;
