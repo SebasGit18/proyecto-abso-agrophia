@@ -1,18 +1,19 @@
 .contact-form {
-    max-width: 400px;
+    max-width: 320px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid var(--gray-300);
     border-radius: 10px;
     background-color: var(--white);
-    font-family: var(--font-primary);
+    font-family: var(--main-font);
 }
 
 /* Título */
 .contact-form__title {
     text-align: center;
+    color: var(--black);
     margin-bottom: 20px;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     font-weight: bold;
 }
 
@@ -26,7 +27,8 @@
 /* Labels */
 .contact-form__label {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: var(--fs-xs);
+    font-family: var(--main-font);
     color: var(--black);
 }
 
@@ -77,16 +79,16 @@
     }
 
     .contact-form__title {
-        font-size: 1rem;
+        font-size: var(--fs-sm);
     }
 
     .contact-form__label {
-        font-size: 13px;
+        font-size: var(--fs-xs);
     }
 
     .contact-form__input,
     .contact-form__textarea {
-        font-size: 13px;
+        font-size: var(--fs-xxs);
         box-sizing: border-box;
         padding: 8px;
     }
