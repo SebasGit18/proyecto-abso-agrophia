@@ -5,6 +5,7 @@
 }
 
 .method-payment__form-title {
+  text-align: center;
   font-size: var(--fs-sm);
   font-family: var(--main-font);
   color: var(--black);
@@ -28,26 +29,28 @@
   font-weight: bold;
   color: var(--primary-700);
   margin-bottom: 5px;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxxs);
   margin-top: 20px;
 }
 
 .method-payment__form-option {
   width: 100%;
+  min-width: 320px;
   height: 56px;
-  padding: 12px 24px;
+  padding: 16px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxs);
 }
 
 .method-payment__form-input {
   width: 100%;
+  min-width: 320px;
   height: 56px;
-  padding: 12px 24px;
+  padding: 16px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-xxxs);
 }
 
 .method-payment__form-button {
@@ -75,6 +78,15 @@
   text-decoration: none;
   color: var(--primary-950);
   font-size: var(--fs-xs);
+}
+
+@media (width < 640px) {
+  .method-payment__form-button {
+    display: flex;
+    padding: 8px 16px;
+    width: 40%;
+    justify-self: center;
+  }
 }
 
 @media (width > 640px) {
