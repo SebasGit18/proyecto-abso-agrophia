@@ -119,6 +119,26 @@
   background-color: var(--primary-950);
 }
 
+/* Botón volver (ahora parte del bloque, con scope global mínimo) */
+.profile-button__back{
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background-color: var(--primary-700);
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: var(--fs-xxs);
+  /* font-weight: 600; */
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0 1px 3px var(--gray-100);
+  transition: background-color .2s ease;
+}
+.profile-button__back:hover{
+  background-color: var(--primary-600);
+}
+
+
 @media (max-width: 1024px) {
     .profile__address .profile__label{
         text-align: center;

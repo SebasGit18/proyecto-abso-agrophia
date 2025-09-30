@@ -1,6 +1,7 @@
 .contact-form {
     max-width: 320px;
     margin: 20px auto;
+    margin-top: 150px;
     padding: 20px;
     border: 1px solid var(--gray-300);
     border-radius: 10px;
@@ -26,7 +27,8 @@
 
 /* Labels */
 .contact-form__label {
-    margin-bottom: 5px;
+    margin: 5px ; 
+    padding-bottom: var(--padding-bottom) ;
     font-size: var(--fs-xs);
     font-family: var(--main-font);
     color: var(--black);
@@ -37,9 +39,10 @@
 .contact-form__textarea {
     width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid var(--gray-900);
     border-radius: 5px;
-    font-size: 14px;
+    font-size: var(--fs-xs);
     box-sizing: border-box;
 }
 
@@ -47,7 +50,7 @@
 .contact-form__textarea {
     resize: vertical;
     min-height: 30px;
-    font-family: sans-serif;
+    font-family: var(--main-font);
 }
 
 /* Botón */
@@ -59,7 +62,7 @@
     background-color: var(--gray-50);
     border: none;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: var(--fs-xs);
     cursor: pointer;
     color: var(--primary-700);
     transition: background 0.3s ease;
@@ -70,7 +73,6 @@
 }
 
 
-/* Celulares pequeños */
 @media (width > 768px) {
     .contact-form {
         width: 100%;
@@ -84,19 +86,21 @@
 
     .contact-form__label {
         font-size: var(--fs-xs);
+       
     }
 
     .contact-form__input,
     .contact-form__textarea {
         font-size: var(--fs-xxs);
         box-sizing: border-box;
-        padding: 8px;
+        padding: 12px 24px;
     }
 
     .contact-form__button {
-        font-size: 13px;
-        padding: 10px;
-        width: 30%;
+        font-size: var(--fs-xs);
+        padding: 12px 24px;
+        width: 20%;
+        border-radius: 6px;
     }
 }
 

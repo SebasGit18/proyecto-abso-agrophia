@@ -1,5 +1,5 @@
 @import url(sidebar.css);
-@import url(components/forloggin.css);
+@import url('components/forloggin.css');
 @import url(components/hero.css);
 @import url(components/informacion_perfil.css);
 @import url('components/update_perfil.css');
@@ -15,6 +15,7 @@
 @import url(components/from.css);
 @import url(components/form_reset_password.css);
 @import url(components/form_contact.css);
+@import url(components/form_subir_producto.css);
 @import url(components/card-public.css);
 @import url(components/card_options_farmer.css);
 @import url(components/card-available.css);
@@ -23,6 +24,7 @@
 @import url(components/navbar-public.css);
 @import url(components/navbar-method-payment.css);
 @import url(components/navbar-available.css);
+@import url(components/navbar_contact.css);
 @import url(components/card-disable.css);
 @import url(header_admin.css);
 @import url('reset.css');

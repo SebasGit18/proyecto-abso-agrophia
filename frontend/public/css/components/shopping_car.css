@@ -16,20 +16,21 @@ body {
     font-size: var(--fs-xs);
 }
 
-.header__title {
+.header__title_shoppingcar {
     font-size: var(--fs-md);
     padding-top: var(--padding-top);
     text-align: center;
+    margin-bottom: 20px
 }
 
-.header__icon {
+.header__icon_shoppingcar {
     justify-self: center;
     margin-left: 5px;
     margin-top: 5px;
 }
 
-.header__subtitle {
-    font-size: var(--fs-xs);
+.header__subtitle_shoppingcar {
+    font-size: var(--fs-sm);
     text-align: center;
     padding-left: var(--padding-left);
     padding-right: var(--padding-right);
@@ -73,12 +74,12 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--white);
 }
 
 .shoppingcar__btn {
     background-color: var(--terciary-400);
-    color: white;
+    color: var(--white);
     border: none;
     padding: 8px 12px;
     border-radius: 5px;

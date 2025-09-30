@@ -17,12 +17,13 @@
     background-repeat: no-repeat;
 }
 
-.home__description {
+.page__description {
     font-size: var(--fs-sm);
     color: var(--white);
     text-align: center;
     padding: 50% 25%;
 }
+
 .page__right {
     margin-left: auto; 
     width:50%; 

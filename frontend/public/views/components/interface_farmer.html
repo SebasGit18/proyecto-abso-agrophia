@@ -1,17 +1,27 @@
 <header class="header">
-   <div class="header__contact">
-        <img src="/frontend/public/icons/user.svg" alt="contact" class="header__contact-icon" width="48" height="48">
-   </div>
-      
-   <h1 class="header__title"> Bienvenido</h1>
-   <div class="header__subtitle">Explora tus productos y revisa tus pedidos</div>
-    
-   <nav class="navbar">
-      <div class="navbar__group navbar__group--right">
-        <ul class="navbar__list">
-          <li class="navbar__item"><a href="contact.html" class="navbar__link">Compras</a></li>
-          <li class="navbar__item"><a href="register.html" class="navbar__link">Cerrar sesión</a></li>
-        </ul>
-      </div>
-   </nav>
+  <h1 class="header__title">Bienvenido</h1>
+  <div class="header__subtitle">Explora tus productos y revisa tus pedidos</div>
+
+  <nav class="navbar">
+    <div class="navbar__group navbar__group--right">
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__link">Compras</a>
+        </li>
+        <li class="navbar__item">
+          <a href="register.html" class="navbar__link">Cerrar sesión</a>
+        </li>
+        <!-- Icono dentro del navbar -->
+        <li class="navbar__item navbar__item--icon">
+          <a href="profile.html" class="navbar__link navbar__link--icon">
+            <img src="/frontend/public/icons/user.svg"
+                 alt="Perfil de usuario"
+                 class="navbar__icon"
+                 width="24"
+                 height="24">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

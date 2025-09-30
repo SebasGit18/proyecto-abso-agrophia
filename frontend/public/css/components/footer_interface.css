@@ -1,13 +1,13 @@
 html, body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: var(--main-font);
     }
 
-    main {
+    /* main {
       padding: 20px;
       background-color: var(--white);
       min-height: 150vh; 
-    }
+    } */
 
     footer {
       position: fixed;   
