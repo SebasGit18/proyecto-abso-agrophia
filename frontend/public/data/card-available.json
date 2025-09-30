@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/pepino.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -10,7 +10,7 @@
 
     {
         "id": "2",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/zanahoria.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -19,7 +19,7 @@
 
     {
         "id": "3",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/papa.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -28,7 +28,7 @@
 
     {
         "id": "4",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/cebolla.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -37,7 +37,7 @@
 
     {
         "id": "5",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/tomate.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -46,7 +46,7 @@
 
     {
         "id": "6",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/lechuga.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -55,7 +55,7 @@
 
     {
         "id": "7",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/brocoli.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
@@ -64,7 +64,7 @@
 
     {
         "id": "8",
-        "image": "../assets/cards/apple.jpg",
+        "image": "../assets/card/vegetables/pimenton.jpg",
         "price": "12.000 / Libra",
         "name": "Manzana",
         "button1": "Agregar",
