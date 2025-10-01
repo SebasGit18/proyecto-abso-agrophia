@@ -37,6 +37,20 @@
 
 .method-payment__form-label {
   font-weight: bold;
+  color: var(--primary-700);
+  margin-bottom: 5px;
+  font-size: var(--fs-xxxs);
+  margin-top: 20px;
+}
+
+.method-payment__form-option {
+  width: 100%;
+  min-width: 320px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 6px;
+  font-size: var(--fs-xxs);
   color: var(--gray-200);
   font-size: var(--fs-xxxs);
   margin: 10px 0 5px;
@@ -44,12 +58,6 @@
 
 .method-payment__form-option,
 .method-payment__form-input {
-  min-width: 320px;
-  height: 56px;
-  padding: 16px;
-  border: 1px solid var(--gray-400);
-  border-radius: 6px;
-  font-size: var(--fs-xxxs);
   box-sizing: border-box;
 }
 
@@ -79,6 +87,23 @@
   text-decoration: none;
   color: var(--white);
   font-size: var(--fs-xs);
+}
+
+@media (width < 640px) {
+  .method-payment__form-button {
+    display: flex;
+    padding: 8px 16px;
+    width: 40%;
+    justify-self: center;
+  }
+}
+
+@media (width > 640px) {
+  .method-payment {
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
 }
 
 

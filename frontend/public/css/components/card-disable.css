@@ -63,11 +63,12 @@
 
 /* === Botón === */
 .card-disable__button-one {
+  height: 40px;
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   /* Material Design spacing */
   font-size: var(--fs-xs);
   font-weight: 500;
