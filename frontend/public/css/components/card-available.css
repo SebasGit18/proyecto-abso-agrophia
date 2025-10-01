@@ -68,17 +68,18 @@
 .card-available__button {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 }
 
 .card-available__button-one {
+  height: 40px;
   background-color: var(--terciary-200);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -95,11 +96,13 @@
 }
 
 .card-available__button-two {
+  justify-content: center;
+  height: 40px;
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;

@@ -83,7 +83,7 @@
 
     /* sombra oscura para las img */
     --overlay-dark: rgba(0, 0, 0, 0.5); /* sombra oscura encima */
-    --overlay-dark-strong: rgba(0, 0, 0, 0.7); /* más fuerte */
+    --overlay-dark-strong: rgba(0, 0, 0, 0.6); /* más fuerte */
 }
 
 
