@@ -59,7 +59,9 @@
 
 /* Botón personalizado */
 .product-form__label--file {
-  height: 40px;
+  margin: 0;
+  margin-top: 0px;
+  height: 56px;
   width: 320px;
   min-width: 320px;
   display: flex;
@@ -71,9 +73,10 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   text-align: center;
-  margin-top: 9px;
+  /* margin-top: 9px; */
+  align-items: center;
 }
 
 .product-form_input--file {

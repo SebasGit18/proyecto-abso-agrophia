@@ -25,7 +25,8 @@
   justify-content: flex-end;
   align-items: center;
   background-color: var(--primary-800);
-  padding: 10px 20px;
+  padding: 12px 24px;
+  /* height: 40px; */
   flex-wrap: wrap;
   width: 100%;
 }
@@ -39,7 +40,7 @@
   display: flex;
   gap: 40px;
   flex-grow: 1;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row;
 }
 
@@ -48,9 +49,20 @@
   text-decoration: none;
   font-weight: medium;
 }
+
+.navbar__item--icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  height: 20px;
+  top: 0px;
+}
 .navbar__icon {
   filter: brightness(0) invert(1); /* blanco */
   transition: filter 0.3s ease;
+  padding: 0;
 }
 
 .navbar__icon:hover {
@@ -72,5 +84,17 @@
   
 }
 
+@media(width < 615px){
+  .navbar__list{
+    text-align: center;
+    flex-direction: column;
+    gap: 12px;
+    justify-items: center;
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
