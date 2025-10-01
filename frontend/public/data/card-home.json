@@ -43,14 +43,14 @@
         "id": "6",
         "image": "../assets/card/melon.jpg",
         "price": "8.000 / Libra",
-        "name": "Melon",
+        "name": "Melón",
         "button": "Agregar"
     },
 
     {
         "id": "7",
         "image": "../assets/card/banana.jpg",
-        "price": "500 / Libra",
+        "price": "5.000 / Libra",
         "name": "Banano",
         "button": "Agregar"
     },

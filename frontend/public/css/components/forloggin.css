@@ -49,7 +49,7 @@
   font-family: var(--main-font);
   /* margin-left: 400px; */
   margin-right: auto;
-  background-color: var(--white);
+  background: var(--overlay-dark-strong);
   padding: 30px 25px;
   border: 0.2px solid;
   border-radius: 12px;
@@ -66,6 +66,7 @@
   margin-bottom: 25px;
   font-size: var(--fs-xs);
   font-weight: bold;
+  color: var(--white);
 }
 
 .login-form__label {
@@ -73,6 +74,7 @@
   display: block;
   margin: 12px 0 5px;
   font-size: var(--fs-xxxs);
+  color: var(--gray-200);
 }
 
 .login-form__input {
@@ -105,19 +107,21 @@
   cursor: pointer;
   user-select: none;
   font-size: var(--fs-xxxs);
+  color: var(--gray-200);
 }
 
 .login-form__button {
   font-weight: 600;
   display: block;
+  height: 40px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  padding: 10px 24px;
+  padding: 8px 16px;
   background-color: var(--primary-700);
   color: var(--white);
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-xs);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -135,6 +139,7 @@
   margin-top: 20px;
   justify-content: center;
   font-size: var(--fs-xxs);
+  color: var(--white);
   color: var(--primary-700);
   font-weight: bold;
 }
@@ -170,9 +175,7 @@
     margin-left:0; 
     width:100%;
   }
-  .profile-form-update-container{ 
-    width:100%; 
-    max-width:350px; }
+  
 }
 
 

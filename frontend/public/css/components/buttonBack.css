@@ -1,18 +1,18 @@
 
 .button-back{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
-    position: fixed; 
+    position: static;
+    height: 36px; 
     top:1rem; 
-    margin-left: 220px;
+    margin-left: 200px;
     background-color:var(--primary-700);
     border:none; 
-    border-radius:4px; 
-    padding:.35rem 1rem;
-    font-size:.75rem; 
+    border-radius: 6px; 
+    padding: 8px 16px;
+    font-size: var(--fs-xs); 
     font-weight:600; 
     color: var(--white);
     cursor:pointer; 
-    box-shadow:0 1px 3px var(--gray-100);
     transition:background-color .3s ease; 
     text-decoration:none; 
     display:inline-block;
@@ -26,13 +26,13 @@
     display: flex;
     color: var(--white);
     padding: 0 12px;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     text-align: center;
     justify-content: center;
     margin: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .button-container{
         display: block;
@@ -43,9 +43,7 @@
     }
 
     .button-back .button-back__text{
-        /* margin: 20px auto 0; */
         display: block;
-        /* left: 100px; */
         max-width: 150px;    }
 }
 
@@ -56,6 +54,6 @@
         width: 50%;
         max-width: 300px;
         left: 150px;
-        padding: 12px 0;
+        padding: 8px 16px;
     }
-} 
+}  */
