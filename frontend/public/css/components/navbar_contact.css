@@ -7,7 +7,7 @@
 
 .contact-home__title{
   color: var(--primary-800);
-  font-size: var(--fs-md);
+  font-size: var(--fs-lg);
   font-family: sans-serif;
   text-align: center;
   margin: 0
@@ -58,6 +58,20 @@
 .contact-home__menu svg {
     cursor: pointer;
     transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+@media (width < 767px) {
+  .contact-home__navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-home__list {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 @media (width > 768px) {

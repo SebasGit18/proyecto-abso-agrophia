@@ -6,14 +6,15 @@
 
 .header-home__title{
   color: var(--primary-800);
-  font-size: var(--fs-md);
-  font-family: sans-serif;
+  font-size: var(--fs-lg);
+  font-family: var(--main-font);
   text-align: center;
   margin: 0
 }
 
 .header-home__subtitle{
-  color: var(--gray-900);
+  color: var(--black);
+  font-weight: 300;
   font-size: var(--fs-sm);
   font-family: var(--main-font);
   text-align: center;
@@ -110,6 +111,19 @@
 .header-home__menu svg {
     cursor: pointer;
     transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+@media (width < 767px) {
+  .header-home__navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-home__list {
+    align-items: center;
+  }
 }
 
 @media (width > 768px) {
