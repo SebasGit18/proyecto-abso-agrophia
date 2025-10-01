@@ -1,6 +1,19 @@
+  <a href="/frontend/public/views/index.html" class="register__back">Volver</a>
+
   <div class="form-content">
     <h2 class="form__title">Formulario de Registro</h2>
-    <form>
+    <form class="form-content__group">
+      <div class="form__group">
+        <label for="tdocumento" class="form__label">Tipo de Documento</label>
+        <select name="tdocumento" class="form__option" required>
+        <option value="">-- Tipo de documento --</option>
+        <option value="cc">CC</option>
+        <option value="ti">TI</option>
+        <option value="cedula extranjera">Cedula extranjera</option>
+        <option value="pasaporte">Pasaporte</option>
+      </select>
+        
+      </div>
       <div class="form__group">
         <label for="documento" class="form__label">Número de Documento</label>
         <input type="text" class="form__input" placeholder="Número de documento">
@@ -27,25 +40,29 @@
       </div>
 
       <div class="form__group">
-        <label for="direccion" class="form__label">Dirección</label>
-        <select i class="form__select">
+        <label for="password" class="form__label">Contraseña</label>
+        <input type="password" class="form__input" placeholder="Contraseña">
+      </div>
+      
+      <div class="form__group">
+        <label for="direccion" class="form__label">Dirección completa</label>
+        <input type="text" class="form__input" placeholder="Dirección completa">
+        <!-- <select i class="form__select">
           <option value="">Selecciona una opción</option>
           <option value="opt1">Risaralda</option>
           <option value="opt2">Caldas</option>
           <option value="opt2">Quindio</option>
-        </select>
+        </select> -->
       </div>
 
-      <div class="form__group">
-        <label for="password" class="form__label">Contraseña</label>
-        <input type="password" class="form__input" placeholder="Contraseña">
-      </div>
 
-      <div class="form__check">
-        <input type="checkbox" class="form__checkbox">
-        <label for="mostrar" class="form__label">Mostrar contraseña</label>
-      </div>
-
-      <button type="submit" class="form__button">Registrarse</button>
     </form>
+
+    <div class="form__check">
+      <label for="mostrar" class="form__label form__see--password">
+        <input type="checkbox">
+        Mostrar contraseña</label>
+    </div>
+
+    <button type="submit" class="form__button">Registrarse</button>
   </div>

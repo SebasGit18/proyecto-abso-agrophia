@@ -51,7 +51,7 @@
         "id": "7",
         "image": "../assets/card/vegetables/brocoli.jpg",
         "price": "5.000 / Libra",
-        "name": "Banano",
+        "name": "Brócoli",
         "button": "Agregar"
     },
 
@@ -59,7 +59,7 @@
         "id": "8",
         "image": "../assets/card/vegetables/pimenton.jpg",
         "price": "2.000 / Libra",
-        "name": "Pimenton",
+        "name": "Pimentón",
         "button": "Agregar"
     }
 ]
