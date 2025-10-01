@@ -24,12 +24,13 @@
 
 .header__navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   background-color: var(--primary-800);
   padding: 10px 20px;
   flex-wrap: wrap;
   width: 100%;
+  flex-direction: row;
 }
 
 
@@ -39,6 +40,7 @@
 }
 
 .navbar__list {
+  justify-content: flex-end;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -71,3 +73,9 @@
     flex-direction: column;
   }
 }
+
+@media(width <614px){
+  .navbar__list{
+    flex-direction: column;
+  }
+  }
