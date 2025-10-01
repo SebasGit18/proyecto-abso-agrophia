@@ -20,7 +20,8 @@
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  min-width: 300px;
+  min-width: 290px;
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

@@ -139,15 +139,36 @@
   margin-top: 20px;
   justify-content: center;
   font-size: var(--fs-xxs);
+  font-weight: 800;
   color: var(--white);
-  color: var(--primary-700);
+  color: var(--white);
   font-weight: bold;
 }
-
 
 .login-container__register a:hover {
   text-decoration: underline;
 }
+
+.register__back{
+    height: 36px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background-color: var(--primary-700);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: var(--fs-xs);
+    /* font-weight: 600; */
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 1px 3px var(--gray-100);
+    transition: background-color .2s ease;
+}
+
+.register__back:hover{
+  background-color: var(--primary-600);
+}
+
 /* 
 @media(width <353px){
   .login-container{
