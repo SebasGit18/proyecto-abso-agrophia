@@ -55,13 +55,6 @@
 }
 
 /* Contenedor del formulario: sin márgenes verticales extra */
-.profile-form-update-container {
-  width: 100%;
-  max-width: 350px;
-  /* evita que intente crecer a toda la altura */
-  flex: 0 0 auto;
-}
-
 
 /* Estilos del formulario */
 .profile {

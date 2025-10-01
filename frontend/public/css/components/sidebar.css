@@ -24,7 +24,8 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 2px;
+  justify-content: center;
+  gap: 8px;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -41,14 +42,14 @@
   color:var(--terciary-500); }
 
 .sidebar__icon { 
-  width: 20px; 
-  height: 20px; 
+  width: 24px; 
+  height: 24px; 
   flex-shrink: 0; 
   margin-right: 12px; }
 .sidebar__text { 
   font-family: var(--main-font);
   flex: 1; 
-  font-size: 14px; }
+  font-size: var(--fs-xs); }
 
 /* ===== Tablet: de 479px hasta 1115px => barra horizontal ===== */
 @media (min-width: 479px) and (max-width: 1115px) {
