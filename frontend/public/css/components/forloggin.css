@@ -75,7 +75,6 @@
   margin: 12px 0 5px;
   font-size: var(--fs-xxxs);
   color: var(--gray-200);
-
 }
 
 .login-form__input {
@@ -141,6 +140,7 @@
   justify-content: center;
   font-size: var(--fs-xxs);
   color: var(--white);
+  color: var(--primary-700);
   font-weight: bold;
 }
 

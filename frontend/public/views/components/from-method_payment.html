@@ -1,9 +1,9 @@
 <div class="method-payment">
+  <h3 class="method-payment__form-title">Método de pago</h3>
   <form class="method-payment__form">
     <div>
-      <h3 class="method-payment__form-title">Método de pago</h3>
       <label for="metodo" class="method-payment__form-label">Selecciona el método de pago</label>
-      <select id="metodo" name="metodo" class="method-payment__form-option" required>
+      <select name="metodo" class="method-payment__form-option" required>
         <option value="">-- Selecciona --</option>
         <option value="transferencia">Transferencia bancaria</option>
         <option value="contraentrega">Pagos contra entrega</option>
@@ -13,7 +13,7 @@
 
     <div>
       <label for="nombre" class="method-payment__form-label">Nombre completo</label>
-      <input type="text" name="nombre" class="method-payment__form-input" placeholder="Nombre del producto" required>
+      <input type="text" name="nombre" class="method-payment__form-input" placeholder="Nombre completo" required>
     </div>
 
     <div>
@@ -41,7 +41,7 @@
       <input type="text" name="entidad" class="method-payment__form-input" placeholder="Ej: Bancolombia">
     </div>
 
-    <button type="submit" class="method-payment__form-button">Finalizar Pago</button>
-    <a href="/frontend/public/views/p_login-customer.html" class="method-payment__form-volver">← Volver al inicio</a>
   </form>
+  <a href="/frontend/public/views/p_login-customer.html" type="submit" class="method-payment__form-button">Finalizar Pago</a>
+  <a href="/frontend/public/views/p_login-customer.html" class="method-payment__form-volver">← Volver al inicio</a>
 </div>

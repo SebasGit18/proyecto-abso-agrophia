@@ -85,6 +85,23 @@
   background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  
+.producto-form__input {
+  width: 100%;
+  height: 56px;
+  min-width: 320px;
+  padding: 16px;
+  margin: 5px auto;
+  border: 1px solid var(--black);
+  border-radius: 12px;
+  font-size: var(--fs-xs);
+}
+
+.producto-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  justify-content: center;
 }
 
 /* Nombre del archivo */
