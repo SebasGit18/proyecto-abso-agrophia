@@ -1,6 +1,3 @@
-
-
-
 /* BLOQUE: profile */
 .profile {
   max-width: 720px;      /* ancho pensado para 2 columnas */
@@ -9,15 +6,23 @@
   padding: 24px 28px;
   border: 1px solid var(--black);
   border-radius: 12px;
-  background: var(--white, #fff);
+  background: var(--overlay-dark-strong);
   display: block;
   gap: 20px;
+}
+.profile__img{
+  margin-top: 20px;
+  border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: 100px;
 }
 
 /* título */
 .profile__title {
   text-align: center;
-  color: var(--primary-800);
+  color: var(--white);
   font-size: var(--fs-sm);
   margin: 0;
 }
@@ -26,7 +31,7 @@
 .profile__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 24px; /* row-gap col-gap */
+  gap:24px; /* row-gap col-gap */
   margin-top: 18px;
   align-items: start;
 }
@@ -51,7 +56,7 @@
 .profile__address .profile__label {
   display: block;
   font-size: var(--fs-xxs);
-  color: var(--black);
+  color: var(--gray-200);
   font-weight: 500;
   margin-bottom: 6px;
 }
@@ -65,7 +70,7 @@
 /* etiqueta / label */
 .profile__label {
   font-size: var(--fs-xxxs);
-  color: var(--black);
+  color: var(--gray-200);
   font-weight: 500;
   line-height: 1.1;
 }
@@ -101,20 +106,26 @@
   color: var(--white);
   transition: background-color .25s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+
 }
 .profile__button--edit:hover {
-  background-color: var(--primary-950);
+  background-color: var(--primary-600);
+  transform: translateY(-2px);
+
 }
 
 /* Botón volver (ahora parte del bloque, con scope global mínimo) */
 .profile-button__back{
+  font-weight: 600;
   position: fixed;
   top: 16px;
   right: 16px;
   background-color: var(--primary-700);
   border-radius: 4px;
-  padding: 5px 12px;
-  font-size: var(--fs-xxs);
+  padding: 9px 16px;
+  height: 36px;
+  font-size: var(--fs-xs);
   /* font-weight: 600; */
   color: var(--white);
   text-decoration: none;

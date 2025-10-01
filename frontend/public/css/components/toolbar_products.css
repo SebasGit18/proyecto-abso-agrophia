@@ -10,7 +10,8 @@
   margin: 10px;
   background-color: var(--gray-100);
   width: 100%;
-  font-size: var(--fs-xxs);
+  height: 40px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   padding: 12px 24px;
   border: none;
