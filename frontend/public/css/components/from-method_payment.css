@@ -50,9 +50,8 @@
   padding: 16px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
-  font-size: var(--fs-xxs);
-  color: var(--gray-200);
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xs);
+  color: var(--black);
   margin: 10px 0 5px;
 }
 
@@ -66,8 +65,8 @@
   border: 1px solid var(--gray-400);
   border-radius: 6px;
   font-size: var(--fs-xxs);
-  color: var(--gray-200);
-  font-size: var(--fs-xxxs);
+  color: var(--black);
+  font-size: var(--fs-xs);
   margin: 10px 0 5px;
 }
 

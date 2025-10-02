@@ -8,6 +8,7 @@ body {
     background-color: var(--primary-700);
     padding: 25px;
     color: var(--white);
+    height: auto;
 }
 
 .header__title-orders {
