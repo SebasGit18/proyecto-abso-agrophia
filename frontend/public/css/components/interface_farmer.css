@@ -1,20 +1,20 @@
 .header{
   position: static;
-  padding-top: 5px;
   
 }
 
 .header__title{
   color: var(--primary-800);
   font-size: var(--fs-lg);
-  font-family: sans-serif;
+  font-family: var(--main-font);
   text-align: center;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .header__subtitle{
   color: var(--gray-900);
-  font-size: var(--fs-xs);
+  font-weight: 300;
+  font-size: var(--fs-sm);
   font-family: var(--main-font );
   text-align: center;
   padding-bottom: 10px;
