@@ -107,7 +107,7 @@
 
     .contact-form__input,
     .contact-form__textarea {
-        font-size: var(--fs-xxs);
+        font-size: var(--fs-xs);
         box-sizing: border-box;
         padding: 16px;
     }
