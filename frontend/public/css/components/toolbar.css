@@ -1,19 +1,29 @@
 .toolbar-users {
+  margin: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
-  padding: 0 12px;
+  gap: 24px;
+}
+.toolbar-users__content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: var(--white);
+  gap: 24px;
 }
 
+
 .toolbar-users__button {
+  max-width: 450px;
   height: 40px;
-  margin: 10px;
   background-color: var(--gray-100);
   width: 100%;
   font-size: var(--fs-xs);
-  font-weight: 600;
-  padding: 8px 16px;
+  font-weight: 400;
+  padding: 0 16px;
   border: none;
   border-radius: 12px;
   color: var(--primary-700);
@@ -24,7 +34,8 @@
 }
 
 .toolbar-users__search {
-  margin: 10px;
+   height: 40px;
+  /* margin: 10px; */
   display: flex;
   align-items: center;
   gap: 8px;
@@ -32,6 +43,7 @@
   border-radius: 12px;
   padding: 12px 14px;
   width: 100%;
+  max-width: 450px;
 }
 .toolbar-users__search-btn {
   background: none;
@@ -81,20 +93,25 @@
   height: 24px;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
-  .toolbar-users {
-    flex-direction: row;
+
+
+
+/* celular */
+@media (max-width: 640px) {
+  .toolbar-users__content {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .toolbar-users__button {
-    width: auto;
-    max-width: 200px;
+    max-width: 450px;
+    width: 100%;
+    /* max-width: 200px; */
     font-weight: 500;
   }
   .toolbar-users__search {
-    max-width: 150px;
+    max-width: 450px;
     padding: 8px 12px;
   }
   .toolbar-users__row-icons {
@@ -102,23 +119,63 @@
   }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
-  .toolbar-users {
+
+/* tablet */
+@media (max-width:768px) and (min-width:640px) {
+  .toolbar-users__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .toolbar-users__button {
     width: 100%;
-    justify-content: flex-end;
+    /* max-width: 200px; */
+    font-weight: 500;
+  }
+  .toolbar-users__search {
+    /* max-width: 150px; */
+    padding: 8px 12px;
   }
   .toolbar-users__row-icons {
-    gap: 20px;
+    gap: 15px;
   }
 }
 
-/* Móviles muy pequeños */
-@media (max-width: 303px) {
-  .toolbar-users__button {
-    width: 150px;
+@media (max-width:1024px) and (min-width:768px) {
+  .toolbar-users{
+    flex-direction: row;
   }
-  .toolbar-users__search {
-    width: 150px;
+  .toolbar-users__content{
+    flex-direction: row;
+
+  }
+}
+
+
+/* Desktop */
+@media(max-width:1280px) and (min-width: 1024px){
+  .toolbar-users{
+    flex-direction: row;
+  }
+  .toolbar-users__content{
+    flex-direction: row;
+
+  }
+}
+/* big screen */
+@media(max-width:1536px) and (min-width: 1280px){
+  .toolbar-users{
+    flex-direction: row;
+  }
+  .toolbar-users__content{
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .toolbar-users__button{
+    width: 190px;
+  }
+  .toolbar-users__search{
+    width: 190px;
   }
 }
