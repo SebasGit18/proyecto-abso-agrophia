@@ -1,80 +1,100 @@
-
+  .search-users{
+    display: flex;
+    flex-direction: column;
+    margin:0 24px;
+    gap: 24px;
+    align-items: center;
+  }
 /* title */
 .search-users__title {
   font-size: var(--fs-sm);
-  margin: 15px;
   text-align: center;
   color: var(--black);
-  font-family: var(--main-font);
-
+  font-family: var(--main-font)
 }
-
-/*Contenedor principal: mantengo tus medidas y estilos */
-.search-users__container {
+/*Contenedor principal*/
+.search-users-container {
   display: flex;
-  width: 80%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  margin: 0 24px;
   background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
+  gap: 8px;
 }
 
-/* iconos (izquierda/derecha) */
 .search-users__icon {
   color: var(--gray-900);
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /* centra verticalmente el ícono */
+  align-items: center; 
 }
 
-.search-users__filter {
+.search-users__filter__icon {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gray-900);
 }
 
-/* Input: mantengo el id por compatibilidad y añado la clase para BEM */
-#buscador,
-.search-users__input {
+/*Style input*/
+.search-users__bar {
+  /* width:; */
   flex: 1;
   border: none;
   outline: none;
   font-size: var(--fs-xs);
-  background: transparent;
+  background: transparent; 
   color: var(--gray-900);
-  padding: 0.4rem 0;
+  align-items: center;
 }
-
-/* placeholder */
-.search-users__input::placeholder,
-#buscador::placeholder {
-  color: var(--gray-400);
-  font-size: 16px;
-}
-
-/* Media query corregida (anteriormente estaba inválida) */
-/* Mantengo el comportamiento original: desplazar por el sidebar */
-@media (min-width: 1116px) {
-  .search-users__container {
-    margin-left: 250px;
+/* celulares */
+@media( max-width: 640px){
+  .search-users-container{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
   }
-  .search-users__title {
-    text-align: inherit;
-    margin-left: 250px;
-  }
-}
-
-/* Mobile: ocultar icono de filtro tal como tenías */
-@media (max-width: 439px) {
-  #buscador, .search-users__input {
+  .search-users__bar{
     width: 100%;
   }
+  .search-users__title{
+    margin: 0;
+  }
+}
+/* tablets */
+@media( max-width: 768px) and (min-width: 640px)  {
+  .search-users{
+    align-items: center;
 
-  .search-users__filter {
-    display: none;
+  }
+  .search-users-container{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+  }
+}
+/* laptops */
+@media (max-width:1024px) and (min-width:768px) {
+  .search-users-container{
+    max-width: 450px;
+  }
+
+}
+/* big screen  */
+@media (max-width:1536px) and (min-width:1280px) {
+  .search-users-container{
+    max-width: 450px;
+    margin: 0;
+  }
+  .search-users{
+    align-items: start;
+    margin-left: 250px;
+
   }
 }

@@ -63,7 +63,6 @@
 
 /* ====== ESTADOS ====== */
 .users-table__status {
-  width: 70px;
   font-family: var(--main-font);
   display: inline-block;
   padding: 4px 10px;
@@ -78,7 +77,7 @@
 }
 
 .users-table__status--blocked {
-  background-color: var(--gray-200);
+  background-color: var(--secundary-400);
   color: var(--black);
 }
 
@@ -87,7 +86,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 24px;
   padding: 8px 14px;
   border: none;
   border-radius: 8px;
@@ -99,6 +98,7 @@
 
 .users-table__button:hover {
   transform: translateY(-2px);
+  background-color: var(--gray-100);
 }
 
 /* Variantes */
@@ -122,9 +122,7 @@
   color: var(--white);
 }
 
-.users-table__button--message:hover {
-  background-color: var(--primary-200);
-}
+
 
 /* Icono dentro del botón */
 .users-table__button__icon {
@@ -132,9 +130,33 @@
   height: 24px;
   display: inline-block;
 }
-  
-/* DEBUG: aplica margen cuando la pantalla es <1115px
-   Cubre los 3 selectores que podrías estar usando en tu proyecto */
+@media (max-width: 640px){
+
+  .table_users{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+@media (max-width: 768px) and (min-width: 640px) {
+
+  .table_users{
+    /* margin: 24px; */
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+
+
+
+/* 
 @media (max-width: 1115px) {
   .users-table,
   .table_users,
@@ -144,3 +166,9 @@
     margin-right: auto;
   }
 }
+@media(max-width:1024px){
+  .users-table__cell--actions{
+    flex-direction: column;
+  }
+
+} */
