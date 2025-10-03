@@ -51,15 +51,17 @@
   height: 56px;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--black);
   outline: none;
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xs);
   transition: border 0.3s ease;
 }
 
 /* Botón personalizado */
 .product-form__label--file {
-  height: 40px;
+  margin: 0;
+  margin-top: 0px;
+  height: 56px;
   width: 320px;
   min-width: 320px;
   display: flex;
@@ -71,9 +73,10 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  /* transition: all 0.3s ease; */
   text-align: center;
-  margin-top: 9px;
+  /* margin-top: 9px; */
+  align-items: center;
 }
 
 .product-form_input--file {
@@ -85,6 +88,8 @@
   background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
+}
   
 .producto-form__input {
   width: 100%;

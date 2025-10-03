@@ -20,8 +20,8 @@
 
 .board__icon {
   padding: 10px;
-  /* width: 120px;
-  height: auto; */
+  width: 150px;
+  height: 150px;
   margin-bottom: 0;
 }
 
@@ -31,7 +31,8 @@
   align-items: center;
   background-color: var(--white);
   border: 2px solid var(--primary-800);
-  width: 240px;
+  width: 235px;
+  height: 40px;
   border-radius: 6px;
   padding: 12px 24px;
   margin: 0;
@@ -51,15 +52,16 @@
 
 @media (min-width: 640px) {
   .board-container {
-    margin-top: -100px;
     display: flex;
     align-items: center;
     justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .board {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
     max-width: 600px; 
     align-items: center;      
     margin: 0;  
@@ -68,20 +70,27 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1115px) {
   .board-container {
-    margin-top: -560px;
-    margin-right: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .board {
+    /* margin-top: 300px; */
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 600px;      
     margin: 0;  
     margin-left: auto;
-    margin-right: 60%             
+    /* margin-top:50px; */
+    /* margin-right: 50px; */
+  }
+}
+@media(width < 642px){
+  .board__icon{
+    display: none;
+  }
+  .board{
+    gap: 12px;
   }
 }

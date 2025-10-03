@@ -4,7 +4,8 @@
 }
 
 .contact-form {
-    min-width: 320px;   
+    width: 360px;
+    min-width: 320px;  
     margin: 20px auto;
     padding: 20px;
     border: 1px solid var(--gray-300);
@@ -107,7 +108,7 @@
 
     .contact-form__input,
     .contact-form__textarea {
-        font-size: var(--fs-xxs);
+        font-size: var(--fs-xs);
         box-sizing: border-box;
         padding: 16px;
     }
