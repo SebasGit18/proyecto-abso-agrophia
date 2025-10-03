@@ -31,7 +31,8 @@
   align-items: center;
   background-color: var(--white);
   border: 2px solid var(--primary-800);
-  width: 240px;
+  width: 235px;
+  height: 40px;
   border-radius: 6px;
   padding: 12px 24px;
   margin: 0;
@@ -60,7 +61,7 @@
 
   .board {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
     max-width: 600px; 
     align-items: center;      
     margin: 0;  
