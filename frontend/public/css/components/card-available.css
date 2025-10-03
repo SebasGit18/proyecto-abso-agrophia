@@ -21,7 +21,7 @@
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  max-width: 320px;
+  min-width: 320px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -68,17 +68,20 @@
 .card-available__button {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 }
 
 .card-available__button-one {
+  height: 40px;
   background-color: var(--terciary-200);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 16px;
+  height: 40px;
+
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -95,11 +98,14 @@
 }
 
 .card-available__button-two {
+  justify-content: center;
+  height: 40px;
   background-color: var(--secundary-300);
   color: var(--black);
   border: none;
   border-radius: 8px;
-  padding: 12px 24px;
+  padding: 8px 16px;
+  height: 40px;
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;

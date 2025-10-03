@@ -1,6 +1,20 @@
+.method-payment__container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--overlay-dark-strong);
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
 .method-payment {
   width: 100%;
-  max-width: 900px;
   margin: 24px auto;
 }
 
@@ -8,24 +22,20 @@
   text-align: center;
   font-size: var(--fs-sm);
   font-family: var(--main-font);
-  color: var(--black);
+  color: var(--white);
   padding: 5px;
   margin-left: 5px;
+  margin-bottom: 10px;
 }
 
 .method-payment__form {
-  background: var(--white);
-  border-radius: 12px;
-  padding: 24px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  justify-content: center;
 }
 
 .method-payment__form-label {
-  display: flex;
   font-weight: bold;
   color: var(--primary-700);
   margin-bottom: 5px;
@@ -41,16 +51,14 @@
   border: 1px solid var(--gray-400);
   border-radius: 6px;
   font-size: var(--fs-xxs);
+  color: var(--gray-200);
+  font-size: var(--fs-xxxs);
+  margin: 10px 0 5px;
 }
 
+.method-payment__form-option,
 .method-payment__form-input {
-  width: 100%;
-  min-width: 320px;
-  height: 56px;
-  padding: 16px;
-  border: 1px solid var(--gray-400);
-  border-radius: 6px;
-  font-size: var(--fs-xxxs);
+  box-sizing: border-box;
 }
 
 .method-payment__form-button {
@@ -64,6 +72,7 @@
   border-radius: 6px;
   cursor: pointer;
   margin-top: 35px;
+  justify-self: center;
 }
 
 .method-payment__form-button:hover {
@@ -76,7 +85,7 @@
   margin-top: 15px;
   margin-bottom: 12x;
   text-decoration: none;
-  color: var(--primary-950);
+  color: var(--white);
   font-size: var(--fs-xs);
 }
 
@@ -97,10 +106,9 @@
   }
 }
 
-@media (width > 1024px) {
-  .method-payment {
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+
+@media (min-width: 768px) {
+  .method-payment__form {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

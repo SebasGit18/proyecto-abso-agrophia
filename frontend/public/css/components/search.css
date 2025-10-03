@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   width: 80%;
-  max-width: 500px;
+  min-width: 320px;
+  height: 56px;
   margin: 20px auto;
   background: var(--white);
   border: 1px solid var(--gray-900);
@@ -14,7 +15,6 @@
 
 .search__icon {
   color: var(--gray-900);
-  font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
   align-items: center; 

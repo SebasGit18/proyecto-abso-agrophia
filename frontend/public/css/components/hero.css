@@ -10,7 +10,7 @@ body, html {
 }
 
 .hero-content {
-  width: 100vw;                         
+  /* width: 100vw;                          */
   height: auto;                          
   background-image: url(/frontend/public/img/hero__image.jpeg);
   background-size: cover;

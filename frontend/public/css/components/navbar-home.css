@@ -6,7 +6,7 @@
 
 .header-home__title{
   color: var(--primary-800);
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   font-family: sans-serif;
   text-align: center;
   margin: 0
@@ -45,6 +45,59 @@
   gap: 15px;
   gap: 20px;
   font-size: var(--fs-xs);
+}
+.nav-menu {
+  position: relative;
+  list-style: none;
+}
+
+/* Ícono */
+.nav-menu__icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Quitamos el triángulo que pone <summary> */
+.nav-menu summary {
+  list-style: none;
+  cursor: pointer;
+}
+.nav-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Estilo del menú desplegable */
+.nav-menu__list {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: var(--white, #fff);
+  border: 1px solid var(--gray-300, #ccc);
+  border-radius: 6px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+/* Items */
+.nav-menu__list li {
+  list-style: none;
+}
+
+.nav-menu__list a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--black, #000);
+  font-size: 14px;
+}
+
+.nav-menu__list a:hover {
+  background: var(--gray-100, #f0f0f0);
 }
 
 .header-home__link {
