@@ -1,5 +1,5 @@
 
-.footer-content {
+/* .footer-content {
   width: 100%;
   min-height: 64px;
   padding: 16px 24px;
@@ -11,7 +11,7 @@
   align-items: center;
   text-align: center;
   gap: 40px;
-}
+} */
 
 /* === FOOTER PRINCIPAL === */
 .footer-content {
@@ -58,6 +58,14 @@
   font-size: var(--fs-xs);
   position: relative;
 }
+
+    /* .footer__social {
+      grid-column: 3; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      gap: 10px;
+    } */
 
 .footer__social-icon:not(:last-child)::after {
   content: "|";
