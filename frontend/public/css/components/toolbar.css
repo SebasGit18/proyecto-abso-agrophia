@@ -73,7 +73,7 @@
 .toolbar-users__row-icons {
   flex-direction: row;
   display: flex;
-  gap: 30px;
+  gap: 24px;
 }
 .toolbar-users__icon {
   display: flex;
@@ -115,7 +115,7 @@
     padding: 8px 12px;
   }
   .toolbar-users__row-icons {
-    gap: 15px;
+    gap: 24px;
   }
 }
 
@@ -138,7 +138,7 @@
     padding: 8px 12px;
   }
   .toolbar-users__row-icons {
-    gap: 15px;
+    gap: 24px;
   }
 }
 
@@ -161,6 +161,16 @@
   .toolbar-users__content{
     flex-direction: row;
 
+  }
+  .toolbar-users__content{
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .toolbar-users__button{
+    width: 190px;
+  }
+  .toolbar-users__search{
+    width: 190px;
   }
 }
 /* big screen */

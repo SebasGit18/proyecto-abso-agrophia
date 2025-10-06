@@ -17,8 +17,8 @@
   border-collapse: collapse;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
-  font-size: 12px;
-  border-radius: 10px;
+  font-size: var(--fs-xxxs);
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -48,8 +48,9 @@
 
 .orders-table__cell--status,
 .orders-table__cell--message {
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .orders-table__cell--actions {
@@ -57,7 +58,7 @@
   flex-direction: row; /* 🔹 botones uno debajo del otro */
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
   margin:5px;
 }
 
@@ -135,22 +136,57 @@
     padding: 8px 10px;
   }
 
-  /* 🔹 Mantener botones en columna también en móviles */
   .orders-table__cell--actions {
     flex-direction: column;
   }
 }
-/* @media (max-width: 768px){
-    .orders-table{
-        width: auto;
-        margin-left:0px;
-    }
-} */
-
-@media(max-width: 1115px){
-    .orders-table{
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* celulares */
+@media(max-width: 640px){
+  .table-orders{
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: scroll;;
+  }
+  .orders-table{
+    margin: 24px  ;
+  }
+}
+/* tablets */
+@media (max-width: 768px) and (min-width: 640px) {
+  .table-orders{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .orders-table{
+    margin: 24px;
+  }
 }
 
+/* laptops */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .table-orders{
+    margin-top: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .table-orders{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1536px) and (min-width: 1280px) {
+  .orders-table{
+    width: 100%;
+  }
+  .orders-table__cell-status{
+    text-align:center;
+  }
+  
+
+}

@@ -1,7 +1,7 @@
 <!-- Botón volver (ahora formateado como elemento del bloque) -->
 <a href="/frontend/public/views/profile.html" class="profile-update__back">Volver</a>
   <div class="profile-update">
-    <h2 id="profile-update__title" class="profile-update__title">Editar Perfil</h2>
+    <h2 class="profile-update__title">Editar Perfil</h2>
 
     <form class="profile-update__form" novalidate>
       <div class="profile-update__group">
@@ -61,13 +61,20 @@
       <div class="profile-update__group">
         <label class="profile-update__label" for="input-password">Confirmar Contraseña</label>
         <input  class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
-        <div class="profile-update__group profile-update__group--inline">
+        <div class="profile-update__group profile-update__group-checkbox">
         <input class="profile-update__checkbox" type="checkbox" />
         <label class="profile-update__label profile-update__label--checkbox" for="show-password">Mostrar contraseña</label>
       </div>
       </div>
       
-      <div class="profile-update__group">
+      
+      
+      
+    </form>
+
+    <div class="profile-update__group-file">
+
+      <div class="profile-update__group-file__photo">
         <label class="profile-update__label">Foto de Perfil</label>
         
         <!-- Label que actúa como botón -->
@@ -79,9 +86,6 @@
         <!-- Aquí se mostrará el nombre de la foto seleccionada -->
         <!-- <span id="file-name" class="profile-update__file-name">Ningún archivo seleccionado</span> -->
       </div>
-      
-
-      
-    </form>
+    </div>
     <button type="submit" class="profile-update__submit">Guardar Cambios</button>
 </div>
