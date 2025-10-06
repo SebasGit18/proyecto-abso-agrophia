@@ -193,6 +193,7 @@
 /* Pantallas grandes */
 @media (max-width: 1536px) {
   .footer-content {
+
     font-size: var(--fs-xxxs);
   }
 }
