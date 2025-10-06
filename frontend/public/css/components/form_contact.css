@@ -1,45 +1,52 @@
-.contact-form__body {
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
 .contact-form {
+    display: flex;
+    flex-direction: column;
     width: 360px;
     min-width: 320px;  
     margin: 20px auto;
-    padding: 20px;
+    padding: 24px;
     border: 1px solid var(--gray-300);
     border-radius: 10px;
     background: var(--overlay-dark-strong);
     font-family: var(--main-font);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    gap: 24px;
 }
 
+.contact-form__content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+}
 /* Título */
 .contact-form__title {
     text-align: center;
     color: var(--white);
-    margin-bottom: 20px;
     font-size: var(--fs-xs);
     font-weight: bold;
 }
 
-/* Grupos */
+.contact-form__container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .contact-form__group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    gap: 4px;
 }
 
-/* Labels */
+
 .contact-form__label {
-    gap: 8px;
     font-size: var(--fs-xxxs);
     font-family: var(--main-font);
     color: var(--gray-200);
 }
 
-/* Inputs */
+
 .contact-form__input,
 .contact-form__textarea {
     display: flex;
@@ -47,29 +54,26 @@
     width: 320px;
     min-width: 320px;
     height: 56px;
-    gap: 8px;
     padding: 16px;
-    margin-bottom: 10px;
     border: 1px solid var(--gray-900);
     border-radius: 10px;
     font-size: var(--fs-xs);
     box-sizing: border-box;
 }
 
-/* Textarea */
+
 .contact-form__textarea {
     resize: vertical;
     min-height: 30px;
     font-family: var(--main-font);
 }
 
-/* Botón */
+
 .contact-form__button {
     font-weight: 600;
-    display: block;
     width: 30%;        
     margin: 1px auto; 
-    padding: 12px;
+    padding: 8px 16px;
     background-color: var(--primary-700);
     border: none;
     border-radius: 8px;
@@ -77,6 +81,11 @@
     cursor: pointer;
     color: var(--white);
     transition: background 0.3s ease;
+}
+
+.contact-form__send{
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-form__button:hover {

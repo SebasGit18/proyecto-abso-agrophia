@@ -1,3 +1,18 @@
+
+/* .footer-content {
+  width: 100%;
+  min-height: 64px;
+  padding: 16px 24px;
+  background-color: var(--primary-100); 
+  color: var(--primary-800);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+} */
+
 /* === FOOTER PRINCIPAL === */
 .footer-content {
   position: static;
@@ -44,13 +59,19 @@
   position: relative;
 }
 
-  .footer__social {
-    grid-column: 3; 
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 10px;
-  }
+    /* .footer__social {
+      grid-column: 3; 
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      gap: 10px;
+    } */
+
+.footer__social-icon:not(:last-child)::after {
+  content: "|";
+  margin-left: 8px;
+  color: var(--black);
+}
 
 /* === HOVER === */
 .footer__social-icon:hover {
@@ -68,6 +89,64 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+  }
+}
+/* === ELEMENTOS === */
+.footer__copy {
+  font-size: var(--fs-xxxs);
+  grid-column: 2;
+  font-weight: 600;
+  
+
+}
+
+.footer__social {
+  grid-column: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__social-text {
+  font-size: var(--fs-xxxs);
+  padding: 4px;
+  font-weight: 500;
+}
+
+.footer__social-icon {
+  text-decoration: none;
+  color: var(--black);
+  font-size: var(--fs-xs);
+  position: relative;
+}
+
+.footer__social-icon:not(:last-child)::after {
+  content: "|";
+  margin-left: 8px;
+  color: var(--black);
+}
+
+/* === HOVER === */
+.footer__social-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* === BREAKPOINTS === */
+
+/* sm - Teléfonos grandes (≤640px) */
+@media (max-width: 640px) {
+  .footer-content {
+    font-size: var(--fs-xxxs);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+  @media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer__copy {
@@ -88,6 +167,7 @@
 /* Tablets */
 @media (max-width: 768px) {
   .footer-content {
+    font-size: var(--fs-xxxs);
     font-size: var(--fs-xs);
     padding: 10px;
   }
@@ -113,6 +193,7 @@
 /* Desktop */
 @media (max-width: 1280px) {
   .footer-content {
+    font-size: var(--fs-xxxs);
     font-size: var(--fs-xxs);
   }
 }
@@ -120,6 +201,11 @@
 /* Pantallas grandes */
 @media (max-width: 1536px) {
   .footer-content {
+    font-size: var(--fs-xxxs);
+  }
+}
+
     font-size: var(--fs-xxs);
   }
 }
+

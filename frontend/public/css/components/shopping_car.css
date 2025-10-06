@@ -15,13 +15,12 @@ body {
     justify-content: center;
     align-items: center;
     font-size: var(--fs-xs);
-    gap: 16px;
+    gap: 10px;
 }
 
 .header__title_shoppingcar {
     font-size: var(--fs-lg);
     text-align: center;
-    gap: 10px;
 }
 
 .header__icon_shoppingcar {
