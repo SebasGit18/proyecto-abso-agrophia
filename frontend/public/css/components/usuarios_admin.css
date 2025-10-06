@@ -1,0 +1,174 @@
+
+/* ====== CONTENEDOR DE TABLAS ====== */
+.table-container {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px var(--gray-100);
+  overflow-x: auto;
+}
+
+/* ====== TABLA DE USUARIOS ====== */
+.users-table {
+  width: auto;
+  max-width: auto;
+  /* margin-left:200px; */
+  margin-right: 10px;
+  border-collapse: collapse;
+  background: var(--white);
+  box-shadow: 0 4px 12px var(--gray-100);
+  font-size: var(--fs-xxxs);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.users-table__header,
+.users-table__cell {
+  font-family: var(--main-font);
+  color: var(--black);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.users-table__header {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--fs-xxxs);
+  text-align: center;
+}
+
+.users-table__row:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+.users-table__row:hover {
+  background-color: var(--terciary-100);
+}
+
+.users-table__cell--status,
+.users-table__cell--message {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.users-table__cell--actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+/* ====== ESTADOS ====== */
+.users-table__status {
+  font-family: var(--main-font);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.users-table__status--active {
+  background-color: var(--primary-200);
+  color: var(--black);
+}
+
+.users-table__status--blocked {
+  background-color: var(--secundary-400);
+  color: var(--black);
+}
+
+/* ====== BOTONES ====== */
+.users-table__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--fs-xxxs);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.users-table__button:hover {
+  transform: translateY(-2px);
+  background-color: var(--gray-100);
+}
+
+/* Variantes */
+.users-table__button--block {
+  /* background-color: var(--secundary-400); */
+  color: var(--white);
+}
+
+.users-table__button--unblock {
+  /* background-color: var(--primary-600); */
+  color: var(--white);
+}
+
+.users-table__button--edit {
+  /* background-color: var(--terciary-400); */
+  color: var(--white );
+}
+
+.users-table__button--message {
+  /* background-color: var(--primary-600); */
+  color: var(--white);
+}
+
+
+
+/* Icono dentro del botón */
+.users-table__button__icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+@media (max-width: 640px){
+
+  .table_users{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+@media (max-width: 768px) and (min-width: 640px) {
+
+  .table_users{
+    /* margin: 24px; */
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+
+
+
+/* 
+@media (max-width: 1115px) {
+  .users-table,
+  .table_users,
+  .table-container {
+    margin-top: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media(max-width:1024px){
+  .users-table__cell--actions{
+    flex-direction: column;
+  }
+
+} */

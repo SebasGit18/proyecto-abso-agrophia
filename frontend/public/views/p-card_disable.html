@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos Deshabilitados</title>
+  <link rel="stylesheet" href="/frontend/public/css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-product__disable-container"></div>
+  </header>
+
+  <main>
+    <section class="search__container"></section>
+    <section class="card-disable__container-section">
+      <div class="card-disable__container"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container"></div>
+  </footer>
+
+  <script src="/frontend/public/js/components/navbar-disable.js" defer></script>
+  <script src="/frontend/public/js/components/footer.js" defer></script>
+  <script src="/frontend/public/js/components/search.js" defer></script>
+  <script type="module">
+    import { loadCards } from "/frontend/public/js/components/card-disable.js";
+    loadCards(".card-disable__container");// Clase para cargar todas las cards
+  </script>
+</body>
+
+</html>

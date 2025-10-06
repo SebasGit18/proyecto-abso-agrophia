@@ -1,0 +1,89 @@
+.toolbar-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: var(--white);
+  padding: 0 12px;
+}
+
+.toolbar-main__search {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--gray-100);
+  border: none;
+  border-radius: 12px;
+  justify-content: flex-end;
+  padding: 12px 14px;
+  width: 70%;
+}
+
+.toolbar-main__search-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toolbar-main__search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.toolbar-main__search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--fs-xs);
+  background: transparent;
+  color: var(--primary-700);
+}
+
+.toolbar-main__search-input::placeholder {
+  color: var(--gray-400);
+  font-size: var(--fs-xs);
+}
+.toolbar-main__row-icons {
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
+}
+.toolbar-main__icon {
+  display: flex;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gray-100);
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.toolbar-main__icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .toolbar-main {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .toolbar-main__search {
+    max-width: 150px;
+    padding: 8px 12px;
+  }
+  .toolbar-main__row-icons {
+    margin-left: 15px;
+    margin-top: 0;
+    gap: 15px;
+  }
+}

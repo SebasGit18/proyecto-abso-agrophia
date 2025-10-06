@@ -1,0 +1,70 @@
+<div class="product-form__content">
+  <h2 class="product-form__subtitle">Subir producto</h2>
+    <div class="product-form">
+      
+      <form class="product-form__body">
+        
+        <div class="product-form__group">
+          <label for="nombre" class="product-form__label">Nombre del producto</label>
+          <input type="text" class="product-form__input" placeholder="Ej: Tomates frescos" required>
+        </div>
+
+        <div class="product-form__group">
+          <label for="tipo" class="product-form__label">Tipo de producto</label>
+          <input type="text" class="product-form__input" placeholder="Ej: Verdura, fruta..." required>
+        </div>
+
+        <div class="product-form__group">
+          <label for="cantidad" class="product-form__label">Cantidad</label>
+          <input type="number"  class="product-form__input" placeholder="Ej: 50" required>
+        </div>
+
+        <div class="product-form__group">
+          <label for="precio" class="product-form__label">Precio</label>
+          <input type="number" class="product-form__input" placeholder="Ej: 20.00" required>
+        </div>
+
+        <div class="product-form__group">
+          <label for="unidad" class="product-form__label">Unidad de medida</label>
+          <select name="metodo" class="product-form__input" required>
+          <option value="">-- Selecciona --</option>
+          <option value="Libra">Libra</option>
+          <option value="kilo">Kilo</option>
+          <option value="Arroba">Arroba</option>
+          <option value="Litro">Litro</option>
+      </select>
+        </div>
+
+        <div class="product-form__group">
+          <label for="descripcion" class="product-form__label">Descripción</label>
+          <input type="text" class="product-form__input" placeholder="Breve descripción del producto">
+        </div>
+
+        <div class="product-form__group">
+          <label for="garantia" class="product-form__label">Garantía</label>
+          <input type="text" class="product-form__input" placeholder="Ej: 7 días">
+        </div>
+
+        <div class="product-form__group">
+          <label class="product-form__label">Foto de Perfil</label>
+          
+          <!-- Label que actúa como botón -->
+          <label for="input-foto" class="product-form__label product-form__label--file">
+            Seleccionar foto
+          </label>
+          <input id="input-foto" class="product-form_input product-form_input--file" type="file" name="foto"/>
+          
+          <!-- Aquí se mostrará el nombre de la foto seleccionada -->
+          <!-- <span id="file-name" class="product-form__file-name">Ningún archivo seleccionado</span> -->
+        </div>
+        
+      </form>
+    </div>
+
+  <div class="product-form__row producto-form__row--center">
+    <button type="submit" class="producto-form__btn producto-form__btn--publicar">
+      Publicar Producto
+    </button>
+  </div>
+
+</div>

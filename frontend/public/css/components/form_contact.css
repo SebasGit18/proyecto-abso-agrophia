@@ -1,0 +1,126 @@
+.contact-form__body {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contact-form {
+    width: 360px;
+    min-width: 320px;  
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid var(--gray-300);
+    border-radius: 10px;
+    background: var(--overlay-dark-strong);
+    font-family: var(--main-font);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.contact-form__title {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: var(--fs-xs);
+    font-weight: bold;
+}
+
+/* Grupos */
+.contact-form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.contact-form__label {
+    gap: 8px;
+    font-size: var(--fs-xxxs);
+    font-family: var(--main-font);
+    color: var(--gray-200);
+}
+
+/* Inputs */
+.contact-form__input,
+.contact-form__textarea {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    min-width: 320px;
+    height: 56px;
+    gap: 8px;
+    padding: 16px;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray-900);
+    border-radius: 10px;
+    font-size: var(--fs-xs);
+    box-sizing: border-box;
+}
+
+/* Textarea */
+.contact-form__textarea {
+    resize: vertical;
+    min-height: 30px;
+    font-family: var(--main-font);
+}
+
+/* Botón */
+.contact-form__button {
+    font-weight: 600;
+    display: block;
+    width: 30%;        
+    margin: 1px auto; 
+    padding: 12px;
+    background-color: var(--primary-700);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--fs-xs);
+    cursor: pointer;
+    color: var(--white);
+    transition: background 0.3s ease;
+}
+
+.contact-form__button:hover {
+    background-color: var(--primary-800);
+}
+
+
+@media (width > 768px) {
+    .contact-form__body {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .contact-form__title {
+        font-size: var(--fs-sm);
+    }
+
+    .contact-form__label {
+        gap: 4px;
+        font-size: var(--fs-xxxs);
+       
+    }
+
+    .contact-form__input,
+    .contact-form__textarea {
+        font-size: var(--fs-xs);
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .contact-form__button {
+        width: 30%;
+        height: 48px;
+        font-size: var(--fs-xs);
+        padding: 8px 16px;
+        border-radius: 8px;
+    }
+}
+
+
+

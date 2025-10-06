@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi proyecto</title>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+
+    <script src="/frontend/public/js/components/navbar.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/hero.js" defer></script>
+
+
 </head>
 <body>
-    <h1 class="title">Mi proyecto</h1>
+    <header class="navbar-container"></header>
+    <section class="hero">
+        <div class="hero-container"></div>
+    </section>
+    
+    <main>
+        <section class="search__container"></section>
+        <section class="list-home__container"></section>
+        <section class="card-home__container-section">
+            <div class="card-home__container"></div>
+        </section>
+    </main>
+
+
+    <script src="/frontend/public/js/components/navbar-home.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script src="/frontend/public/js/components/list-home.js"></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-home.js";
+        loadCards(".card-home__container");// Clase para cargar todas las cards
+    </script>
+</body>
+
+    <footer class="footer-container"></footer>
 </body>
 </html>

@@ -1,0 +1,153 @@
+  .page-left__unit-measure {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 50%; 
+    height: 100dvh;   /* altura del viewport dinámico real */
+    overflow: hidden;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+
+    background: 
+      linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+      url("/frontend/public/img/huerto.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
+  }
+.page-left__unit-measure__title{
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-align: center;
+  /* letter-spacing: 5px; */
+  
+}
+
+  .page-right__unit-measure{
+    margin-left:50%; 
+    width:50%; 
+    min-height:100vh; 
+    color: var(--black);
+    height:100vh; 
+    overflow-y:auto;
+    display:flex; 
+    flex-direction:row; 
+    align-items:center; 
+    justify-content: center;
+    /* padding:0 40px; */
+  }
+
+  .container-unit-measure {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    height: auto;
+    max-width: 362px;       
+    margin: 20px auto;
+    padding: 20px;       
+    border: 1px solid var(--gray-300); 
+    border-radius: 12px;    
+    text-align: center;
+    font-family: var(--font-primary);
+    background: var(--overlay-dark);
+    gap: 12px;
+  }
+
+  .container-unit-measure__title {
+    font-size: var(--fs-sm);
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--white);
+  }
+
+  .container-unit-measure__description {
+    font-size: var(--fs-xs);
+    margin-bottom: 15px;
+    color: var(--white);
+  }
+
+  /* Grupo de input */
+  .container-unit-measure__form {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; 
+  }
+
+  /* Campos */
+  .container-unit-measure__form-amount {
+    flex: 1;                
+    width: 320px;    
+    padding: 12px;
+    font-size: var(--fs-xs);
+    border: 1px solid var(--black); 
+    border-radius: 12px; 
+    box-sizing: border-box;
+    
+  }
+.container-unit-measure__form-amount:focus{
+    border-color: var(--primary-700);
+    box-shadow: 0 0 0 4px rgba(19,102,255,0.06);
+    outline: none;
+    
+    
+  }
+  
+.container-unit-measure__button{
+    padding: 11px 18px;
+    font-size: var(--fs-xs);
+    background-color: var(--primary-700);
+    color: var(--white);
+    width: 120px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+.container-unit-measure__button:hover{
+  transform: translateY(-2px);
+  background-color: var(--primary-600);
+
+  }
+
+.container-unit-measure__back{
+  font-weight: 600;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background-color: var(--primary-700);
+  border-radius: 4px;
+  padding: 9px 16px;
+  height: 36px;
+  font-size: var(--fs-xs);
+  /* font-weight: 600; */
+  color: var(--white);
+  text-decoration: none;
+  transition: background-color .2s ease;
+}
+.container-unit-measure__back:hover{
+  background-color: var(--primary-600);
+}
+
+@media (max-width:800px){
+  .page-left__unit-measure{ 
+    display:none; 
+  }
+  .page-right__unit-measure{ 
+    margin-left:0; 
+    width:100%;
+  }
+  
+}
+@media(width < 365px){
+  .container-unit-measure{
+    width: auto;
+  }
+  .container-unit-measure__form-amount{
+    width: auto;
+  }
+}

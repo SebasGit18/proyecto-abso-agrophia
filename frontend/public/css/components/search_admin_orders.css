@@ -1,0 +1,88 @@
+body {
+  font-family: var(--main-font);
+  background-color: var(--white);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title (igual que antes, solo renombrado) */
+.search-orders__title{
+  color: var(--black);
+  font-size: var(--fs-sm);
+  margin: 15px;
+  text-align: center;
+}
+
+/* Contenedor principal: mantengo tus medidas y estilos */
+.search-orders__container {
+  display: flex;
+  /* align-items: center; */
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--white);
+  border: 1px solid var(--gray-900);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.search-orders__icon {
+  color: var(--gray-900);
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center; /* centra verticalmente el ícono */
+}
+
+.search-orders__filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-900);
+}
+
+/* Input: mantengo el id por compatibilidad y añado la clase para BEM */
+#buscador,
+.search-orders__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: var(--fs-xs);
+  background: transparent; 
+  color: var(--gray-900);
+  padding: 12px 24px;
+}
+
+/* placeholder */
+.search-orders__input::placeholder,
+#buscador::placeholder {
+  color: var(--gray-400);
+  font-size: 16px;
+}
+
+/* Media query corregida (anteriormente inválida) */
+/* Mantengo tu comportamiento original: desplazar por el sidebar */
+@media (min-width: 1116px) {
+  .search-orders__container {
+    margin-left: 18.5%;
+  }
+  .search-orders__title {
+    text-align: inherit;
+    margin-left: 18.5%;
+  }
+}
+
+/* Mobile: ocultar icono de filtro tal como tenías */
+@media (max-width: 439px) {
+  #buscador, .search-orders__input {
+    width: 100%;
+  }
+
+  .search-orders__filter {
+    display: none;
+  }
+}

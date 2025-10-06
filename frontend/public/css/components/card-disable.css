@@ -1,0 +1,104 @@
+.card-disable__container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  max-width: 1920px;
+}
+
+/* Contenedor que organiza las cards en grilla */
+.card-disable__container {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* === Card === */
+.card-disable {
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  min-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-disable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
+}
+
+/* Imagen de la card */
+.card-disable__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.card-disable__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Texto dentro de la card */
+.card-disable__price {
+  font-size: var(--fs-sm);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-disable__name {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--primary-700);
+  margin-bottom: 16px;
+}
+
+/* === Botón === */
+.card-disable__button-one {
+  height: 40px;
+  background-color: var(--secundary-300);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-disable__button-one:hover {
+  background-color: var(--secundary-400);
+  transform: scale(1.02);
+}
+
+.card-disable__button-one:active {
+  background-color: var(--secundary-500);
+  transform: scale(0.98);
+}
+
+@media (width > 640px) {
+  .card-disable__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (width > 1024px) {
+  .card-disable__container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,128 @@
+.method-payment {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--overlay-dark-strong);
+  border-radius: 8px;
+  padding: 24px;
+  min-width: 320px;
+  height: auto;
+  width: 100%;
+  margin: 24px auto 24px;
+  gap: 24px;
+}
+
+
+.method-payment__title {
+  text-align: center;
+  font-size: var(--fs-sm);
+  font-family: var(--main-font);
+  color: var(--white);
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.method-payment__form {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+}
+
+.method-payment__label {
+  font-weight: bold;
+  color: var(--gray-200);
+  font-size: var(--fs-xxxs);
+}
+
+.method-payment__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.method-payment__select,
+.method-payment__input {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  height: 56px;
+  padding: 0 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 6px;
+  color: var(--black);
+  font-size: var(--fs-xs);
+  margin: 0;
+}
+
+.method-payment__button {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 20%;
+  padding: 8px 16px;
+  background: var(--primary-800);
+  color: var(--white);
+  font-size: var(--fs-xs);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  justify-self: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.method-payment__button:hover {
+  background: var(--primary-950);
+}
+
+.method-payment__link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 12x;
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--fs-xs);
+}
+
+@media (max-width: 640px) {
+  .method-payment {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .method-payment__button {
+    padding: 8px 16px;
+    height: 40px;
+    width: 20%;
+
+  }
+}
+
+@media (width > 768px) {
+  .method-payment {
+    max-width: 90%;
+  }
+
+  .method-payment__form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width > 1024px) {
+  .method-payment {
+    max-width: 90%;
+  }
+
+  .method-payment__form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

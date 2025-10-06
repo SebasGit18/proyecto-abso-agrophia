@@ -1,5 +1,3 @@
-/* El archivo layout.css se encarga de definir la estructura base de tu aplicación, como el sistema de grid, flexbox, contenedores, espaciados y alineaciones. Su objetivo es organizar los elementos de la página sin afectar su apariencia visual (colores, tipografías, etc.). */
-
 /* Distribución general (fondo del body, display, flexbox, grid, alturas, anchos, etc.). */
 
 html {
@@ -12,8 +10,9 @@ html {
 }
 
 body {
-    background-color: var(--gray-900);
+    /*background-color: var(--gray-900);*/
     color: var(--white);
+    font-size: 1.6rem;
 }
 
 /* 1. Contenedor Principal */
@@ -39,11 +38,11 @@ body {
     gap: 10px;
 }
 
-/* 4. Secciones principales */
+/* 4. Secciones principales 
 .header, .main, .footer {
     width: 100%;
     padding: 20px;
-}
+}*/
 
 /* 5. Espaciados reutilizables */
 .margin-top {

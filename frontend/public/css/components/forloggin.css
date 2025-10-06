@@ -1,0 +1,203 @@
+.page__left_login {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 50%; 
+  height: 100dvh;   /* altura del viewport dinámico real */
+  overflow: hidden;
+
+  display: flex;                 
+  justify-content: center;       
+  align-items: center;           
+
+  background: 
+    linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+    url("/frontend/public/img/farmer.jpg");
+
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+
+.login__title-left {
+  text-align: center;
+  font-size: var(--fs-xxs);
+  font-weight: bold;
+  color: var(--white); /* para que se vea sobre el fondo oscuro */
+}
+
+
+.page__right_login{
+  margin-left:50%; 
+  width:50%; 
+  min-height:100vh; 
+  color: var(--black);
+  height:100vh; 
+  overflow-y:auto;
+  display:flex; 
+  flex-direction:row; 
+  align-items:center; 
+  /* padding:0 40px; */
+}
+.page__right::before, .page__right::after { 
+  content:""; 
+  display:block; 
+  flex:0 0 60px; 
+}
+
+.login-container {
+  font-family: var(--main-font);
+  /* margin-left: 400px; */
+  margin-right: auto;
+  background: var(--overlay-dark-strong);
+  padding: 30px 25px;
+  border: 0.2px solid;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  /* margin: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 8px;
+}
+
+.login-container__title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: var(--fs-xs);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.login-form__label {
+  gap: 4px;
+  display: block;
+  margin: 12px 0 5px;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-200);
+}
+
+.login-form__input {
+  /* font-size: 16px; */
+  width: 100%;
+  min-width: 320px;
+  height: 56px;
+  padding: 16px;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  font-size: var(--fs-xxxxs);
+  margin-bottom: 15px;
+}
+
+.login-form__show-password {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.login-form__checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.login-form__checkbox-label {
+  cursor: pointer;
+  user-select: none;
+  font-size: var(--fs-xxxs);
+  color: var(--gray-200);
+}
+
+.login-form__button {
+  font-weight: 600;
+  display: block;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background-color: var(--primary-700);
+  color: var(--white);
+  font-size: var(--fs-xs);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form__button:hover {
+  background-color: var(--primary-900);
+  color: var(--white);
+}
+
+.login-container__register {
+  display: flex;
+  text-align: center;
+  margin-top: 20px;
+  justify-content: center;
+  font-size: var(--fs-xxs);
+  font-weight: 800;
+  color: var(--white);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.login-container__register a:hover {
+  text-decoration: underline;
+}
+
+.register__back{
+    height: 36px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background-color: var(--primary-700);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: var(--fs-xs);
+    /* font-weight: 600; */
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 1px 3px var(--gray-100);
+    transition: background-color .2s ease;
+}
+
+.register__back:hover{
+  background-color: var(--primary-600);
+}
+
+/* 
+@media(width <353px){
+  .login-container{
+    width: auto;
+  }
+} */
+
+/* @media (width< 969px) {
+  .login-container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: left; 
+    width: auto;               
+  }
+} */
+/* Responsive: ocultar imagen en tablet/móvil */
+@media (max-width:800px){
+  .page__left_login{ 
+    display:none; 
+  }
+  .page__right_login{ 
+    margin-left:0; 
+    width:100%;
+  }
+  
+}
+
+
+

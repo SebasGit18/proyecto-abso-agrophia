@@ -1,0 +1,239 @@
+.page { 
+    display:flex; 
+    width:100%; 
+    min-height:100vh; 
+    margin:0; 
+    font-family:var(--main-font, Arial, sans-serif); }
+
+.page__left {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:20%; 
+    height:100vh;
+    background-image: linear-gradient(var(--overlay-dark), var(--overlay-dark)), url("/frontend/public/img/plant.png");
+    background-size:cover; 
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.page__description {
+    font-size: var(--fs-sm);
+    color: var(--white);
+    text-align: center;
+    padding: 50% 25%;
+}
+
+.page__right {
+    margin: 0px;
+    margin-left: auto; 
+    width: 50%; 
+    min-height:100vh; 
+    overflow-y: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    /* background-image: linear-gradient(var(--overlay-dark), var(--overlay-dark)), url("/frontend/public/img/plant.png"); */
+    background-size:cover; 
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.page__right::before, .page__right::after { 
+    content:""; 
+    display:block; 
+    flex:0 0 60px; 
+}
+
+.home__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: var(--primary-700);
+    font-size: var(--fs-lg);
+} 
+
+.form {
+    background: var(--white);
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--black);
+    width: 500px;
+    max-width: 1000px;
+    border: 1px solid var(--black);
+    font-family: var(--main-font);
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: var(--fs-md);
+}
+
+
+.form__label {
+    color: var(--gray-200);
+    display: block;
+    font-size: var(--fs-xxxs);
+    font-weight: bold;
+}
+.form__group{
+    display: flex;
+    gap:4px;
+    flex-direction: column;
+}
+.form__option {
+    width: 280px;
+    min-width: 320px;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid var(--gray-400);
+    border-radius: 12px;
+    font-size: var(--fs-xs);
+}
+
+.form__input,
+.form__select {
+    width: 280px;
+    min-width: 320px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-400);
+    outline: none;
+    font-size: var(--fs-xs);
+    transition: border 0.3s ease;
+}
+
+.form__input:focus,
+.form__select:focus {
+    border-color: var(--black);
+}
+
+.form__checkbox {
+    gap: 5px;
+    accent-color: var(--black);
+}
+
+.form__button {
+    display: block;
+    font-weight: 600;
+    height: 40px;
+    min-width: 64px;
+    width: 40%;
+    margin: 20px auto 0;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: var(--primary-700);
+    color: var(--white);
+    font-size: var(--fs-xs);
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Botón volver (ahora parte del bloque, con scope global mínimo) */
+.register__back{
+    height: 36px;
+
+    /* top: 16px;
+    right: 16px; */
+    background-color: var(--primary-700);
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: var(--fs-xs);
+    /* font-weight: 600; */
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 0 1px 3px var(--gray-100);
+    transition: background-color .2s ease;
+}
+
+.register__back:hover{
+  background-color: var(--primary-600);
+}
+
+.form__button:hover {
+    background: var(--primary-800);
+    cursor: pointer;
+}
+
+
+@media (width > 640px) {
+    .register__back{
+        position: static;
+        top: none;
+    }
+    .page__left {
+        display: none;
+    }
+
+    .page__right {
+        width: 100%;   /* Que ocupe todo el ancho */
+        margin: 0px;
+    }
+
+    .form-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--black);
+        padding: 24px;
+        color: var(--gray-800);
+        border-radius: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        background: var(--overlay-dark-strong);
+    }
+
+    .form-content__group {
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .form__label {
+        min-width: 320px;
+    }
+
+    .form__see--password {
+        margin-top: 10px;
+        display: flex;
+        align-items: center; /* Alinea checkbox y texto verticalmente */
+        gap: 8px; /* Espacio entre el checkbox y el texto */
+        font-weight: bold; /* Opcional, para que coincida con tu imagen */
+        /* font-size: var(--fs-xxs); */
+    }
+}
+
+@media (width < 640px) {
+    .page__left {
+        display: none; /* Ocultar la imagen */
+    }
+
+    .page__right {
+        width: 100%;   /* Que ocupe todo el ancho */
+        margin-left: 0; 
+        padding: 20px;
+    }
+
+    .form-content { 
+        margin: 0;   
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 12px 24px;
+        width: 370px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        text-align: left;
+        border: solid 0.1rem var(--primary-950);
+        color: var(--black);
+        background: var(--overlay-dark-strong);
+    }
+}
