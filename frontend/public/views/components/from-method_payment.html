@@ -1,46 +1,48 @@
 <div class="method-payment">
-  <h3 class="method-payment__form-title">Método de pago</h3>
+  <h3 class="method-payment__title">Método de pago</h3>
+
   <form class="method-payment__form">
-    <div>
-      <label for="metodo" class="method-payment__form-label">Selecciona el método de pago</label>
-      <select name="metodo" class="method-payment__form-option" required>
+    <div class="method-payment__group">
+      <label class="method-payment__label" for="metodo">Selecciona el método de pago</label>
+      <select class="method-payment__select" name="metodo" required>
         <option value="">-- Selecciona --</option>
         <option value="transferencia">Pago de contado</option>
         <option value="contraentrega">Pago contra entrega</option>
       </select>
     </div>
 
-    <div>
-      <label for="nombre" class="method-payment__form-label">Nombre completo</label>
-      <input type="text" name="nombre" class="method-payment__form-input" placeholder="Nombre completo" required>
+    <div class="method-payment__group">
+      <label for="nombre" class="method-payment__label">Nombre completo</label>
+      <input type="text" name="nombre" class="method-payment__input" placeholder="Nombre completo" required>
     </div>
 
-    <div>
-      <label for="correo" class="method-payment__form-label">Correo electrónico</label>
-      <input type="email" name="correo" class="method-payment__form-input" placeholder="ejemplo@correo.com" required>
+    <div class="method-payment__group">
+      <label for="correo" class="method-payment__label">Correo electrónico</label>
+      <input type="email" name="correo" class="method-payment__input" placeholder="ejemplo@correo.com" required>
     </div>
 
-    <div>
-      <label for="direccion" class="method-payment__form-label">Dirección de entrega</label>
-      <input type="text" name="direccion" class="method-payment__form-input" placeholder="Tu dirección" required>
+    <div class="method-payment__group">
+      <label for="direccion" class="method-payment__label">Dirección de entrega</label>
+      <input type="text" name="direccion" class="method-payment__input" placeholder="Tu dirección" required>
     </div>
 
-    <div>
-      <label for="referencia" class="method-payment__form-label">Número de comprobante o referencia</label>
-      <input type="text" name="referencia" class="method-payment__form-input" placeholder="Ej: #123456">
+    <div class="method-payment__group">
+      <label for="referencia" class="method-payment__label">Número de comprobante o referencia</label>
+      <input type="text" name="referencia" class="method-payment__input" placeholder="Ej: #123456">
     </div>
 
-    <div>
-      <label for="monto" class="method-payment__form-label">Monto transferido</label>
-      <input type="number" name="monto" class="method-payment__form-input" placeholder="Ej: 50000">
+    <div class="method-payment__group">
+      <label for="monto" class="method-payment__label">Monto transferido</label>
+      <input type="number" name="monto" class="method-payment__input" placeholder="Ej: 50000">
     </div>
 
-    <div>
-      <label for="entidad" class="method-payment__form-label">Entidad donde pagaste</label>
-      <input type="text" name="entidad" class="method-payment__form-input" placeholder="Ej: Bancolombia">
+    <div class="method-payment__group">
+      <label for="entidad" class="method-payment__label">Entidad donde pagaste</label>
+      <input type="text" name="entidad" class="method-payment__input" placeholder="Ej: Bancolombia">
     </div>
+    
 
   </form>
-  <a href="/frontend/public/views/p_login-customer.html" type="submit" class="method-payment__form-button">Finalizar Pago</a>
-  <a href="/frontend/public/views/p_login-customer.html" class="method-payment__form-volver">← Volver al inicio</a>
+  <a href="/frontend/public/views/p_login-customer.html" type="submit" class="method-payment__button">Finalizar Pago</a>
+  <a href="/frontend/public/views/p_login-customer.html" class="method-payment__link">← Volver al inicio</a>
 </div>

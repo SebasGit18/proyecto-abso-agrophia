@@ -20,7 +20,7 @@
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  min-width: 290px;
+  min-width: 320px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -97,7 +97,7 @@
 
 }
 
-/* === Responsive Grid === */
+
 @media (width > 640px) {
   .card-dairy__container {
     grid-template-columns: repeat(2, 1fr);
@@ -107,14 +107,6 @@
   }
 }
 
-/*@media (width < 1320px) {
-  .card-home__container {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
-}*/
 
 @media (width > 1024px) {
   .card-dairy__container {
