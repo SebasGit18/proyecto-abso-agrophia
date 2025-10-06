@@ -1,16 +1,27 @@
 <div class="contact-form">
-   <h2 class="contact-form__title">Formulario de Contacto</h2> 
+  <div class="contact-form__content">
+    <h2 class="contact-form__title">Formulario de Contacto</h2> 
+  </div>
 
-  <form class="contact-form__body">
-    <label for="name" class="contact-form__label">Nombre Completo</label>
-    <input type="text" id="name" class="contact-form__input" placeholder="Nombre Completo" />
-
-    <label for="email" class="contact-form__label">Correo Electrónico</label>
-    <input type="email" id="email" class="contact-form__input" placeholder="Correo Electrónico" />
-
-    <label for="message" class="contact-form__label">Escribe tu mensaje aquí</label>
-    <textarea id="message" class="contact-form__textarea" placeholder="Mensaje"></textarea>
-
+  <div class="contact-form__container">
+    <form class="contact-form__body">
+      <div class="contact-form__group">
+        <label for="name" class="contact-form__label">Nombre Completo</label>
+        <input type="text" id="name" class="contact-form__input" placeholder="Nombre Completo" />
+      </div>
+      
+      <div class="contact-form__group">
+        <label for="email" class="contact-form__label">Correo Electrónico</label>
+        <input type="email" id="email" class="contact-form__input" placeholder="Correo Electrónico" />
+      </div>
+      
+      <div class="contact-form__group">
+        <label for="message" class="contact-form__label">Escribe tu mensaje aquí</label>
+        <textarea type="message" class="contact-form__textarea" placeholder="Mensaje"></textarea>
+      </div>
+    </form>
+  </div>
+  <div class="contact-form__send">
     <button type="submit" class="contact-form__button">Enviar</button>
-  </form>
+  </div>
 </div>

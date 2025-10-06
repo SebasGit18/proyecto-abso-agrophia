@@ -1,8 +1,6 @@
-/* ===== FORMULARIO DE SUBIR PRODUCTO ===== */
-
 .product-form__content {
   background-color: var(--overlay-dark-strong);
-  padding: 12px 24px;
+  padding: 24px;
   border-radius: 10px;
   box-shadow: 0 2px 6px var(--black);
   width: 100%;
@@ -10,43 +8,75 @@
   border: 1px solid var(--black);
   font-family: var(--main-font);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 24px auto 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-
+.product-form__container{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 24px;
+  
+}
 .product-form {
   text-align: left;
-  margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 24px;
 }
 
-.product-form__title {
+.public-product__button{
+  margin: 24px;
+  justify-content: flex-end;
+  display: flex;
+}
+.public-product__back{
+  font-weight: 600;
+  position: static;
+  top: 16px;
+  right: 16px;
+  background-color: var(--primary-700);
+  border-radius: 4px;
+  padding: 9px 16px;
+  height: 36px;
+  font-size: var(--fs-xs);
+  /* font-weight: 600; */
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0 1px 3px var(--gray-100);
+  transition: background-color .2s ease;
+}
+.public-product__back:hover{
+  background-color: var(--primary-600);
+}
+
+/* .product-form__title {
   text-align: center;
   margin-bottom: 20px;
   color: var(--white);
   font-size: var(--fs-sm);
   font-weight: 600;
-}
+} */
 
 
 .product-form__group {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 4px;
 }
 
 .product-form__label {
   color: var(--gray-200);
-  margin-bottom: 5px;
   font-size: var(--fs-xxxs);
   font-weight: bold;
 }
 
 .product-form__input {
-  width: 320px;
+  /* width: 320px; */
   min-width: 320px;
   height: 56px;
   padding: 16px;
@@ -134,6 +164,7 @@
 .product-form__row {
   grid-column: span 1;
   text-align: center;
+  /* gap:24px; */
 }
 
 .producto-form__btn--publicar {
@@ -142,7 +173,7 @@
   height: 40px;
   min-width: 64px;
   width: 40%;
-  margin: 20px auto 0;
+  margin: 20px auto 0; 
   padding: 8px 16px;
   background-color: var(--primary-700);
   color: var(--white);
@@ -157,26 +188,26 @@
   cursor: pointer;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 640px) {
   .product-form__content {
-    width: auto;
-    max-width: 380px;
+    width: 100%;
+    margin: 0; 
   }
 
-    .product-form {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
-  }
+  .product-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
 
   .producto-form__btn--publicar {
     width: 60%;
   }
 }
 
-/* ===== TABLET (641px – 1024px) ===== */
-@media (min-width: 741px) and (max-width: 1024px) {
+/* ===== TABLET  ===== */
+@media (max-width: 768px) and (min-width: 640px) {
   .product-form__content {
     width: auto;
     max-width: 715px;

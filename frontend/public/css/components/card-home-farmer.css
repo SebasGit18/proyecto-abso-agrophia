@@ -10,7 +10,6 @@
 
 /* Contenedor que organiza las cards en grilla */
 .card-farmer__container {
-  
     display: grid;
     gap: 24px;
     width: 50%;
