@@ -42,7 +42,7 @@ body {
     color: var(--black);
 }
 
-table {
+.tableorder__table {
     padding: 24px;
     width: 95%;
     margin: 20px auto;
@@ -68,6 +68,7 @@ tr:nth-child(even) {
 }
 
 .tableorder__btn--pending {
+    width: 100%;
     background-color: var(--secundary-400);
     color: var(--black);
     border: none;
@@ -76,15 +77,29 @@ tr:nth-child(even) {
     cursor: pointer;
 }
 
+.tableorder__btn--pendingone {
+    width: 100%;
+    background-color: var(--primary-100);
+    color: var(--black);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
 .tableorder__link {
+    padding: 8px 16px;
+    height: 36px;
     display: block;
     text-align: center;
     margin-bottom: 0px;
     margin: 100px;
     color: var(--primary-950);
     text-decoration: none;
+    font-size: var(--fs-xs);
 }
 
 .tableorder__link--home:hover {
     text-decoration: underline;
+    cursor: pointer;
 }

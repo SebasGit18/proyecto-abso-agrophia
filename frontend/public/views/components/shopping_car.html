@@ -1,40 +1,65 @@
 <div class="shoppingcar-content">
-    <table>
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio/Unidad</th>
-                <th>Tipo</th>
-                <th>Cantidad</th>
-                <th>Acciones</th>
+    <table class="shoppincar__table">
+        <thead class="shoppincar__thead">
+            <tr class="shoppingcar__row">
+                <th class="shoppincar__header">Producto</th>
+                <th class="shoppincar__header">Precio/ <br> Unidad</th>
+                <th class="shoppincar__header">Tipo</th>
+                <th class="shoppincar__header">Cantidad</th>
+                <th class="shoppincar__header">Acciones</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>Tomates orgánicos</td>
-                <td>$500</td>
-                <td>Verdura</td>
-                <td>10 kg</td>
-                <td>
+        <tbody class="shoppincar__body">
+            <tr class="shoppingcar__row">
+                <td class="shoppincar__column">Tomates orgánicos</td>
+                <td class="shoppincar__column">$500</td>
+                <td class="shoppincar__column">Verdura</td>
+                <td class="shoppincar__column">10 kg</td>
+                <td class="shoppincar__column shoppincar__colum--buttons">
+
                     <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'">Modificar</button>
                     <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
+
                 </td>
             </tr>
-            <tr>
-                <td>Maíz Amarillo</td>
-                <td>$1000</td>
-                <td>Grano</td>
-                <td>25 kg</td>
-                <td>
+            <tr class="shoppingcar__row">
+                <td class="shoppincar__column">Maíz Amarillo</td>
+                <td class="shoppincar__column">$1000</td>
+                <td class="shoppincar__column">Grano</td>
+                <td class="shoppincar__column">25 kg</td>
+                <td class="shoppincar__column shoppincar__colum--buttons">
+
                     <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'" >Modificar</button>
                     <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
+
                 </td>
             </tr>
         </tbody>
     </table>
-    <a href="/frontend/public/views/p_card-available.html" class="link__home">Volver al inicio</a>
-    <div class="total">
-        <strong><p class="total__value">Valor total: 204.754 COP</p></strong>
-        <button class="button__pagar" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_from-method_payment.html'">Pagar Solicitudes</button>
+</div>
+
+<div class="info-content">
+    
+    <div class="info__link--content">
+
+        <button onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_card-available.html'"class="info__home--button">Volver al inicio</button>
+
     </div>
+    
+    <div class="info__total--content">
+        
+        <div class="info__content--value">
+
+            <p class="info__total--value">Valor total: 204.754 COP</p>
+
+        </div>
+                
+        <div class="info__content--button">
+
+            <button class="info__total--button" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_from-method_payment.html'">Pagar Solicitudes</button>
+            
+        </div>
+        
+    </div>
+    
 </div>
