@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const ToolbarproductsElement = document.querySelector(".toolbar-products");
+  const ToolbarproductsElement = document.querySelector(".toolbar-products-container");
 
   if (ToolbarproductsElement) {
     fetch("/frontend/public/views/components/toolbar_products.html")

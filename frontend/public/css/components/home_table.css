@@ -1,26 +1,21 @@
 
 /* ====== CONTENEDOR DE TABLAS ====== */
 .table-home-container {
-    margin: 20px;
   background: var(--white);
-  padding: 20px;
   border-radius: 12px;
-  /* box-shadow: 0 3px 6px var(--gray-100); */
-  overflow-x: auto;
+  width: 80%;
 }
 
 /* ====== TABLA DE USUARIOS ====== */
 .home-table {
     font-family: var(--main-font);
-    width: auto;
-    max-width: auto;
-    /* margin-left:200px; */
-    /* margin-right: 10px; */
+    width: 100%;
+    min-width: 400px;
     border-collapse: collapse;
     background: var(--white);
     box-shadow: 0 4px 12px var(--gray-100);
-    font-size: 12px;
-    border-radius: 10px;
+    font-size: var(--fs-xxxs);
+    border-radius: 12px;
     overflow: hidden;
 }
 
@@ -49,24 +44,39 @@
   background-color: var(--terciary-100);
 }
 
-
-  
-/* DEBUG: aplica margen cuando la pantalla es <1115px
-   Cubre los 3 selectores que podrías estar usando en tu proyecto */
-@media (max-width: 1115px) {
+/* celulares */
+@media(max-width: 640px){
+  .table-home-container{
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: scroll;;
+  }
   .home-table{
-    width: 600px;
+    margin: 24px  ;
+    width: 100%;
   }
-  .table-home-container {
-    /* width: 70%; */
-    margin-top: 10px; 
-    margin-left: auto;
-    margin-right: auto;
-  }
-} 
+}
 
-@media(width > 1115px){
-    .home-table{
-        width: 700px;
-    }
+@media(max-width: 768px) and (min-width: 640px){
+  .home-table{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1024px) and (min-width: 768px){
+  .table-home-container{
+    width: 100%;
+  }
+}
+
+
+@media(max-width: 1280px) and (min-width: 1024px){
+  .table-home-container{
+    width: 70%;
+  }
+}
+@media(max-width: 1536) and (min-width: 1280px){
+  .table-home-container{
+    width: 100%;
+  }
 }
