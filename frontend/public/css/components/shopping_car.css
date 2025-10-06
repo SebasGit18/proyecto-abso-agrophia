@@ -21,12 +21,22 @@ body {
 .header__title_shoppingcar {
     font-size: var(--fs-lg);
     text-align: center;
+    gap: 10px;
+}
+
+.header__title_shoppingcar {
+    font-size: var(--fs-md);
+    /* padding-top: var(--padding-top); */
+    text-align: center;
+    /* margin-bottom: 20px */
 }
 
 .header__icon_shoppingcar {
     justify-self: center;
     width: 24px;
     height: 24px;
+    /* margin-left: 5px; */
+    /* margin-top: 5px; */
 }
 
 .header__subtitle_shoppingcar {

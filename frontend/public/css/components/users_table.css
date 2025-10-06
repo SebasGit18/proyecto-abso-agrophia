@@ -14,7 +14,6 @@
   max-width: auto;
   /* margin-left:200px; */
   margin-right: 10px;
-  border-collapse: collapse;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
   font-size: var(--fs-xxxs);
@@ -55,7 +54,7 @@
 
 .users-table__cell--actions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0px;
@@ -69,7 +68,7 @@
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: var(--fs-xxxs);
 }
 
 .users-table__status--active {
@@ -78,7 +77,7 @@
 }
 
 .users-table__status--blocked {
-  background-color: var(--gray-200);
+  background-color: var(--secundary-400);
   color: var(--black);
 }
 
@@ -87,7 +86,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 24px;
   padding: 8px 14px;
   border: none;
   border-radius: 8px;
@@ -122,9 +121,7 @@
   color: var(--white);
 }
 
-.users-table__button--message:hover {
-  background-color: var(--primary-200);
-}
+
 
 /* Icono dentro del botón */
 .users-table__button__icon {
@@ -132,15 +129,59 @@
   height: 24px;
   display: inline-block;
 }
-  
-/* DEBUG: aplica margen cuando la pantalla es <1115px
-   Cubre los 3 selectores que podrías estar usando en tu proyecto */
-@media (max-width: 1115px) {
+/* celulares */
+@media (max-width: 640px){
+
+  .table_users{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+/* tablets */
+@media (max-width: 768px) and (min-width: 640px) {
+  .table_users{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  .users-table{
+    margin: 24px;
+  }
+}
+/* laptops */
+@media (max-width: 1024px) and (min-width: 768px) {
   .users-table,
-  .table_users,
-  .table-container {
+  .table_users{
     margin-top: 10px; 
     margin-left: auto;
     margin-right: auto;
+    margin: 0 24px;
   }
+  .users-table__cell--actions{
+    flex-direction: column;
+  }
+
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .users-table,
+  .table_users{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .users-table__cell--actions{
+    flex-direction: column;
+  }
+  
+}
+@media (max-width: 1536px) and (min-width: 1280px) {
+  .users-table__cell--actions{
+    flex-direction: row;
+  }
+  
+
 }

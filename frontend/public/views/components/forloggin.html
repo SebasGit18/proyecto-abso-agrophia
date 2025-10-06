@@ -1,26 +1,29 @@
 <a href="/frontend/public/views/index.html" class="register__back">Volver</a>
 
-<div class="login-content">
-  <h1 class="login-container__title">Iniciar Sesión</h1>
+<div class="login">
+  <h1 class="login__title">Iniciar Sesión</h1>
 
   <form class="login-form">
-      <label for="usuario" class="login-form__label">Número de documento</label>
-      <input type="text" id="usuario" class="login-form__input" name="usuario" placeholder="Número de documento" required />
+    <div class="login-form__container">
+      <label for="usuario" class="login-form__container__label">Número de documento</label>
+      <input type="text" id="usuario" class="login-form__container__input" name="usuario" placeholder="Número de documento" required />
+    </div>
 
-      <label for="clave" class="login-form__label">Contraseña</label>
-      <input type="password" id="clave" class="login-form__input" name="clave" placeholder="Contraseña" required />
+    <div class="login-form__container">
+      <label for="clave" class="login-form__container__label">Contraseña</label>
+      <input type="password" id="clave" class="login-form__container__input" name="clave" placeholder="Contraseña" required />
+    </div>
+  </form>
+  <div class="login__show-password">
+    <input type="checkbox" id="toggle-password" class="login-form__checkbox" />
+    <label for="toggle-password" class="login-form__checkbox-label">Mostrar contraseña</label>
+  </div>
 
-      <div class="login-form__show-password">
-        <input type="checkbox" id="toggle-password" class="login-form__checkbox" />
-        <label for="toggle-password" class="login-form__checkbox-label">Mostrar contraseña</label>
-      </div>
+  <button type="submit" class="login__button">Iniciar sesión</button>
 
-      <button type="submit" class="login-form__button">Iniciar sesión</button>
-    </form>
-
-    <a href="/frontend/public/views/p_forgot-password.html" class="login-container__register">
-      ¿Olvidaste tu contraseña?
-    </a>
+<a href="/frontend/public/views/p_forgot-password.html" class="login-container__register">
+  ¿Olvidaste tu contraseña?
+</a>
   </div>
 
 

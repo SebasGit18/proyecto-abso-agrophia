@@ -26,7 +26,13 @@
 
         <div class="product-form__group">
           <label for="unidad" class="product-form__label">Unidad de medida</label>
-          <input type="text" class="product-form__input" placeholder="Ej: kg, litro, unidad">
+          <select name="metodo" class="product-form__input" required>
+          <option value="">-- Selecciona --</option>
+          <option value="Libra">Libra</option>
+          <option value="kilo">Kilo</option>
+          <option value="Arroba">Arroba</option>
+          <option value="Litro">Litro</option>
+      </select>
         </div>
 
         <div class="product-form__group">

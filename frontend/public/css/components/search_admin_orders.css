@@ -1,88 +1,109 @@
-body {
-  font-family: var(--main-font);
-  background-color: var(--white);
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Title (igual que antes, solo renombrado) */
-.search-orders__title{
-  color: var(--black);
+  .search-orders{
+    display: flex;
+    flex-direction: column;
+    margin:0 24px;
+    gap: 24px;
+    align-items: center;
+  }
+/* title */
+.search-orders__title {
   font-size: var(--fs-sm);
-  margin: 15px;
   text-align: center;
+  color: var(--black);
+  font-family: var(--main-font)
 }
-
-/* Contenedor principal: mantengo tus medidas y estilos */
-.search-orders__container {
+/*Contenedor principal*/
+.search-orders-container {
   display: flex;
-  /* align-items: center; */
-  width: 80%;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  width: 450px;
+  height: 56px;
   background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 12px 24px;
+  gap: 8px;
 }
 
 .search-orders__icon {
   color: var(--gray-900);
-  font-size: 1.2rem;
   margin-right: 0.5rem;
   display: flex;
-  align-items: center; /* centra verticalmente el ícono */
+  align-items: center; 
 }
 
-.search-orders__filter {
+.search-orders__filter__icon {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gray-900);
 }
 
-/* Input: mantengo el id por compatibilidad y añado la clase para BEM */
-#buscador,
-.search-orders__input {
+/*Style input*/
+.search-orders__bar {
+  /* width:; */
   flex: 1;
   border: none;
   outline: none;
   font-size: var(--fs-xs);
   background: transparent; 
   color: var(--gray-900);
-  padding: 12px 24px;
+  align-items: center;
 }
-
-/* placeholder */
-.search-orders__input::placeholder,
-#buscador::placeholder {
-  color: var(--gray-400);
-  font-size: 16px;
-}
-
-/* Media query corregida (anteriormente inválida) */
-/* Mantengo tu comportamiento original: desplazar por el sidebar */
-@media (min-width: 1116px) {
-  .search-orders__container {
-    margin-left: 18.5%;
+/* celulares */
+@media( max-width: 640px){
+  .search-orders-container{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
   }
-  .search-orders__title {
-    text-align: inherit;
-    margin-left: 18.5%;
-  }
-}
-
-/* Mobile: ocultar icono de filtro tal como tenías */
-@media (max-width: 439px) {
-  #buscador, .search-orders__input {
+  .search-orders__bar{
     width: 100%;
   }
+  .search-orders__title{
+    margin: 0;
+  }
+}
+/* tablets */
+@media( max-width: 768px) and (min-width: 640px)  {
+  .search-orders{
+    align-items: center;
 
-  .search-orders__filter {
-    display: none;
+  }
+  .search-orders-container{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+  }
+}
+/* laptops */
+@media (max-width:1024px) and (min-width:768px) {
+  .search-orders-container{
+    max-width: 450px;
+  }
+
+}
+
+@media (max-width:1280px) and (min-width:1024px){
+  .search-orders-container{
+    max-width: 600px;
+  }
+
+}
+
+
+
+/* big screen  */
+@media (max-width:1536px) and (min-width:1280px) {
+  .search-users-container{
+    max-width: 450px;
+    margin: 0;
+  }
+  .search-orders{
+    align-items: start;
+    margin-left: 321px;
+
   }
 }
