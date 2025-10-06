@@ -21,6 +21,7 @@ body {
 .header__title_shoppingcar {
     font-size: var(--fs-lg);
     text-align: center;
+    gap: 10px;
 }
 
 .header__icon_shoppingcar {

@@ -51,9 +51,9 @@
   height: 56px;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid var(--gray-400);
+  border: 1px solid var(--black);
   outline: none;
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xs);
   transition: border 0.3s ease;
 }
 

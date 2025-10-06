@@ -44,11 +44,13 @@
   position: relative;
 }
 
-.footer__social-icon:not(:last-child)::after {
-  content: "|";
-  margin-left: 8px;
-  color: var(--black);
-}
+  .footer__social {
+    grid-column: 3; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+  }
 
 /* === HOVER === */
 .footer__social-icon:hover {

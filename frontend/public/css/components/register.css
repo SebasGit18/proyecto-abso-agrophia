@@ -76,11 +76,14 @@
 .form__label {
     color: var(--gray-200);
     display: block;
-    margin-bottom: 5px;
     font-size: var(--fs-xxxs);
     font-weight: bold;
 }
-
+.form__group{
+    display: flex;
+    gap:4px;
+    flex-direction: column;
+}
 .form__option {
     width: 280px;
     min-width: 320px;
@@ -88,7 +91,7 @@
     padding: 16px;
     border: 1px solid var(--gray-400);
     border-radius: 12px;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
 }
 
 .form__input,
@@ -100,7 +103,7 @@
     border-radius: 12px;
     border: 1px solid var(--gray-400);
     outline: none;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     transition: border 0.3s ease;
 }
 
@@ -135,9 +138,9 @@
 /* Botón volver (ahora parte del bloque, con scope global mínimo) */
 .register__back{
     height: 36px;
-    position: fixed;
-    top: 16px;
-    right: 16px;
+
+    /* top: 16px;
+    right: 16px; */
     background-color: var(--primary-700);
     border-radius: 4px;
     padding: 8px 16px;
@@ -160,7 +163,10 @@
 
 
 @media (width > 640px) {
-
+    .register__back{
+        position: static;
+        top: none;
+    }
     .page__left {
         display: none;
     }
@@ -196,10 +202,12 @@
     }
 
     .form__see--password {
+        margin-top: 10px;
         display: flex;
         align-items: center; /* Alinea checkbox y texto verticalmente */
         gap: 8px; /* Espacio entre el checkbox y el texto */
         font-weight: bold; /* Opcional, para que coincida con tu imagen */
+        /* font-size: var(--fs-xxs); */
     }
 }
 
