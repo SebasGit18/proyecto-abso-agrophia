@@ -1,7 +1,6 @@
 .profile-update{
   margin-top: 50px;
   border-radius: 12px;
-  /* width: auto; */
   display: flex;
   flex-direction: column;
   color: var(--black);
@@ -35,7 +34,6 @@
 .profile-update__input{
   height: 56px;
   width: 100%;
-  /* min-width: 320px; */
   padding: 12px 16px;
   font-size: var(--fs-xs);
   border: 1px solid var(--black);
@@ -71,13 +69,11 @@
   justify-content: center;
   gap: 4px;
   margin: 0;
-  /* align-content: center; */
   /* align-items: center; */
 }
 .profile-update__checkbox{
   width: 18px;
   height: 18px;
-  /* modern browsers: accent-color para colorear checkbox */
   accent-color: var(--black);
 }
 .profile-update__group-checkbox{
