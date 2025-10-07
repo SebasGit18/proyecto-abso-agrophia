@@ -10,13 +10,15 @@
   font-size: var(--fs-sm);
   text-align: center;
   color: var(--black);
-  font-family: var(--main-font)
+  font-family: var(--main-font);
+  margin: 0;
 }
 /*Contenedor principal*/
 .search-orders-container {
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
-  width: 450px;
   height: 56px;
   background: var(--white);
   border: 1px solid var(--gray-900);
@@ -41,7 +43,7 @@
 
 /*Style input*/
 .search-orders__bar {
-  /* width:; */
+  width:100%;
   flex: 1;
   border: none;
   outline: none;
@@ -50,23 +52,9 @@
   color: var(--gray-900);
   align-items: center;
 }
-/* celulares */
-@media( max-width: 640px){
-  .search-orders-container{
-    margin-top: 100px;
-    width: 100%;
-    max-width: 450px;
-    margin: 0;
-  }
-  .search-orders__bar{
-    width: 100%;
-  }
-  .search-orders__title{
-    margin: 0;
-  }
-}
+
 /* tablets */
-@media( max-width: 768px) and (min-width: 640px)  {
+@media(width > 640px)  {
   .search-orders{
     align-items: center;
 
@@ -76,34 +64,5 @@
     width: 100%;
     max-width: 450px;
     margin: 0;
-  }
-}
-/* laptops */
-@media (max-width:1024px) and (min-width:768px) {
-  .search-orders-container{
-    max-width: 450px;
-  }
-
-}
-
-@media (max-width:1280px) and (min-width:1024px){
-  .search-orders-container{
-    max-width: 600px;
-  }
-
-}
-
-
-
-/* big screen  */
-@media (max-width:1536px) and (min-width:1280px) {
-  .search-users-container{
-    max-width: 450px;
-    margin: 0;
-  }
-  .search-orders{
-    align-items: start;
-    margin-left: 321px;
-
   }
 }
