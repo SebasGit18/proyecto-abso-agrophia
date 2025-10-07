@@ -17,10 +17,11 @@
 
 /* === Card === */
 .card-disable {
+  width: auto;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  min-width: 320px;
+  /* min-width: 320px; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -95,11 +96,25 @@
   }
 }
 
+@media(width > 768px){
+  .card-disable__container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+   
+  }
+  .card-disable__img{
+    height: 200px;
+  }
+}
+
 @media (width > 1024px) {
   .card-disable__container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
+    /* margin-bottom: 50px; */
+    margin: 24px;
+  }
+  .card-disable__img{
+    height: 250px;
   }
 }

@@ -42,8 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* solo padding lateral; el espacio vertical lo dan los pseudo-elementos */
-  padding: 0 40px;
+  
 }
 
 /* Espacio fijo arriba y abajo, sin depender de márgenes del contenido */

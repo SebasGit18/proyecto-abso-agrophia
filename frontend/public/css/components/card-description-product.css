@@ -194,9 +194,9 @@
   }
 
   .product-card__btn {
-    width: 40%;
+    width: auto;
     margin: 0 auto;
-    display: block;
+    display: flex;
   }
 
 
