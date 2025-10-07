@@ -145,9 +145,10 @@
     gap: 8px;
 
   @media (max-width: 1024px) {
-  .footer__container {
+    .footer__container {
     grid-template-columns: 1fr 1fr;
   }
+}
 
   .footer__copy {
     order: 2;
@@ -201,11 +202,8 @@
 /* Pantallas grandes */
 @media (max-width: 1536px) {
   .footer-content {
-    font-size: var(--fs-xxxs);
+    font-size:var(--fs-xxxs);
   }
-}
-
-    font-size: var(--fs-xxs);
   }
 }
 

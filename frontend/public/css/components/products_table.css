@@ -7,17 +7,26 @@
   overflow-x: auto;
 }
 
+.table-products{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
 /* ====== TABLA DE PRODUCTOS ====== */
 .products-table {
   width: auto;
   max-width: auto;
-  /* margin-left:200px; */
+  border-collapse: collapse;
   margin-right: 10px;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
   font-size: var(--fs-xxxs);
   border-radius: 10px;
   overflow: hidden;
+  margin: 24px;
 }
 
 .products-table__header,
@@ -125,21 +134,8 @@
   width: 24px;
 }
 
-/* celulares */
-@media (max-width: 640px){
-  .table-products{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: scroll;
-  }
-  .products-table{
-    margin: 24px;
-  }
-}
 /* tablets */
-@media (max-width: 768px) and (min-width: 640px){
+@media (width > 640px){
   .table-products{
     display: flex;
     justify-content: center;
@@ -156,14 +152,14 @@
 
 
 /* laptops */
-@media (max-width: 1024px) and (min-width: 768px){
+@media (width >768px){
  .table-products{
     display: flex;
     justify-content: center;
     margin: 0 24px;
   }
   .products-table{
-    margin: 24px;
+    margin: 0px;
     width: 730px;
   }
   .products-table__cell--actions{
@@ -172,11 +168,23 @@
   
 }
 
-@media (max-width: 1280px) and (min-width: 1024px){
+@media (width > 1024px){
+  
+  
+  .products-table{    
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
   .table-products{
+    border-radius: 12px;
+    scrollbar-width: none; /* Firefox */
+    width: auto;
     display: flex;
     justify-content: center;
-    margin: 0 24px;
+    margin: 0;
+    height: max-content;
+    box-shadow: 4px -1px 10px var(--gray-100);
   }
   .products-table__cell--actions{
     flex-direction: row;
