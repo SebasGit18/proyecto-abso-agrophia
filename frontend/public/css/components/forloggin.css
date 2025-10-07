@@ -44,7 +44,7 @@
 .login__title {
   margin: 24px 0 0 0 ;
   text-align: center;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   font-weight: bold;
   color: var(--white);
 }
@@ -135,11 +135,11 @@
   text-decoration: underline;
 }
 
-.register__back{
-  margin: 24px 0 0 24px;
-  width: max-content;
+.login__back{
   font-weight: 600;
-  position: static;
+  position: fixed;
+  top: 16px;
+  left: 16px;
   background-color: var(--primary-700);
   border-radius: 4px;
   padding: 9px 16px;
@@ -151,7 +151,7 @@
   transition: background-color .2s ease;
 }
 
-.register__back:hover{
+.login__back:hover{
   background-color: var(--primary-600);
 }
 
@@ -212,10 +212,10 @@
   .login-form__container__input{
     width: 320px;
   }
-  .register__back{
+  .login__back{
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: 16px;
+    left: 16px;
   }
 }
 

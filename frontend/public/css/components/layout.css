@@ -6,9 +6,16 @@
 
 }
 
+.layout__interface-farmer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Pantallas pequeñas (≤478px): columna forzada */
 @media (max-width: 640px) {
+
   .layout {
     flex-direction: column;
   }
@@ -58,6 +65,11 @@
     justify-content: center;
     gap: 24px;
 
+  }
+
+  .layout__interface-farmer {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 

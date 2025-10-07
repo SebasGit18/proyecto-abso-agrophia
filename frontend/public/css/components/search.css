@@ -1,5 +1,5 @@
 /*Contenedor principal*/
-.search-container {
+.search-container__index {
   display: flex;
   align-items: center;
   width: 80%;
@@ -39,10 +39,10 @@
 }
 
 @media (max-width: 768px) {
-  .search-container {
-    width: 95%;
+  .search-container__index {
+    width: auto;
     padding: 10px 16px;
-    margin: 15px auto;
+    margin: 24px;
   }
 
   .search__icon {
@@ -55,3 +55,16 @@
   }
 }
 
+@media (width > 1024px) {
+  .search-container__index {
+    width: 450px;
+    justify-content: center;
+    margin: 24px 0 0 0;
+  }
+
+  .search__container-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

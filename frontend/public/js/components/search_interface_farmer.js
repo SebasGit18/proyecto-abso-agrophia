@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const searchContainer = document.querySelector(".search__container");
+    const searchContainer = document.querySelector(".search__interface-farmer");
   
     if (searchContainer) {
       fetch("/frontend/public/views/components/search_interface_farmer.html")
