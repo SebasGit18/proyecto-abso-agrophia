@@ -42,7 +42,7 @@
 .form__title {
     text-align: center;
     color: var(--white);
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
 }
 
 

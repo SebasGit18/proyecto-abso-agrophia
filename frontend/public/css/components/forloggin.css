@@ -44,7 +44,7 @@
 .login__title {
   margin: 24px 0 0 0 ;
   text-align: center;
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
   font-weight: bold;
   color: var(--white);
 }
