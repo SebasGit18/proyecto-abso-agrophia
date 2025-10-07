@@ -214,9 +214,7 @@
     gap: 24px;
   }
 
-  .product-form__group {
-    
-  }
+  
 
   .product-form__input,
   .product-form__label--file,
@@ -236,10 +234,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
     gap: 24px;
-  }
-
-  .product-form__group {
-    /* width: 100%; */
   }
 
   .product-form__input,
