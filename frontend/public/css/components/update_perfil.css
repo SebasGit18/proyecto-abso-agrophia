@@ -180,9 +180,9 @@
   margin: 24px 0 0 24px;
   width: max-content;
   font-weight: 600;
+/*   top: 16px;
+  left: 16px; */
   position: static;
-  /* top: 16px; */
-  /* right: 16px; */
   background-color: var(--primary-700);
   border-radius: 4px;
   padding: 9px 16px;

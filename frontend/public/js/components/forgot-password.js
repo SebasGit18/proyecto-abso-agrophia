@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const forgotContainer = document.querySelector(".forgot-password");
+    const forgotContainer = document.querySelector(".forgot-password__container");
   
     if (forgotContainer) {
       fetch("/frontend/public/views/components/forgot-password.html")
