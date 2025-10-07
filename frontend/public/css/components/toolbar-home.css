@@ -17,7 +17,7 @@
   border-radius: 12px;
   justify-content: flex-end;
   padding: 0px 14px;
-  width: 70%;
+  width: 100%;
 }
 
 .toolbar-main__search-btn {
@@ -67,19 +67,15 @@
   height: 24px;
 }
 
-@media(max-width:640px){
-  .toolbar-main__search{
-    max-width: 450px;
-  }
-}
 
-@media(max-width: 768px) and (min-width: 640px){
+
+@media(width > 640px){
   .toolbar-main{
     flex-direction: row;
     justify-content: center;
   }
   .toolbar-main__search{
-    max-width: 450px;
+    max-width: 320px;
   }
 }
 

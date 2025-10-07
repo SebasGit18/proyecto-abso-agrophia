@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginContainer = document.querySelector(".login-container");
+  const loginContainer = document.querySelector(".container-login");
 
   if (loginContainer) {
     fetch("/frontend/public/views/components/forloggin.html")

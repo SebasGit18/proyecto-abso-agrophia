@@ -7,18 +7,21 @@
   box-shadow: 0 3px 6px var(--gray-100);
   overflow-x: auto;
 }
-
+.table_users{
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
 /* ====== TABLA DE USUARIOS ====== */
 .users-table {
   width: auto;
   max-width: auto;
-  /* margin-left:200px; */
-  margin-right: 10px;
+  margin: 24px;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
   font-size: var(--fs-xxxs);
   border-radius: 10px;
-  overflow: hidden;
+  border-collapse: collapse;
 }
 
 .users-table__header,
@@ -129,34 +132,18 @@
   height: 24px;
   display: inline-block;
 }
-/* celulares */
-@media (max-width: 640px){
-
-  .table_users{
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: scroll;
-  }
-  .users-table{
-    margin: 24px;
-  }
-}
 /* tablets */
-@media (max-width: 768px) and (min-width: 640px) {
+@media (width > 640px) {
   .table_users{
     width: 100%;
     overflow-y: scroll;
     overflow-x: scroll;
-  }
-  .users-table{
-    margin: 24px;
   }
 }
 /* laptops */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (width > 768px) {
   .users-table,
   .table_users{
-    margin-top: 10px; 
     margin-left: auto;
     margin-right: auto;
     margin: 0 24px;
@@ -166,22 +153,18 @@
   }
 
 }
-@media (max-width: 1280px) and (min-width: 1024px) {
+@media (width > 1024px) {
   .users-table,
   .table_users{
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    scrollbar-width: none; /* Firefox */
+
   }
-  .users-table__cell--actions{
-    flex-direction: column;
-  }
-  
-}
-@media (max-width: 1536px) and (min-width: 1280px) {
   .users-table__cell--actions{
     flex-direction: row;
   }
   
-
 }
+
