@@ -1,9 +1,10 @@
 .card-home__container-section {
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
-  max-width: 1920px;
+  /* max-width: 1920px; */
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -17,11 +18,11 @@
 
 
 .card-home {
+  width: auto;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  min-width: 290px;
-
+  /* min-width: 290px; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -34,7 +35,7 @@
 
 .card-home__img {
   width: 100%;
-  height: 250px;
+  height: 150px;
   border-radius: 8px;
   margin-bottom: 16px;
   object-fit: cover;
@@ -120,8 +121,9 @@
 @media (width > 1024px) {
   .card-home__container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 90%;
+    /* max-width: 90%; */
+    width: max-content;
     margin-bottom: 50px;
     margin-top: 20px;
   }
-}
+}   
