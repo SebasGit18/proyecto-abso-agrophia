@@ -11,18 +11,17 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  justify-content: center;
   background-color: var(--white);
   gap: 24px;
 }
 
-
 .toolbar-users__button {
-  max-width: 450px;
+  width: 100%;
   height: 40px;
   background-color: var(--gray-100);
-  width: 100%;
   font-size: var(--fs-xs);
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 16px;
   border: none;
   border-radius: 12px;
@@ -41,9 +40,8 @@
   gap: 8px;
   background: var(--gray-100);
   border-radius: 12px;
-  padding: 12px 14px;
+  padding: 8px 12px;
   width: 100%;
-  max-width: 450px;
 }
 .toolbar-users__search-btn {
   background: none;
@@ -93,35 +91,8 @@
   height: 24px;
 }
 
-
-
-
-/* celular */
-@media (max-width: 640px) {
-  .toolbar-users__content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .toolbar-users__button {
-    max-width: 450px;
-    width: 100%;
-    /* max-width: 200px; */
-    font-weight: 500;
-  }
-  .toolbar-users__search {
-    max-width: 450px;
-    padding: 8px 12px;
-  }
-  .toolbar-users__row-icons {
-    gap: 24px;
-  }
-}
-
-
 /* tablet */
-@media (max-width:768px) and (min-width:640px) {
+@media (width >640px) {
   .toolbar-users__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,11 +113,12 @@
   }
 }
 
-@media (max-width:1024px) and (min-width:768px) {
+@media (width >768px) {
   .toolbar-users{
     flex-direction: row;
   }
   .toolbar-users__content{
+    display: flex;
     flex-direction: row;
 
   }
@@ -154,29 +126,13 @@
 
 
 /* Desktop */
-@media(max-width:1280px) and (min-width: 1024px){
+@media(width > 1024px){
   .toolbar-users{
     flex-direction: row;
   }
   .toolbar-users__content{
     flex-direction: row;
 
-  }
-  .toolbar-users__content{
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .toolbar-users__button{
-    width: 190px;
-  }
-  .toolbar-users__search{
-    width: 190px;
-  }
-}
-/* big screen */
-@media(max-width:1536px) and (min-width: 1280px){
-  .toolbar-users{
-    flex-direction: row;
   }
   .toolbar-users__content{
     flex-direction: row;

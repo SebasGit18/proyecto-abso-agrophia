@@ -1,6 +1,6 @@
 <a href="/frontend/public/views/index.html" class="register__back">Volver</a>
-
-<div class="form-content">
+<h1 class="home__title">Agrophia</h1>
+<div class="form-content__register">
   <h2 class="form__title">Formulario de Registro</h2>
   <form class="form-content__group">
     <div class="form__group">
@@ -9,7 +9,7 @@
       <option value="">-- Tipo de documento --</option>
       <option value="cc">CC</option>
       <option value="ti">TI</option>
-      <option value="cedula extranjera">Cedula extranjera</option>
+      <option value="cedula extranjera">Cédula extranjera</option>
       <option value="pasaporte">Pasaporte</option>
     </select>
       
@@ -39,10 +39,6 @@
       <input type="tel" class="form__input" placeholder="Teléfono">
     </div>
 
-    <div class="form__group">
-      <label for="password" class="form__label">Contraseña</label>
-      <input type="password" class="form__input" placeholder="Contraseña">
-    </div>
     
     <div class="form__group">
       <label for="direccion" class="form__label">Dirección completa</label>
@@ -54,15 +50,26 @@
         <option value="opt2">Quindio</option>
       </select> -->
     </div>
+    
+    <div class="form__group">
+      <label for="password" class="form__label">Contraseña</label>
+      <input type="password" class="form__input" placeholder="Contraseña">
 
-
+        <div class="form__check">
+          <label for="mostrar" class="form__label form__see--password">
+          <input type="checkbox">
+            Mostrar contraseña</label>
+        </div>
+    </div>
+  
+    <div class="form__group">
+        <label for="password" class="form__label"> Confirmar Contraseña</label>
+        <input type="password" class="form__input" placeholder="Contraseña">
+    </div>
+    
   </form>
 
-  <div class="form__check">
-    <label for="mostrar" class="form__label form__see--password">
-      <input type="checkbox">
-      Mostrar contraseña</label>
-  </div>
+
 
   <button type="submit" class="form__button">Registrarse</button>
 </div>

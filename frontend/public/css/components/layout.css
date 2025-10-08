@@ -6,9 +6,16 @@
 
 }
 
+.layout__interface-farmer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Pantallas pequeñas (≤478px): columna forzada */
 @media (max-width: 640px) {
+
   .layout {
     flex-direction: column;
   }
@@ -18,7 +25,7 @@
     width: 100%; /* cada uno ocupa todo el ancho */
   }
 }
-@media (max-width:768px) and (min-width: 640px) {
+@media (width > 640px) {
   .layout{
     flex-direction: column;
     gap: 24px;
@@ -33,7 +40,7 @@
   
 }
 
-@media (max-width:1024px) and (min-width: 768px) {
+@media (width > 768px) {
   .layout{
     flex-direction: column;
     gap: 24px;
@@ -41,17 +48,15 @@
 }
 
 /* Pantallas grandes: sidebar y tabla en fila */
-@media (max-width:1280px) and (min-width: 1024px) {
+@media (width > 1024px) {
   .layout {
     flex-direction: column;
   }
   .layout__products-row{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     gap: 24px;
-    margin: 24px;
   }
 
   .layout__direction-row-home{
@@ -61,9 +66,14 @@
     gap: 24px;
 
   }
+
+  .layout__interface-farmer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
-@media (max-width:1536px) and (min-width: 1280px) {
+@media (width > 1280px) {
   .layout {
     flex-direction: row;
   }
@@ -85,5 +95,6 @@
     display: flex;
     gap: 24px;
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
