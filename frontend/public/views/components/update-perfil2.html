@@ -1,0 +1,65 @@
+<!-- Botón volver (ahora formateado como elemento del bloque) -->
+<a href="/frontend/public/views/update_perfil.html" class="profile-update__back">Volver</a>
+  <div class="profile-update">
+    <h2 class="profile-update__title">Editar Perfil</h2>
+    <div class="profile-update__row-informartion">
+
+     
+      <form class="profile-update__form" novalidate>
+
+         <div class="profile-update__group">
+             <label class="profile-update__label" for="input-telefono">Teléfono</label>
+             <input id="input-telefono" class="profile-update__input" type="tel" name="telefono" placeholder="315678934" autocomplete="tel" pattern="[0-9]{7,15}" required />
+         </div>
+        
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-email">Correo Electrónico</label>
+          <input id="input-email" class="profile-update__input" type="email" name="email" placeholder="breinermorales@agrophia.com" autocomplete="email" required />
+        </div>
+        
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-direccion">Departamento</label>
+          <select name="" class="profile-update__deparment">
+            <option value="">Selecciona el Departamento</option>
+            <option value="Risaralda">Risaralda</option>
+            <option value="Caldas">Caldas</option>
+            <option value="Quindio">Quindio</option>
+          </select>
+        </div>
+        
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-direccion">Municipio</label>
+          <select name="" class="profile-update__deparment">
+            <option value="">Selecciona el Municipio</option>
+            <option value="Risaralda">Neira</option>
+            <option value="Caldas">Manizales</option>
+            <option value="Quindio">San josé</option>
+          </select>
+        </div>
+        
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-direccion">Dirección Completa</label>
+          <input id="input-direccion" class="profile-update__input" type="text" name="direccion" placeholder=" Ej: cr12a ..." autocomplete="street-address" required />
+        </div>
+
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-password">Contraseña</label>
+          <input id="input-password" class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
+        </div>
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-password">Confirmar Contraseña</label>
+          <input  class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
+          <div class="profile-update__group profile-update__group-checkbox">
+            <input class="profile-update__checkbox" type="checkbox" />
+            <label class="profile-update__label profile-update__label--checkbox" for="show-password">Mostrar contraseña</label>
+          </div>
+        </div>
+    </form>
+
+  </div>
+  <button type="submit" class="profile-update__submit__save">Guardar Cambios</button>
+      
+      
+    
+    </div>
+</div>
