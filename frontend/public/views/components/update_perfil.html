@@ -16,8 +16,28 @@
           <!-- Aquí se mostrará el nombre de la foto seleccionada -->
           <!-- <span id="file-name" class="profile-update__file-name">Ningún archivo seleccionado</span> -->
         </div>
-      <form class="profile-update__form" novalidate>
-        <div class="profile-update__group">
+        <form class="profile-update__form" novalidate>
+          <div class="profile-update__group">
+            <label class="profile-update__label" for="input-identificacion">Tipo de Documento</label>
+              <select name="tdocumento" class="form__option" required>
+                <option value="">-- Tipo de documento --</option>
+                <option value="cc">CC</option>
+                <option value="ti">TI</option>
+                <option value="cedula extranjera">Cédula extranjera</option>
+                <option value="pasaporte">Pasaporte</option>
+              </select>
+                  </div>
+  
+  
+  
+  
+  
+  
+          <div class="profile-update__group">
+            <label class="profile-update__label" for="input-identificacion">Número de Identificación</label>
+            <input id="input-identificacion" class="profile-update__input" type="text" name="identificacion" placeholder="1056884567" autocomplete="off" required />
+          </div>
+          <div class="profile-update__group">
           <label class="profile-update__label" for="input-nombres">Nombres</label>
           <input id="input-nombres" class="profile-update__input" type="text" name="nombres" placeholder="Breiner" autocomplete="given-name" required />
         </div>
@@ -27,26 +47,6 @@
           <input id="input-apellidos" class="profile-update__input" type="text" name="apellidos" placeholder="Morales" autocomplete="family-name" required />
         </div>
 
-        <div class="profile-update__group">
-          <label class="profile-update__label" for="input-identificacion">Tipo de Documento</label>
-            <select name="tdocumento" class="form__option" required>
-              <option value="">-- Tipo de documento --</option>
-              <option value="cc">CC</option>
-              <option value="ti">TI</option>
-              <option value="cedula extranjera">Cédula extranjera</option>
-              <option value="pasaporte">Pasaporte</option>
-            </select>
-                </div>
-
-
-
-
-
-
-        <div class="profile-update__group">
-          <label class="profile-update__label" for="input-identificacion">Número de Identificación</label>
-          <input id="input-identificacion" class="profile-update__input" type="text" name="identificacion" placeholder="1056884567" autocomplete="off" required />
-        </div>
 
     </form>
     
