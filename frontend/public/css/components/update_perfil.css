@@ -262,7 +262,7 @@
 
 @media(width > 640px){
   .profile-update__input{
-    width: 450px;
+    width: 400px;
   }
   .profile-update{
     width: max-content;
