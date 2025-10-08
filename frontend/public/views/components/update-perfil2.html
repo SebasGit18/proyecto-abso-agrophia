@@ -5,7 +5,7 @@
     <div class="profile-update__row-informartion">
 
      
-      <form class="profile-update__form" novalidate>
+      <form class="profile-update__form2" novalidate>
 
          <div class="profile-update__group">
              <label class="profile-update__label" for="input-telefono">Teléfono</label>
@@ -37,26 +37,30 @@
           </select>
         </div>
         
-        <div class="profile-update__group">
-          <label class="profile-update__label" for="input-direccion">Dirección Completa</label>
-          <input id="input-direccion" class="profile-update__input" type="text" name="direccion" placeholder=" Ej: cr12a ..." autocomplete="street-address" required />
-        </div>
+        
+        
+        
 
         <div class="profile-update__group">
           <label class="profile-update__label" for="input-password">Contraseña</label>
           <input id="input-password" class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
-        </div>
-        <div class="profile-update__group">
-          <label class="profile-update__label" for="input-password">Confirmar Contraseña</label>
-          <input  class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
           <div class="profile-update__group profile-update__group-checkbox">
             <input class="profile-update__checkbox" type="checkbox" />
             <label class="profile-update__label profile-update__label--checkbox" for="show-password">Mostrar contraseña</label>
           </div>
         </div>
-    </form>
-
-  </div>
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-password">Confirmar Contraseña</label>
+          <input  class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
+          
+        </div>
+      </form>
+      
+    </div>
+    <div class="profile-update__group-textarea">
+      <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
+      <textarea id="input-direccion" class="profile-update__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
+    </div>
   <button type="submit" class="profile-update__submit__save">Guardar Cambios</button>
       
       
