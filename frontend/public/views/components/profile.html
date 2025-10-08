@@ -1,43 +1,68 @@
 <a href="/frontend/public/views/interface_farmer.html" class="profile-button__back">Volver</a>
-
-<div class="profile">
-  <h2 class="profile__title">Perfil</h2>
-
-  <img src="/frontend/public/img/foto_sofi.png" alt="imagen de Perfil" class="profile__img">
-
-  <div class="profile__grid">
-    <div class="profile__item">
-      <div class="profile__label">Nombre Completo</div>
-      <div class="profile__value">Juan Pérez</div>
+<div class="profile-content">
+  <h1 class="profile__title-principal">Informacion de perfil</h1>
+  <div class="profile">
+    <div class="profile__header">
+      <div class="profile__img-container">
+        <img src="/frontend/public/img/img-perfil-breiner.jpg" alt="imagen de Perfil" class="profile__img">
+      </div>
+      <h2 class="profile__title">Juan Pérez</h2>
+      <p class="profile__subtitle">Productor de Café - Risaralda con una excelente calidad en mis productos</p>
     </div>
+    <div class="profile_group">
 
-    <div class="profile__item">
-      <div class="profile__label">Número de Identificación</div>
-      <div class="profile__value">123456789</div>
+      <div class="profile__body">
+        <div class="profile__item">
+          <span class="profile__label">Tipo de documento</span>
+          <div class="profile__value">CC</div>
+        </div>
+        
+      <div class="profile__item">
+        <span class="profile__label">Número de Identificación</span>
+        <div class="profile__value">123456789</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Nombres</span>
+        <div class="profile__value">Breiner</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Apellidos</span>
+        <div class="profile__value">Morales</div>
+      </div>
+      
+      <div class="profile__item">
+        <span class="profile__label">Teléfono</span>
+        <div class="profile__value">3123456789</div>
+      </div>
+
+      <div class="profile__item">
+        <span class="profile__label">Correo Electrónico</span>
+        <div class="profile__value">juanperez@agrophia.com</div>
+      </div>
+      
+      <div class="profile__item">
+        <span class="profile__label">Departamento</span>
+        <div class="profile__value">Risaralda</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Municipio</span>
+        <div class="profile__value">Pereira</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Contraseña</span>
+        <div class="profile__value">*****************</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Dirección</span>
+        <div class="profile__value">Finca La Esperanza</div>
+      </div>
     </div>
-
-    <div class="profile__item">
-      <div class="profile__label">Teléfono</div>
-      <div class="profile__value">3123456789</div>
-    </div>
-
-    <div class="profile__item">
-      <div class="profile__label">Correo Electrónico</div>
-      <div class="profile__value">juanperez@agrophia.com</div>
+    
+    <div class="profile__actions">
+      <a href="/frontend/public/views/update_perfil.html" class="profile__button--edit">
+        Editar Información
+      </a>
     </div>
   </div>
-
-  <!-- Dirección fuera del grid -->
-  <div class="profile__address">
-    <div class="profile__label">Dirección</div>
-    <div class="profile__value">
-      Finca La Esperanza. Risaralda - Pereira
-    </div>
-  </div>
-
-  <div class="profile__actions">
-    <a href="/frontend/public/views/update_perfil.html" class="profile__button--edit">
-      Editar Información
-    </a>
   </div>
 </div>
