@@ -268,7 +268,8 @@
   .profile-update__form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+  }
+  
   .profile-update{
     width: max-content;
     margin: 24px auto;
