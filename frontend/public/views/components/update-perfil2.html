@@ -1,5 +1,4 @@
 <!-- Botón volver (ahora formateado como elemento del bloque) -->
-<a href="/frontend/public/views/update_perfil.html" class="profile-update__back">Volver</a>
   <div class="profile-update">
     <h2 class="profile-update__title">Editar Perfil</h2>
     <div class="profile-update__row-informartion">
@@ -41,6 +40,15 @@
         
         
 
+        
+        <div class="profile-update__group">
+          <label class="profile-update__label" for="input-direccion">Dirección</label>
+          <input id="input-nombres" class="profile-update__input" type="text" name="direccion" placeholder="Dirección" autocomplete="given-name" required />
+        </div>
+        <div class="profile-update__group-textarea">
+          <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
+          <textarea id="input-direccion" class="profile-update__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
+        </div>
         <div class="profile-update__group">
           <label class="profile-update__label" for="input-password">Contraseña</label>
           <input id="input-password" class="profile-update__input" type="password" name="password" placeholder="********" autocomplete="current-password" required />
@@ -57,11 +65,11 @@
       </form>
       
     </div>
-    <div class="profile-update__group-textarea">
-      <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
-      <textarea id="input-direccion" class="profile-update__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
+
+    <div class="profile-update__row-buttons">
+      <a href="/frontend/public/views/update_perfil.html" class="profile-update__row-buttons__back">Volver</a>
+      <a href="/frontend/public/views/profile.html" class="profile-update__row-buttons__save">Guardar Cambios</a>
     </div>
-  <button type="submit" class="profile-update__submit__save">Guardar Cambios</button>
       
       
     
