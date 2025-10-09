@@ -15,6 +15,7 @@
 
 /* === FOOTER PRINCIPAL === */
 .footer-content {
+  height: 10vh;
   position: static;
   bottom: 0;
   left: 0;

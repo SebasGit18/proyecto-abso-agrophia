@@ -91,34 +91,54 @@
 }
 
 .profile__value {
-  /* border-top: 1px solid var(--gray-600); */
   background: rgba(255, 255, 255, 0.15);
-  /* border: 1px solid rgba(255, 255, 255, 0.25); */
-  /* border-radius: 10px; */
   padding: 4px 16px;
   font-size: var(--fs-xs);
   color: var(--black);
-  /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); */
 }
 
-/* === BOTÓN === */
+
 .profile__actions {
-  margin: 0 0 12px 0;
+  gap: 8px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+}
+.profile__actions--back{
+  display: flex;
+  background-color: var(--gray-900);
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
-
-.profile__button--edit {
-  background-color: var(--primary-700);
+.profile__actions--back:hover{
+  opacity: 60%;
+}
+.profile__actions--edit{
+  text-align: center;
+  /* display: flex; */
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
   color: var(--white);
-  border: none;
-  padding: 11px 16px;
-  border-radius: 10px;
+  padding: 12px 24px;
   font-size: var(--fs-xs);
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
   text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.profile__actions--edit:hover{
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile__button--edit:hover {
@@ -127,28 +147,10 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* === BOTÓN VOLVER === */
-.profile-button__back {
-  height: 36px;
-  margin: 24px 0 0 24px;
-  width: max-content;
-  position: static;
-  background-color: var(--primary-700);
-  color: var(--white);
-  padding: 10px 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.profile-button__back:hover {
-  background-color: var(--primary-600);
-}
 @media(width > 640px){
   .profile-content{
-    margin: 0 24px 24px 24px;
-
+    padding: 24px;
+    margin: 0;
   }
   .profile-container{
     display: flex;
@@ -169,6 +171,11 @@
 }
 
 @media(width > 768px){
+  .profile-content{
+    margin: 0;
+    padding: 24px;
+    height: 90vh;
+  }
   
   .profile__header{
     width: 200px;
