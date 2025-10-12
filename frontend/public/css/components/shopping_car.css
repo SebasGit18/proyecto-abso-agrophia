@@ -18,6 +18,10 @@ body {
     gap: 10px;
 }
 
+.shoppingcar__btn--delete{
+    background-color: var(--gray-800);
+}
+
 .header__title_shoppingcar {
     font-size: var(--fs-lg);
     text-align: center;

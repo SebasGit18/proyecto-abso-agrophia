@@ -1,7 +1,21 @@
-<a href="/frontend/public/views/index.html" class="register__back">Volver</a>
 <h1 class="home__title">Agrophia</h1>
 <div class="form-content__register">
   <h2 class="form__title">Formulario de Registro</h2>
+
+  <div class="form-content__register-row">
+
+  <div class="profile-update__group-file__photo">
+          <img src="/frontend/public/img/foto_sofi.png" alt="foto de Perfil cargada" class="profile-update__group-file__photo_review">
+          
+          <!-- Label que actúa como botón -->
+          <label for="input-foto" class="profile-update__label--file">
+            Cambiar foto
+          </label>
+          <input id="input-foto" class="profile-update__input profile-update__input--file" type="file" name="foto" />
+          
+          <!-- Aquí se mostrará el nombre de la foto seleccionada -->
+          <!-- <span id="file-name" class="profile-update__file-name">Ningún archivo seleccionado</span> -->
+        </div>
   <form class="form-content__group">
 
     
@@ -30,69 +44,12 @@
     <div class="form__group">
       <label for="apellidos" class="form__label">Apellidos</label>
       <input type="text" class="form__input" placeholder="Apellidos">
-    </div>
-
-    <div class="form__group">
-      <label for="email" class="form__label">Correo Electrónico</label>
-      <input type="email" class="form__input" placeholder="Correo Electrónico">
-    </div>
-
-    <div class="form__group">
-      <label for="telefono" class="form__label">Teléfono</label>
-      <input type="tel" class="form__input" placeholder="Teléfono">
-    </div>
-
-    <div class="form__group">
-      <label class="form__label" for="input-departament">Departamento</label>
-      <select name="" class="form__option">
-        <option value="">Selecciona el Departamento</option>
-        <option value="Risaralda">Risaralda</option>
-        <option value="Caldas">Caldas</option>
-        <option value="Quindio">Quindio</option>
-      </select>
-    </div>
-      
-      <div class="form__group">
-        <label class="form__label" for="input-municipality">Municipio</label>
-        <select name="" class="form__option">
-          <option value="">Selecciona el Municipio</option>
-          <option value="Risaralda">Neira</option>
-          <option value="Caldas">Manizales</option>
-          <option value="Quindio">San josé</option>
-        </select>
-      </div>
-      
-    <div class="form__group">
-      <label for="direccion" class="form__label">Dirección completa</label>
-      <input type="text" class="form__input" placeholder="Dirección completa">
-      <!-- <select i class="form__select">
-        <option value="">Selecciona una opción</option>
-        <option value="opt1">Risaralda</option>
-        <option value="opt2">Caldas</option>
-        <option value="opt2">Quindio</option>
-      </select> -->
-    </div>
-    
-    <div class="form__group">
-      <label for="password" class="form__label">Contraseña</label>
-      <input type="password" class="form__input" placeholder="Contraseña">
-
-        <div class="form__check">
-          <label for="mostrar" class="form__label form__see--password">
-          <input type="checkbox">
-            Mostrar contraseña</label>
-        </div>
-    </div>
-  
-    <div class="form__group">
-        <label for="password" class="form__label"> Confirmar Contraseña</label>
-        <input type="password" class="form__input" placeholder="Contraseña">
-    </div>
-    
+    </div>    
   </form>
+  </div>
 
-
-  <a href="/frontend/public/views/p_login-customer.html" class="form-register-link">
-    <button type="submit" class="form__button">Registrarse</button>
-  </a>
+  <div class="form-content__register--row-buttons">
+  <a href="/frontend/public/views/index.html" class="form-content__register--row-buttons__back">Volver</a>
+  <a href="/frontend/public/views/register2.html" class="form-content__register--row-buttons__next">Siguiente</a>
+  </div>
 </div>

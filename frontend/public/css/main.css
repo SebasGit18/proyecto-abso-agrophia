@@ -15,7 +15,7 @@
 @import url(components/from.css);
 @import url(components/form_reset_password.css);
 @import url(components/form_contact.css);
-@import url(components/form_subir_producto.css);
+@import url('components/form_subir_producto.css');
 @import url(components/card-public.css);
 @import url(components/card_options_farmer.css);
 @import url(components/card-available.css);

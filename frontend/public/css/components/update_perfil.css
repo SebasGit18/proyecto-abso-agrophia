@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 24px;
     width: auto;
-    margin: 24px;
+    /* margin: 24px; */
   }
 .profile-update__row-informartion{
   display: flex;
@@ -14,9 +14,9 @@
 
 
 .profile-form-update-container2{
-    margin: 24px;
+  padding: 24px;
 }
-.profile-update__group-file__photo_review{
+.profile-update_group-file_photo_review{
   border: 4px solid var(--gray-300);
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
   height: 100%;
@@ -34,7 +34,6 @@
   flex-direction: column;
   color: var(--black);
   border:1px solid var(--black);
-  margin: 24px 0 0 0;
   padding: 24px;
   background: var(--overlay-dark-strong);
   gap: 24px;
@@ -65,11 +64,10 @@
 
 /* Inputs: 100% ancho, padding manejado por box-sizing */
 .profile-update__input{
-  height: 56px;
+  height: 48px;
   width: 100%;
   padding: 12px 16px;
   font-size: var(--fs-xs);
-  border: 1px solid var(--black);
   border-radius: 8px;
   background: var(--white);
   appearance: none;
@@ -130,52 +128,11 @@
   font-weight: 600;
 }
 
-/* Botón submit */
-.profile-update__submit{
-  display: block;
-  width: max-content;
-  padding: 12px 24px;
-  margin-left: auto;
-  /* margin-right: auto; */
-  background: var(--primary-700);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: var(--fs-xs);
-  transition: all 0.3s ease;
-  /* align-items: center; */
-}
-
-.profile-update__submit__save{
-  display: block;
-  width: max-content;
-  padding: 12px 24px;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--primary-700);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: var(--fs-xs);
-  transition: all 0.3s ease;
-  /* align-items: center; */
-}
 
 .profile-update__deparment{
   width: 100%;
-  height: 56px;
+  height: 48px;
   border-radius: 8px;
-  border: 1px solid var(--black);
-}
-/* Estilo base para el input file */
-.profile-update__submit:hover{
-  background: var(--primary-600);
-  transform: translateY(-2px);
-
 }
 
 /* Ocultamos el input real */
@@ -225,61 +182,94 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
-.profile-update__back{
-  /* margin: 24px 0 0 24px; */
-  width: max-content;
-  font-weight: 600;
-  /*   top: 16px;
-  left: 16px; */
-  position: static;
-  background-color: var(--primary-700);
-  border-radius: 4px;
-  padding: 9px 16px;
-  height: 36px;
-  font-size: var(--fs-xs);
-  /* font-weight: 600; */
+.profile-update__row-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-update__row-buttons__back{
+  background-color: var(--gray-900);
   color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
   text-decoration: none;
-  transition: background-color .2s ease;
+  border-radius: 12px;
+
 }
-.profile-update__back:hover{
-  background-color: var(--primary-600);
+.profile-update__row-buttons__back:hover{
+  opacity: 60%;
 }
+
+.profile-update__row-buttons__next{
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+
+}
+.profile-update__row-buttons__next:hover{
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-update__row-buttons__save{
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.profile-update__row-buttons__save:hover{
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
 .profile-update__textarea{
-  height: 56px;
+  height: 48px;
   width: 100%;
   padding: 12px 16px;
   font-size: var(--fs-xs);
-  border: 1px solid var(--black);
   border-radius: 8px;
   background: var(--white);
   max-height: 100px;
   resize: vertical;
-  min-height: 56px;
 }
 
 
 @media(width > 640px){
   .profile-update__input{
-    width: 450px;
+    width: 400px;
   }
   
   .profile-update__form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
   .profile-update{
     width: max-content;
     margin: 24px auto;
-    
   }
 }
- 
+
+
 
 
 @media(width >768px){
+  .profile-form-update-container2{
+    margin: 0 auto;
+    padding: 24px;
+    height: 90vh;
+  }
+
   .profile-update__group-textarea{
     width: 100%;
     margin: 0 auto;
@@ -287,10 +277,12 @@
  
   .profile-update{
     padding: 24px;
-    gap: 24px;
+    gap: 12px;
     width: 712px;
-    margin: 24px auto;
+    margin: 0 auto;
   }
+
+
   .profile-update__form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -316,7 +308,7 @@
 @media(width > 1024px){
   .profile-update{
     padding: 24px;
-    gap: 24px;
+    gap: 12px;
     width: auto;
     margin: 0 auto 24px auto;
     max-width: max-content;
@@ -343,18 +335,24 @@
   }
 }
 @media(width > 1280px){
-  .profile-form-update-container{
-    height: 100vh;
+  .profile-update__group-file__photo{
+    flex-direction: column;
   }
   .profile-form-update-container2{
-    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
   }
+  .profile-form-update-container{
+    height: 90vh;
+  }
+
   .profile-update__row-informartion{
     display: flex;
     flex-direction: row;
     gap: 24px;
   }
-  .profile-update__group-file__photo{
+  .profile-update_group-file_photo{
     flex-direction: column;
   }
 
@@ -362,7 +360,7 @@
     padding: 24px;
     gap: 24px;
     width: auto;
-    margin: 0 auto 24px auto;
+    margin: 0 auto;
     max-width: max-content;
   }
   .profile-update__form{
@@ -383,7 +381,7 @@
     width: max-content;
   }
   .profile-update__group-file{
-    flex-direction: row;
+    flex-direction: column;
   }
   .profile-update__back{
     margin-right: none;
