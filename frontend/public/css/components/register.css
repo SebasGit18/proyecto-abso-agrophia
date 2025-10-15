@@ -257,6 +257,11 @@
     .form__label {
         max-width: 320px;
     }
+
+    .form__option {
+        width: 320px;
+    }
+
     .form-content__register{
         max-width:max-content;
     }
