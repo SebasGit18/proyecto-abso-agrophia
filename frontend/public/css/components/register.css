@@ -101,6 +101,22 @@
     font-size: var(--fs-xs);
     transition: border 0.3s ease;
 }
+.register__group-textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+.register__textarea{
+    height: 48px;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: var(--fs-xs);
+    border-radius: 8px;
+    background: var(--white);
+    max-height: 56px;
+    resize: vertical;
+}
 .form-content__register-row{
     width: 100%;
 }
@@ -181,8 +197,9 @@
     }
     .form-container2{
         align-items: center;
-        justify-content: flex-start;
-        height: 100vh;
+        justify-content: center;
+        height: 90vh;
+        margin: 0;
     }
     .form-content__group {
         width: 100%;
@@ -206,6 +223,7 @@
     }
     .form-content__register{
         max-width:max-content;
+        margin: 0;
     }
 
     .form__see--password {
@@ -214,7 +232,7 @@
         align-items: center; /* Alinea checkbox y texto verticalmente */
         gap: 8px; /* Espacio entre el checkbox y el texto */
         font-weight: bold; /* Opcional, para que coincida con tu imagen */
-        /* font-size: var(--fs-xxs); */
+        accent-color: var(--black);
     }
 
 }
