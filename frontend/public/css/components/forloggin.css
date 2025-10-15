@@ -95,7 +95,7 @@
 
 .login-form__checkbox-label {
   cursor: pointer;
-  user-select: none;
+  /* user-select: none; */
   font-size: var(--fs-xxxs);
   color: var(--gray-200);
 }

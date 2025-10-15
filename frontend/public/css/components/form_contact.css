@@ -74,7 +74,7 @@
     width: 30%;        
     margin: 1px auto; 
     padding: 8px 16px;
-    background-color: var(--primary-700);
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
     border: none;
     border-radius: 8px;
     font-size: var(--fs-xs);
@@ -89,7 +89,9 @@
 }
 
 .contact-form__button:hover {
-    background-color: var(--primary-800);
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 
