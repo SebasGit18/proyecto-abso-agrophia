@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "image": "../assets/card/green-apple.jpg",
+        "price": "7.000 / Libra",
+        "name": "Manzana verde",
+        "button": "Agregar"
+    }, 
+
+    {
+        "id": "2",
+        "image": "../assets/card/strawberries.jpg",
+        "price": "8.000 / Libra",
+        "name": "Fresas",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "3",
+        "image": "../assets/card/grapes.jpg",
+        "price": "5.000 / Libra",
+        "name": "Uvas",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "4",
+        "image": "../assets/card/pineapple.jpg",
+        "price": "3.000 / Libra",
+        "name": "Piña",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "5",
+        "image": "../assets/card/papaya.jpg",
+        "price": "5.000 / Libra",
+        "name": "Papaya",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "6",
+        "image": "../assets/card/melon.jpg",
+        "price": "8.000 / Libra",
+        "name": "Melón",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "7",
+        "image": "../assets/card/banana.jpg",
+        "price": "5.000 / Libra",
+        "name": "Banano",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "8",
+        "image": "../assets/card/apple.jpg",
+        "price": "6.000 / Libra",
+        "name": "Manzana Roja",
+        "button": "Agregar"
+    }
+]

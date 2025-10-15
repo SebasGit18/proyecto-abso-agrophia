@@ -1,25 +1,49 @@
 body {
-    /*background-color: var(--primary-100);*/
+    /* background-color: var(--primary-100); */
     font-family: var(--main-font);
+    margin: 0;
+}
+
+.header-container {
+    background-color: var(--primary-700);
+    padding: 25px;
+    color: var(--white);
+    height: auto;
+}
+
+.header__title-orders {
+    font-size: var(--fs-lg);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.header__subtitle-orders {
+    font-size: var(--fs-sm  );
+    text-align: center;
+    font-weight: 100;
+    color: var(--white);
 }
 
 .tableorder-container {
     background-color: var(--white);
     width: 930px;
-    height: 310px;
+    height: auto;
     padding: 24px 0px;
-    margin-top: 140px;
+    margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
     font-family: var(--main-font);
     border-radius: 16px;
+    margin-bottom: 100px;
 }
 
 .tableorder-content {
     color: var(--black);
 }
 
-table {
+.tableorder__table {
     padding: 24px;
     width: 95%;
     margin: 20px auto;
@@ -31,37 +55,52 @@ table {
 }
 
 th, td {
-    padding: 15px;
+    padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: var(--terciary-800);
-    color: var(--white);
+    background-color: var(--primary-100);
+    color: var(--black);
 }
 
 tr:nth-child(even) {
     background-color: var(--white);
 }
 
-.pediente__btn {
+.tableorder__btn--pending {
+    width: 100%;
     background-color: var(--secundary-400);
     color: var(--black);
     border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border-radius: 12px;
     cursor: pointer;
 }
 
-.link__home {
+.tableorder__btn--pendingone {
+    width: 100%;
+    background-color: var(--primary-100);
+    color: var(--black);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.tableorder__link {
+    padding: 8px 16px;
+    height: 36px;
     display: block;
     text-align: center;
     margin-bottom: 0px;
     margin: 100px;
     color: var(--primary-950);
     text-decoration: none;
+    font-size: var(--fs-xs);
 }
 
-.link__home:hover {
+.tableorder__link--home:hover {
     text-decoration: underline;
+    cursor: pointer;
 }

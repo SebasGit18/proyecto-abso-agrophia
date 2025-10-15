@@ -1,0 +1,66 @@
+  .search-products{
+    display: flex;
+    flex-direction: column;
+    margin:0 24px;
+    gap: 24px;
+    align-items: center;
+  }
+/* title */
+.search-products__title {
+  font-size: var(--fs-sm);
+  text-align: center;
+  color: var(--black);
+  font-family: var(--main-font)
+}
+/*Contenedor principal*/
+.search-products-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  margin: 0 24px;
+  background: var(--white);
+  border: 1px solid var(--gray-900);
+  border-radius: 8px;
+  padding: 12px 24px;
+  gap: 8px;
+}
+
+.search-products__icon {
+  color: var(--gray-900);
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center; 
+}
+
+.search-products__filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-900);
+}
+
+/*Style input*/
+.search-products__bar {
+  /* width:; */
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: var(--fs-xs);
+  background: transparent; 
+  color: var(--gray-900);
+  align-items: center;
+}
+/* celulares */
+@media(width > 640px){
+  .search-products{
+    align-items: center;
+
+  }
+  .search-products-container{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+  }
+}

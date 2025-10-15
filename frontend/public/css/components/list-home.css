@@ -1,0 +1,56 @@
+/* ==== Lista horizontal de categorías ==== */
+.list-home {
+    padding: 8px;
+    max-width: 1000px;
+    margin: 20px 0 5px 40px;
+}
+
+.list-home__section {
+    display: flex;   
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-home__option{
+    font-size: var(--fs-xs);
+    color: var(--primary-700);
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.list-home__option a {
+    color: var(--primary-700);
+}
+
+.list-home__option:hover {
+    background: var(--primary-100);
+    color: var(--black);
+}
+
+
+@media (max-width: 768px) {
+    .list-home {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .list-home__section {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .list-home__option {
+        font-size: var(--fs-xs);
+        width: 100%;
+        max-width: 200px;
+    }
+}

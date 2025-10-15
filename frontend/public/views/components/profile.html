@@ -1,21 +1,69 @@
 <div class="profile-content">
-    <h2 class="profile__title">Perfil</h2>
+  <h1 class="profile__title-principal">Informacion de perfil</h1>
+  <div class="profile">
+    <div class="profile__header">
+      <div class="profile__img-container">
+        <img src="/frontend/public/img/img-perfil-breiner.jpg" alt="imagen de Perfil" class="profile__img">
+      </div>
+      <h2 class="profile__title">Juan Pérez</h2>
+      <p class="profile__subtitle">Productor de Café - Risaralda con una excelente calidad en mis productos</p>
+    </div>
+    <div class="profile_group">
 
-    <h4 class="profile__field1">Nombre Completo</h4>
-    <p class="profile__paragraph1">Juan Pérez</p>
+      <div class="profile__body">
+        <div class="profile__item">
+          <span class="profile__label">Tipo de documento</span>
+          <div class="profile__value">CC</div>
+        </div>
+        
+      <div class="profile__item">
+        <span class="profile__label">Número de Identificación</span>
+        <div class="profile__value">123456789</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Nombres</span>
+        <div class="profile__value">Breiner</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Apellidos</span>
+        <div class="profile__value">Morales</div>
+      </div>
+      
+      <div class="profile__item">
+        <span class="profile__label">Teléfono</span>
+        <div class="profile__value">3123456789</div>
+      </div>
 
-    <h4 class="profile__field2">Número de Identificación</h4>
-    <p class="profile__paragraph2">123456789</p>
+      <div class="profile__item">
+        <span class="profile__label">Correo Electrónico</span>
+        <div class="profile__value">juanperez@agrophia.com</div>
+      </div>
+      
+      <div class="profile__item">
+        <span class="profile__label">Departamento</span>
+        <div class="profile__value">Risaralda</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Municipio</span>
+        <div class="profile__value">Pereira</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Contraseña</span>
+        <div class="profile__value">*****************</div>
+      </div>
+      <div class="profile__item">
+        <span class="profile__label">Dirección</span>
+        <div class="profile__value">Finca La Esperanza</div>
+      </div>
+    </div>
+    
+    <div class="profile__actions">
+      <a href="/frontend/public/views/interface_farmer.html" class="profile__actions--back">Volver</a>
 
-    <h4 class="profile__field3">Telefono</h4>
-    <p class="profile__paragraph3">3123456789</p>
-
-    <h4 class="profile__field4">Correo Electrónico</h4>
-    <p class="profile__paragraph4">juanperez@agrophia.com</p>
-
-    <h4 class="profile__field5">Dirección</h4>
-    <p class="profile__paragraph5">Finca La Esperanza. Risaralda -Pereira</p>
-
-    <button class="profile-button__edit">Editar Información</button>
-
+      <a href="/frontend/public/views/update_perfil.html" class="profile__actions--edit">
+        Editar Información
+      </a>
+    </div>
+  </div>
+  </div>
 </div>

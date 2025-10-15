@@ -1,48 +1,46 @@
-<div class="payment__container">
-  <form class="payment__form">
-    <div class="payment__campo-option">
-      <h3 class="title-method__payment">Método de pago</h3>
-      <label for="metodo" class="payment__label">Selecciona el método de pago</label>
-      <select id="metodo" name="metodo" class="selection" required>
+<div class="method-payment">
+  <h3 class="method-payment__form-title">Método de pago</h3>
+  <form class="method-payment__form">
+    <div>
+      <label for="metodo" class="method-payment__form-label">Selecciona el método de pago</label>
+      <select name="metodo" class="method-payment__form-option" required>
         <option value="">-- Selecciona --</option>
-        <option value="transferencia">Transferencia bancaria</option>
-        <option value="contraentrega">Pagos contra entrega</option>
-        <option value="mercadopago">Mercado Pago</option>
+        <option value="transferencia">Pago de contado</option>
+        <option value="contraentrega">Pago contra entrega</option>
       </select>
     </div>
 
-    <div class="payment__campo">
-      <label for="nombre" class="payment__label">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" class="payment__input" placeholder="Nombre del producto" required>
+    <div>
+      <label for="nombre" class="method-payment__form-label">Nombre completo</label>
+      <input type="text" name="nombre" class="method-payment__form-input" placeholder="Nombre completo" required>
     </div>
 
-    <div class="payment__campo">
-      <label for="correo" class="payment__label">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" class="payment__input" placeholder="ejemplo@correo.com" required>
+    <div>
+      <label for="correo" class="method-payment__form-label">Correo electrónico</label>
+      <input type="email" name="correo" class="method-payment__form-input" placeholder="ejemplo@correo.com" required>
     </div>
 
-    <div class="payment__campo">
-      <label for="direccion" class="payment__label">Dirección de entrega</label>
-      <input type="text" id="direccion" name="direccion" class="payment__input" placeholder="Tu dirección" required>
+    <div>
+      <label for="direccion" class="method-payment__form-label">Dirección de entrega</label>
+      <input type="text" name="direccion" class="method-payment__form-input" placeholder="Tu dirección" required>
     </div>
 
-    <div class="payment__campo">
-      <label for="referencia" class="payment__label">Número de comprobante o referencia</label>
-      <input type="text" id="referencia" name="referencia" class="payment__input" placeholder="Ej: #123456">
+    <div>
+      <label for="referencia" class="method-payment__form-label">Número de comprobante o referencia</label>
+      <input type="text" name="referencia" class="method-payment__form-input" placeholder="Ej: #123456">
     </div>
 
-    <div class="payment__campo">
-      <label for="monto" class="payment__label">Monto transferido</label>
-      <input type="number" id="monto" name="monto" class="payment__input" placeholder="Ej: 50000">
+    <div>
+      <label for="monto" class="method-payment__form-label">Monto transferido</label>
+      <input type="number" name="monto" class="method-payment__form-input" placeholder="Ej: 50000">
     </div>
 
-    <div class="payment__campo">
-      <label for="entidad" class="payment__label">Entidad donde pagaste</label>
-      <input type="text" id="entidad" name="entidad" class="payment__input" placeholder="Ej: Bancolombia">
+    <div>
+      <label for="entidad" class="method-payment__form-label">Entidad donde pagaste</label>
+      <input type="text" name="entidad" class="method-payment__form-input" placeholder="Ej: Bancolombia">
     </div>
 
-    <button type="submit" class="payment__btn">Finalizar Pago</button>
   </form>
-
-  <a href="#" class="payment__volver">← Volver al inicio</a>
+  <a href="/frontend/public/views/p_login-customer.html" type="submit" class="method-payment__form-button">Finalizar Pago</a>
+  <a href="/frontend/public/views/p_login-customer.html" class="method-payment__form-volver">← Volver al inicio</a>
 </div>

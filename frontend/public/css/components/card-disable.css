@@ -1,79 +1,120 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  /*background-color: var(--gray-50);*/
-}
-
-/*Contenedor principal*/
-.contenedor-cards__disable {
+.card-disable__container-section {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 80%;
+  padding: 24px;
+  max-width: 1920px;
 }
 
-/*Targeta*/
-.card-public {
+/* Contenedor que organiza las cards en grilla */
+.card-disable__container {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* === Card === */
+.card-disable {
+  width: auto;
   border-radius: 12px;
-  padding: 16px;
-  width: 180px;
-  min-height: 200px;
-  border: 1px solid var(--primary-900);
-  background-color: var(--white);
-}
-
-.card-public__img {
-  width: 170px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 0.9rem;
-  align-items: center;
-}
-
-.card-public__price {
-  font-size: var(--fs-xxs);
-  color: var(--black);
-  margin: 0.3rem 0;
-  text-align: left;
-}
-
-.card-public__name {
-  font-size: var(--fs-xxxs);
-  font-family: var(--main-font);
-  color: var(--primary-600);
-  margin: 0.3rem 0;
-  text-align: left;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column; /* pone los botones en columna */
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
-.one-public__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 24px;
   text-align: center;
-  background: var(--secundary-300);
+  /* min-width: 320px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-disable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
+}
+
+/* Imagen de la card */
+.card-disable__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.card-disable__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Texto dentro de la card */
+.card-disable__price {
+  font-size: var(--fs-sm);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-disable__name {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--primary-700);
+  margin-bottom: 16px;
+}
+
+/* === Botón === */
+.card-disable__button-one {
+  height: 40px;
+  background-color: var(--secundary-300);
   color: var(--black);
   border: none;
-  min-width: 64px;
-  height: 40px;
-  padding: 16px;
   border-radius: 8px;
+  padding: 8px 16px;
+  /* Material Design spacing */
+  font-size: var(--fs-xs);
+  font-weight: 500;
   cursor: pointer;
-  font-size: var(--fs-xxxs);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.one-public__button:hover {
-  background: var(--terciary-500);
-  transition: background 0.3s ease;
+.card-disable__button-one:hover {
+  background-color: var(--secundary-400);
+  transform: scale(1.02);
 }
 
-/*este css esta segun las medidas de google material design, si no lo estan dime cuales son y donde las tengo que colocar*/  
+.card-disable__button-one:active {
+  background-color: var(--secundary-500);
+  transform: scale(0.98);
+}
+
+@media (width > 640px) {
+  .card-disable__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media(width > 768px){
+  .card-disable__container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+   
+  }
+  .card-disable__img{
+    height: 200px;
+  }
+}
+
+@media (width > 1024px) {
+  .card-disable__container {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    /* margin-bottom: 50px; */
+    margin: 24px;
+  }
+  .card-disable__img{
+    height: 250px;
+  }
+}

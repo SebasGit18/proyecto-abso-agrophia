@@ -1,26 +1,21 @@
 .layout {
+  margin: 24px;
   display: flex;
   flex-direction: column; /* por defecto, apilados uno debajo del otro */
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+
 }
 
-/* Pantallas grandes: sidebar y tabla en fila */
-@media (min-width: 1116px) {
-  .layout {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .sidebar-container {
-    width: 250px; /* ancho fijo para sidebar */
-  }
-
-  .table_users {
-    flex: 1; /* tabla ocupa el resto */
-  }
+.layout__interface-farmer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Pantallas pequeñas (≤478px): columna forzada */
-@media (max-width: 478px) {
+@media (max-width: 640px) {
+
   .layout {
     flex-direction: column;
   }
@@ -28,5 +23,78 @@
   .sidebar-container,
   .table_users {
     width: 100%; /* cada uno ocupa todo el ancho */
+  }
+}
+@media (width > 640px) {
+  .layout{
+    flex-direction: column;
+    gap: 24px;
+  }
+  .layout__direction-row-home{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media (width > 768px) {
+  .layout{
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+/* Pantallas grandes: sidebar y tabla en fila */
+@media (width > 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+  .layout__products-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .layout__direction-row-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+
+  }
+
+  .layout__interface-farmer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (width > 1280px) {
+  .layout {
+    flex-direction: row;
+  }
+  .layout__products-row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    align-content: flex-start;
+}
+
+  .table-orders{
+    width: 100%;
+  }
+
+  .layout__direction-row-home{
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }

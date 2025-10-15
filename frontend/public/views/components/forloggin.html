@@ -1,24 +1,32 @@
-<div class="login-content">
-  <h1 class="login-container__title">Iniciar Sesión</h1>
+<div class="login-container">
+  <a href="/frontend/public/views/index.html" class="login__back">Volver</a>
 
-  <form class="login-form">
-      <label for="usuario" class="login-form__label">Número de documento</label>
-      <input type="text" id="usuario" class="login-form__input" name="usuario" placeholder="Número de documento" required />
+  <div class="login-container__card">
+    <div class="login">
+      <h1 class="login__title">Iniciar Sesión</h1>
 
-      <label for="clave" class="login-form__label">Contraseña</label>
-      <input type="password" id="clave" class="login-form__input" name="clave" placeholder="Contraseña" required />
+      <form class="login-form">
+        <div class="login-form__container">
+          <label for="usuario" class="login-form__container__label">Número de documento</label>
+          <input type="text" id="usuario" class="login-form__container__input" name="usuario" placeholder="Número de documento" required />
+        </div>
 
-      <div class="login-form__show-password">
-        <input type="checkbox" id="toggle-password" class="login-form__checkbox" />
+        <div class="login-form__container">
+          <label for="clave" class="login-form__container__label">Contraseña</label>
+          <input type="password" id="clave" class="login-form__container__input" name="clave" placeholder="Contraseña" required />
+        </div>
+      </form>
+
+      <div class="login__show-password">
+        <input type="checkbox" class="login-form__checkbox" />
         <label for="toggle-password" class="login-form__checkbox-label">Mostrar contraseña</label>
       </div>
+      <a href="/frontend/public/views/interface_farmer.html" class="login__button">Iniciar sesión
+      </a>
 
-      <button type="submit" class="login-form__button">Iniciar sesión</button>
-    </form>
-
-    <p class="login-container__register">
-      ¿Olvidaste tu contraseña?
-    </p>
+      <a href="/frontend/public/views/p_forgot-password.html" class="login-container__register">
+        ¿Olvidaste tu contraseña?
+      </a>
+    </div>
   </div>
-
-
+</div>

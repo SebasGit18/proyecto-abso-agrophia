@@ -1,93 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body, html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
 
 .hero-content {
-  width: 100vw;                         
-  height: 50vh;                          
+  gap: 12px;
+  height: auto;                          
   background-image: url(/frontend/public/img/hero__image.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 40px 20px;                    
-  color: white;
-  text-align: left;
+  padding: 24px;                    
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 10rem;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
 }
 
-.hero-content h1 {
-  font-size: var(--fs-xxs);  /* Ajusta según tus variables */
-  margin-bottom: 1rem;
+.hero-content__title{
+  font-size: var(--fs-sm);
+  backdrop-filter: blur(1px)
 }
-
-.hero-content p {
-  font-size: var(--fs-md);
-  margin-bottom: 1.5rem;
+.hero-content__information{
+  font-size: var(--fs-xs);
   font-weight: bold;
+  backdrop-filter: blur(1px)
 }
 
-
-
-/* Tablet horizontal y pantallas medianas (hasta 1024px) */
-@media (max-width: 1024px) {
-  .hero-content {
-    padding-left: 5rem;
+@media (width > 768px) {
+  .hero-content{
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
+    height: 200px;
+  }
+  .hero-content__title{
+    font-size: var(--fs-md);
   }
 
-  .hero-content h1 {
-    font-size: 2.5rem;
+  .hero-content__information{
+    font-size: var(--fs-sm);
   }
 
-  .hero-content p {
-    font-size: 1.2rem;
-  }
-}
-
-/* Tablets y celulares grandes (hasta 768px) */
-@media (max-width: 768px) {
-  .hero-content {
-    height: auto;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
-
-/* Celulares pequeños (hasta 480px) */
-@media (max-width: 480px) {
-  .hero-content {
-    padding: 15px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
 }

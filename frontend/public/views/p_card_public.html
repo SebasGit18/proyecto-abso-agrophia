@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página cards publicados</title>
+  <title>Productos publicados</title>
   <link rel="stylesheet" href="/frontend/public/css/main.css">
 </head>
+
 <body>
 
   <!-- Aquí se cargará la Card -->
-<<<<<<< HEAD
     <section class="contenedor-cards-public">
-=======
     <section class="contenedor-cards__public">
->>>>>>> f6167521db86fce808b277f81a52384d3d929012
         <div class="card-public__container"></div>
     </section>
 
-  <script src="/frontend/public/js/components/card-public.js"></script>
+  <header>
+    <div class="header-product_public-container"></div>
+  </header>
+
+  <main>
+    <section class="search__container-index"></section>
+    <section class="card-public__container-section">
+      <div class="card-public__container"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container"></div>
+  </footer>
+
+  <script src="/frontend/public/js/components/navbar-public.js" defer></script>
+  <script src="/frontend/public/js/components/buttonBack.js" defer></script>
+  <script src="/frontend/public/js/components/footer.js" defer></script>
+  <script src="/frontend/public/js/components/search.js" defer></script>
+  <script type="module">
+    import { loadCards } from "/frontend/public/js/components/card-public.js";
+    loadCards(".card-public__container");// Clase para cargar todas las cards
+  </script>
+  <script src="/frontend/public/views/components/footer.html"></script>
 </body>
+
 </html>

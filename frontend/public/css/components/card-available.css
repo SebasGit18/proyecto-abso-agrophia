@@ -1,0 +1,142 @@
+.card-available__container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  max-width: 1920px;
+}
+
+/* Contenedor que organiza las cards en grilla */
+.card-available__container {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* === Card === */
+.card-available {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  min-width: 290px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-available:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
+}
+
+/* Imagen de la card */
+.card-available__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.card-available__info {
+  display: flex;
+  flex-direction: column;
+  /* Precio arriba, nombre abajo */
+  align-items: flex-start;
+  /* ← Alineados a la izquierda */
+  margin-bottom: 10px;
+}
+
+/* Texto dentro de la card */
+.card-available__price {
+  font-size: var(--fs-sm);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-available__name {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--primary-700);
+  margin-bottom: 4px;
+}
+
+/* === Botón === */
+
+.card-available__button {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-available__button-one {
+  height: 40px;
+  background-color: var(--terciary-200);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+
+  font-size: var(--fs-xs);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-available__button-one:hover {
+  background-color: var(--terciary-300);
+  transform: scale(1.02);
+}
+
+.card-available__button-one:active {
+  background-color: var(--terciary-400);
+  transform: scale(0.98);
+}
+
+.card-available__button-two {
+  justify-content: center;
+  height: 40px;
+  background-color: var(--secundary-300);
+  color: var(--black);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  font-size: var(--fs-xs);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-available__button-two:hover {
+  background-color: var(--secundary-400);
+  transform: scale(1.02);
+}
+
+.card-available__button-two:active {
+  background-color: var(--secundary-500);
+  transform: scale(0.98);
+}
+
+
+/* === Responsive Grid === */
+@media (width > 640px) {
+  .card-available__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+@media (width > 1024px) {
+  .card-available__container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}

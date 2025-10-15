@@ -1,0 +1,315 @@
+
+.form-shop__content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* arriba y centro */
+    box-sizing: border-box;
+}
+
+.form-shop__back {
+    align-self: flex-start; /* lo manda a la izquierda */
+}
+
+.form-shop__title {
+    color: var(--primary-700);
+    text-align: center;
+}
+
+.form-shop__container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* ocupa todo el espacio vertical restante */
+}
+
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: var(--overlay-dark-strong);
+    border: 1px solid;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin: 24px;
+    padding: 24px;
+}
+
+.form-shop {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Mantén el resto de tu estilo igual */
+
+
+
+.form-shop__subtitle {
+    text-align: center;
+    font-size: var(--fs-sm);
+    font-weight: bold;
+    color: var(--white);
+}
+
+.form-shop__body {
+    display: flex;
+    flex-direction:column;
+    gap:24px;
+
+}
+
+.form-shop__group{
+    margin: 0;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  
+}
+.form-shop__label {
+    display: block;
+    font-size: var(--fs-xxxs);
+    color: var(--gray-200);
+}
+
+.form-shop__input{
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    font-size: var(--fs-xxxxs);
+}
+
+.form-shop__show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.form-shop__checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.form-shop__checkbox-label {
+    cursor: pointer;
+    user-select: none;
+    font-size: var(--fs-xxxs);
+    color: var(--gray-200);
+}
+
+.form-shop__textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-shop__description {
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    font-size: var(--fs-xs);
+    min-height: 56px;
+    font-family: var(--main-font);
+    resize: vertical;/*permite redimenionar la caja de texto solo en vertical 
+    si no se coloca permite redimensionar en vertical y horizontal*/
+}
+
+.form-shop__create {
+    display: flex;
+    align-items: center;
+}
+
+.form-shop__button {
+    font-weight: 600;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 16px;
+    background-color: var(--primary-700);
+    color: var(--white);
+    font-size: var(--fs-xs);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.login-form__button:hover {
+    background-color: var(--primary-900);
+    color: var(--white);
+}
+
+.form-shop__option {
+    width: 100%;
+    height: 56px;
+    padding: 16px;
+    border: 1px solid var(--gray-400);
+    border-radius: 12px;
+    font-size: var(--fs-xs);
+}
+
+.form-shop__button:hover {
+    text-decoration: underline;
+}
+
+.form-shop__back {
+    font-weight: 600;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background-color: var(--primary-700);
+    border-radius: 4px;
+    padding: 9px 16px;
+    height: 36px;
+    font-size: var(--fs-xs);
+    /* font-weight: 600; */
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color .2s ease;
+}
+
+.form-shop__back:hover{
+    background-color: var(--primary-600);
+}
+
+
+@media (width > 640px) {
+
+    .form-shop__title {
+        margin: 24px;
+    }
+
+    .shop {
+        width: auto;
+        margin: 0;
+    }
+
+    .form-shop__input {
+        min-width: 320px;
+    }
+}
+
+@media (width > 768px){
+    .shop {
+        width: auto;
+    }
+
+    .form-shop__input {
+        min-width: 320px;
+    }
+
+    .form-shop__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+
+@media (width > 1024px){
+    .shop {
+        width: auto;
+        margin: 0;
+    }
+
+    .form-shop__input {
+        min-width: 320px;
+    }
+
+    .form-shop__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+
+@media (width > 1280px){
+    .page-left__shop {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 35%; 
+        height: 100dvh;   /* altura del viewport dinámico real */
+        overflow: hidden;
+
+        display: flex;                 
+        justify-content: center;       
+        align-items: center;           
+
+        background: 
+            linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+            url("/frontend/public/img/farmer.jpg");
+
+        background-size: cover;        
+        background-position: center;   
+        background-repeat: no-repeat;
+    }
+
+    .page__title-left {
+        display: flex;
+        text-align: center;
+        font-size: var(--fs-sm);
+        font-weight: bold;
+        color: var(--white); /* para que se vea sobre el fondo oscuro */
+    }
+
+
+    .page-right__shop {
+        margin-left: 43%; 
+        width:50%; 
+        color: var(--black);
+        display:flex; 
+        flex-direction:row; 
+        align-items:center; 
+        justify-content: center;
+    }
+
+    .page-right__shop::before, .page-right__shop::after { 
+        content:""; 
+        display:block; 
+    }
+  
+    .form-shop {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .form-shop__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop{
+        width: auto;
+        padding: 24px;
+    }
+
+    .form-shop__group {
+        margin: 0;
+    }
+
+    .form-shop__input {
+        width: 320px;
+    }
+
+    .form-shop__textarea {
+        margin: 0;
+    }
+
+    .form-shop__back{
+        position: fixed;
+        top: 16px;
+        left: 16px;
+    }
+    
+}

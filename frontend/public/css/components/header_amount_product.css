@@ -2,16 +2,20 @@
     background-color: var(--primary-50);
     padding: 18px;
     margin-top: -6px;
+    height: auto;
 }
 
 .navbar__title{
- color: var(--primary-800);
-  font-size: var(--fs-xl);
+  font-family: var(--main-font);
+  color: var(--primary-800);
+  font-size: var(--fs-md);
   font-family: var(--font-primary);
   text-align: center;
+  padding: 0px 24px;
 }
 
 .navbar__subtitle{
+  font-family: var(--main-font);
   color: var(--black);
   font-size: var(--fs-sm);
   font-family: var(--font-primary);
@@ -21,15 +25,19 @@
   padding: 0;
 }
 
-/*  Celulares (pantallas pequeñas hasta 480px) */
+
 @media (width > 768px) {
   .navbar__title {
-    font-size: var(--fs-lg); 
+    margin: 0;
+    padding: 12px 24px;
+    font-size: var(--fs-sm) ; 
   }
 
   .navbar__subtitle {
-    font-size: var(--fs-xs);
-    margin-bottom: 15px;
+    font-size: var(--fs-xxxs);
+    margin: 0;
+    padding: 0 12px;
+    /* margin-bottom: 15px; */
   }
 
   .header {

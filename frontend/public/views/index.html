@@ -1,59 +1,48 @@
-<!-- <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio seccion</title>
-  <link rel="stylesheet" href="/frontend/public/css/main.css">
-  <script src="/frontend/public/js/components/hero.js"></script>
-</head>
-<body>
-    <section class="hero">
-        <div class="hero-container"></div>
-    </section>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="/frontend/public/css/main.css">
-=======
-
-    <link rel="stylesheet" href="/frontend/public/css/variables.css">
-    <link rel="stylesheet" href="/frontend/public/css/components/navbar.css">
-    <link rel="stylesheet" href="/frontend/public/css/components/footer.css">
->>>>>>> f6167521db86fce808b277f81a52384d3d929012
     
 
     <script src="/frontend/public/js/components/navbar.js" defer></script>
     <script src="/frontend/public/js/components/footer.js" defer></script>
-<<<<<<< HEAD
-=======
-   
->>>>>>> f6167521db86fce808b277f81a52384d3d929012
+    <link rel="stylesheet" href="/frontend/public/css/main.css">
+
+    <script src="/frontend/public/js/components/navbar.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/hero.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+
 
 </head>
 <body>
+    <header class="navbar-container"></header>
+    <section class="hero">
+        <div class="hero-container"></div>
+    </section>
     
     <header class="header">
-<<<<<<< HEAD
         <div class="navbar-container"></div>
         
     </header>
 
     
-=======
-        <div class="navbar-container"></div> 
-    </header>
 
-       <footer class="footer">  
+
+    <script src="/frontend/public/js/components/navbar-home.js" defer></script>
+    <script src="/frontend/public/js/components/footer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
+    <script src="/frontend/public/js/components/list-home.js"></script>
+    <script type="module">
+        import { loadCards } from "/frontend/public/js/components/card-home.js";
+        loadCards(".card-home__container");// Clase para cargar todas las cards
+    </script>
+</body>
+   <footer class="footer">  
          <div class="footer-container"></div>
      </footer>   
-
->>>>>>> f6167521db86fce808b277f81a52384d3d929012
 </body>
 </html>

@@ -1,0 +1,67 @@
+
+/* ====== CONTENEDOR DE TABLAS ====== */
+.table-home-container {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  background: var(--white);
+  border-radius: 12px;
+}
+
+/* ====== TABLA DE USUARIOS ====== */
+.home-table {
+    font-family: var(--main-font);
+    width: 100%;
+    min-width: 400px;
+    border-collapse: collapse;
+    background: var(--white);
+    box-shadow: 0 4px 12px var(--gray-100);
+    font-size: var(--fs-xxxs);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 24px;
+}
+
+.home-table__header,
+.home-table__cell {
+  padding: 10px 12px;
+  text-align: center;
+  color: var(--primary-900);
+  font-size: var(--fs-xxxs);
+}
+
+.home-table__header {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+.home-table__row:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+.home-table__row:hover {
+  background-color: var(--terciary-100);
+}
+
+@media(width > 640px){
+  .home-table{
+    width: 90%;
+    
+  }
+  .table-home-container{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@media(width > 1024px){
+  .table-home-container{
+    width: 70%;
+  }
+}

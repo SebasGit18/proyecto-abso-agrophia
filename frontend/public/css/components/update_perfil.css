@@ -1,137 +1,387 @@
-/* ---- Reset útil para que el padding no rompa anchos ---- */
-/* *, *::before, *::after { 
-  box-sizing: border-box; 
-} */
-
-/* Layout (igual que tenías) */
-.page { 
-  display:flex; 
-  width:100%; 
-  min-height:100vh; 
-  margin:0; 
-  font-family:var(--main-font, Arial, sans-serif); }
-
-.page__left {
-  position:fixed; 
-  top:0; 
-  left:0; 
-  width:50%; 
-  height:100vh;
-  background-image:url("/frontend/public/img/imagen_planta_perfil.png");
-  background-size:cover; 
-  background-position:center;
-}
-.page__right {
-  margin-left:50%; 
-  width:50%; 
-  min-height:100vh; 
-  height:100vh; 
-  overflow-y:auto;
-  display:flex; 
-  flex-direction:column; 
-  align-items:center; 
-  padding:0 40px;
-}
-.page__right::before, .page__right::after { 
-  content:""; 
-  display:block; 
-  flex:0 0 60px; }
-
-/* ---- Caja principal fija a 350px ---- */
-.profile-form-update-container {
-  width:350px;           /* caja de 350px */
-  max-width:100%;
-  margin:0 auto;
-  flex:0 0 auto;
+.profile-form-update-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    width: auto;
+    /* margin: 24px; */
+  }
+.profile-update__row-informartion{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-/* Tarjeta/formulario */
-.profile {
-  width:100%;            /* ocupa toda la caja (350px) */
-  padding:16px;          /* si quieres que el input toque el borde, pon 0 */
-  background:#fff;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.1);
+
+.profile-form-update-container2{
+  padding: 24px;
+}
+.profile-update_group-file_photo_review{
+  border: 4px solid var(--gray-300);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  height: 100%;
+  width: 100%;
+  max-width: 150px;
+  min-height: 100px;
+  min-width: 100px;
+  max-height: 150px;
+  border-radius: 50%;
 }
 
-/* Grupos y etiquetas */
-.profile__group { 
-  margin-bottom:14px; 
-}
-.profile__label { 
-  display:block; 
-  margin-bottom:6px; 
-  font-weight:600; }
-
-/* ---- Inputs: todos idénticos y al 100% ---- */
-.profile__input,
-.profile input[type="text"],
-.profile input[type="email"],
-.profile input[type="tel"],
-.profile input[type="password"]{
-  display:block;
-  width:100%;
-  min-width:0;                 /* evita límites raros del navegador */
-  height:40px;
-  padding:10px 12px;
+.profile-update{
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
   border:1px solid var(--black);
-  border-radius:8px;
-  background:#fff;
-  appearance:none;             /* unifica estilos nativos */
-  -webkit-appearance:none;
+  padding: 24px;
+  background: var(--overlay-dark-strong);
+  gap: 24px;
 }
-
-.profile__input:focus{
-  border-color:var(--primary-600) !important;
-  outline:none !important;
-  box-shadow:none !important;
-}
-
-/* Botón guardar: mismo ancho de la caja */
-.profile__button{
-  display:block;
-  width:80%;
-  padding:12px;
-  margin-top:12px;
-  background:var(--primary-700);
-  color:var(--white);
-  border:none; 
-  border-radius:8px; 
-  cursor:pointer;
-}
-.profile__button:hover{ 
-  background:var(--primary-600); }
-
-/* Botón volver como enlace (no <a> dentro de <button>) */
-.back-btn{
-  position:fixed; 
-  top:1rem; 
-  right:1rem;
-  background-color:var(--primary-700);
-  border:none; 
-  border-radius:4px; 
-  padding:.35rem 1rem;
-  font-size:.75rem; 
-  font-weight:600; 
+.profile-update__title{
+  text-align: center;
+  font-size: var(--fs-sm);
   color: var(--white);
-  cursor:pointer; 
-  box-shadow:0 1px 3px var(--gray-100);
-  transition:background-color .3s ease; 
-  text-decoration:none; 
-  display:inline-block;
 }
-.back-btn:hover{ 
-  background-color:var(--primary-600); }
+.profile-update__form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.profile-update__form2{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-/* Responsive: ocultar imagen en tablet/móvil */
-@media (max-width:1024px){
-  .page__left{ 
-    display:none; 
+
+.profile-update__label{
+  display: block;
+  font-size: var(--fs-xxxs);
+  font-weight: 600;
+  color: var(--gray-200);
+}
+
+/* Inputs: 100% ancho, padding manejado por box-sizing */
+.profile-update__input{
+  height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: var(--fs-xs);
+  border-radius: 8px;
+  background: var(--white);
+  appearance: none;
+}
+.profile-update__input:focus{
+  border-color: var(--primary-600);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(19,102,255,0.06);
+}
+
+/* Checkbox y label inline */
+.profile-update__group{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+
+.profile-update__group-textarea{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+}
+.profile-update__group-file__photo{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-update__group-file{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  /* align-items: center; */
+}
+.profile-update__checkbox{
+  width: 18px;
+  height: 18px;
+  accent-color: var(--black);
+}
+.profile-update__group-checkbox{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+/* Label específico para checkbox (si quieres otro estilo) */
+.profile-update__label--checkbox{
+  color: var(--white);
+  font-size: var(--fs-xxxs);
+  font-weight: 600;
+}
+
+
+.profile-update__deparment{
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+}
+
+/* Ocultamos el input real */
+.profile-update__input--file {
+  display: none;
+}
+
+/* Botón personalizado */
+.profile-update__label--file {
+  width: max-content;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, var(--primary-700), var(--primary-600));
+  color: var(--white);
+  font-size: var(--fs-xs);
+  /* font-weight: 600; */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  align-items: center;
+}
+
+/* Efecto hover */
+.profile-update__label--file:hover {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Nombre del archivo */
+.profile-update__file-name {
+  display: block;
+  margin-top: 10px;
+  font-size: var(--fs-xxxs);
+  font-weight: 500;
+  color: var(--gray-700);
+  text-align: center;
+  border: 1px dashed var(--gray-400);
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--gray-50);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile-update__row-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-update__row-buttons__back{
+  background-color: var(--gray-900);
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+
+}
+.profile-update__row-buttons__back:hover{
+  opacity: 60%;
+}
+
+.profile-update__row-buttons__next{
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+
+
+}
+.profile-update__row-buttons__next:hover{
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-update__row-buttons__save{
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.profile-update__row-buttons__save:hover{
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-update__textarea{
+  height: 48px;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: var(--fs-xs);
+  border-radius: 8px;
+  background: var(--white);
+  max-height: 100px;
+  resize: vertical;
+}
+
+
+@media(width > 640px){
+  .profile-update__input{
+    width: 400px;
   }
-  .page__right{ 
-    margin-left:0; width:100%;
+  
+  .profile-update{
+    width: max-content;
+    margin: 24px auto;
   }
-  .profile-form-update-container{ 
-    width:100%; 
-    max-width:350px; }
+}
+
+
+
+
+@media(width >768px){
+  .profile-form-update-container2{
+    margin: 0 auto;
+    padding: 24px;
+    height: 90vh;
+  }
+
+  .profile-update__group-textarea{
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+  .profile-update{
+    padding: 24px;
+    gap: 12px;
+    width: 712px;
+    margin: 0 auto;
+  }
+
+
+  .profile-update__form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-update__form2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-update__input{
+    max-width: 320px;
+  }
+  .profile-update__deparment{
+    max-width: 320px;
+  }
+  .profile-update__label--file{
+    width: 150px;
+  }
+  .profile-update__group-file{
+    flex-direction: row;
+  }
+}
+
+@media(width > 1024px){
+  .profile-update{
+    padding: 24px;
+    gap: 12px;
+    width: auto;
+    margin: 0 auto 24px auto;
+    max-width: max-content;
+  }
+  .profile-update__form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-update__form2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-update__input{
+    max-width: 320px;
+  }
+  .profile-update__deparment{
+    max-width: 320px;
+  }
+  .profile-update__label--file{
+    width: 150px;
+  }
+  .profile-update__group-file{
+    flex-direction: row;
+  }
+}
+@media(width > 1280px){
+  .profile-update__group-file__photo{
+    flex-direction: column;
+  }
+  .profile-form-update-container2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-form-update-container{
+    height: 90vh;
+  }
+
+  .profile-update__row-informartion{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .profile-update_group-file_photo{
+    flex-direction: column;
+  }
+
+  .profile-update{
+    padding: 24px;
+    gap: 24px;
+    width: auto;
+    margin: 0 auto;
+    max-width: max-content;
+  }
+  .profile-update__form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile-update__form2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .profile-update__input{
+    max-width: 320px;
+  }
+  .profile-update__deparment{
+    max-width: 320px;
+  }
+  .profile-update__label--file{
+    width: max-content;
+  }
+  .profile-update__group-file{
+    flex-direction: column;
+  }
+  .profile-update__back{
+    margin-right: none;
+  }
+  
+  
 }

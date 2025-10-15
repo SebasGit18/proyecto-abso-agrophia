@@ -1,51 +1,55 @@
-  <div class="form-content">
-    <h2 class="form__title">Formulario de Registro</h2>
-    <form>
-      <div class="form__group">
-        <label for="documento" class="form__label">Número de Documento</label>
-        <input type="text" id="documento" class="form__input" placeholder="Número de documento">
-      </div>
+<h1 class="home__title">Agrophia</h1>
+<div class="form-content__register">
+  <h2 class="form__title">Formulario de Registro</h2>
 
-      <div class="form__group">
-        <label for="nombres" class="form__label">Nombres</label>
-        <input type="text" id="nombres" class="form__input" placeholder="Nombres">
-      </div>
+  <div class="form-content__register-row">
 
-      <div class="form__group">
-        <label for="apellidos" class="form__label">Apellidos</label>
-        <input type="text" id="apellidos" class="form__input" placeholder="Apellidos">
-      </div>
+  <div class="profile-update__group-file__photo">
+          <img src="/frontend/public/img/foto_sofi.png" alt="foto de Perfil cargada" class="profile-update__group-file__photo_review">
+          
+          <!-- Label que actúa como botón -->
+          <label for="input-foto" class="profile-update__label--file">
+            Cambiar foto
+          </label>
+          <input id="input-foto" class="profile-update__input profile-update__input--file" type="file" name="foto" />
+          
+          <!-- Aquí se mostrará el nombre de la foto seleccionada -->
+          <!-- <span id="file-name" class="profile-update__file-name">Ningún archivo seleccionado</span> -->
+        </div>
+  <form class="form-content__group">
 
-      <div class="form__group">
-        <label for="email" class="form__label">Correo Electrónico</label>
-        <input type="email" id="correo" class="form__input" placeholder="Correo Electrónico">
-      </div>
+    
 
-      <div class="form__group">
-        <label for="telefono" class="form__label">Teléfono</label>
-        <input type="tel" id="telefono" class="form__input" placeholder="Teléfono">
-      </div>
+    <div class="form__group">
+      <label for="tdocumento" class="form__label">Tipo de Documento</label>
+      <select name="tdocumento" class="form__option" required>
+      <option value="">-- Tipo de documento --</option>
+      <option value="cc">CC</option>
+      <option value="ti">TI</option>
+      <option value="cedula extranjera">Cédula extranjera</option>
+      <option value="pasaporte">Pasaporte</option>
+    </select>
+      
+    </div>
+    <div class="form__group">
+      <label for="documento" class="form__label">Número de Documento</label>
+      <input type="text" class="form__input" placeholder="Número de documento">
+    </div>
 
-      <div class="form__group">
-        <label for="direccion" class="form__label">Dirección</label>
-        <select id="direccion" class="form__select">
-          <option value="">Selecciona una opción</option>
-          <option value="opt1">Risaralda</option>
-          <option value="opt2">Caldas</option>
-          <option value="opt2">Quindio</option>
-        </select>
-      </div>
+    <div class="form__group">
+      <label for="nombres" class="form__label">Nombres</label>
+      <input type="text" class="form__input" placeholder="Nombres">
+    </div>
 
-      <div class="form__group">
-        <label for="password" class="form__label">Contraseña</label>
-        <input type="password" id="password" class="form__input" placeholder="Contraseña">
-      </div>
-
-      <div class="form__check">
-        <input type="checkbox" id="mostrar">
-        <label for="mostrar" class="form__label">Mostrar contraseña</label>
-      </div>
-
-      <button type="submit" class="form__button">Registrarse</button>
-    </form>
+    <div class="form__group">
+      <label for="apellidos" class="form__label">Apellidos</label>
+      <input type="text" class="form__input" placeholder="Apellidos">
+    </div>    
+  </form>
   </div>
+
+  <div class="form-content__register--row-buttons">
+  <a href="/frontend/public/views/index.html" class="form-content__register--row-buttons__back">Volver</a>
+  <a href="/frontend/public/views/register2.html" class="form-content__register--row-buttons__next">Siguiente</a>
+  </div>
+</div>

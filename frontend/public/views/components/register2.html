@@ -1,0 +1,79 @@
+<div class="header-register">
+    <a href="/frontend/public/views/register.html" class="register__back">Volver</a>
+    <h1 class="home__title">Agrophia</h1>
+</div>  <!--header-register-->
+
+<div class="form-content__register">
+  <h2 class="form__title">Formulario de Registro</h2>
+  <form class="form-content__group2">
+
+    
+
+    <div class="form__group">
+      <label for="email" class="form__label">Correo Electrónico</label>
+      <input type="email" class="form__input" placeholder="Correo Electrónico">
+    </div>
+
+    <div class="form__group">
+      <label for="telefono" class="form__label">Teléfono</label>
+      <input type="tel" class="form__input" placeholder="Teléfono">
+    </div>
+
+    <div class="form__group">
+      <label class="form__label" for="input-departament">Departamento</label>
+      <select name="" class="form__option">
+        <option value="">Selecciona el Departamento</option>
+        <option value="Risaralda">Risaralda</option>
+        <option value="Caldas">Caldas</option>
+        <option value="Quindio">Quindio</option>
+      </select>
+    </div>
+      
+      <div class="form__group">
+        <label class="form__label" for="input-municipality">Municipio</label>
+        <select name="" class="form__option">
+          <option value="">Selecciona el Municipio</option>
+          <option value="Risaralda">Neira</option>
+          <option value="Caldas">Manizales</option>
+          <option value="Quindio">San josé</option>
+        </select>
+      </div>
+      
+    <div class="form__group">
+      <label for="direccion" class="form__label">Dirección completa</label>
+      <input type="text" class="form__input" placeholder="Dirección completa">
+      <!-- <select i class="form__select">
+        <option value="">Selecciona una opción</option>
+        <option value="opt1">Risaralda</option>
+        <option value="opt2">Caldas</option>
+        <option value="opt2">Quindio</option>
+      </select> -->
+    </div>
+    
+    <div class="form__group">
+      <label for="password" class="form__label">Contraseña</label>
+      <input type="password" class="form__input" placeholder="Contraseña">
+
+        <div class="form__check">
+          <label for="mostrar" class="form__label form__see--password">
+          <input type="checkbox">
+            Mostrar contraseña</label>
+        </div>
+    </div>
+  
+    <div class="form__group">
+        <label for="password" class="form__label"> Confirmar Contraseña</label>
+        <input type="password" class="form__input" placeholder="Contraseña">
+    </div>
+    <div class="profile-update__group-textarea">
+          <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
+          <textarea id="input-direccion" class="profile-update__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
+        </div>
+    
+  </form>
+
+
+  <a href="/frontend/public/views/p_login-customer.html" class="form-register-link">
+    <button type="submit" class="form__button">Registrarse</button>
+  </a>
+</div>

@@ -1,85 +1,87 @@
 .toolbar-orders{
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: center;
     background-color: var(--white);
-    padding: 0px 24px;
-    margin: 0px;
-
-    
-
+    gap: 24px;
+    margin: 24px;
 }
 
-.toolbar-orders__button{
-  margin-top: 12px;
-  background-color: var(--gray-100);
+.toolbar-orders__content{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  font-size:var(--fs-xxxxs);
-  font-weight: 600;
-  padding: 12px 12px;
+  align-items: center;
+  background-color: var(--white);
+  gap: 24px;
+}
+
+.toolbar-orders__row-buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.toolbar-orders__button{
+  width: 100%;
+  font-weight: 500;
+  background-color: var(--gray-100);
+  height: 40px;
+  font-size:var(--fs-xs);
+  padding: 0 16px;
   border: none;
   border-radius:12px;
   color: var(--primary-700);
   cursor: pointer;
 }
 
+.toolbar-orders__row-icons {
+  flex-direction: row;
+  display: flex;
+  gap: 24px;
+}
+.toolbar-orders__icon {
+  display: flex;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gray-100);
+  align-content: space-around;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.toolbar-orders__icon-img {
+  width: 24px;
+  height: 24px;
+}
 
-.toolbar-orders__row-icons{
-    display: flex;
+
+/* tablet */
+@media (width > 640px) {
+  .toolbar-orders__row-icons {
     flex-direction: row;
-    gap: 30px;
+  }
 }
 
-.toolbar-orders__icon-img{
-    width: 30px;
-    height: 30pxpx;
-}
-
-.toolbar-orders__icon{
-    width: 40px;
-    height:40px;
-    border-radius: 50%;
-    border:none;
-    background-color: var(--gray-100)
-}
-
-
-/* =====================
-   TABLET (>=768px)
-   ===================== */
-@media (min-width: 478px) {
-  .toolbar-orders {
-    flex-direction: row;      /* en fila */
-    justify-content: center;  /* centrado */
-    align-items: center;
-    margin: 0;
-    padding: 12px 24px;
+@media (width > 768px) {
+  .toolbar-orders__content{
+    flex-direction: row;
+    
+  }
   
-  }
-
-  .toolbar-orders__button {
-    font-size: var(--fs-xxxxs);
-    width: 200px;
-    max-width: 200px;
-    font-weight:500;
-  }
-}
-
-/* =====================
-   DESKTOP (>=1024px)
-   ===================== */
-@media (min-width: 1024px) {
-  .toolbar-orders {
-    justify-content: flex-end; /* a la derecha */
-    margin: 0;
-    padding: 12px 24px;
+  .toolbar-orders__row-buttons{
+    justify-content: flex-end;
+    flex-direction: row;
   }
   .toolbar-orders__button{
-    width: 100px;
-    min-width: 150px;
-  }
-  .toolbar-orders__row-icons{
-    gap: 20px;
+    max-width: 190px;
   }
 }
+

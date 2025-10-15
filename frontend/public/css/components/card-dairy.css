@@ -1,0 +1,126 @@
+.card-dairy__container-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  max-width: 1920px;
+}
+
+/* Contenedor que organiza las cards en grilla */
+.card-dairy__container {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+
+.card-dairy {
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  min-width: 290px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-dairy:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 1);
+}
+
+
+.card-dairy__img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.card-dairy__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+
+.card-dairy__price {
+  font-size: var(--fs-sm);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-dairy__name {
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  color: var(--primary-700);
+  margin-bottom: 16px;
+}
+
+
+.card-dairy__button-one {
+  height: 40px;
+  background-color: var(--primary-700);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-dairy__button-one:hover {
+  background-color: var(--primary-800);
+  transform: scale(1.02);
+}
+
+.card-dairy__button-one:active {
+  background-color: var(--primary-900);
+  transform: scale(0.98);
+}
+
+.card-dairy__button svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--white);
+
+}
+
+/* === Responsive Grid === */
+@media (width > 640px) {
+  .card-dairy__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}
+
+/*@media (width < 1320px) {
+  .card-home__container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}*/
+
+@media (width > 1024px) {
+  .card-dairy__container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}

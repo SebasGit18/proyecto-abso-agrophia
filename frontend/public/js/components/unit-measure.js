@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector(".unit-measure__container");
+    const container = document.querySelector(".unit-measure__container-section");
   
     if (container) {
       fetch("/frontend/public/views/components/unit-measure.html")

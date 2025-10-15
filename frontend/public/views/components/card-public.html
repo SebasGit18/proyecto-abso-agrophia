@@ -1,13 +1,11 @@
 <div class="card-public">
-    <img src="/frontend/public/assets/cards/apple.jpg" alt="Manzanas frescas" class="card-public__img">
-    <div class="card-public__info">
-      <p class="card-public__price">12.000 / Libra</p>
-      <p class="card-public__name">Tomates</p>
-    </div>
-    <div class="button-container">
-        <button class="one-public__button">Editar</button>
-        <button class="two-public__button">Deshabilitar</button>
-    </div>
-    
+  <img src="{{image}}" alt="Manzanas" class="card-public__img">
+  <div class="card-public__info">
+    <p class="card-public__price">{{price}}</p>
+    <p class="card-public__name">{{name}}</p>
   </div>
-  
+  <div class="card-public__button">
+    <button class="card-public__button-one">{{button1}}</button>
+    <button class="card-public__button-two">{{button2}}</button>
+  </div>
+</div>

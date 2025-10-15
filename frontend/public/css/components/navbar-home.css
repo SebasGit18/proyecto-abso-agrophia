@@ -1,0 +1,141 @@
+.header-home {
+  position: static;
+  top: 0;
+  padding-top: 20px;
+}
+
+.header-home__title{
+  color: var(--primary-800);
+  font-size: var(--fs-lg);
+  font-family: var(--main-font);
+  text-align: center;
+  margin: 0
+}
+
+.header-home__subtitle{
+  color: var(--black);
+  font-weight: 300;
+  font-size: var(--fs-sm);
+  font-family: var(--main-font);
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.header-home__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-800);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header-home__group {
+  display: flex;
+}
+
+.header-home__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  gap: 20px;
+  font-size: var(--fs-xs);
+}
+.nav-menu {
+  position: relative;
+  list-style: none;
+}
+
+/* Ícono */
+.nav-menu__icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Quitamos el triángulo que pone <summary> */
+.nav-menu summary {
+  list-style: none;
+  cursor: pointer;
+}
+.nav-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Estilo del menú desplegable */
+.nav-menu__list {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: var(--white, #fff);
+  border: 1px solid var(--gray-300, #ccc);
+  border-radius: 6px;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+/* Items */
+.nav-menu__list li {
+  list-style: none;
+}
+
+.nav-menu__list a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: var(--black, #000);
+  font-size: 14px;
+}
+
+.nav-menu__list a:hover {
+  background: var(--gray-100, #f0f0f0);
+}
+
+.header-home__link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: medium;
+  font-size: var(--fs-xs);
+}
+
+.header-home__menu svg {
+    cursor: pointer;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+@media (width < 767px) {
+  .header-home__navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-home__list {
+    align-items: center;
+  }
+}
+
+@media (width > 768px) {
+  .header-home__list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+}

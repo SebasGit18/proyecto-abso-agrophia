@@ -1,0 +1,180 @@
+.card-farmer__container-section {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 24px;
+  max-width: 1920px;
+  margin-bottom: 70px;
+}
+
+/* Contenedor que organiza las cards en grilla */
+.card-farmer__container {
+    display: grid;
+    gap: 24px;
+    width: max-content;
+    justify-content: center;
+    margin: 24px; 
+}
+
+
+.card-farmer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card-farmer:hover {
+  transform: translateY(-4px);
+}
+
+
+.card-farmer__img {
+  width: auto;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-farmer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.card-farmer__price {
+  font-size: var(--fs-xs);
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.card-farmer__name {
+  font-size: var(--fs-xxs);
+  font-weight: 500;
+  color: var(--primary-950);
+  margin-bottom: 4px;
+}
+
+
+/* .card-home__button-one {
+  background-color: var(--primary-700);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+   Flexbox dentro del botón 
+  align-items: center;
+   Centra verticalmente texto + icono 
+  justify-content: center;
+   Centra horizontalmente 
+  gap: 8px;
+}
+
+.card-home__button-one:hover {
+  background-color: var(--primary-800);
+  transform: scale(1.02);
+}
+
+.card-home__button-one:active {
+  background-color: var(--primary-900);
+  transform: scale(0.98);
+}
+
+.card-home__button svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--white);
+
+} */
+
+
+
+/* === Responsive Grid === */
+@media (width > 640px) {
+
+  .card-farmer__container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-farmer__img {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+/*@media (width < 1320px) {
+  .card-home__container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+}*/
+
+@media (width > 1024px) {
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px;
+    max-width: 1920px;
+    margin-bottom: 70px;
+  }
+
+  .card-farmer__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: max-content;
+    margin: 24px;
+  }
+} 
+
+@media (width > 1280px) {
+  .card-farmer__container-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px;
+    max-width: 1920px;
+    margin-bottom: 70px;
+  }
+
+  .card-farmer__container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 24px;
+  }
+
+  .card-farmer__img {
+    justify-self: center;
+    width: 150px;
+  }
+} 
