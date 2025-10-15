@@ -1,0 +1,52 @@
+:root
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.button-back{
+    background-color: var(--gray-50);
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 92px;
+    height: 42px;
+    margin-left: 1135px;
+    border-radius: 6px;
+    border: none;
+    padding: 11px 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button-back:hover{
+    cursor: pointer;
+}
+
+.button-back .back {
+    display: flex;
+    color: var(--primary-700);
+    font-size: var(--fs-xxxs);
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .button-back {
+        margin: 20px auto 0;
+        display: block;
+        left: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .button-back {
+        margin: 20px auto 0;
+        display: block;
+        width: 50%;
+        max-width: 300px;
+        left: 75px;
+        padding: 12px 0;
+    }
+}

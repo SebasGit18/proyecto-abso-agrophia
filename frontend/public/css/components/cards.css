@@ -57,6 +57,8 @@ html, body {
   border-radius: 6px;
   cursor: pointer;
   font-size: var(--fs-xxxs);
+
+  margin-top: 15px;
 }
 
 .card__button:hover {
