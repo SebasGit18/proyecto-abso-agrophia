@@ -240,7 +240,7 @@
   font-size: var(--fs-xs);
   border-radius: 8px;
   background: var(--white);
-  max-height: 100px;
+  max-height: 56px;
   resize: vertical;
 }
 

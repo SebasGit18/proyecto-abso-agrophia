@@ -1,8 +1,11 @@
-<div class="contact-form">
-  <div class="contact-form__content">
-    <h2 class="contact-form__title">Formulario de Contacto</h2> 
-  </div>
-
+<div class="contact">
+  
+  <h1 class="contact-title">Agrophia</h1>
+  <div class="contact-form">
+    <div class="contact-form__content">
+      <h2 class="contact-form__title">Formulario de Contacto</h2> 
+    </div>
+    
   <div class="contact-form__container">
     <form class="contact-form__body">
       <div class="contact-form__group">
@@ -15,13 +18,16 @@
         <input type="email" id="email" class="contact-form__input" placeholder="Correo Electrónico" />
       </div>
       
-      <div class="contact-form__group">
-        <label for="message" class="contact-form__label">Escribe tu mensaje aquí</label>
-        <textarea type="message" class="contact-form__textarea" placeholder="Mensaje"></textarea>
-      </div>
     </form>
   </div>
-  <div class="contact-form__send">
-    <button type="submit" class="contact-form__button">Enviar</button>
+  <div class="contact-form__group">
+    <label for="message" class="contact-form__label">Escribe tu mensaje aquí</label>
+    <textarea type="message" class="contact-form__textarea" placeholder="Mensaje"></textarea>
   </div>
+  <div class="contact-form--row-buttons">
+      <a href="/frontend/public/views/p_login-customer.html" class="contact-form--row-buttons__back">Volver</a>
+      <a href="/frontend/public/views/login.html" class="contact-form--row-buttons__send">Enviar mensaje</a>
+  </div>
+</div>
+
 </div>

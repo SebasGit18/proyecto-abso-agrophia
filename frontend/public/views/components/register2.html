@@ -1,8 +1,3 @@
-<div class="header-register">
-    <a href="/frontend/public/views/register.html" class="register__back">Volver</a>
-    <h1 class="home__title">Agrophia</h1>
-</div>  <!--header-register-->
-
 <div class="form-content__register">
   <h2 class="form__title">Formulario de Registro</h2>
   <form class="form-content__group2">
@@ -50,6 +45,10 @@
       </select> -->
     </div>
     
+    <div class="register__group-textarea">
+          <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
+          <textarea id="input-direccion" class="register__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
+        </div>
     <div class="form__group">
       <label for="password" class="form__label">Contraseña</label>
       <input type="password" class="form__input" placeholder="Contraseña">
@@ -65,15 +64,12 @@
         <label for="password" class="form__label"> Confirmar Contraseña</label>
         <input type="password" class="form__input" placeholder="Contraseña">
     </div>
-    <div class="profile-update__group-textarea">
-          <label class="profile-update__label" for="input-descripcion">Descripción de perfil (opcional)</label>
-          <textarea id="input-direccion" class="profile-update__textarea" type="text" name="direccion" placeholder="Maximo 40 Caracteres" autocomplete="street-address" required ></textarea>
-        </div>
     
   </form>
 
 
-  <a href="/frontend/public/views/p_login-customer.html" class="form-register-link">
-    <button type="submit" class="form__button">Registrarse</button>
-  </a>
+   <div class="form-content__register--row-buttons">
+      <a href="/frontend/public/views/register.html" class="form-content__register--row-buttons__back">Volver</a>
+      <a href="/frontend/public/views/login.html" class="form-content__register--row-buttons__next">Registrarse</a>
+    </div>
 </div>

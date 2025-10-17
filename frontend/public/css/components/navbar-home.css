@@ -1,11 +1,11 @@
 .header-home {
   position: static;
   top: 0;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .header-home__title{
-  color: var(--primary-800);
+  color: var(--white);
   font-size: var(--fs-lg);
   font-family: var(--main-font);
   text-align: center;
@@ -31,10 +31,12 @@
   padding: 10px 20px;
   flex-wrap: wrap;
   width: 100%;
+  height: 70px;
 }
 
 .header-home__group {
   display: flex;
+  gap: 8px;
 }
 
 .header-home__list {
