@@ -3,9 +3,10 @@
     flex-direction: column;
     /* gap: 20px; */
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--primary-700);
     gap: 24px;
-    margin: 24px;
+    /* margin: 24px; */
+    padding:  12px 24px;
 }
 
 .toolbar-orders__content{
@@ -14,8 +15,8 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: var(--white);
-  gap: 24px;
+  background-color: var(--primary-700);
+  /* gap: 24px; */
 }
 
 .toolbar-orders__row-buttons{
@@ -24,19 +25,25 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 24px;
 }
 .toolbar-orders__button{
   width: 100%;
   font-weight: 500;
-  background-color: var(--gray-100);
+  /* background-color: var(--gray-100); */
   height: 40px;
   font-size:var(--fs-xs);
   padding: 0 16px;
   border: none;
   border-radius:12px;
-  color: var(--primary-700);
+  color: var(--white);
   cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+.toolbar-orders__button:hover{
+  transform: scale(1.2); 
+  background-color: var(--primary-800);
+  width: max-content;
 }
 
 .toolbar-orders__row-icons {
@@ -51,13 +58,18 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: var(--gray-100);
+  /* background-color: var(--white); */
   align-content: space-around;
   justify-content: center;
   flex-direction: row;
   align-items: center;
 }
+.toolbar-orders__icon:hover{
+  transform: scale(1.2); 
+  background-color: var(--primary-800);
+}
 .toolbar-orders__icon-img {
+  filter: invert(1);
   width: 24px;
   height: 24px;
 }
