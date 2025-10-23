@@ -1,35 +1,42 @@
 .toolbar-users {
-  margin: 24px;
+  padding: 0 24px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--white);
-  gap: 24px;
+  background-color: var(--primary-700);
+  /* gap: 24px; */
 }
 .toolbar-users__content{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--white);
-  gap: 24px;
+  /* width: 100%; */
+  background-color: var(--primary-700);
+  /* gap: 24px; */
+  padding: 12px;
+  justify-content: flex-end;
 }
 
 .toolbar-users__button {
-  width: 100%;
   height: 40px;
-  background-color: var(--gray-100);
+  /* background-color: var(--white); */
   font-size: var(--fs-xs);
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 16px;
   border: none;
   border-radius: 12px;
-  color: var(--primary-700);
+  color: var(--white);
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toolbar-users__button:hover{
+  background-color: var(--primary-800);
+  /* font-weight: 700; */
+  transform: scale(1.1); 
 }
 .toolbar-users__button--message {
-  color: var(--primary-700);
+  color: var(--white);
 }
 
 .toolbar-users__search {
@@ -69,6 +76,7 @@
 }
 
 .toolbar-users__row-icons {
+  margin: 0 0 12px 0;
   flex-direction: row;
   display: flex;
   gap: 24px;
@@ -80,27 +88,38 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: var(--gray-100);
+  /* background-color: var(--white); */
   align-content: space-around;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+.toolbar-users__icon:hover{
+   transform: scale(1.2); 
+   background-color: var(--primary-800);
 }
 .toolbar-users__icon-img {
   width: 24px;
   height: 24px;
+  filter: invert(1);
 }
 
 /* tablet */
 @media (width >640px) {
+  .toolbar-users{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .toolbar-users__content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    /* grid-template-columns: repeat(2, 1fr); */
     justify-content: center;
     align-items: center;
   }
   .toolbar-users__button {
-    width: 100%;
+    width: max-content;
     /* max-width: 200px; */
     font-weight: 500;
   }
@@ -110,6 +129,7 @@
   }
   .toolbar-users__row-icons {
     gap: 24px;
+    margin: 0;
   }
 }
 
