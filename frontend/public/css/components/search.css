@@ -2,8 +2,9 @@
 .list-home__index {
   display: flex;
   align-items: center;
-  width: 80%;
-  min-width: 320px;
+  width: auto;
+  margin: 24px;
+  /* min-width: 280px; */
   height: 56px;
   /* margin: 20px auto; */
   background: var(--white);
