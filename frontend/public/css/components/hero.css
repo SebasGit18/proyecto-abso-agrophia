@@ -20,13 +20,13 @@
 
 .hero-content__title{
   font-size: var(--fs-sm);
-  -webkit-backdrop-filter: blur(1px); 
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 .hero-content__information{
   font-size: var(--fs-xs);
   font-weight: bold;
-  -webkit-backdrop-filter: blur(1px); 
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 
@@ -40,8 +40,8 @@
     font-size: var(--fs-md);
   }
 
-  .hero-content__information{
+  /* .hero-content__information{
     font-size: var(--fs-sm);
-  }
+  } */
 
 }

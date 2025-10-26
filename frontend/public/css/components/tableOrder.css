@@ -30,7 +30,7 @@ body {
     background-color: var(--white);
     width: 930px;
     height: auto;
-    padding: 24px 0px;
+    /* padding: 24px 0px; */
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;

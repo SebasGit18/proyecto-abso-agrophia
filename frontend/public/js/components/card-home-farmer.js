@@ -33,6 +33,7 @@ export async function loadCards(containerSelector, cardIds = []) {
                 .replace("{{image}}", card.image)
                 .replace("{{price}}", card.price)
                 .replace("{{name}}", card.name)
+                .replace("{{button}}", card.button)
             
             //container.innerHTML += html;
             container.insertAdjacentHTML("beforeend", html);
