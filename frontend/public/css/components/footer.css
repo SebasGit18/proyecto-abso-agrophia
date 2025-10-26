@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   justify-content: center;
-  background-color: var(--primary-100);
+  background-color: var(--gray-100);
   color: var(--primary-800);
   font-size: var(--fs-xxxs);
   text-align: center;

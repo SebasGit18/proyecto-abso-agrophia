@@ -46,6 +46,7 @@
   .header-available__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -58,6 +59,22 @@
     text-decoration: none;
     font-weight: medium;
     font-size: var(--fs-xs);
+    position: relative;
+  }
+
+  .header-available__link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--gray-400);
+    transition: width 0.3s;
+  }
+
+  .header-available__link:hover::after {
+  width: 100%;
   }
   
   @media (width > 768px) {
