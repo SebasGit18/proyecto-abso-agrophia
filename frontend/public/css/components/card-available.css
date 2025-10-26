@@ -86,12 +86,13 @@
 }
 
 .card-available__button-one:hover {
-  background-color: var(--terciary-300);
-  transform: scale(1.02);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-available__button-one:active {
-  background-color: var(--terciary-400);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: scale(0.98);
 }
 

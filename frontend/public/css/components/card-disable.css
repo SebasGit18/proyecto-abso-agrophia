@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  max-width: 1920px;
+  width: auto;
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -11,13 +10,12 @@
   display: grid;
   gap: 24px;
   width: 100%;
-  max-width: 1200px;
   justify-content: center;
 }
 
 /* === Card === */
 .card-disable {
-  width: auto;
+  width: 100%;
   border-radius: 12px;
   padding: 24px;
   text-align: center;
@@ -37,7 +35,6 @@
   height: 250px;
   border-radius: 8px;
   margin-bottom: 16px;
-  object-fit: cover;
 }
 
 .card-disable__info {
@@ -65,11 +62,11 @@
 /* === Botón === */
 .card-disable__button-one {
   height: 40px;
-  background-color: var(--secundary-300);
-  color: var(--black);
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   /* Material Design spacing */
   font-size: var(--fs-xs);
   font-weight: 500;
@@ -88,33 +85,34 @@
 }
 
 @media (width > 640px) {
+  .card-disable__container-section {
+    margin: 0;
+  }
+
   .card-disable__container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
+    padding: 24px;
   }
 }
 
 @media(width > 768px){
   .card-disable__container {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 90%;
-   
-  }
-  .card-disable__img{
-    height: 200px;
+    width: auto;
   }
 }
 
 @media (width > 1024px) {
   .card-disable__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+  }
+}
+
+@media (width > 1280px) {
+  .card-disable__container {
     grid-template-columns: repeat(4, 1fr);
     width: auto;
-    /* margin-bottom: 50px; */
-    margin: 24px;
-  }
-  .card-disable__img{
-    height: 250px;
   }
 }
