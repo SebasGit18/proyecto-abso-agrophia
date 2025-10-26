@@ -58,8 +58,25 @@
   color: var(--white);
   text-decoration: none;
   font-weight: medium;
-  margin: 5px;
+  /* margin: 5px; */
   font-size: var(--fs-xs);
+  text-align: center;
+  position: relative;
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--gray-400);
+  transition: width 0.3s;
+}
+
+.navbar__link:hover::after {
+  width: 100%;
 }
 
 @media (width > 768px) {

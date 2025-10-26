@@ -67,10 +67,6 @@
 
   }
 
-  .layout__interface-farmer {
-    flex-direction: row;
-    align-items: flex-start;
-  }
 }
 
 @media (width > 1280px) {

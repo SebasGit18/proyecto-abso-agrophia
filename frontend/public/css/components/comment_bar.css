@@ -5,7 +5,7 @@
 }
 
 .qa__title {
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   color: var(--black);
   font-weight: bold;
   margin-bottom: 30px;

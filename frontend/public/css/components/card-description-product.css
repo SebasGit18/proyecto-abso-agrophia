@@ -1,10 +1,10 @@
-.page--product {
+/* .page--product {
   margin: 0;
   font-family: var(--main-font);
   background: url('/frontend/public/assets/cards/font-product-descrption.jpeg') no-repeat center center fixed; 
   background-size: cover;
   position: relative;
-}
+} */
 
 .page--product::before {
   content: "";
@@ -61,26 +61,29 @@
   color: var(--black);
   border-radius: 12px;
   padding: 1.5rem;
-  max-width: 350px;
+  max-width: 450px;
 }
 
 .product-card__title {
-  font-size: var(--fs-xxs);
+  font-size: var(--fs-sm);
   font-weight: bold;
 }
 
 .product-card__subtitle {
   font-weight: bold;
+  font-size: var(--fs-xs);
   margin-top: 1rem;
+  padding: 0;
 }
 
 .product-card__description {
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xs);
   margin: 0.5rem 0 1rem;
 }
 
 .product-card__seller-title {
   font-weight: bold;
+  font-size: var(--fs-sm);
   margin: 1rem 0 0.5rem;
 }
 
@@ -105,7 +108,7 @@
 
 .product-card__seller-detail {
   color: var(--primary-700);
-  font-size: var(--fs-xxxxs);
+  font-size: var(--fs-xxs);
   margin: 0;
 }
 
@@ -119,7 +122,7 @@
 
 .product-card__btn {
   background-color: var(--primary-700);
-  color: var(--black);
+  color: var(--white);
   border: none;
   border-radius: 8px;
   padding: 12px 24px;
@@ -131,7 +134,7 @@
   display: inline-flex;       /* Flexbox dentro del botón */
   align-items: center;        /* Centra verticalmente texto + icono */
   justify-content: center;    /* Centra horizontalmente */
-  gap: 8px;  
+  gap: 8px;
 }
 
 .product-card__btn:hover {
@@ -146,8 +149,7 @@
 .product-card__btn svg {
   width: 24px;
   height: 24px;
-  stroke: var(--black);
-
+  stroke: var(--white);
 }
 
 @media (max-width: 600px) {
