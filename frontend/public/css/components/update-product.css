@@ -1,0 +1,147 @@
+/* === FORMULARIO ACTUALIZAR PRODUCTO === */
+
+.update-product__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--overlay-dark-strong);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px var(--black);
+  border: 1px solid var(--black);
+  font-family: var(--main-font);
+  text-align: center;
+  margin: 24px;
+}
+
+.update-product__header {
+  text-align: center;
+}
+
+.update-product__title {
+  color: var(--white);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+/* === FORMULARIO === */
+
+
+
+.update-product__group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.update-product__label {
+  color: var(--gray-200);
+  font-size: var(--fs-xxxs);
+  font-weight: bold;
+}
+
+.update-product__input {
+  width: 100%;
+  height: 56px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--black);
+  outline: none;
+  font-size: var(--fs-xs);
+  transition: border 0.3s ease;
+}
+
+.update-product__input:focus {
+  border-color: var(--primary-700);
+}
+
+/* === BOTONES === */
+
+.update-product__actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.update-product__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.update-product__btn--back {
+  background-color: var(--gray-900);
+  color: var(--white);
+}
+
+.update-product__btn--back:hover {
+  opacity: 0.7;
+}
+
+.update-product__btn--next{
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: var(--fs-xs);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.update-product__btn--submit:hover {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVE === */
+
+/* Teléfonos */
+@media (width > 640px) {
+  .update-product__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .update-product__input {
+    width: 400px    ;
+  }
+
+  
+}
+
+/* Tablets */
+@media (width > 768px){
+    .update-product__row{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+  .update-product__input {
+        width: 320px;
+  }
+
+  .update-product__form {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1025px) {
+  .update-product__content {
+    width: max-content;
+    margin: 48px auto;
+  }
+
+  .update-product__input {
+    width: 400px;
+  }
+}

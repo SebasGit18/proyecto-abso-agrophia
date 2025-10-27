@@ -23,6 +23,7 @@
 }
 
 .header__navbar {
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   background-color: var(--primary-800);
@@ -97,7 +98,16 @@
     height: 10vh;
   }
 }
-
+@media(width > 640px){
+  .header__navbar{
+    height:10vh;
+    flex-direction:row;
+    justify-content:space-between
+  }
+  .navbar__list{
+    flex-direction:row;
+  }
+}
 @media(width <614px){
   .navbar__list{
     flex-direction: column;
