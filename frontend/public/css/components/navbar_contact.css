@@ -77,7 +77,7 @@
   }
   .contact-home__navbar{
     justify-content: flex-end;
-    height: 70px;
+    height: 10vh;
     min-height: 0;
   }
 

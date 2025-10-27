@@ -1,0 +1,39 @@
+<div class="update-product__content">
+  <div class="update-product__header">
+    <h2 class="update-product__title">Actualizar producto</h2>
+  </div>
+  <div class="update-product__row">
+  <div class="product-form__group-file__photo">
+          <img src="/frontend/public/img/not-found.png" alt="foto de Producto cargada" class="product-form__img">
+          
+          <!-- Label que actúa como botón -->
+          <label for="input-foto" class="profile-update__label--file">
+            Cambiar foto
+          </label>
+          <input id="input-foto-producto" class="profile-update__input profile-update__input--file" type="file" name="foto" />
+          
+        </div>
+    <form class="update-product__form">
+      <div class="update-product__group">
+        <label for="nombre" class="update-product__label">Nombre del producto</label>
+        <input id="nombre" type="text" class="update-product__input" placeholder="Ej: Tomates frescos" required>
+      </div>
+
+      <div class="update-product__group">
+        <label for="tipo" class="update-product__label">Tipo de producto</label>
+        <input id="tipo" type="text" class="update-product__input" placeholder="Ej: Verdura, fruta..." required>
+      </div>
+
+      <div class="update-product__group">
+        <label for="cantidad" class="update-product__label">Cantidad</label>
+        <input id="cantidad" type="number" class="update-product__input" placeholder="Ej: 50" required>
+      </div>
+    </form>
+  </div>
+    <div class="update-product__actions">
+      <a href="/frontend/public/views/p_card_public.html" class="update-product__btn update-product__btn--back">Volver</a>
+      <a href="/frontend/public/views/update_product2.html" class="update-product__btn update-product__btn--next">Siguiente</a>
+  </div>
+</div> 
+
+</div>

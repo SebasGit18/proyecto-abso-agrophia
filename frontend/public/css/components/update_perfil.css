@@ -188,7 +188,7 @@
   justify-content: space-between;
 }
 .profile-update__row-buttons__back{
-  background-color: var(--gray-900);
+  background-color: var(--gray-600);
   color: var(--white);
   padding: 12px 24px;
   font-size: var(--fs-xs);
@@ -212,9 +212,9 @@
 
 }
 .profile-update__row-buttons__next:hover{
-    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-update__row-buttons__save{

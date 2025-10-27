@@ -1059,6 +1059,7 @@
         display: flex;
         gap: 0;
         align-items: center;
+        min-height: 80vh;
     }
     .form-container2{
         align-items: center;
@@ -1085,7 +1086,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 80vh;
+        height: 80vh;
         /* gap: 24px; */
     }
     .form-container2{
@@ -1142,12 +1143,13 @@
     .form-container{
         display: flex;
         gap: 24px;
-        min-height: 80vh;
+        height: 80vh;
         align-items: center;
         justify-content: center;
     }
    
     .form-container2{
+        height: 80vh;
         align-items: center;
         gap: 24px;
     }
