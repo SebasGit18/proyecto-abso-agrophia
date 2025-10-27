@@ -62,33 +62,6 @@
   margin-bottom: 16px;
 }
 
-
-/* .card-home__button-one {
-  background-color: var(--primary-700);
-  color: var(--white);
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-flex;
-  align-items: center; 
-  justify-content: center;
-  gap: 8px;
-}
-
-.card-home__button-one:hover {
-  background-color: var(--primary-800);
-  transform: scale(1.02);
-}
-
-.card-home__button-one:active {
-  background-color: var(--primary-900);
-  transform: scale(0.98);
-} */
-
 /* .card-home__button svg {
   width: 24px;
   height: 24px;
@@ -98,33 +71,59 @@
 
 .card-homefarmer__button {
   display: flex;
-  flex-direction: row;
-  gap: 8px;
+  flex-direction: column;
+  gap: 24px;
   align-items: center;
-  justify-content: center;
+}
+
+.card-farmer__button-one {
+  width: max-content;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  /* Material Design spacing */
+  height: 40px;
+  font-size: var(--fs-xs);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ccard-farmer__button-one:hover {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ccard-farmer__button-one:active {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: scale(0.98);
 }
 
 .card-homefarmer__button-two {
   justify-content: center;
   height: 40px;
-  background-color: var(--secundary-300);
-  color: var(--black);
+  background-color: var(--gray-600);
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
-  height: 40px;
+  padding: 9px 16px;
+  height: 36px;
   font-size: var(--fs-xs);
-  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .card-homefarmer__button-two:hover {
-  background-color: var(--secundary-400);
+  opacity: 60%;
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 .card-homefarmer__button-two:active {
-  background-color: var(--secundary-500);
+  opacity: 60%;
   transform: scale(0.98);
 }
 
@@ -148,6 +147,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .card-homefarmer__button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
 

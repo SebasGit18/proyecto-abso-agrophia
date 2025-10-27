@@ -8,7 +8,7 @@ body {
     background-color: var(--primary-700);
     padding: 25px;
     color: var(--white);
-    height: auto;
+    min-height: 10vh;
 }
 
 .header__title-orders {
@@ -41,6 +41,7 @@ body {
 
 .tableorder-content {
     color: var(--black);
+    min-height: 51vh;
 }
 
 .tableorder__table {
