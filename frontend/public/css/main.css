@@ -72,3 +72,6 @@
 @import url('components/');
 @import url('components/create-shop.css');
 @import url('components/create-perfil-farmer.css');
+@import url('components/mensajes_farmer.css');
+@import url('components/mensajes_sends.css');
+@import url('components/my_orders.css');

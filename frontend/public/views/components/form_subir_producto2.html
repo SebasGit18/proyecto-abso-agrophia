@@ -1,0 +1,44 @@
+<div class="product-form__content">
+  <div class="product-form__container">
+    <h2 class="product-form__subtitle">Subir producto</h2>
+  </div> 
+    <div class="product-form2">
+      
+      <form class="product-form__body">
+        
+        <div class="product-form__group">
+          <label for="precio" class="product-form__label">Precio</label>
+          <input type="number" class="product-form__input" placeholder="Ej: 20.00" required>
+        </div>
+
+        <div class="product-form__group">
+          <label for="unidad" class="product-form__label">Unidad de medida</label>
+          <select id="unidad" name="unidad" class="product-form__input" required>
+            <option value="">-- Selecciona --</option>
+            <option value="Libra">Libra</option>
+            <option value="Kilo">Kilo</option>
+            <option value="Arroba">Arroba</option>
+            <option value="Litro">Litro</option>
+          </select>
+        </div>
+
+        <div class="product-form__group">
+          <label for="descripcion" class="product-form__label">Descripción</label>
+          <input type="text" class="product-form__input" placeholder="Breve descripción del producto">
+        </div>
+
+        <div class="product-form__group">
+          <label for="garantia" class="product-form__label">Garantía</label>
+          <input type="text" class="product-form__input" placeholder="Ej: 7 días">
+        </div>
+        
+      </form>
+    </div>
+
+  <div class="product-form__row ">
+    <a href="/frontend/public/views/form_subir_producto.html" class="product-form__row--back">Volver</a>
+    <a href="/frontend/public/views/form_subir_producto2.html" class="product-form__row--next">Publicar Producto</a>
+
+  </div>
+
+</div>

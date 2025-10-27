@@ -9,10 +9,7 @@
 /* ====== TABLA DE PEDIDOS ====== */
 .orders-table {
   color: var(--black);
-  /* margin-top: 50px; */
   width: auto;
-  /* margin-left: 200px; */
-  /* margin-right: 10px; */
   margin-bottom: 30px; 
   border-collapse: collapse;
   background: var(--white);
@@ -21,6 +18,11 @@
   border-radius: 12px;
   overflow: hidden;
 }
+.table-orders{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
 
 .orders-table__header,
 .orders-table__cell {
@@ -126,11 +128,6 @@
 
 /* tablets */
 @media (width >  640px) {
-  .table-orders{
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: scroll;
-  }
   .orders-table{
     width: 100%;
     margin: 0;
@@ -143,21 +140,21 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    scrollbar-width: none; /* Firefox */
+
     /* margin: 0 24px; */
   }
 }
 
-@media (width > 1024px) {
-  .table-orders{
-    width: auto;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-  }
-}
 @media (width > 1280px) {
   .orders-table{
-    width: 100%;
+    width: 80%;
     margin: 0;
+  }
+  .table-orders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .orders-table__cell-status{
     text-align:center;

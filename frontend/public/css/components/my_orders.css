@@ -1,0 +1,103 @@
+.my-orders{
+  min-height: 80vh;
+}
+
+.orders {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.orders__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.orders__title {
+  font-size: 1.8rem;
+  color: var(--primary-700);
+  margin-bottom: 6px;
+}
+
+.orders__subtitle {
+  color: var(--gray-700);
+}
+
+.orders__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orders__item {
+  background-color: var(--white);
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.orders__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  font-size: var(--fs-xxxs);
+}
+
+.orders__number {
+  font-weight: bold;
+  color: #333;
+}
+
+.orders__date {
+  color: var(--gray-700);
+}
+
+.orders__status {
+  font-weight: bold;
+}
+
+.orders__status--delivered {
+  color: var(--primary-700);
+}
+
+.orders__status--pending {
+  color: var(--secundary-500);
+}
+
+.orders__details {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.orders__details-title {
+  font-size: var(--fs-xxxs);
+  color: var(--gray-800);
+  margin-bottom: 8px;
+}
+
+.orders__product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.orders__product-item {
+  font-size: var(--fs-xs);
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  color: var(--black);
+}
+
+.orders__total {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--primary-700);
+  margin-top: 8px;
+}

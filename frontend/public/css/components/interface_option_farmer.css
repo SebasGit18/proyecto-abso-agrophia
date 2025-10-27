@@ -8,7 +8,9 @@
   box-sizing: border-box;
   /* margin-right: 50px; */
 }
-
+.board-container{
+  width: 100%x  ;
+}
 
 .board__item {
   display: flex;
