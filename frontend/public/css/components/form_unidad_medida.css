@@ -1,49 +1,25 @@
-  .page-left__unit-measure {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 50%; 
-    height: 100dvh;   /* altura del viewport dinámico real */
-    overflow: hidden;
-    display: flex;                 
-    justify-content: center;       
-    align-items: center;           
-
-    background: 
-      linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
-      url("/frontend/public/img/huerto.jpg");
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;
-  }
-.page-left__unit-measure__title{
-  font-size: var(--fs-sm);
-  font-weight: 600;
-  text-align: center;
-  /* letter-spacing: 5px; */
-  
+.input-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+.page-left__unit-measure{
+  display: none;
 
-  .page-right__unit-measure{
-    margin-left:50%; 
-    width:50%; 
-    min-height:100vh; 
-    color: var(--black);
-    height:100vh; 
-    overflow-y:auto;
-    display:flex; 
-    flex-direction:row; 
-    align-items:center; 
-    justify-content: center;
-    /* padding:0 40px; */
-  }
-
+}
+.page-right__unit-measure {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
   .container-unit-measure {
     display: flex;
     flex-direction: column;
     color: var(--black);
     height: auto;
-    max-width: 362px;
+    /* width: 100%; */
     margin: 24px;
     padding: 20px;
     border: 1px solid var(--gray-300);
@@ -57,13 +33,12 @@
   .container-unit-measure__title {
     font-size: var(--fs-sm);
     font-weight: bold;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     color: var(--white);
   }
 
   .container-unit-measure__description {
     font-size: var(--fs-xs);
-    margin-bottom: 15px;
     color: var(--white);
   }
 
@@ -77,14 +52,13 @@
 
   /* Campos */
   .container-unit-measure__form-amount {
-    flex: 1;                
-    width: 320px;    
+    flex: 1;
+    width: 100%;
     padding: 12px;
     font-size: var(--fs-xs);
-    border: 1px solid var(--black); 
-    border-radius: 12px; 
+    border: 1px solid var(--black);
+    border-radius: 12px;
     box-sizing: border-box;
-    
   }
 .container-unit-measure__form-amount:focus{
     border-color: var(--primary-700);
@@ -96,10 +70,10 @@
   
 .container-unit-measure__button{
   margin: 0 auto;
-  width: 200px;
+  width: max-content;
   background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
   color: var(--white);
-  padding: 12px 24px;
+  padding: 12px 2rem;
   font-size: var(--fs-xs);
   text-decoration: none;
   border-radius: 12px;
@@ -128,14 +102,58 @@
 .container-unit-measure__back:hover{
   opacity: 60%;
 }
+@media(width > 640px){
+  .container-unit-measure{
+    width: max-content;
+  }
+  .container-unit-measure__form-amount{
+    width: 400px;
+  }
+}
 
-@media (width > 800px){
+@media (width > 768px){
+    .page-right__unit-measure{
+    margin:0 0 0 50%; 
+    width:50%; 
+    min-height:100vh; 
+    color: var(--black);
+    height:100vh; 
+    overflow-y:auto;
+    display:flex; 
+    flex-direction:row; 
+    align-items:center; 
+    justify-content: center;
+    /* padding:0 40px; */
+  }
   .page-left__unit-measure{ 
     display:none; 
   }
-  .page-right__unit-measure{ 
-    margin-left:0; 
-    width:100%;
+.container-unit-measure__form-amount{
+  width: 320px;
+}
+  .page-left__unit-measure {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 50%; 
+    height: 100dvh;   /* altura del viewport dinámico real */
+    overflow: hidden;
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+
+    background: 
+      linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
+      url("/frontend/public/img/huerto.jpg");
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;
   }
+.page-left__unit-measure__title{
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-align: center; 
+}
+
   
 }
