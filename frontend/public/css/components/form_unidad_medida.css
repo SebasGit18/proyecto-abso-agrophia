@@ -43,11 +43,11 @@
     flex-direction: column;
     color: var(--black);
     height: auto;
-    max-width: 362px;       
-    margin: 20px auto;
-    padding: 20px;       
-    border: 1px solid var(--gray-300); 
-    border-radius: 12px;    
+    max-width: 362px;
+    margin: 24px;
+    padding: 20px;
+    border: 1px solid var(--gray-300);
+    border-radius: 12px;
     text-align: center;
     font-family: var(--font-primary);
     background: var(--overlay-dark);
@@ -95,45 +95,41 @@
   }
   
 .container-unit-measure__button{
-    padding: 11px 18px;
-    font-size: var(--fs-xs);
-    background-color: var(--primary-700);
-    color: var(--white);
-    width: 120px;
-    height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  margin: 0 auto;
+  width: 200px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  padding: 12px 24px;
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
   }
 
 .container-unit-measure__button:hover{
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: translateY(-2px);
-  background-color: var(--primary-600);
-
-  }
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
 
 .container-unit-measure__back{
-  font-weight: 600;
   position: fixed;
   top: 16px;
-  right: 16px;
-  background-color: var(--primary-700);
+  left: 16px;
+  background-color: var(--gray-600);
   border-radius: 4px;
   padding: 9px 16px;
   height: 36px;
   font-size: var(--fs-xs);
-  /* font-weight: 600; */
   color: var(--white);
   text-decoration: none;
   transition: background-color .2s ease;
 }
 .container-unit-measure__back:hover{
-  background-color: var(--primary-600);
+  opacity: 60%;
 }
 
-@media (max-width:800px){
+@media (width > 800px){
   .page-left__unit-measure{ 
     display:none; 
   }
@@ -142,12 +138,4 @@
     width:100%;
   }
   
-}
-@media(width < 365px){
-  .container-unit-measure{
-    width: auto;
-  }
-  .container-unit-measure__form-amount{
-    width: auto;
-  }
 }
