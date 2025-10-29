@@ -2,63 +2,62 @@
   <div class="product-form__container">
     <h2 class="product-form__subtitle">Subir producto</h2>
   </div> 
-    <div class="product-form2">
+
+  <div class="product-form2">
+    <form onsubmit="mostrarAlerta(event)" class="product-form__body">
       
-      <form class="product-form__body">
-        
-        <div class="product-form__group">
-          <label for="precio" class="product-form__label">Precio</label>
-          <input type="number" class="product-form__input" placeholder="Ej: 20.00" required>
-        </div>
+      <div class="product-form__group">
+        <label for="precio" class="product-form__label">Precio</label>
+        <input type="number" class="product-form__input" placeholder="Ej: 20.00" required>
+      </div>
 
-        <div class="product-form__group">
-          <label for="unidad" class="product-form__label">Unidad de medida</label>
-          <select id="unidad" name="unidad" class="product-form__input" required>
-            <option value="">-- Selecciona --</option>
-            <option value="Libra">Libra</option>
-            <option value="Kilo">Kilo</option>
-            <option value="Arroba">Arroba</option>
-            <option value="Litro">Litro</option>
-          </select>
-        </div>
+      <div class="product-form__group">
+        <label for="unidad" class="product-form__label">Unidad de medida</label>
+        <select id="unidad" name="unidad" class="product-form__input" required>
+          <option value="">-- Selecciona --</option>
+          <option value="Libra">Libra</option>
+          <option value="Kilo">Kilo</option>
+          <option value="Arroba">Arroba</option>
+          <option value="Litro">Litro</option>
+        </select>
+      </div>
 
-        <div class="product-form__group">
-          <label for="descripcion" class="product-form__label">Descripción</label>
-          <input type="text" class="product-form__input" placeholder="Breve descripción del producto">
-        </div>
+      <div class="product-form__group">
+        <label for="descripcion" class="product-form__label">Descripción</label>
+        <input type="text" class="product-form__input" placeholder="Breve descripción del producto">
+      </div>
 
-        <div class="product-form__group">
-          <label for="garantia" class="product-form__label">Garantía</label>
-          <input type="text" class="product-form__input" placeholder="Ej: 7 días">
-        </div>
-        
-        <div class="product-form__group">
-          <label for="method-payment" class="product-form__label">Método de pago</label>
-          <select id="unidad" name="unidad" class="product-form__input" required>
-            <option value="">-- Selecciona --</option>
-            <option value="transferencia">Pago de contado</option>
-            <option value="contraentrega">Pago contra entrega</option>
-            <option value="contraentrega">Transferencia</option>
-          </select>
-        </div>
+      <div class="product-form__group">
+        <label for="garantia" class="product-form__label">Garantía</label>
+        <input type="text" class="product-form__input" placeholder="Ej: 7 días">
+      </div>
+      
+      <div class="product-form__group">
+        <label for="metodo-pago" class="product-form__label">Método de pago</label>
+        <select id="metodo-pago" name="metodo-pago" class="product-form__input" required>
+          <option value="">-- Selecciona --</option>
+          <option value="contado">Pago de contado</option>
+          <option value="entrega">Pago contra entrega</option>
+          <option value="transferencia">Transferencia</option>
+        </select>
+      </div>
 
-        <div class="product-form__group">
-          <label for="garantia" class="product-form__label">Método de entrega</label>
-          <select id="unidad" name="unidad" class="product-form__input" required>
-            <option value="">-- Selecciona --</option>
-            <option value="transferencia">Envio a domicilio</option>
-            <option value="contraentrega">Recogido en tienda</option>
-            <option value="contraentrega">Entrega bajo cita</option>
-          </select>
-        </div>
-        
-      </form>
-    </div>
+      <div class="product-form__group">
+        <label for="metodo-entrega" class="product-form__label">Método de entrega</label>
+        <select id="metodo-entrega" name="metodo-entrega" class="product-form__input" required>
+          <option value="">-- Selecciona --</option>
+          <option value="domicilio">Envío a domicilio</option>
+          <option value="tienda">Recogido en tienda</option>
+          <option value="cita">Entrega bajo cita</option>
+        </select>
+      </div>
 
-  <div class="product-form__row ">
-    <a href="/frontend/public/views/form_subir_producto.html" class="product-form__row--back">Volver</a>
-    <a href="/frontend/public/views/form_subir_producto2.html" class="product-form__row--next">Publicar Producto</a>
-
+    </form>
   </div>
-
+      <!-- Botones -->
+      <div class="product-form__row">
+        <a href="/frontend/public/views/form_subir_producto.html" class="product-form__row--back">Volver</a>
+        <a href="/frontend/public/views/p_card_public.html" onclick="mostrarAlerta(event)" class="product-form__row--next">Publicar Producto</a>
+      </div>
 </div>
+

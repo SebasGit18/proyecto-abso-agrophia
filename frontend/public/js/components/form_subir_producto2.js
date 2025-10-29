@@ -12,3 +12,9 @@
 
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Producto publicado correctamente!");
+  window.location.href = "/frontend/public/views/interface_farmer.html";
+}
