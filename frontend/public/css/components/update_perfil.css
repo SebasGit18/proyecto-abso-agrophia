@@ -1,4 +1,5 @@
 .profile-form-update-container{
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,9 +14,7 @@
 }
 
 
-.profile-form-update-container2{
-  padding: 24px;
-}
+  
 .profile-update_group-file_photo_review{
   border: 4px solid var(--gray-300);
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
@@ -29,6 +28,7 @@
 }
 
 .profile-update{
+  margin: 24px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -194,7 +194,6 @@
   font-size: var(--fs-xs);
   text-decoration: none;
   border-radius: 12px;
-
 }
 .profile-update__row-buttons__back:hover{
   opacity: 60%;
@@ -212,9 +211,9 @@
 
 }
 .profile-update__row-buttons__next:hover{
-    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-update__row-buttons__save{
@@ -252,7 +251,6 @@
   
   .profile-update__form{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
   .profile-update{
     width: max-content;

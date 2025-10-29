@@ -156,11 +156,11 @@
 @media (width > 1024px) {
   .users-table,
   .table_users{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     scrollbar-width: none; /* Firefox */
-
+    margin: 0;
   }
   .users-table__cell--actions{
     flex-direction: row;

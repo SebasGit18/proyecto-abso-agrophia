@@ -1,65 +1,96 @@
-<div class="shoppingcar-content">
-    <table class="shoppincar__table">
-        <thead class="shoppincar__thead">
-            <tr class="shoppingcar__row">
-                <th class="shoppincar__header">Producto</th>
-                <th class="shoppincar__header">Precio/ <br> Unidad</th>
-                <th class="shoppincar__header">Tipo</th>
-                <th class="shoppincar__header">Cantidad</th>
-                <th class="shoppincar__header">Acciones</th>
-            </tr>
-        </thead>
-        <tbody class="shoppincar__body">
-            <tr class="shoppingcar__row">
-                <td class="shoppincar__column">Tomates orgánicos</td>
-                <td class="shoppincar__column">$500</td>
-                <td class="shoppincar__column">Verdura</td>
-                <td class="shoppincar__column">10 kg</td>
-                <td class="shoppincar__column shoppincar__colum--buttons">
+<div class="cart">
+  <h2 class="cart__title">Carrito de Compras - Productos Agrícolas</h2>
 
-                    <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'">Modificar</button>
-                    <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
+  <div class="cart__container">
+    <div class="cart__table">
 
-                </td>
-            </tr>
-            <tr class="shoppingcar__row">
-                <td class="shoppincar__column">Maíz Amarillo</td>
-                <td class="shoppincar__column">$1000</td>
-                <td class="shoppincar__column">Grano</td>
-                <td class="shoppincar__column">25 kg</td>
-                <td class="shoppincar__column shoppincar__colum--buttons">
+      <!-- FILA 1 -->
+      <div class="cart__content">
+        <div class="cart__row">
 
-                    <button class="shoppingcar__btn shoppingcar__btn--modify" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_unit-measure.html'" >Modificar</button>
-                    <button class="shoppingcar__btn shoppingcar__btn--delete">X</button>
-
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="info-content">
-    
-    <!-- <div class="info__link--content"> -->
-
-        <button onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_card-available.html'"class="info__home--button">Volver al inicio</button>
-
-    <!-- </div> -->
-    
-    <!-- <div class="info__total--content"> -->
-        
-        <!-- <div class="info__content--value"> -->
-
-            <p class="info__total--value">Valor total: 204.754 COP</p>
-
-        <!-- </div> -->
-                
-        <!-- <div class="info__content--button"> -->
-
-            <button class="info__total--button" onclick="window.location.href='http://127.0.0.1:5501/frontend/public/views/p_from-method_payment.html'">Pagar Solicitudes</button>
+          <div class="cart__row--1">
+            <div class="cart__cell" data-label="Producto">
+              <label class="cart__label">Producto</label>
+              <div class="cart__value">Tomates</div>
+            </div>
             
-        <!-- </div> -->
-        
-    <!-- </div> -->
-    
+            <div class="cart__cell" data-label="Precio Unidad">
+              <label class="cart__label">Precio Unidad</label>
+              <div class="cart__value">$2.500</div>
+            </div>
+          </div>
+          
+          <div class="cart__row--2">
+            
+            <div class="cart__cell" data-label="Tipo">
+              <label class="cart__label">Tipo</label>
+              <div class="cart__value">Verdura</div>
+            </div>
+            
+            <div class="cart__cell" data-label="Cantidad">
+              <label class="cart__label">Cantidad</label>
+              <input type="number" class="cart__input" min="1" value="2" />
+            </div>
+          </div>
+          
+        </div>
+          <div class="cart__cell cart__actions" data-label="Acciones">
+            <div class="cart__actions--row">
+              <button class="cart__btn cart__btn--edit">Modificar</button>
+              <button class="cart__btn cart__btn--cancel">Cancelar</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="cart__content">
+        <div class="cart__row">
+
+          <div class="cart__row--1">
+            <div class="cart__cell" data-label="Producto">
+              <label class="cart__label">Producto</label>
+              <div class="cart__value">Café</div>
+            </div>
+            
+            <div class="cart__cell" data-label="Precio Unidad">
+              <label class="cart__label">Precio Unidad</label>
+              <div class="cart__value">$8.000</div>
+            </div>
+          </div>
+          
+          <div class="cart__row--2">
+            <div class="cart__cell" data-label="Tipo">
+              <label class="cart__label">Tipo</label>
+              <div class="cart__value">Grano</div>
+            </div>
+            
+            <div class="cart__cell" data-label="Cantidad">
+              <label class="cart__label">Cantidad</label>
+              <input type="number" class="cart__input" min="1" value="1" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__cell cart__actions" data-label="Acciones">
+          <div class="cart__actions--row">
+            <button class="cart__btn cart__btn--edit">Modificar</button>
+            <button class="cart__btn cart__btn--cancel">Cancelar</button>
+          </div>
+        </div>
+
+      </div>
+      
+
+    </div>
+
+    <!-- TOTAL -->
+    <div class="cart__summary">
+      <p class="cart__total">Total: <span class="cart__total-value">$13.000</span></p>
+    </div>
+  </div>
+
+  <!-- BOTONES FINALES -->
+  <div class="cart__actions-global">
+    <button class="cart__btn cart__btn--back">Volver</button>
+    <button class="cart__btn cart__btn--pay">Pagar</button>
+  </div>
 </div>
