@@ -9,7 +9,7 @@
                 <th>Cantidad</th>
                 <th>Total</th>
                 <th>Estado</th>
-                <th>Envio</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -23,7 +23,13 @@
                 <td>
                     <button class="tableorder__btn tableorder__btn--pending">Pendiente</button>
                 </td>
-                <td>En camino</td>
+                <td>
+                    <a href="/frontend/public/views/orders_page.html" onclick="mostrarAlerta(event)">
+                        <button class="orders-table__button--cancel">
+                            <img src="/frontend/public/icons/x.svg" alt="editar" class="orders-table__icon">
+                        </button>
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="tableorder__user">Brainer Morales</td>
@@ -35,9 +41,15 @@
                 <td>
                     <button class="tableorder__btn tableorder__btn--pendingone">Completado</button>
                 </td>
-                <td>Entregado</td>
+                <td>
+                    <a href="/frontend/public/views/tableOrder.html" onclick="mostrarAlerta(event)">
+                        <button class="orders-table__button--cancel">
+                            <img src="/frontend/public/icons/x.svg" alt="editar" class="orders-table__icon">
+                        </button>
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>
-    <a href="/frontend/public/views/p_card-available.html" class="tableorder__link tableorder__link--home">Volver al inicio</a>
+    <a href="/frontend/public/views/interface_farmer.html" class="tableorder__link tableorder__link--home">Volver al inicio</a>
 </div>

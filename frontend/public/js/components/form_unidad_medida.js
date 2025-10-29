@@ -12,3 +12,9 @@
 
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault();
+  alert("¡El producto Se agregó al carrito exitosamente!");
+  window.location.href = "/frontend/public/views/p_login-customer.html";
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/frontend/public/icons/planta.png">
+  <link rel="stylesheet" href="/frontend/public/css/main.css">
+
+  <!-- Librerías necesarias -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <!-- Script del componente -->
+  <script src="/frontend/public/js/components/generate-user-report.js" defer></script>
+
+  <script src="/frontend/public/js/components/toolbar.js" defer></script>
+  <script src="/frontend/public/js/components/sidebar_admin.js" defer></script>
+  <script src="/frontend/public/js/components/footer.js" defer></script>
+
+
+
+  <title>Usuarios admin</title>
+</head>
+<body>
+    <div class="toolbar"></div>
+
+    <div class="sidebar-container"></div>
+
+    <!-- Aquí se cargará dinámicamente el componente -->
+    <div class="table_users"></div>
+
+    <footer class="footer">  
+        <div class="footer-container"></div>
+    </footer> 
+</body>
+</html>

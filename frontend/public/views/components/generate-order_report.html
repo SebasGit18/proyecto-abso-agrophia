@@ -1,0 +1,49 @@
+<div class="order-report" id="contenido-reporte">
+  <h1 class="order-report__title">Reporte de Pedidos</h1>
+  <h3 class="order-report__subtitle">Agrophia - Octubre 2025</h3>
+
+  <div class="order-report__table-wrapper">
+    <table class="order-report__table">
+      <thead class="order-report__head">
+        <tr class="order-report__row order-report__row--head">
+          <th class="order-report__header">Cliente</th>
+          <th class="order-report__header">Fecha</th>
+          <th class="order-report__header">Productos</th>
+          <th class="order-report__header">Cantidad</th>
+          <th class="order-report__header">Total</th>
+          <th class="order-report__header">Estado</th>
+        </tr>
+      </thead>
+
+      <tbody class="order-report__body">
+        <tr class="order-report__row">
+          <td class="order-report__cell">Laura Quintero</td>
+          <td class="order-report__cell">01/09/2025</td>
+          <td class="order-report__cell">Leche, Pan</td>
+          <td class="order-report__cell">5</td>
+          <td class="order-report__cell">50.000 COP</td>
+          <td class="order-report__cell order-report__cell--status">
+            <span class="order-report__status order-report__status--completed">Completado</span>
+          </td>
+        </tr>
+
+        <tr class="order-report__row">
+          <td class="order-report__cell">Salomé López</td>
+          <td class="order-report__cell">01/09/2025</td>
+          <td class="order-report__cell">Uvas, Leche</td>
+          <td class="order-report__cell">5</td>
+          <td class="order-report__cell">74.000 COP</td>
+          <td class="order-report__cell order-report__cell--status">
+            <span class="order-report__status order-report__status--pending">Pendiente</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <canvas id="order-report__chart" class="order-report__chart" width="300" height="300"></canvas>
+
+  <div class="order-report__actions">
+    <button class="order-report__button" id="btn-generar-pdf">Descargar PDF</button>
+  </div>
+</div>

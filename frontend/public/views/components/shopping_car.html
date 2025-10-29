@@ -122,7 +122,7 @@
       <p class="cart__total">Total: <span class="cart__total-value">$13.000</span></p>
       <div class="cart__summary--options">
 
-        <select  name="payment-method" class="cart__summary--options__method-pay" required>
+        <select name="payment-method" class="cart__summary--options__method-pay" required>
           <option value="">-- Método de pago --</option>
           <option value="pago contra entrega">Pago contra entrega</option>
           <option value="pago de contado">Pago de contado</option>
@@ -142,7 +142,12 @@
 
   <!-- BOTONES FINALES -->
   <div class="cart__actions-global">
-    <button class="cart__btn cart__btn--back">Volver</button>
-    <button class="cart__btn cart__btn--pay">Pagar</button>
+    <a href="/frontend/public/views/p_login-customer.html">
+      <button class="cart__btn cart__btn--back">Volver</button>
+    </a>
+    <a href="/frontend/public/views/p_login-customer.html"
+    onclick="mostrarAlerta(event)">
+      <button class="cart__btn cart__btn--pay">Pagar</button>
+    </a>
   </div>
 </div>
