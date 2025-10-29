@@ -1,0 +1,56 @@
+<div class="product-report" id="contenido-reporte">
+  <h1 class="product-report__title">Reporte de Productos</h1>
+  <h3 class="product-report__subtitle">Agrophia - Octubre 2025</h3>
+
+  <div class="product-report__table-wrapper">
+    <table class="product-report__table">
+      <thead class="product-report__head">
+        <tr class="product-report__row product-report__row--head">
+          <th class="product-report__header">Nombre</th>
+          <th class="product-report__header">Código</th>
+          <th class="product-report__header">Categoría</th>
+          <th class="product-report__header">Precio</th>
+          <th class="product-report__header">Estado</th>
+        </tr>
+      </thead>
+
+      <tbody class="product-report__body">
+        <tr class="product-report__row">
+          <td class="product-report__cell">Manzana</td>
+          <td class="product-report__cell">01</td>
+          <td class="product-report__cell">Fruta</td>
+          <td class="product-report__cell">$1.200</td>
+          <td class="product-report__cell product-report__cell--status">
+            <span class="product-report__status product-report__status--active">Activo</span>
+          </td>
+        </tr>
+
+        <tr class="product-report__row">
+          <td class="product-report__cell">Pera</td>
+          <td class="product-report__cell">02</td>
+          <td class="product-report__cell">Fruta</td>
+          <td class="product-report__cell">$1.000</td>
+          <td class="product-report__cell product-report__cell--status">
+            <span class="product-report__status product-report__status--inactive">Inactivo</span>
+          </td>
+        </tr>
+
+        <tr class="product-report__row">
+          <td class="product-report__cell">Zanahoria</td>
+          <td class="product-report__cell">03</td>
+          <td class="product-report__cell">Verdura</td>
+          <td class="product-report__cell">$800</td>
+          <td class="product-report__cell product-report__cell--status">
+            <span class="product-report__status product-report__status--active">Activo</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <canvas id="product-report__chart" class="product-report__chart" width="300" height="300"></canvas>
+
+  <div class="product-report__actions">
+    <button class="product-report__button" id="btn-generar-pdf">Descargar PDF</button>
+  </div>
+</div>

@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
     .catch(error => console.log("Error cargando al cargar el carrito de compras", error));
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Compra exitosamente!");
+  window.location.href = "/frontend/public/views/p_login-customer.html";
+}
