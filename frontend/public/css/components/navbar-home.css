@@ -133,6 +133,20 @@
     transition: transform 0.3s ease, fill 0.3s ease;
 }
 
+/* 
+@media (width > 767px) {
+  .header-home__navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header-home__list {
+    align-items: center;
+  }
+} */
+
 @media (width > 768px) {
   .header-home__navbar {
     flex-direction: row;
@@ -152,5 +166,10 @@
     justify-content: space-evenly;
     align-items: center;
   }
-
+   .header-home__navbar {
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+  }
 }

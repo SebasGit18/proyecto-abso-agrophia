@@ -1,0 +1,135 @@
+/* Base - Mobile First */
+.product-detail {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    font-family: var(--main-font);
+    color: var(--black);
+}
+.product-detail__container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px var(--gray-200);
+    overflow: hidden;
+    align-items: center;
+    gap: 12px;
+}
+.product-detail__type{
+    font-size: var(--fs-xs);
+}
+.product-detail__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product-detail__name {
+  font-size: var(--fs-sm);
+  font-weight: bold;
+  color: var(--primary-700);
+}
+.product-detail__image--photo{
+    width: auto;
+    height: 250px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 0 0 12px 12px;
+}
+.product-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.product-detail__actions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+.product-detail__btn--edit {
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: var(--fs-xs);
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.product-detail__btn--edit:hover {
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-detail__btn--disable {
+    height: 40px;
+    background-color: var(--gray-700);
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: var(--fs-xs);
+    text-decoration: none;
+    border-radius: 12px;
+}
+
+.product-detail__btn--disable:hover {
+    opacity: 60%;
+}
+
+/* 📱 Tablet Small (width > 640px) */
+@media (width > 640px) {
+  .product-detail {
+    padding: 24px;
+    width: 500px;
+  }
+  .review-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* 💻 Tablet Large (width > 768px) */
+@media (width > 768px) {
+    .review-product{
+        min-height: 80vh;
+    }
+    .product-detail{
+        width: 700px;
+        display: grid;
+        /* grid-template-columns: repeat(2, 40% 60%); */
+    }
+  .product-detail__container {
+    display: grid;
+    grid-template-columns: repeat(2,40% 60%);
+  }
+
+
+.product-detail__image--photo{
+      border-radius: 0 12px 12px 0;
+  }
+  .product-detail__info {
+    padding: 2rem;
+  }
+
+  .product-detail__btn {
+    width: 150px;
+  }
+}
+
+@media(width > 1024px){
+    .product-detail{
+        width: 80%;
+    }
+    .product-detail__container{
+        grid-template-columns: repeat(2, 30% 70%);
+    }
+}
