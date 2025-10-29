@@ -75,15 +75,21 @@
 }
 
 .user-report__button {
-  background-color: #2c3e50;
-  color: #fff;
+  font-weight: 600;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 16px;
+  color: var(--white);
+  font-size: var(--fs-xs);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .user-report__button:hover {
-  background-color: #34495e;
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }

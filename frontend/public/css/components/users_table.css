@@ -150,7 +150,7 @@
   .table_users{
     margin-left: auto;
     margin-right: auto;
-    margin: 0 24px;
+    /* margin: 0 24px; */
   }
   .users-table__cell--actions{
     flex-direction: column;
