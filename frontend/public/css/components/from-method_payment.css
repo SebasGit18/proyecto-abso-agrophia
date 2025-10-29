@@ -1,4 +1,4 @@
-.method-payment__container {
+.method-payment {
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -6,19 +6,15 @@
   background: var(--overlay-dark-strong);
   border-radius: 8px;
   padding: 24px;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  min-width: 320px;
   height: auto;
-}
-
-.method-payment {
   width: 100%;
-  margin: 24px auto;
+  margin: 24px auto 24px;
+  gap: 24px;
 }
 
-.method-payment__form-title {
+
+.method-payment__title {
   text-align: center;
   font-size: var(--fs-sm);
   font-family: var(--main-font);
@@ -30,66 +26,60 @@
 
 .method-payment__form {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 24px;
   justify-content: center;
 }
 
-.method-payment__form-label {
+.method-payment__label {
   font-weight: bold;
   color: var(--gray-200);
-  margin-bottom: 5px;
   font-size: var(--fs-xxxs);
-  margin-top: 20px;
 }
 
-.method-payment__form-option {
-  width: 100%;
-  min-width: 320px;
-  height: 56px;
-  padding: 16px;
-  border: 1px solid var(--gray-400);
-  border-radius: 6px;
-  font-size: var(--fs-xs);
-  color: var(--black);
-  margin: 10px 0 5px;
+.method-payment__group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.method-payment__form-option,
-.method-payment__form-input {
+.method-payment__select,
+.method-payment__input {
   box-sizing: border-box;
   width: 100%;
   min-width: 320px;
   height: 56px;
-  padding: 16px;
+  padding: 0 16px;
   border: 1px solid var(--gray-400);
   border-radius: 6px;
-  font-size: var(--fs-xxs);
   color: var(--black);
   font-size: var(--fs-xs);
-  margin: 10px 0 5px;
+  margin: 0;
 }
 
-.method-payment__form-button {
+.method-payment__button {
   display: block;
-  width: 40%;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 20%;
+  padding: 8px 16px;
   background: var(--primary-800);
   color: var(--white);
   font-size: var(--fs-xs);
-  padding: 12px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  margin-top: 35px;
   justify-self: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.method-payment__form-button:hover {
+.method-payment__button:hover {
   background: var(--primary-950);
 }
 
-.method-payment__form-volver {
+.method-payment__link {
   display: block;
   text-align: center;
   margin-top: 15px;
@@ -99,25 +89,39 @@
   font-size: var(--fs-xs);
 }
 
-@media (width < 640px) {
-  .method-payment__form-button {
+@media (max-width: 640px) {
+  .method-payment {
     display: flex;
-    padding: 8px 16px;
-    width: 40%;
+    flex-direction: column;
+    padding: 16px;
+    width: 60%;
     justify-self: center;
   }
+
+  .method-payment__button {
+    padding: 8px 16px;
+    height: 40px;
+    width: 20%;
+
+  }
 }
 
-@media (width > 640px) {
+@media (width > 768px) {
   .method-payment {
     max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+  }
+
+  .method-payment__form {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 
-@media (min-width: 768px) {
+@media (max-width > 1024px) {
+  .method-payment {
+    max-width: 90%;
+  }
+
   .method-payment__form {
     grid-template-columns: repeat(2, 1fr);
   }
