@@ -24,6 +24,10 @@
   border-collapse: collapse;
 }
 
+.tableorder__user {
+  text-align: left;
+}
+
 .users-table__header,
 .users-table__cell {
   font-family: var(--main-font);
@@ -80,7 +84,7 @@
 }
 
 .users-table__status--blocked {
-  background-color: var(--secundary-400);
+  background-color: var(--gray-200);
   color: var(--black);
 }
 
