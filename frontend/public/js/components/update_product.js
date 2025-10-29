@@ -15,3 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.log("Error cargando el formulario de actualizar producto:", error));
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Se deshabilito el producto exitosamente");
+  window.location.href = "/frontend/public/views/p_card_public.html";
+}

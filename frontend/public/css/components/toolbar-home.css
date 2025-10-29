@@ -90,7 +90,7 @@
 @media(width > 768px){
   .toolbar-main{
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   .toolbar-main__search{
     max-width: 200px;
