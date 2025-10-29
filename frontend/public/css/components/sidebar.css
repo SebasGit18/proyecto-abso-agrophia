@@ -23,6 +23,7 @@
 
 .sidebar__item {
   text-decoration: none;
+  gap: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +57,15 @@
 
 @media (width >640px) {
     .sidebar__list{
+      gap: 12px;
       flex-direction: row;
+    }
+    .sidebar__item{
+      gap: 8px;
+    }
+    .sidebar__icon{
+      margin: 0;
+      margin-right: 0;
     }
   }
 

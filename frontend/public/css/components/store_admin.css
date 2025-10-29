@@ -1,0 +1,71 @@
+.table_shops {
+ width: auto;
+  max-width: auto;
+  margin: 24px;
+  background: var(--white);
+  box-shadow: 0 4px 12px var(--gray-100);
+  font-size: var(--fs-xxxs);
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.shops-table {
+  width: auto;
+  max-width: auto;
+  margin: 24px;
+  background: var(--white);
+  box-shadow: 0 4px 12px var(--gray-100);
+  font-size: var(--fs-xxxs);
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.shops-table__header,
+.shops-table__cell {
+  font-family: var(--main-font);
+  color: var(--black);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.shops-table__header {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.shops-table__row:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+.shops-table__row:hover {
+  background-color: var(--terciary-100);
+}
+
+/* Adaptación responsive igual a la tabla de usuarios */
+@media (width > 640px) {
+  .table_shops {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+
+@media (width > 768px) {
+  .shops-table,
+  .table_shops {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+  }
+}
+
+@media (width > 1024px) {
+  .shops-table,
+  .table_shops {
+    width: 100%;
+    margin: 0;
+    scrollbar-width: none; /* Firefox */
+  }
+}
