@@ -1,45 +1,52 @@
-<main class="page__product">
-    <div class="page__gallery">
-        <div class="page__gallery--left">
-            <img src="/frontend/public/assets/cards/Tree-of-apples.jpg" alt="Árbol de manzanas" class="page__gallery-image">
-        </div>
-        
-    <div class="page__gallery--right">
-      <img src="/frontend/public/assets/cards/Basket-of-apples.webp" alt="Cesta de manzanas" class="page__gallery-image">
-      <img src="/frontend/public/assets/cards/Apple.webp" alt="Manzana en rama" class="page__gallery-image">
+<div class="product-view">
+  <div class="product-view__gallery">
+    <img
+      src="/frontend/public/img/img-tomato.webp"
+      alt="Tomates frescos"
+      class="product-view__image--main"
+      id="main-image"
+    >
+
+    <div class="product-view__thumbnails">
+      <img src="/frontend/public/img/img-tomato.webp" alt="Tomates" class="product-view__thumbnail">
+      <img src="/frontend/public/img/img-tomate.jpg" alt="Tomates maduros" class="product-view__thumbnail">
+      <img src="/frontend/public/img/img-tomate2.jpg" alt="Tomates verdes" class="product-view__thumbnail">
+      <img src="/frontend/public/img/img-tomate.jpg" alt="Tomates detalle" class="product-view__thumbnail">
     </div>
+  </div>
+
+  <div class="product-view__info">
+    <h1 class="product-view__name">Tomates Chonto Frescos</h1>
+    <p class="product-view__type">Tipo: Hortaliza</p>
+    <p class="product-view__unit">Unidad de medida: Kilogramo (kg)</p>
+    <p class="product-view__price">$4.500 / kg</p>
+    <p class="product-view__guarantee">Garantía: 2 días después de la entrega</p>
+
+    <div class="product-view__buttons">
+      <a href="/frontend/public/views/p_unit-measure.html"class="product-view__btn product-view__btn--add">Agregar al carrito</a>
+      <a href="/frontend/public/views/contact.html" class="product-view__btn product-view__btn--message">Enviar mensaje al vendedor</a>
     </div>
 
-    <!-- Product Detail Card -->
-    <aside class="product-card">
-        <h2 class="product-card__title">Manzana Roja Gala</h2>
+    <div class="product-view__description">
+      <h2 class="product-view__subtitle">Descripción</h2>
+      <p class="product-view__p">
+        Tomates chonto cultivados de forma natural en tierras fértiles, sin químicos añadidos. Ideales para ensaladas, salsas y preparaciones frescas.
+      </p>
+    </div>
 
-        <h3 class="product-card__subtitle">Descripción del Producto</h3>
-        <p class="product-card__description">
-        Nuestras Manzanas son cultivadas con las mejores prácticas agrícolas, garantizando un producto de alta calidad, libre de transgénicos y con un alto valor nutricional. Ideal para la alimentación y para la elaboración de productos alimenticios.
-        </p>
+    <div class="product-view__seller">
+      <h2 class="product-view__subtitle">Información del vendedor</h2>
+      <p class="product-view__p"><strong>Nombre:</strong> Finca Los Aromos</p>
+      <p class="product-view__p"><strong>Ubicación:</strong> Santa Rosa de Cabal, Risaralda</p>
+      <p class="product-view__p"><strong>URL de pagina web: </strong><a href="https://agrophia.com/fincalosaromos" class="product-view__link" target="_blank">Visitar sitio</a></p>
+    </div>
 
-        <h3 class="product-card__seller-title">Información del Vendedor</h3>
-        <div class="product-card__seller">
-            <img src="user-icon.png" alt="Usuario" class="product-card__seller-icon">
-            <div class="product-card__seller-info">
-            <p class="product-card__seller-name">Ricardo García</p>
-            <p class="product-card__seller-detail">Agricultor con mas 10 productos</p>
-            </div>
-        </div>
-
-    
-
-        <div class="product-card__button-container">
-            <a href="/frontend/public/views/p_login-customer.html" class="product-card__btn">
-            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  
-            stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  
-            class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" 
-            d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path 
-            d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>Agregar</a>
-        </div>
-        <div class="product-card__mensaje">
-            <a href="" class="product-card__mensaje--link">Enviar mensaje al Vendedor</a>
-        </div>
-    </aside>
-</main>
+    <div class="product-view__extra">
+      <h2 class="product-view__subtitle">Métodos de pago y entrega</h2>
+      <ul class="product-view__list">
+        <li><strong>Pagos:</strong> Pago Contra entrega  | Pago de contado | Transferencia</li>
+        <li><strong>Entrega:</strong> Envio domicilio | Recogido en tienda | Entrega bajo cita</li>
+      </ul>
+    </div>
+  </div>
+</div>
