@@ -6,6 +6,11 @@
   border-radius: 16px;
   font-family: "Poppins", sans-serif;
 }
+.cart__summary--options{
+  display: flex;
+  flex-direction: column;
+  gap:24px; 
+}
 
 /* TÍTULO */
 .cart__title {
@@ -163,6 +168,7 @@
   border-radius: 8px var(--black); /* Bordes redondeados */
 }
 .cart__total {
+  text-align: right;
   font-size: var(--fs-xs);
   color: var(--primary-950);
   font-weight: 600;
@@ -182,10 +188,26 @@
   margin-top: 24px;
   flex-wrap: wrap;
 }
+.cart__summary--options__method-send,
+.cart__summary--options__method-pay{
+  height: 48px;
+  padding: 12px;
+  border: 1px solid var(--gray-600 );
+  border-radius: 12px;
+}
 
 /* === BREAKPOINTS === */
 /* sm: >=640px */
 @media (width > 640px) {
+  .cart__summary{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cart__summary--options{
+    flex-direction: row;
+    justify-content: flex-end;
+  }
   .cart__container{
       border: 1px solid #cce0b3;
       padding: 16px;
