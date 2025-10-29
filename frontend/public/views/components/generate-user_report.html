@@ -1,0 +1,49 @@
+<div class="user-report" id="contenido-reporte">
+  <h1 class="user-report__title">Reporte de Usuarios</h1>
+  <h3 class="user-report__subtitle">Agrophia - Octubre 2025</h3>
+
+  <div class="user-report__table-wrapper">
+    <table class="user-report__table">
+      <thead class="user-report__head">
+        <tr class="user-report__row user-report__row--head">
+          <th class="user-report__header">Nombre</th>
+          <th class="user-report__header">Correo electrónico</th>
+          <th class="user-report__header">Teléfono</th>
+          <th class="user-report__header">Ubicación</th>
+          <th class="user-report__header">Tipo usuario</th>
+          <th class="user-report__header">Estado</th>
+        </tr>
+      </thead>
+
+      <tbody class="user-report__body">
+        <tr class="user-report__row">
+          <td class="user-report__cell">Juan Perez</td>
+          <td class="user-report__cell">juan.perez@example.com</td>
+          <td class="user-report__cell">3122406789</td>
+          <td class="user-report__cell">Finca la Esperanza, Pereira</td>
+          <td class="user-report__cell">Agricultor</td>
+          <td class="user-report__cell user-report__cell--status">
+            <span class="user-report__status user-report__status--active">Activo</span>
+          </td>
+        </tr>
+
+        <tr class="user-report__row">
+          <td class="user-report__cell">Brainer Morales</td>
+          <td class="user-report__cell">brainermorales@gmail.com</td>
+          <td class="user-report__cell">3126248076</td>
+          <td class="user-report__cell">Finca La Tribuna, Dosquebradas</td>
+          <td class="user-report__cell">Cliente</td>
+          <td class="user-report__cell user-report__cell--status">
+            <span class="user-report__status user-report__status--inactive">Inactivo</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <canvas id="user-report__chart" class="user-report__chart" width="250" height="100"></canvas>
+
+  <div class="user-report__actions">
+    <button class="user-report__button" id="btn-generar-pdf">Descargar PDF</button>
+  </div>
+</div>
