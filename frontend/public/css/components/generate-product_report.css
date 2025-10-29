@@ -1,31 +1,31 @@
-.user-report {
+.product-report {
   padding: 20px;
   background-color: var(--white);
 }
 
-.user-report__title {
+.product-report__title {
   text-align: center;
   color: var(--gray-700);
   margin-bottom: 5px;
 }
 
-.user-report__subtitle {
+.product-report__subtitle {
   text-align: center;
   color: var(--gray-500);
   margin-bottom: 20px;
 }
 
-.user-report__table-wrapper {
+.product-report__table-wrapper {
   overflow-x: auto;
 }
 
-.user-report__table {
+.product-report__table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-.user-report__header {
+.product-report__header {
   background-color: var(--white);
   color: var(--black);
   font-weight: 600;
@@ -34,23 +34,22 @@
   text-align: center;
 }
 
-
-.user-report__row:nth-child(even) {
+.product-report__row:nth-child(even) {
   background-color: var(--gray-50);
 }
 
-.user-report__row:hover {
+.product-report__row:hover {
   background-color: var(--terciary-100);
 }
 
-.user-report__cell {
+.product-report__cell {
   font-family: var(--main-font);
   color: var(--black);
   padding: 10px 12px;
   text-align: center;
 }
 
-.user-report__status {
+.product-report__status {
   width: 70px;
   font-family: var(--main-font);
   display: inline-block;
@@ -60,36 +59,42 @@
   font-size: var(--fs-xxxs);
 }
 
-.user-report__status--active {
+.product-report__status--active {
   color: var(--black);
   background-color: var(--primary-200);
 }
 
-.user-report__status--inactive {
+.product-report__status--inactive {
   color: var(--black);
   background-color: var(--gray-200);
 }
 
-.user-report__actions {
+.product-report__actions {
   text-align: center;
 }
 
-.user-report__button {
+.product-report__button {
   font-weight: 600;
   height: 40px;
   background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
   color: var(--white);
   border: none;
   padding: 10px 16px;
-  color: var(--white);
   font-size: var(--fs-xs);
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.user-report__button:hover {
+.product-report__button:hover {
   background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Opcional: estilos del gráfico */
+.product-report__chart {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px;
 }

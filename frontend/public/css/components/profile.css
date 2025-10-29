@@ -216,6 +216,7 @@
   }
   .profile-content2{
     margin: 0;
+    height: 90vh;
     padding: 24px;
     align-items: center;
     display: flex;
