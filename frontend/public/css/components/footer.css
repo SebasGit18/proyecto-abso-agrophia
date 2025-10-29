@@ -67,7 +67,7 @@
     font-size: var(--fs-xs);
     padding: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 8px;
   }
 

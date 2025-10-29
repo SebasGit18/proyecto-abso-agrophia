@@ -74,7 +74,7 @@
   flex-direction: column;
   gap: 0.5rem;
   max-width: 600px;
-  margin: 0px;
+  margin: 0px 0px 12px 0px;
   font-family: var(--fs-font);
 }
 
@@ -86,9 +86,10 @@
 }
 
 .qa__container {
+  height: 40px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .qa__input {
@@ -96,20 +97,23 @@
   padding: 8px 12px;
   border: 1px solid var(--gray-50);
   border-radius: 6px;
-  font-size: var(--fs-xxxs);
-  margin-bottom: 80px;
+  font-size: var(--fs-xs);
+  /* margin-bottom: 80px; */
+  height: 40px;
 }
 
 .qa__button {
+  width: 100px;
+  height: 40px;
   background-color: var(--terciary-700);
   color: var(--white);
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: var(--fs-xxxs);
+  font-size: var(--fs-xxs);
   transition: background-color 0.2s ease-in-out;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .qa__button:hover {
