@@ -1,3 +1,8 @@
+.container-questionbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .qa {
   font-family: var(--fs-font);
   max-width: 600px;

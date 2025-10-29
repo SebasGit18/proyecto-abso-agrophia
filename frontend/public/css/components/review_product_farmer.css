@@ -97,11 +97,7 @@
   }
 }
 
-/* 💻 Tablet Large (width > 768px) */
 @media (width > 768px) {
-    .review-product{
-        min-height: 80vh;
-    }
     .product-detail{
         width: 700px;
         display: grid;
@@ -128,6 +124,7 @@
 @media(width > 1024px){
     .product-detail{
         width: 80%;
+        margin: 0;
     }
     .product-detail__container{
         grid-template-columns: repeat(2, 30% 70%);
