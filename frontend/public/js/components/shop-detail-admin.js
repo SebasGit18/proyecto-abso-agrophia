@@ -10,3 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.log("Error cargando la información", error));
     }   
 });
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Tienda deshabilitada exitosamente!");
+  window.location.href = "/frontend/public/views/store_admin.html";
+}

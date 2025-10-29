@@ -1,0 +1,61 @@
+<div class="shop-report" id="contenido-reporte">
+  <!-- Título del reporte -->
+  <h1 class="shop-report__title">Reporte de Tiendas</h1>
+  <h3 class="shop-report__subtitle">Agrophia - Octubre 2025</h3>
+
+  <!-- Tabla de tiendas -->
+  <div class="shop-report__table-wrapper">
+    <table class="shop-report__table">
+      <thead class="shop-report__head">
+        <tr class="shop-report__row shop-report__row--head">
+          <th class="shop-report__header">Nombre de la Tienda</th>
+          <th class="shop-report__header">Teléfono</th>
+          <th class="shop-report__header">Correo Electrónico</th>
+          <th class="shop-report__header">Departamento</th>
+          <th class="shop-report__header">Municipio</th>
+          <th class="shop-report__header">URL</th>
+          <th class="shop-report__header">Horario</th>
+          <th class="shop-report__header">Estado</th>
+        </tr>
+      </thead>
+
+      <tbody class="shop-report__body">
+        <tr class="shop-report__row">
+          <td class="shop-report__cell">El Ahorro</td>
+          <td class="shop-report__cell">3056785643</td>
+          <td class="shop-report__cell">sebasv@gmail.com</td>
+          <td class="shop-report__cell">Risaralda</td>
+          <td class="shop-report__cell">Santa Rosa de Cabal</td>
+          <td class="shop-report__cell">www.ahorro.com</td>
+          <td class="shop-report__cell">Lunes a viernes</td>
+          <td class="shop-report__cell shop-report__cell--status">
+            <span class="shop-report__status shop-report__status--inactive">Inactiva</span>
+          </td>
+        </tr>
+
+        <tr class="shop-report__row">
+          <td class="shop-report__cell">La Vendemás</td>
+          <td class="shop-report__cell">3056785643</td>
+          <td class="shop-report__cell">vendemas@gmail.com</td>
+          <td class="shop-report__cell">Risaralda</td>
+          <td class="shop-report__cell">Pereira</td>
+          <td class="shop-report__cell">www.vendemas.com</td>
+          <td class="shop-report__cell">Lunes a viernes</td>
+          <td class="shop-report__cell shop-report__cell--status">
+            <span class="shop-report__status shop-report__status--active">Activa</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Gráfico de tiendas -->
+  <canvas id="shop-report__chart" class="shop-report__chart" width="300" height="300"></canvas>
+
+  <!-- Botón de acción -->
+  <div class="shop-report__actions">
+    <button class="shop-report__button" id="btn-generar-pdf">
+      Descargar PDF
+    </button>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.shop-report {
+  padding: 20px;
+  background-color: var(--white);
+}
+
+/* ===== Títulos ===== */
+.shop-report__title {
+  text-align: center;
+  color: var(--gray-700);
+  margin-bottom: 5px;
+}
+
+.shop-report__subtitle {
+  text-align: center;
+  color: var(--gray-500);
+  margin-bottom: 20px;
+}
+
+/* ===== Tabla ===== */
+.shop-report__table-wrapper {
+  overflow-x: auto;
+}
+
+.shop-report__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.shop-report__header {
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: var(--fs-xxxs);
+  text-align: center;
+}
+
+.shop-report__row:nth-child(even) {
+  background-color: var(--gray-50);
+}
+
+.shop-report__row:hover {
+  background-color: var(--terciary-100);
+}
+
+.shop-report__cell {
+  font-family: var(--main-font);
+  color: var(--black);
+  padding: 10px 12px;
+  text-align: center;
+}
+
+/* ===== Estado ===== */
+.shop-report__status {
+  width: 70px;
+  font-family: var(--main-font);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: var(--fs-xxxs);
+}
+
+.shop-report__status--active {
+  color: var(--black);
+  background-color: var(--primary-200);
+}
+
+.shop-report__status--inactive {
+  color: var(--black);
+  background-color: var(--gray-200);
+}
+
+/* ===== Gráfico ===== */
+.shop-report__chart {
+  display: block;
+  margin: 0 auto 24px auto;
+  max-width: 600px;
+}
+
+/* ===== Acciones ===== */
+.shop-report__actions {
+  text-align: center;
+}
+
+.shop-report__button {
+  font-weight: 600;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
+  border: none;
+  padding: 10px 16px;
+  font-size: var(--fs-xs);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shop-report__button:hover {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}

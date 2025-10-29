@@ -1,0 +1,159 @@
+.shop-navbar {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-700);
+}
+
+.shop-navbar__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--primary-700);
+  padding: 12px;
+  justify-content: flex-end;
+}
+
+/* ===== Botones ===== */
+.shop-navbar__button {
+  height: 40px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 0 16px;
+  border: none;
+  border-radius: 12px;
+  color: var(--white);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.shop-navbar__button:hover {
+  background-color: var(--primary-800);
+  transform: scale(1.1);
+}
+
+.shop-navbar__button--message {
+  color: var(--white);
+}
+
+/* ===== Iconos ===== */
+.shop-navbar__icons {
+  margin: 0 0 12px 0;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.shop-navbar__icon {
+  display: flex;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.shop-navbar__icon:hover {
+  transform: scale(1.2);
+  background-color: var(--primary-800);
+}
+
+.shop-navbar__icon-img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+/* ===== Título y logo ===== */
+.shop-navbar__title {
+  font-size: var(--fs-md);
+  color: var(--white);
+  font-weight: 700;
+  margin: 0;
+}
+
+.shop-navbar__logo {
+  width: 40px;
+  height: 40px;
+  margin-left: 8px;
+}
+
+/* ===== Grupos (izquierda/derecha) ===== */
+.shop-navbar__group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.shop-navbar__group--left {
+  justify-content: flex-start;
+}
+
+.shop-navbar__group--right {
+  justify-content: flex-end;
+}
+
+/* ===== Enlaces ===== */
+.shop-navbar__link {
+  text-decoration: none;
+}
+
+/* ===== Responsividad ===== */
+
+/* Tablet */
+@media (width > 640px) {
+  .shop-navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .shop-navbar__content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shop-navbar__button {
+    width: max-content;
+    font-weight: 500;
+  }
+
+  .shop-navbar__icons {
+    gap: 24px;
+    margin: 0;
+  }
+}
+
+/* Pantallas medianas */
+@media (width > 768px) {
+  .shop-navbar {
+    flex-direction: row;
+  }
+
+  .shop-navbar__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop */
+@media (width > 1024px) {
+  .shop-navbar {
+    flex-direction: row;
+  }
+
+  .shop-navbar__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .shop-navbar__button {
+    width: 190px;
+  }
+}
