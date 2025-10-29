@@ -22,7 +22,7 @@
 
   .sidebar-container,
   .table_users {
-    width: 100%; /* cada uno ocupa todo el ancho */
+    width: 100%; 
   }
 }
 @media (width > 640px) {
@@ -75,7 +75,7 @@
 
 @media (width > 1280px) {
   .layout {
-    flex-direction: row;
+    flex-direction: column;
   }
   .layout__products-row{
     display: flex;
@@ -90,11 +90,4 @@
     width: 100%;
   }
 
-  .layout__direction-row-home{
-    width: 100%;
-    display: flex;
-    gap: 24px;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
 }
