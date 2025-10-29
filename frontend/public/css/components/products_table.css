@@ -7,18 +7,26 @@
   overflow-x: auto;
 }
 
+.table-products{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
 /* ====== TABLA DE PRODUCTOS ====== */
 .products-table {
   width: auto;
   max-width: auto;
-  /* margin-left:200px; */
-  margin-right: 10px;
   border-collapse: collapse;
+  margin-right: 10px;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
-  font-size: 12px;
+  font-size: var(--fs-xxxs);
   border-radius: 10px;
   overflow: hidden;
+  margin: 24px;
 }
 
 .products-table__header,
@@ -54,7 +62,7 @@
 
 .products-table__cell--actions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0px;
@@ -66,7 +74,7 @@
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: var(--fs-xxxs);
   width: 70px;
 }
 
@@ -85,13 +93,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 24px;
   padding: 8px 14px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 12px;
+  font-size: var(--fs-xxxs);
   transition: transform 0.2s, background 0.3s;
 }
 
@@ -120,22 +128,83 @@
   height: 16px;
   display: inline-block;
 }
+
+.products-table__icon{
+  height: 24px;
+  width: 24px;
+}
+
+/* tablets */
+@media (width > 640px){
+  .table-products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 0 24px; */
+    scrollbar-width: none; /* Firefox */
+  }
+  .products-table{
+    width: 100%;
+    margin: 0;
+    scrollbar-width: none; /* Firefox */
+  }
+  .products-table__cell--actions{
+    flex-direction: row;
+  }
   
-/* DEBUG: aplica margen cuando la pantalla es <1115px
-   Cubre los 3 selectores que podrías estar usando en tu proyecto */
-@media (max-width: 1115px) {
-  .products-table,
-  .table_products,
-  .table-container {
-    margin-top: 10px; 
-    margin-left: auto;
-    margin-right: auto;
+}
+
+
+/* laptops */
+@media (width >768px){
+ .table-products{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  .products-table{
+    margin: 0px;
+    width: 100%;
+  }
+  .products-table__cell--actions{
+    flex-direction: row;
+  }
+  
+}
+
+@media (width > 1024px){
+  
+  
+  .products-table{  
+    width: 100%;  
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .table-products{
+    border-radius: 12px;
+    scrollbar-width: none; /* Firefox */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: max-content;
+  }
+  .products-table__cell--actions{
+    flex-direction: row;
   }
 }
 
-@media(width > 1150px){
-    .products-table{
-        width: 800px;
-        /* margin-left: 15px; */
-    }
+@media (width > 1280px) {
+  .products-table__cell--actions{
+    flex-direction: row;
+  }
+  .products-table{
+    width: 90%  ;
+  }
+  .products-table{
+    width: 100%;
+  }
+
 }

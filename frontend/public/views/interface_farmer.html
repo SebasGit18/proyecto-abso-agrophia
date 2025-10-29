@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface</title>
+    <title>Interface Farmer</title>
+    <link rel="icon" href="/frontend/public/icons/planta.png">
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     
     <script src="/frontend/public/js/components/interface_farmer.js" defer></script>
     <script src="/frontend/public/js/components/footer.js" defer></script>
     <script src="/frontend/public/js/components/search_interface_farmer.js" defer></script>
     <script src="/frontend/public/js/components/interface_option_farmer.js" defer></script>
+    <script src="/frontend/public/js/components/search.js" defer></script>
     
     <script type="module">
         import { loadCards } from "/frontend/public/js/components/card-home-farmer.js";
@@ -18,18 +20,15 @@
    
 </head>
 <body>  
-    </header>
-        <div class="navbar-container"></div> 
-    </header>
+    <header class="navbar-container"></header>
      
-    <section class="search__container"></section>
-    <div class="layout">
+    <div class="layout__interface-farmer">
         <section class="board-container"></section>
+        <section class="search__container-index"></section>
         <div class="card-farmer__container"></div>
     </div>
-    <footer class="footer">  
-         <div class="footer-container"></div>
-     </footer>     
+
+    <footer class="footer-container"></footer>     
 
 </body>
 </html>

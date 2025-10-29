@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  /* padding: 24px; */
   max-width: 1920px;
 }
 
@@ -11,7 +11,6 @@
   display: grid;
   gap: 24px;
   width: 100%;
-  max-width: 1200px;
   justify-content: center;
 }
 
@@ -74,50 +73,53 @@
 }
 
 .card-available__button-one {
+  display: flex;
   height: 40px;
-  background-color: var(--terciary-200);
-  color: var(--black);
+  gap: 8px;
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   height: 40px;
-
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  align-items: center;
 }
 
 .card-available__button-one:hover {
-  background-color: var(--terciary-300);
-  transform: scale(1.02);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-available__button-one:active {
-  background-color: var(--terciary-400);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: scale(0.98);
 }
 
 .card-available__button-two {
   justify-content: center;
   height: 40px;
-  background-color: var(--secundary-300);
-  color: var(--black);
+  background-color: var(--gray-600);
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
-  height: 40px;
+  padding: 9px 16px;
+  height: 36px;
   font-size: var(--fs-xs);
-  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .card-available__button-two:hover {
-  background-color: var(--secundary-400);
+  opacity: 60%;
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 .card-available__button-two:active {
-  background-color: var(--secundary-500);
+  opacity: 60%;
   transform: scale(0.98);
 }
 
@@ -126,17 +128,21 @@
 @media (width > 640px) {
   .card-available__container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
+    padding: 24px;
   }
 }
 
 @media (width > 1024px) {
   .card-available__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+  }
+}
+
+@media (width > 1280px) {
+  .card-available__container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
   }
 }

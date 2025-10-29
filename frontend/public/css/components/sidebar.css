@@ -1,14 +1,15 @@
 .sidebar {
   position: static;
-  width: 100%;               /* móvil: ocupa todo el ancho */
   background: var(--white);
-  padding: 20px 10px;
+  padding: 12px;
   display: flex;
-  flex-direction: row;    /* por defecto en columna (<=478px) */
-  box-shadow: 2px 0 5px var(--gray-100);
+  flex-direction: row;   
   border-radius: 8px;
   justify-content: center;
   font-family: var(--main-font);
+  border-radius: 0;
+  margin: 0 24px;
+  box-shadow: none;
 }
 
 .sidebar__list {
@@ -17,7 +18,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 24px;
 }
 
 .sidebar__item {
@@ -49,39 +50,16 @@
 .sidebar__text { 
   font-family: var(--main-font);
   flex: 1; 
-  font-size: var(--fs-xs); }
-
-/* ===== Tablet: de 479px hasta 1115px => barra horizontal ===== */
-@media (min-width: 479px) and (max-width: 1115px) {
-  .sidebar {
-    border-radius: 0px;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    padding: 10px;
-    box-shadow: none; /* opcional para que no interfiera visual */
-  }
-
-  .sidebar__list { 
-    flex-direction: row; 
-    gap: 15px; 
-    align-items: center; }
-  .sidebar__item { 
-    padding: 8px; }
-  .sidebar__icon { 
-    margin-right: 0; }
+  font-size: var(--fs-xs); 
 }
 
-/* ===== Desktop: >=1116px ===== */
-@media (min-width: 1116px) {
-  .layout { 
-    flex-direction: row; 
+
+@media (width >640px) {
+    .sidebar__list{
+      flex-direction: row;
+    }
   }
-  .sidebar {
-    width: 200px;
-    flex: 0 0 250px;
-    margin: 30px;
-    border-radius: 12px;
-    top: 90px; /* si lo necesitas, asegurate que el position lo soporte */
-  }
-}
+
+
+
+

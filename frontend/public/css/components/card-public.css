@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
-  max-width: 1920px;
+  /* padding: 24px; */
+  width: auto;
+  margin: 24px;
 }
 
 /* Contenedor que organiza las cards en grilla */
@@ -11,7 +12,6 @@
   display: grid;
   gap: 24px;
   width: 100%;
-  max-width: 1200px;
   justify-content: center;
 }
 
@@ -21,7 +21,7 @@
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  min-width: 320px;
+  width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -60,15 +60,21 @@
   color: var(--primary-700);
   margin-bottom: 16px;
 }
-
+.card-public__button{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
 /* === Botón === */
 .card-public__button-one {
+  width: max-content;
   height: 40px;
-  background-color: var(--terciary-200);
-  color: var(--black);
+  background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   /* Material Design spacing */
   height: 40px;
   font-size: var(--fs-xs);
@@ -78,23 +84,25 @@
 }
 
 .card-public__button-one:hover {
-  background-color: var(--terciary-300);
-  transform: scale(1.02);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-public__button-one:active {
-  background-color: var(--terciary-400);
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
   transform: scale(0.98);
 }
 
 
 .card-public__button-two {
-  background-color: var(--secundary-300);
-  color: var(--black);
+  width: max-content;
+  background-color: var(--gray-600);
+  color: var(--white);
   border: none;
   border-radius: 8px;
-  padding: 8px 16px;
-  height: 40px;
+  padding: 9px 16px;
+  height: 36px;
   font-size: var(--fs-xs);
   font-weight: 500;
   cursor: pointer;
@@ -102,29 +110,43 @@
 }
 
 .card-public__button-two:hover {
-  background-color: var(--secundary-400);
+  opacity: 60%;
   transform: scale(1.02);
 }
 
 .card-public__button-two:active {
-  background-color: var(--secundary-500);
+  opacity: 60%;
   transform: scale(0.98);
 }
 
 @media (width > 640px) {
+  .card-public__container-section {
+    margin: 0;
+  }
+
   .card-public__container {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
+    padding: 24px;
+  }
+
+  .card-public__button{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 @media (width > 1024px) {
   .card-public__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+  }
+}
+
+@media (width > 1280px) {
+  .card-public__container {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 90%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    width: auto;
   }
 }

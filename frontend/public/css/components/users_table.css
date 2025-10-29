@@ -7,19 +7,25 @@
   box-shadow: 0 3px 6px var(--gray-100);
   overflow-x: auto;
 }
-
+.table_users{
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
 /* ====== TABLA DE USUARIOS ====== */
 .users-table {
   width: auto;
   max-width: auto;
-  /* margin-left:200px; */
-  margin-right: 10px;
-  border-collapse: collapse;
+  margin: 24px;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
   font-size: var(--fs-xxxs);
   border-radius: 10px;
-  overflow: hidden;
+  border-collapse: collapse;
+}
+
+.tableorder__user {
+  text-align: left;
 }
 
 .users-table__header,
@@ -55,7 +61,7 @@
 
 .users-table__cell--actions {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0px;
@@ -63,12 +69,13 @@
 
 /* ====== ESTADOS ====== */
 .users-table__status {
+  width: 70px;
   font-family: var(--main-font);
   display: inline-block;
   padding: 4px 10px;
   border-radius: 12px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: var(--fs-xxxs);
 }
 
 .users-table__status--active {
@@ -77,7 +84,7 @@
 }
 
 .users-table__status--blocked {
-  background-color: var(--secundary-400);
+  background-color: var(--gray-200);
   color: var(--black);
 }
 
@@ -98,7 +105,6 @@
 
 .users-table__button:hover {
   transform: translateY(-2px);
-  background-color: var(--gray-100);
 }
 
 /* Variantes */
@@ -130,45 +136,39 @@
   height: 24px;
   display: inline-block;
 }
-@media (max-width: 640px){
-
+/* tablets */
+@media (width > 640px) {
   .table_users{
     width: 100%;
     overflow-y: scroll;
     overflow-x: scroll;
   }
-  .users-table{
-    margin: 24px;
-  }
 }
-@media (max-width: 768px) and (min-width: 640px) {
-
-  .table_users{
-    /* margin: 24px; */
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: scroll;
-  }
-  .users-table{
-    margin: 24px;
-  }
-}
-
-
-
-/* 
-@media (max-width: 1115px) {
+/* laptops */
+@media (width > 768px) {
   .users-table,
-  .table_users,
-  .table-container {
-    margin-top: 10px; 
+  .table_users{
     margin-left: auto;
     margin-right: auto;
+    margin: 0 24px;
   }
-}
-@media(max-width:1024px){
   .users-table__cell--actions{
     flex-direction: column;
   }
 
-} */
+}
+@media (width > 1024px) {
+  .users-table,
+  .table_users{
+    width: 100%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+  }
+  .users-table__cell--actions{
+    flex-direction: row;
+  }
+  
+}
+

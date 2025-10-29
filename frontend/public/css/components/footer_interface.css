@@ -1,13 +1,4 @@
-html, body {
-      margin: 0;
-      font-family: var(--main-font);
-    }
-
-    /* main {
-      padding: 20px;
-      background-color: var(--white);
-      min-height: 150vh; 
-    } */
+/* 
 
     footer {
       position: static;   
@@ -98,4 +89,4 @@ html, body {
   .footer__social-link:not(:last-child)::after {
     content: ""; 
   }
-}
+} */

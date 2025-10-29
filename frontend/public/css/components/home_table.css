@@ -1,27 +1,25 @@
 
 /* ====== CONTENEDOR DE TABLAS ====== */
 .table-home-container {
-    margin: 20px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: scroll;
   background: var(--white);
-  padding: 20px;
   border-radius: 12px;
-  /* box-shadow: 0 3px 6px var(--gray-100); */
-  overflow-x: auto;
 }
 
 /* ====== TABLA DE USUARIOS ====== */
 .home-table {
     font-family: var(--main-font);
-    width: auto;
-    max-width: auto;
-    /* margin-left:200px; */
-    /* margin-right: 10px; */
+    width: 100%;
+    min-width: 400px;
     border-collapse: collapse;
     background: var(--white);
     box-shadow: 0 4px 12px var(--gray-100);
-    font-size: 12px;
-    border-radius: 10px;
+    font-size: var(--fs-xxxs);
+    border-radius: 12px;
     overflow: hidden;
+    margin: 24px;
 }
 
 .home-table__header,
@@ -49,24 +47,21 @@
   background-color: var(--terciary-100);
 }
 
-
-  
-/* DEBUG: aplica margen cuando la pantalla es <1115px
-   Cubre los 3 selectores que podrías estar usando en tu proyecto */
-@media (max-width: 1115px) {
+@media(width > 640px){
   .home-table{
-    width: 600px;
+    width: 90%;
+    
   }
-  .table-home-container {
-    /* width: 70%; */
-    margin-top: 10px; 
-    margin-left: auto;
-    margin-right: auto;
+  .table-home-container{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    scrollbar-width: none; /* Firefox */
   }
-} 
+}
 
-@media(width > 1115px){
-    .home-table{
-        width: 700px;
-    }
+@media(width > 1024px){
+  .table-home-container{
+    width: 70%;
+  }
 }

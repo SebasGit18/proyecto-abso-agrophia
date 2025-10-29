@@ -59,15 +59,19 @@
       transition: transform 0.3s ease, fill 0.3s ease;
   }
   
-  @media (width > 768px) {
-    .header-product__disable-list {
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-      gap: 40;
-      flex-grow: 1;
-      justify-content: space-evenly;
-  
-    }
-  
+@media (width > 768px) {
+  .header-product__disable-navbar {
+    height: 70px;
   }
+
+  .header-product__disable-list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40;
+    flex-grow: 1;
+    justify-content: space-evenly;
+
+  }
+
+}

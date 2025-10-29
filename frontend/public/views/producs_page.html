@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/frontend/public/icons/planta.png">
     <link rel="stylesheet" href="/frontend/public/css/main.css">
     <script src="/frontend/public/js/components/sidebar_admin.js" defer></script>
     <script src="/frontend/public/js/components/header_admin.js" defer></script>
@@ -13,14 +14,16 @@
     <title>Productos</title>
 </head>
 <body>
-    <header class="header-adminis"></header>
-    <div class="toolbar-products"></div>
+    <!-- <header class="header-adminis"></header> -->
+    <div class="toolbar-products-container"></div>
     <div class="search-products"></div>
     <div class="layout">
     <!-- Contenedor del sidebar -->
         <div class="sidebar-container"></div>
-        <div class="table-products"></div>
-        <div class="card_admin_information"></div>
+        <div class="layout__products-row">
+            <div class="table-products"></div>
+            <div class="card_admin_information"></div>
+        </div>
     </div>
 </body>
 </html>

@@ -1,11 +1,18 @@
 /*Contenedor principal*/
-.search-container {
+
+.search__container-index {
+  width: 100%;
+  align-items: center;
+}
+
+.list-home__index {
   display: flex;
   align-items: center;
-  width: 80%;
-  min-width: 320px;
+  width: auto;
+  margin: 24px;
+  /* min-width: 280px; */
   height: 56px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
@@ -38,13 +45,20 @@
   align-items: center;
 }
 
-@media (max-width: 768px) {
-  .search-container {
-    width: 95%;
+@media (width > 640px) {
+  .search-container__index {
+    width: 400px;
     padding: 10px 16px;
-    margin: 15px auto;
+    margin: 24px;
+    justify-content: center;
   }
-
+  .login-customer__row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
   .search__icon {
     font-size: var(--fs-xxxs);
     margin-right: 0.3rem;
@@ -55,3 +69,69 @@
   }
 }
 
+
+@media (width > 768px) {
+  .search-container__index {
+    padding: 10px 16px;
+    margin: 24px;
+    justify-content: center;
+  }
+
+  
+  .search__icon {
+    font-size: var(--fs-xxxs);
+    margin-right: 0.3rem;
+  }
+
+  .buscador {
+    font-size: var(--fs-xs);
+  }
+}
+
+@media (width > 1024px) {
+  .list-home__index {
+    width: 400px;
+    justify-content: center;
+    margin: 12px 0 0 12px ;
+  }
+
+  .search__container-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-home__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-customer__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 24px;
+    align-items: end;
+  }
+}
+
+@media (width > 1280px) {
+  .list-home__index {
+    width: 600px;
+    justify-content: center;
+    margin: 12px 0 0 0;
+  }
+
+  .search__container-index {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-home__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-customer__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

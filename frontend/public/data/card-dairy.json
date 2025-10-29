@@ -29,5 +29,37 @@
         "price": "10.000 / Libra",
         "name": "Yogur natural",
         "button": "Agregar"
+    },
+
+        {
+        "id": "5",
+        "image": "../assets/card/dairy/leche.jpg",
+        "price": "5.000 / Unidad",
+        "name": "Leche fresca",
+        "button": "Agregar"
+    }, 
+
+    {
+        "id": "6",
+        "image": "../assets/card/dairy/queso.jpg",
+        "price": "12.000 / Libra",
+        "name": "Queso fresco",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "7",
+        "image": "../assets/card/dairy/requeson.jpg",
+        "price": "15.000 / Libra",
+        "name": "Requesón",
+        "button": "Agregar"
+    },
+
+    {
+        "id": "8",
+        "image": "../assets/card/dairy/yogurt-natural.png",
+        "price": "10.000 / Libra",
+        "name": "Yogur natural",
+        "button": "Agregar"
     }
 ]

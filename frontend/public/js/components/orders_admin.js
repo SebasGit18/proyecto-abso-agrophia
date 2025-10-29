@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const PedidosElement = document.querySelector(".table_pedidos");
+    const PedidosElement = document.querySelector(".table-orders");
 
     if (PedidosElement) {
         fetch("/frontend/public/views/components/pedidos_table.html")
@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 PedidosElement.innerHTML = data;
             })
-            .catch(error => console.log("Error cargando el hero", error));
+            .catch(error => console.log("Error cargando la tabla de pedidos", error));
     }   
 });

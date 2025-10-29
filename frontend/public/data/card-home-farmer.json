@@ -4,7 +4,8 @@
         "image": "../assets/card/green-apple.jpg",
         "price": "7.000 / Libra",
         "name": "Manzana verde",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     }, 
 
     {
@@ -12,7 +13,8 @@
         "image": "../assets/card/strawberries.jpg",
         "price": "8.000 / Libra",
         "name": "Fresas",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -20,7 +22,8 @@
         "image": "../assets/card/grapes.jpg",
         "price": "5.000 / Libra",
         "name": "Uvas",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -28,7 +31,8 @@
         "image": "../assets/card/pineapple.jpg",
         "price": "3.000 / Libra",
         "name": "Piña",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -36,7 +40,8 @@
         "image": "../assets/card/papaya.jpg",
         "price": "5.000 / Libra",
         "name": "Papaya",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -44,7 +49,8 @@
         "image": "../assets/card/melon.jpg",
         "price": "8.000 / Libra",
         "name": "Melón",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -52,7 +58,8 @@
         "image": "../assets/card/banana.jpg",
         "price": "5.000 / Libra",
         "name": "Banano",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     },
 
     {
@@ -60,6 +67,7 @@
         "image": "../assets/card/apple.jpg",
         "price": "6.000 / Libra",
         "name": "Manzana roja",
-        "button": "Agregar"
+        "button1": "Editar",
+        "button2": "Visualizar"
     }
 ]

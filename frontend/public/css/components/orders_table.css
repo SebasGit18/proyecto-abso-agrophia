@@ -9,18 +9,20 @@
 /* ====== TABLA DE PEDIDOS ====== */
 .orders-table {
   color: var(--black);
-  /* margin-top: 50px; */
   width: auto;
-  /* margin-left: 200px; */
-  /* margin-right: 10px; */
   margin-bottom: 30px; 
   border-collapse: collapse;
   background: var(--white);
   box-shadow: 0 4px 12px var(--gray-100);
-  font-size: 12px;
-  border-radius: 10px;
+  font-size: var(--fs-xxxs);
+  border-radius: 12px;
   overflow: hidden;
 }
+.table-orders{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
 
 .orders-table__header,
 .orders-table__cell {
@@ -48,8 +50,9 @@
 
 .orders-table__cell--status,
 .orders-table__cell--message {
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .orders-table__cell--actions {
@@ -57,7 +60,7 @@
   flex-direction: row; /* 🔹 botones uno debajo del otro */
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
   margin:5px;
 }
 
@@ -122,35 +125,40 @@
   height: 24px;
 }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .orders-table {
-    font-size: 11px;
-    min-width: 700px; /* mantiene scroll en móviles */
-    margin-left: 0px;
-  }
 
-  .orders-table__header,
-  .orders-table__cell {
-    padding: 8px 10px;
-  }
-
-  /* 🔹 Mantener botones en columna también en móviles */
-  .orders-table__cell--actions {
-    flex-direction: column;
+/* tablets */
+@media (width >  640px) {
+  .orders-table{
+    width: 100%;
+    margin: 0;
   }
 }
-/* @media (max-width: 768px){
-    .orders-table{
-        width: auto;
-        margin-left:0px;
-    }
-} */
 
-@media(max-width: 1115px){
-    .orders-table{
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* laptops */
+@media (width > 768px) {
+  .table-orders{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    scrollbar-width: none; /* Firefox */
+
+    /* margin: 0 24px; */
+  }
 }
 
+@media (width > 1280px) {
+  .orders-table{
+    width: 80%;
+    margin: 0;
+  }
+  .table-orders{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .orders-table__cell-status{
+    text-align:center;
+  }
+  
+
+}

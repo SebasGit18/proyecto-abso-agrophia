@@ -1,7 +1,7 @@
   .search-users{
     display: flex;
     flex-direction: column;
-    margin:0 24px;
+    margin:24px 24px 0 24px  ;
     gap: 24px;
     align-items: center;
   }
@@ -10,7 +10,8 @@
   font-size: var(--fs-sm);
   text-align: center;
   color: var(--black);
-  font-family: var(--main-font)
+  font-family: var(--main-font);
+  margin: 0;
 }
 /*Contenedor principal*/
 .search-users-container {
@@ -42,7 +43,7 @@
 
 /*Style input*/
 .search-users__bar {
-  /* width:; */
+  width: 100%;
   flex: 1;
   border: none;
   outline: none;
@@ -52,22 +53,9 @@
   align-items: center;
 }
 /* celulares */
-@media( max-width: 640px){
-  .search-users-container{
-    margin-top: 100px;
-    width: 100%;
-    max-width: 450px;
-    margin: 0;
-  }
-  .search-users__bar{
-    width: 100%;
-  }
-  .search-users__title{
-    margin: 0;
-  }
-}
+
 /* tablets */
-@media( max-width: 768px) and (min-width: 640px)  {
+@media(width > 640px)  {
   .search-users{
     align-items: center;
 
@@ -80,21 +68,9 @@
   }
 }
 /* laptops */
-@media (max-width:1024px) and (min-width:768px) {
+@media (width > 768px) {
   .search-users-container{
     max-width: 450px;
   }
 
-}
-/* big screen  */
-@media (max-width:1536px) and (min-width:1280px) {
-  .search-users-container{
-    max-width: 450px;
-    margin: 0;
-  }
-  .search-users{
-    align-items: start;
-    margin-left: 250px;
-
-  }
 }

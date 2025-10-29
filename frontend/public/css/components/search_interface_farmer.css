@@ -23,9 +23,8 @@ body {
 .search-container {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 500px;
-  margin-top: 20px; 
+  width: auto;
+  margin: 24px;
   background: var(--white);
   border: 1px solid var(--gray-900);
   border-radius: 8px;
@@ -102,3 +101,15 @@ body {
     padding: 0.4rem 0;
   }
 
+@media (width > 1024px) {
+  .search-container {
+    width: 450px;
+    justify-content: center;
+  }
+
+  .search__interface-farmer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
