@@ -1,6 +1,9 @@
 .profile-content{
   margin:24px;
 }
+.profile-content2{
+  margin:24px;
+}
 .profile-container{
     display: flex;
     flex-direction: column;
@@ -14,6 +17,18 @@
   /* margin-top: 20px; */
 }
 .profile {
+  width: auto;
+  margin: 24px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+.profile-shop2{
   width: auto;
   margin: 24px auto;
   border-radius: 12px;
@@ -68,6 +83,12 @@
 
 /* === CUERPO CON CAMPOS === */
 .profile__body {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile__body2 {
   padding: 24px 32px;
   display: flex;
   flex-direction: column;
@@ -153,6 +174,10 @@
     padding: 24px;
     margin: 0;
   }
+  .profile-content2{
+    padding: 24px;
+    margin: 0;
+  }
   .profile-container{
     display: flex;
     flex-direction: column;
@@ -162,8 +187,18 @@
   .profile{
     width: 500px;
   }
+  .profile-shop2{
+    width: 500px;
+
+  }
 
  .profile__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+ .profile__body2 {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -179,6 +214,12 @@
     align-items: center;
     display: flex;
   }
+  .profile-content2{
+    margin: 0;
+    padding: 24px;
+    align-items: center;
+    display: flex;
+  }
   
   .profile__header{
     width: 200px;
@@ -189,6 +230,12 @@
     width: 700px;
     display: flex;
     flex-direction: row;
+  }
+  .profile-shop2{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .profile__body::before{
     display: none;

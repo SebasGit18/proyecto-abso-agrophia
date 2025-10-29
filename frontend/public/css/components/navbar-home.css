@@ -93,6 +93,7 @@
 }
 
 .nav-menu__list a {
+  text-align: left;
   display: block;
   padding: 8px 12px;
   text-decoration: none;
