@@ -168,7 +168,7 @@
   }
    .header-home__navbar {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     align-items: center;
   }

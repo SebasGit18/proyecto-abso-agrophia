@@ -36,7 +36,7 @@
         </div>
           <div class="cart__cell cart__actions" data-label="Acciones">
             <div class="cart__actions--row">
-              <button class="cart__btn cart__btn--edit">Modificar</button>
+              <button class="cart__btn cart__btn--edit">Confirmar</button>
               <button class="cart__btn cart__btn--cancel">Cancelar</button>
             </div>
           </div>
@@ -72,21 +72,34 @@
 
         <div class="cart__cell cart__actions" data-label="Acciones">
           <div class="cart__actions--row">
-            <button class="cart__btn cart__btn--edit">Modificar</button>
+            <button class="cart__btn cart__btn--edit">Confirmar</button>
             <button class="cart__btn cart__btn--cancel">Cancelar</button>
           </div>
         </div>
 
       </div>
       
-
     </div>
 
     <!-- TOTAL -->
     <div class="cart__summary">
       <p class="cart__total">Total: <span class="cart__total-value">$13.000</span></p>
+       <select id="payment-method" name="payment-method" class="cart__options" required>
+        <option value="">-- Método de pago --</option>
+        <option value="pago contra entrega">Pago contra entrega</option>
+        <option value="pago de contado">Pago de contado</option>
+        <option value="transferencia">Transferencia</option>
+      </select>
+
+      <select id="shipping-method" name="shipping-method" class="cart__options" required>
+        <option value="">-- Método de envío --</option>
+        <option value="envio a domicilio">Envío a domicilio</option>
+        <option value="recogido en tienda">Recogido en tienda</option>
+        <option value="entrega bajo cita">Entrega bajo cita</option>
+      </select>
     </div>
   </div>
+
 
   <!-- BOTONES FINALES -->
   <div class="cart__actions-global">

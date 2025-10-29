@@ -73,7 +73,9 @@
 }
 
 .card-available__button-one {
+  display: flex;
   height: 40px;
+  gap: 8px;
   background: linear-gradient(135deg, var(--primary-500), var(--primary-700));
   color: var(--white);
   border: none;
@@ -83,6 +85,7 @@
   font-size: var(--fs-xs);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  align-items: center;
 }
 
 .card-available__button-one:hover {

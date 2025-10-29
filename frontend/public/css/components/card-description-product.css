@@ -187,9 +187,7 @@
 }
 .product-card__mensaje--link{
   text-decoration: none;
-  color: var(--terciary-700);
-
-
+  color: var(--primary-700);
 }
 @media(width > 768px){
   .page__product{

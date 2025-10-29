@@ -71,6 +71,7 @@
       width: 100%;
       height: 70px;
   }
+    
       display: flex;
       background-color: var(--primary-800);
       padding: 10px 20px;
