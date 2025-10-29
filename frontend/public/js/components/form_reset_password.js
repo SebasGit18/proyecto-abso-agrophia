@@ -12,3 +12,9 @@ if (resetElement) {
 
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡La contaseña se reestableció correctamente!");
+  window.location.href = "/frontend/public/views/login.html";
+}

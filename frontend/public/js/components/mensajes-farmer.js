@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
     .catch(error => console.log("Error cargando el toolbar", error));
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Respuesta enviado correctamente!");
+  window.location.href = "/frontend/public/views/interface_farmer.html";
+}

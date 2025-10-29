@@ -11,3 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Código enviado correctamente!");
+  window.location.href = "/frontend/public/views/reset_password.html";
+}
