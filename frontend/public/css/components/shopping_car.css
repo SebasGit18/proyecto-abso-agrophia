@@ -151,10 +151,17 @@
 
 /* ==================== TOTAL ==================== */
 .cart__summary {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
   margin-top: 16px;
 }
-
+.cart_options{
+  border: 2px solid var(--black); /* Color del borde */
+  border-radius: 8px var(--black); /* Bordes redondeados */
+}
 .cart__total {
   font-size: var(--fs-xs);
   color: var(--primary-950);
@@ -214,10 +221,19 @@
     display: flex;
     justify-content: space-between;
   }
+  .card-summary{
+    display: flex;
+    justify-content: space-around;
+  }
 }
 @media(width > 768px){
   .cart__container{
     max-width: 950px;
     margin: 0 auto;
+  }
+  .card-summary{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-end;
   }
 }

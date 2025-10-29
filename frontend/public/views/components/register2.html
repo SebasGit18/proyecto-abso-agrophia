@@ -1,6 +1,6 @@
 <div class="form-content__register">
   <h2 class="form__title">Formulario de Registro</h2>
-  <form class="form-content__group2">
+  <form onsubmit="mostrarAlerta(event)" class="form-content__group2">
 
     
 
@@ -70,6 +70,7 @@
 
    <div class="form-content__register--row-buttons">
       <a href="/frontend/public/views/register.html" class="form-content__register--row-buttons__back">Volver</a>
-      <a href="/frontend/public/views/login.html" class="form-content__register--row-buttons__next">Registrarse</a>
+      <a href="/frontend/public/views/login.html" 
+      onclick="mostrarAlerta(event)" class="form-content__register--row-buttons__next">Registrarse</a>
     </div>
 </div>

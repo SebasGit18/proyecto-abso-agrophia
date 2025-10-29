@@ -13,14 +13,15 @@
       <p class="messages__content">
         Buenas tardes, estoy interesado en comprar 10 kilos de tomates. ¿Tienen disponibilidad?
       </p>
-      <form class="messages__reply">
+      <form onsubmit="mostrarAlerta(event)" class="messages__reply">
         <textarea
           class="messages__reply-text"
           placeholder="Escribe tu respuesta..."
         ></textarea>
         <div class="messages__row-buttons">
           <a href="/frontend/public/views/mensajes_farmer.html" class="messages__row-buttons--back">Rechazar</a>
-          <a href="/frontend/public/views/interface_farmer.html" class="messages__row-buttons--next">Responder</a>
+          <a href="/frontend/public/views/interface_farmer.html" 
+          onclick="mostrarAlerta(event)" class="messages__row-buttons--next">Responder</a>
         </div>
       </form>
     </div>
@@ -40,7 +41,8 @@
         ></textarea>
         <div class="messages__row-buttons">
           <a href="/frontend/public/views/mensajes_farmer.html" class="messages__row-buttons--back">Rechazar</a>
-          <a href="/frontend/public/views/interface_farmer.html" class="messages__row-buttons--next">Responder</a>
+          <a href="/frontend/public/views/interface_farmer.html" 
+          onclick="mostrarAlerta(event)" class="messages__row-buttons--next">Responder</a>
         </div>
       </form>
     </div>
@@ -61,7 +63,7 @@
         ></textarea>
         <div class="messages__row-buttons">
           <a href="/frontend/public/views/mensajes_farmer.html" class="messages__row-buttons--back">Rechazar</a>
-          <a href="/frontend/public/views/interface_farmer.html" class="messages__row-buttons--next">Responder</a>
+          <a href="/frontend/public/views/interface_farmer.html" onclick="mostrarAlerta(event)" class="messages__row-buttons--next">Responder</a>
         </div>
       </form>
     </div>
@@ -81,7 +83,8 @@
         ></textarea>
         <div class="messages__row-buttons">
           <a href="/frontend/public/views/mensajes_farmer.html" class="messages__row-buttons--back">Rechazar</a>
-          <a href="/frontend/public/views/interface_farmer.html" class="messages__row-buttons--next">Responder</a>
+          <a href="/frontend/public/views/interface_farmer.html" 
+          onclick="mostrarAlerta(event)" class="messages__row-buttons--next">Responder</a>
         </div>
       </form>
     </div>

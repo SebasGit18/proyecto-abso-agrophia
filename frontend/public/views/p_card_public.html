@@ -16,8 +16,10 @@
   <header class="navbar-container"></header>
 
   <main>
-    <section class="search__container-index"></section>
-    <section class="card-public__container-section">
+    <div class="login-customer__row">
+        <!-- <section class="list-home__container"></section> -->
+        <section class="search__container-index"></section>
+    </div>
       <div class="card-public__container"></div>
     </section>
   </main>
@@ -30,6 +32,7 @@
   <script src="/frontend/public/js/components/buttonBack.js" defer></script>
   <script src="/frontend/public/js/components/footer.js" defer></script>
   <script src="/frontend/public/js/components/search.js" defer></script>
+  <!-- <script src="/frontend/public/js/components/list-home.js"></script> -->
   <script type="module">
     import { loadCards } from "/frontend/public/js/components/card-public.js";
     loadCards(".card-public__container");// Clase para cargar todas las cards

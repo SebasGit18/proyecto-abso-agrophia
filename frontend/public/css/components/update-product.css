@@ -1,3 +1,28 @@
+.update-product__message {
+  position: fixed;
+  top: 45%;
+  width: 30%;
+  background-color: var(--primary-600);
+  color: var(--white);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: var(--fs-xs);
+  font-weight: bold;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.update-product__message--show {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
 /* === FORMULARIO ACTUALIZAR PRODUCTO === */
 
 .update-product__content {

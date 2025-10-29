@@ -20,3 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.log("Error al cargar el formulario de registro", error));
   }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Te has registrado exitosamente!");
+  window.location.href = "/frontend/public/views/login.html";
+}

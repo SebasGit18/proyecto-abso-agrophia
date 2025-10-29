@@ -10,3 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => console.error("Error cargando la información del perfil:", error));
   }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Iniciaste sesión exitosamente!");
+  window.location.href = "/frontend/public/views/interface_farmer.html";
+}
