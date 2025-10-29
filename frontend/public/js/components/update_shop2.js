@@ -11,3 +11,9 @@ document.addEventListener("DOMContentLoaded", function(){
     .catch(error => console.log("Error cargando el formulario de crear tienda", error));
     }
 });
+
+function mostrarAlerta(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+  alert("¡Tienda editada exitosamente!");
+  window.location.href = "/frontend/public/views/profile_shop.html";
+}

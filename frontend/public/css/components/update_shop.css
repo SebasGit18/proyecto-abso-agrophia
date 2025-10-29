@@ -150,8 +150,10 @@
   font-weight: 700;
   font-size: var(--fs-xs);
   transition: all 0.3s ease;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
+
+
 
 .login-form__button:hover {
   background-color: var(--primary-900);
