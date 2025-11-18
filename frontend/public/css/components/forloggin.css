@@ -163,23 +163,20 @@
 }
 @media (width > 1024px){
   .page__left_login {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 50%; 
-  height: 100dvh;   /* altura del viewport dinámico real */
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  width: 50%;
+  height: 87vh;   /* altura del viewport dinámico real */
   overflow: hidden;
-
-  display: flex;                 
-  justify-content: center;       
-  align-items: center;           
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: 
     linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
     url("/frontend/public/img/farmer.jpg");
-
-  background-size: cover;        
-  background-position: center;   
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -193,12 +190,14 @@
 
 
 .page__right_login{
-  margin-left:50%; 
-  width:50%; 
+  position: relative;
+  margin-left:50%;
+  width:50%;
+  height: 87vh;
   color: var(--black);
-  display:flex; 
-  flex-direction:row; 
-  align-items:center; 
+  display:flex;
+  flex-direction:row;
+  align-items:center;
   justify-content: center;
 }
 .page__right::before, .page__right::after { 
@@ -214,7 +213,7 @@
   }
   .login__back{
     position: fixed;
-    top: 16px;
+    top: 64px;
     left: 16px;
   }
 }

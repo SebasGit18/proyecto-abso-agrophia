@@ -4,7 +4,7 @@
   align-items: center;
   /* margin: 24px; */
   padding: 12px;
-  background-color: var(--primary-700);
+  background-color: var(--gray-100);
   gap: 24px;
 }
 

@@ -23,7 +23,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-800);
+  background-color: var(--gray-100);
   align-items: center;
   gap: 12px;
   padding: 12px;
@@ -45,7 +45,7 @@
 }
 
 .navbar__link {
-  color: var(--white);
+  color: var(--primary-700);
   text-decoration: none;
   font-weight: medium;
 }

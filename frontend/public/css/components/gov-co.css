@@ -1,0 +1,13 @@
+.govco-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 5vh;
+  padding: 24px;
+  color: var(--white);
+  background-color: var(--terciary-450);
+}
+
+.gov__img {
+  height: 2rem;
+}

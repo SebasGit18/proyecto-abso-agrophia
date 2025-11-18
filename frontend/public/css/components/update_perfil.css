@@ -212,7 +212,7 @@
   justify-content: space-between;
 }
 .profile-update__row-buttons__back{
-  background-color: var(--gray-700);
+  background-color: var(--gray-800);
   color: var(--white);
   padding: 12px 24px;
   font-size: var(--fs-xs);

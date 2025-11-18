@@ -113,15 +113,16 @@
 
 @media (width > 768px){
     .page-right__unit-measure{
-    margin:0 0 0 50%; 
-    width:50%; 
-    min-height:100vh; 
+    position: relative;
+    margin:0 0 0 50%;
+    width:50%;
+    min-height:100vh;
     color: var(--black);
-    height:100vh; 
+    height:100vh;
     overflow-y:auto;
-    display:flex; 
-    flex-direction:row; 
-    align-items:center; 
+    display:flex;
+    flex-direction:row;
+    align-items:center;
     justify-content: center;
     /* padding:0 40px; */
   }
@@ -132,21 +133,20 @@
   width: 320px;
 }
   .page-left__unit-measure {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 50%; 
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    width: 50%;
     height: 100dvh;   /* altura del viewport dinámico real */
     overflow: hidden;
-    display: flex;                 
-    justify-content: center;       
-    align-items: center;           
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: 
       linear-gradient(var(--overlay-dark), var(--overlay-dark)), 
       url("/frontend/public/img/huerto.jpg");
-    background-size: cover;        
-    background-position: center;   
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 .page-left__unit-measure__title{

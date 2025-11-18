@@ -5,7 +5,7 @@
 }
 
 .header-home__title{
-  color: var(--white);
+  color: var(--primary-700);
   font-size: var(--fs-lg);
   font-family: var(--main-font);
   text-align: center;
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-800);
+  background-color: var(--gray-100);
   padding: 10px 20px;
   width: 100%;
   gap: 24px;
@@ -60,6 +60,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  color: var(--primary-700);
 }
 
 /* Quitamos el triángulo que pone <summary> */
@@ -106,7 +107,7 @@
 }
 
 .header-home__link {
-  color: var(--white);
+  color: var(--primary-700);
   text-decoration: none;
   font-weight: medium;
   font-size: var(--fs-xs);

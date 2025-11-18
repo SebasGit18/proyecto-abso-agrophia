@@ -27,6 +27,7 @@
       {
         "nested-interactive": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }
